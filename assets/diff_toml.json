@@ -1,0 +1,41 @@
+{
+  "dependency": "toml",
+  "baseline": {
+    "passed": 1,
+    "failed": 0,
+    "skipped": 0,
+    "duration": 0.157,
+    "junit_path": "D:\\Agent\\assets\\evidence\\capsule-toml\\baseline_junit.xml"
+  },
+  "candidate": {
+    "passed": 1,
+    "failed": 0,
+    "skipped": 0,
+    "duration": 0.142,
+    "junit_path": "D:\\Agent\\assets\\evidence\\capsule-toml\\candidate_junit.xml"
+  },
+  "new_failures": [],
+  "failures_details": [],
+  "per_test_diff": [
+    {
+      "test_name": "tests.test_core::test_parse_config",
+      "baseline": "passed",
+      "candidate": "passed",
+      "changed": false
+    }
+  ],
+  "pip_check": {
+    "baseline": "No broken requirements found.",
+    "candidate": "No broken requirements found."
+  },
+  "evidence_files": [
+    "assets\\evidence\\capsule-toml\\baseline_pip_check.txt",
+    "assets\\evidence\\capsule-toml\\candidate_pip_check.txt",
+    "assets\\evidence\\capsule-toml\\baseline_junit.xml",
+    "assets\\evidence\\capsule-toml\\candidate_junit.xml",
+    "assets\\evidence\\capsule-toml\\baseline_coverage.json",
+    "assets\\evidence\\capsule-toml\\candidate_coverage.json",
+    "assets\\evidence\\capsule-toml\\baseline_pytest_output.txt",
+    "assets\\evidence\\capsule-toml\\candidate_pytest_output.txt"
+  ]
+}

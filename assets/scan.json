@@ -1,0 +1,50 @@
+{
+  "repo_path": "D:\\Agent\\tests\\fixtures\\sample_repo",
+  "scanned_at": "2026-10-22T02:53:50.391066+00:00",
+  "dependencies": {
+    "toml": {
+      "name": "toml",
+      "declared_specifier": "==0.10.2",
+      "declared_in": [
+        "requirements.txt",
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 2181,
+          "source_url": "https://pypi.org/pypi/toml/json",
+          "fetched_at": "2026-10-22T02:53:50.391089+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/toml/json",
+          "fetched_at": "2026-10-22T02:53:50.391089+00:00"
+        }
+      ]
+    },
+    "appdirs": {
+      "name": "appdirs",
+      "declared_specifier": "==1.4.4",
+      "declared_in": [
+        "requirements.txt",
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 2354,
+          "source_url": "https://pypi.org/pypi/appdirs/json",
+          "fetched_at": "2026-10-22T02:53:50.715232+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/appdirs/json",
+          "fetched_at": "2026-10-22T02:53:50.715232+00:00"
+        }
+      ]
+    }
+  }
+}

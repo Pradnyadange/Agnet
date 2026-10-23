@@ -1,0 +1,41 @@
+{
+  "dependency": "appdirs",
+  "baseline": {
+    "passed": 1,
+    "failed": 0,
+    "skipped": 0,
+    "duration": 0.108,
+    "junit_path": "D:\\Agent\\assets\\evidence\\capsule-appdirs\\baseline_junit.xml"
+  },
+  "candidate": {
+    "passed": 1,
+    "failed": 0,
+    "skipped": 0,
+    "duration": 0.181,
+    "junit_path": "D:\\Agent\\assets\\evidence\\capsule-appdirs\\candidate_junit.xml"
+  },
+  "new_failures": [],
+  "failures_details": [],
+  "per_test_diff": [
+    {
+      "test_name": "tests.test_core::test_parse_config",
+      "baseline": "passed",
+      "candidate": "passed",
+      "changed": false
+    }
+  ],
+  "pip_check": {
+    "baseline": "No broken requirements found.",
+    "candidate": "No broken requirements found."
+  },
+  "evidence_files": [
+    "assets\\evidence\\capsule-appdirs\\baseline_pip_check.txt",
+    "assets\\evidence\\capsule-appdirs\\candidate_pip_check.txt",
+    "assets\\evidence\\capsule-appdirs\\baseline_junit.xml",
+    "assets\\evidence\\capsule-appdirs\\candidate_junit.xml",
+    "assets\\evidence\\capsule-appdirs\\baseline_coverage.json",
+    "assets\\evidence\\capsule-appdirs\\candidate_coverage.json",
+    "assets\\evidence\\capsule-appdirs\\baseline_pytest_output.txt",
+    "assets\\evidence\\capsule-appdirs\\candidate_pytest_output.txt"
+  ]
+}

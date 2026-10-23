@@ -1,0 +1,156 @@
+{
+  "schema_version": "2.0.0",
+  "capsule_id": "capsule-sample_repo-toml-20261022_025451",
+  "generated_at": "2026-10-22T02:54:51.596636+00:00",
+  "capsule_type": "replacement",
+  "target_repo": {
+    "name": "sample_repo",
+    "url": "https://github.com/maintainer/sample_repo",
+    "commit_sha": "a1b2c3d4e5f678901234567890abcdef12345678",
+    "python_version": "3.14.6"
+  },
+  "maintenance_problem": "Dependency toml shows high staleness risk indicators and should be replaced with modern supported alternative.",
+  "dependency": {
+    "name": "toml",
+    "declared_specifier": "==0.10.2",
+    "declared_in": [
+      "requirements.txt",
+      "pyproject.toml"
+    ]
+  },
+  "observed": {
+    "risk_indicators": [
+      {
+        "id": "days_since_release",
+        "value": 2181,
+        "source_url": "https://pypi.org/pypi/toml/json",
+        "fetched_at": "2026-10-22T02:53:50.391089+00:00"
+      },
+      {
+        "id": "yanked",
+        "value": false,
+        "source_url": "https://pypi.org/pypi/toml/json",
+        "fetched_at": "2026-10-22T02:53:50.391089+00:00"
+      }
+    ],
+    "scan": {
+      "files_scanned": 2,
+      "dynamic_imports": []
+    },
+    "usage_locations": [
+      {
+        "file": "sample_pkg/core.py",
+        "line": 1,
+        "symbol": "toml",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "sample_pkg/core.py",
+        "line": 5,
+        "symbol": "loads",
+        "kind": "call",
+        "covered_by_tests": false
+      }
+    ],
+    "test_results": {
+      "baseline": {
+        "passed": 1,
+        "failed": 0,
+        "junit_path": "D:\\Agent\\assets\\evidence\\capsule-toml\\baseline_junit.xml"
+      },
+      "candidate": {
+        "passed": 1,
+        "failed": 0,
+        "junit_path": "D:\\Agent\\assets\\evidence\\capsule-toml\\candidate_junit.xml"
+      },
+      "new_failures": [],
+      "pip_check": {
+        "baseline": "No broken requirements found.",
+        "candidate": "No broken requirements found."
+      }
+    },
+    "evidence": [
+      {
+        "path": "assets/evidence/capsule-toml/baseline_pip_check.txt",
+        "sha256": "9bc9eff87ccde9a897a86ea3cf9096facadba3cc998bc2b74cc3d856cf1cc971",
+        "command": "pip check",
+        "exit_code": 0,
+        "captured_at": "2026-10-22T02:54:51.596636+00:00"
+      },
+      {
+        "path": "assets/evidence/capsule-toml/candidate_pip_check.txt",
+        "sha256": "9bc9eff87ccde9a897a86ea3cf9096facadba3cc998bc2b74cc3d856cf1cc971",
+        "command": "pip check",
+        "exit_code": 0,
+        "captured_at": "2026-10-22T02:54:51.596636+00:00"
+      },
+      {
+        "path": "assets/evidence/capsule-toml/baseline_junit.xml",
+        "sha256": "4a26ca011b3ea3318911560fc8a53340f8b9aae63d698bc598bf62fbd359a4b0",
+        "command": "pytest",
+        "exit_code": 0,
+        "captured_at": "2026-10-22T02:54:51.596636+00:00"
+      },
+      {
+        "path": "assets/evidence/capsule-toml/candidate_junit.xml",
+        "sha256": "499cf81d262c0396b4c5088745e9299cb0fb5c3dfa0a3c42a6f38453086fe1cd",
+        "command": "pytest",
+        "exit_code": 0,
+        "captured_at": "2026-10-22T02:54:51.596636+00:00"
+      },
+      {
+        "path": "assets/evidence/capsule-toml/baseline_pytest_output.txt",
+        "sha256": "a78bfb74cf5a3b85a2941b5a03e3deb758ae601e228121fd703ead9d685f4259",
+        "command": "pytest",
+        "exit_code": 0,
+        "captured_at": "2026-10-22T02:54:51.596636+00:00"
+      },
+      {
+        "path": "assets/evidence/capsule-toml/candidate_pytest_output.txt",
+        "sha256": "6bf36ab2cbe51df456f1a787a6afbfc81262c56b508edcb28f95412667d4fc0c",
+        "command": "pytest",
+        "exit_code": 0,
+        "captured_at": "2026-10-22T02:54:51.596636+00:00"
+      }
+    ]
+  },
+  "ai_generated": {
+    "proposed_replacement": {
+      "name": "tomllib",
+      "type": "stdlib"
+    },
+    "migration_steps": [
+      "Replace 'import toml' with 'import tomllib' on Python 3.11+",
+      "Switch to binary file mode (open with 'rb') when calling tomllib.load()",
+      "Remove 'toml' from requirements.txt"
+    ],
+    "suggested_tests": [
+      "Test tomllib.loads with basic valid TOML strings",
+      "Test binary stream parsing with tomllib.load"
+    ],
+    "gap_analysis": [
+      "tomllib is read-only; writing TOML requires tomli_w if dump/dumps is used",
+      "Requires Python 3.11 or higher"
+    ],
+    "provenance": {
+      "provider": "rule_based_knowledge_base",
+      "model_id": "none",
+      "model_license_name": "N/A",
+      "model_card_url": "N/A",
+      "prompt_sha256": "N/A",
+      "raw_response_path": "N/A",
+      "validation": {
+        "passed": true,
+        "api_coverage": 1.0,
+        "rejected_candidates": []
+      }
+    }
+  },
+  "status": "not_testable",
+  "limitations": [
+    "Results only cover what the repo's tests exercise.",
+    "Python only.",
+    "Small models can propose weak replacements; validation gate determines acceptance."
+  ]
+}

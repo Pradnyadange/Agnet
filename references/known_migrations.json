@@ -1,0 +1,69 @@
+{
+  "toml": {
+    "replacement": "tomllib",
+    "type": "stdlib",
+    "min_python": "3.11",
+    "symbol_map": {
+      "load": "load",
+      "loads": "loads"
+    },
+    "migration_steps": [
+      "Replace 'import toml' with 'import tomllib' on Python 3.11+",
+      "Switch to binary file mode (open with 'rb') when calling tomllib.load()",
+      "Remove 'toml' from requirements.txt"
+    ],
+    "suggested_tests": [
+      "Test tomllib.loads with basic valid TOML strings",
+      "Test binary stream parsing with tomllib.load"
+    ],
+    "gap_analysis": [
+      "tomllib is read-only; writing TOML requires tomli_w if dump/dumps is used",
+      "Requires Python 3.11 or higher"
+    ]
+  },
+  "appdirs": {
+    "replacement": "platformdirs",
+    "type": "pypi",
+    "symbol_map": {
+      "user_cache_dir": "user_cache_dir",
+      "user_data_dir": "user_data_dir",
+      "user_config_dir": "user_config_dir",
+      "user_log_dir": "user_log_dir",
+      "AppDirs": "PlatformDirs"
+    },
+    "migration_steps": [
+      "Replace 'appdirs' with 'platformdirs' in requirements.txt",
+      "Update import statements from 'import appdirs' to 'import platformdirs as appdirs' or rename usages to 'platformdirs'",
+      "Verify directory paths match platform standard directories"
+    ],
+    "suggested_tests": [
+      "Validate user_cache_dir returns identical or standard OS path",
+      "Check compatibility of custom appname arguments"
+    ],
+    "gap_analysis": [
+      "platformdirs is actively maintained; minor differences in macOS path resolution for specific system flags"
+    ]
+  },
+  "six": {
+    "replacement": "builtins",
+    "type": "stdlib",
+    "symbol_map": {
+      "string_types": "str",
+      "text_type": "str",
+      "binary_type": "bytes",
+      "moves": "builtins"
+    },
+    "migration_steps": [
+      "Replace six.string_types with str",
+      "Replace six.text_type with str",
+      "Replace six.moves.urllib with urllib",
+      "Remove six dependency from requirements"
+    ],
+    "suggested_tests": [
+      "Test string type checks across all text inputs"
+    ],
+    "gap_analysis": [
+      "Pure Python 3 modernization; legacy Python 2 idioms are eliminated"
+    ]
+  }
+}

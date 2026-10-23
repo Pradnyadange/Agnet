@@ -1,0 +1,7 @@
+[project]
+name = "sample-repo"
+version = "0.1.0"
+dependencies = [
+    "toml==0.10.2",
+    "appdirs==1.4.4"
+]

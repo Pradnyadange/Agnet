@@ -1,0 +1,67 @@
+{
+  "file_count": 2,
+  "import_edge_count": 2,
+  "target_dependency": "toml",
+  "direct_usage_files": [
+    "sample_pkg/core.py"
+  ],
+  "blast_cone_files": [
+    "sample_pkg/core.py"
+  ],
+  "top_files_by_importers": [
+    {
+      "id": "sample_pkg/core.py",
+      "label": "sample_pkg/core.py",
+      "type": "file",
+      "in_degree": 0,
+      "test_status": "covered_and_passing"
+    },
+    {
+      "id": "tests/test_core.py",
+      "label": "tests/test_core.py",
+      "type": "file",
+      "in_degree": 0,
+      "test_status": "covered_and_passing"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "sample_pkg/core.py",
+      "label": "sample_pkg/core.py",
+      "type": "file",
+      "in_degree": 0,
+      "test_status": "covered_and_passing"
+    },
+    {
+      "id": "tests/test_core.py",
+      "label": "tests/test_core.py",
+      "type": "file",
+      "in_degree": 0,
+      "test_status": "covered_and_passing"
+    },
+    {
+      "id": "toml",
+      "label": "toml",
+      "type": "package",
+      "in_degree": 1,
+      "test_status": "not_covered"
+    },
+    {
+      "id": "sample_pkg",
+      "label": "sample_pkg",
+      "type": "package",
+      "in_degree": 1,
+      "test_status": "not_covered"
+    }
+  ],
+  "edges": [
+    {
+      "from": "sample_pkg/core.py",
+      "to": "toml"
+    },
+    {
+      "from": "tests/test_core.py",
+      "to": "sample_pkg"
+    }
+  ]
+}

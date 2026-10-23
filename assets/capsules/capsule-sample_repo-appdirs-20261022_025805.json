@@ -1,0 +1,154 @@
+{
+  "schema_version": "2.0.0",
+  "capsule_id": "capsule-sample_repo-appdirs-20261022_025805",
+  "generated_at": "2026-10-22T02:58:05.743131+00:00",
+  "capsule_type": "replacement",
+  "target_repo": {
+    "name": "sample_repo",
+    "url": "https://github.com/maintainer/sample_repo",
+    "commit_sha": "a1b2c3d4e5f678901234567890abcdef12345678",
+    "python_version": "3.14.6"
+  },
+  "maintenance_problem": "Dependency appdirs shows high staleness risk indicators and should be replaced with modern supported alternative.",
+  "dependency": {
+    "name": "appdirs",
+    "declared_specifier": "==1.4.4",
+    "declared_in": [
+      "requirements.txt",
+      "pyproject.toml"
+    ]
+  },
+  "observed": {
+    "risk_indicators": [
+      {
+        "id": "days_since_release",
+        "value": 2354,
+        "source_url": "https://pypi.org/pypi/appdirs/json",
+        "fetched_at": "2026-10-22T02:53:50.715232+00:00"
+      },
+      {
+        "id": "yanked",
+        "value": false,
+        "source_url": "https://pypi.org/pypi/appdirs/json",
+        "fetched_at": "2026-10-22T02:53:50.715232+00:00"
+      }
+    ],
+    "scan": {
+      "files_scanned": 2,
+      "dynamic_imports": []
+    },
+    "usage_locations": [],
+    "test_results": {
+      "baseline": {
+        "passed": 1,
+        "failed": 0,
+        "junit_path": "D:\\Agent\\assets\\evidence\\capsule-appdirs\\baseline_junit.xml"
+      },
+      "candidate": {
+        "passed": 1,
+        "failed": 0,
+        "junit_path": "D:\\Agent\\assets\\evidence\\capsule-appdirs\\candidate_junit.xml"
+      },
+      "new_failures": [],
+      "pip_check": {
+        "baseline": "No broken requirements found.",
+        "candidate": "No broken requirements found."
+      }
+    },
+    "evidence": [
+      {
+        "path": "assets/evidence/capsule-appdirs/baseline_pip_check.txt",
+        "sha256": "9bc9eff87ccde9a897a86ea3cf9096facadba3cc998bc2b74cc3d856cf1cc971",
+        "command": "pip check",
+        "exit_code": 0,
+        "captured_at": "2026-10-22T02:58:05.743131+00:00"
+      },
+      {
+        "path": "assets/evidence/capsule-appdirs/candidate_pip_check.txt",
+        "sha256": "9bc9eff87ccde9a897a86ea3cf9096facadba3cc998bc2b74cc3d856cf1cc971",
+        "command": "pip check",
+        "exit_code": 0,
+        "captured_at": "2026-10-22T02:58:05.743131+00:00"
+      },
+      {
+        "path": "assets/evidence/capsule-appdirs/baseline_junit.xml",
+        "sha256": "72955b7026730e7be312bbbc8a450865cb6747ee11f26dfc4d8174f6c3fe3cb0",
+        "command": "pytest",
+        "exit_code": 0,
+        "captured_at": "2026-10-22T02:58:05.743131+00:00"
+      },
+      {
+        "path": "assets/evidence/capsule-appdirs/candidate_junit.xml",
+        "sha256": "7ad1d7592b7cda79aa8d3996e7be38e6cff5c968758b0e6f23bec1de5140e3c5",
+        "command": "pytest",
+        "exit_code": 0,
+        "captured_at": "2026-10-22T02:58:05.743131+00:00"
+      },
+      {
+        "path": "assets/evidence/capsule-appdirs/baseline_coverage.json",
+        "sha256": "a6870988b0253a93b1aa3117c83eba2d6511ee6944022ef47b7031c1a19db9d5",
+        "command": "llm-response",
+        "exit_code": 0,
+        "captured_at": "2026-10-22T02:58:05.743131+00:00"
+      },
+      {
+        "path": "assets/evidence/capsule-appdirs/candidate_coverage.json",
+        "sha256": "57185a5ee00333a3beeb97fd5ae6ab5c4ddbe9284a1c5130152dc288f28696cb",
+        "command": "llm-response",
+        "exit_code": 0,
+        "captured_at": "2026-10-22T02:58:05.743131+00:00"
+      },
+      {
+        "path": "assets/evidence/capsule-appdirs/baseline_pytest_output.txt",
+        "sha256": "16ab1d4a41814ce08a723abe76a488712a3ba3785bc9508a42f3a13743414d2d",
+        "command": "pytest",
+        "exit_code": 0,
+        "captured_at": "2026-10-22T02:58:05.743131+00:00"
+      },
+      {
+        "path": "assets/evidence/capsule-appdirs/candidate_pytest_output.txt",
+        "sha256": "ab2873d127a804b64bcfd25395b387f23c7a0c57cfea43d5bf9f489a29499a83",
+        "command": "pytest",
+        "exit_code": 0,
+        "captured_at": "2026-10-22T02:58:05.743131+00:00"
+      }
+    ]
+  },
+  "ai_generated": {
+    "proposed_replacement": {
+      "name": "platformdirs",
+      "type": "pypi"
+    },
+    "migration_steps": [
+      "Replace 'appdirs' with 'platformdirs' in requirements.txt",
+      "Update import statements from 'import appdirs' to 'import platformdirs as appdirs' or rename usages to 'platformdirs'",
+      "Verify directory paths match platform standard directories"
+    ],
+    "suggested_tests": [
+      "Validate user_cache_dir returns identical or standard OS path",
+      "Check compatibility of custom appname arguments"
+    ],
+    "gap_analysis": [
+      "platformdirs is actively maintained; minor differences in macOS path resolution for specific system flags"
+    ],
+    "provenance": {
+      "provider": "rule_based_knowledge_base",
+      "model_id": "none",
+      "model_license_name": "N/A",
+      "model_card_url": "N/A",
+      "prompt_sha256": "N/A",
+      "raw_response_path": "N/A",
+      "validation": {
+        "passed": true,
+        "api_coverage": 1.0,
+        "rejected_candidates": []
+      }
+    }
+  },
+  "status": "unverified",
+  "limitations": [
+    "Results only cover what the repo's tests exercise.",
+    "Python only.",
+    "Small models can propose weak replacements; validation gate determines acceptance."
+  ]
+}

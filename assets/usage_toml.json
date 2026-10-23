@@ -1,0 +1,21 @@
+{
+  "dependency": "toml",
+  "files_scanned": 2,
+  "dynamic_imports": [],
+  "usage_locations": [
+    {
+      "file": "sample_pkg/core.py",
+      "line": 1,
+      "symbol": "toml",
+      "kind": "import",
+      "covered_by_tests": false
+    },
+    {
+      "file": "sample_pkg/core.py",
+      "line": 5,
+      "symbol": "loads",
+      "kind": "call",
+      "covered_by_tests": false
+    }
+  ]
+}
