@@ -1,0 +1,18 @@
+{
+  "proposed_replacement": {
+    "name": "tomllib",
+    "type": "stdlib"
+  },
+  "migration_steps": [
+    "Remove the `toml` import statement from `linkwatch/config.py`.",
+    "Replace the `toml.load()` call with `tomllib.loads()` or `tomllib.load()` depending on the exact usage context.",
+    "Update `setup.py` or `requirements.txt` to reflect the new dependency."
+  ],
+  "suggested_tests": [
+    "Run `python -m unittest linkwatch.tests` to ensure the replacement doesn't introduce new test failures.",
+    "Verify that the application still works as expected with the new dependency."
+  ],
+  "gap_analysis": [
+    "Potential incompatibility: If the application uses custom TOML parsing logic, it might not be directly compatible with `tomllib`. In this case, the migration steps may need to be adjusted or additional custom parsing logic implemented."
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "proposed_replacement": {
+    "name": "pathlib",
+    "type": "stdlib"
+  },
+  "migration_steps": [
+    "Remove `appdirs` dependency from requirements",
+    "Update `linkwatch/cache.py` to import `pathlib` instead of `appdirs`",
+    "Replace `user_cache_dir` call with `pathlib.Path.home() / '.cache'`"
+  ],
+  "suggested_tests": [
+    "Test that cache directory creation works as expected with `pathlib`"
+  ],
+  "gap_analysis": [
+    "Potential incompatibility with non-standard paths or cache directory configuration"
+  ]
+}

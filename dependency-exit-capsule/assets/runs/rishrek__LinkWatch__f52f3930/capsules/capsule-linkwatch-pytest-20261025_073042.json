@@ -1,0 +1,158 @@
+{
+  "schema_version": "2.0.0",
+  "capsule_id": "capsule-linkwatch-pytest-20261025_073042",
+  "generated_at": "2026-10-25T07:30:42.916045+00:00",
+  "capsule_type": "replacement",
+  "target_repo": {
+    "name": "LinkWatch",
+    "url": "https://github.com/rishrek/LinkWatch",
+    "commit_sha": "f52f3930c8e7c33d934ccf614955a38e26984bd5",
+    "python_version": "3.14.6"
+  },
+  "maintenance_problem": "Dependency 'pytest' analyzed during static risk triage.",
+  "dependency": {
+    "name": "pytest",
+    "declared_specifier": "",
+    "declared_in": [
+      "requirements-dev.txt"
+    ]
+  },
+  "observed": {
+    "risk_indicators": [
+      {
+        "id": "days_since_release",
+        "value": 127,
+        "source_url": "https://pypi.org/pypi/pytest/json",
+        "fetched_at": "2026-10-25T07:26:05.511958+00:00"
+      },
+      {
+        "id": "yanked",
+        "value": false,
+        "source_url": "https://pypi.org/pypi/pytest/json",
+        "fetched_at": "2026-10-25T07:26:05.511958+00:00"
+      }
+    ],
+    "scan": {
+      "files_scanned": 15,
+      "dynamic_imports": []
+    },
+    "usage_locations": [
+      {
+        "file": "tests/conftest.py",
+        "line": 6,
+        "symbol": "pytest",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "tests/conftest.py",
+        "line": 60,
+        "symbol": "fixture",
+        "kind": "call",
+        "covered_by_tests": false
+      }
+    ],
+    "test_results": {
+      "baseline": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "candidate": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "new_failures": [],
+      "pip_check": {
+        "baseline": "Tests not run in static analyze mode.",
+        "candidate": "Tests not run in static analyze mode."
+      }
+    },
+    "evidence": [
+      {
+        "path": "assets/runs/rishrek__LinkWatch__f52f3930/evidence/pytest_raw_model_response.json",
+        "sha256": "fdc2d005027da6c5ed60352e5f6fc2f4e4f69be3b293f091dc8abcaba1f534c3",
+        "command": "ollama run llama3.1:8b",
+        "exit_code": 0,
+        "captured_at": "2026-10-25T07:30:42.916009+00:00"
+      }
+    ],
+    "trust_check": {
+      "skipped": false,
+      "candidate_name": "pytest",
+      "candidate_type": "stdlib|pypi",
+      "first_release_date": "2010-11-25T21:00:27.474482Z",
+      "release_count": 192,
+      "last_release_date": "2026-06-19T10:58:32.857420Z",
+      "project_urls": {
+        "Changelog": "https://docs.pytest.org/en/stable/changelog.html",
+        "Contact": "https://docs.pytest.org/en/stable/contact.html",
+        "Funding": "https://docs.pytest.org/en/stable/sponsor.html",
+        "Homepage": "https://docs.pytest.org/en/latest/",
+        "Source": "https://github.com/pytest-dev/pytest",
+        "Tracker": "https://github.com/pytest-dev/pytest/issues"
+      },
+      "has_source_repo_url": true,
+      "min_edit_distance_to_popular": 0,
+      "closest_popular_package": "pytest",
+      "needs_human_review": false,
+      "reasons": []
+    },
+    "secret_redactions_count": 0
+  },
+  "ai_generated": {
+    "proposed_replacement": {
+      "name": "no_valid_proposal",
+      "type": "stdlib"
+    },
+    "migration_steps": [],
+    "suggested_tests": [],
+    "gap_analysis": [
+      "Candidate rejected by validation gate: unknown replacement type"
+    ],
+    "provenance": {
+      "provider": "ollama",
+      "model_id": "llama3.1:8b",
+      "model_license_name": "LLAMA 3.1 COMMUNITY LICENSE AGREEMENT",
+      "model_card_url": "https://ollama.com/library/llama3.1",
+      "prompt_sha256": "9412b9d11abce5a60151b9c2aefb9daefb439876e081715c5777d67359692b44",
+      "raw_response_path": "assets/runs/rishrek__LinkWatch__f52f3930/evidence/pytest_raw_model_response.json",
+      "secret_redactions_count": 0,
+      "trust_check": {
+        "skipped": false,
+        "candidate_name": "pytest",
+        "candidate_type": "stdlib|pypi",
+        "first_release_date": "2010-11-25T21:00:27.474482Z",
+        "release_count": 192,
+        "last_release_date": "2026-06-19T10:58:32.857420Z",
+        "project_urls": {
+          "Changelog": "https://docs.pytest.org/en/stable/changelog.html",
+          "Contact": "https://docs.pytest.org/en/stable/contact.html",
+          "Funding": "https://docs.pytest.org/en/stable/sponsor.html",
+          "Homepage": "https://docs.pytest.org/en/latest/",
+          "Source": "https://github.com/pytest-dev/pytest",
+          "Tracker": "https://github.com/pytest-dev/pytest/issues"
+        },
+        "has_source_repo_url": true,
+        "min_edit_distance_to_popular": 0,
+        "closest_popular_package": "pytest",
+        "needs_human_review": false,
+        "reasons": []
+      },
+      "validation": {
+        "passed": false,
+        "api_coverage": 0.0,
+        "rejected_candidates": [
+          "Unknown candidate type: stdlib|pypi"
+        ]
+      }
+    }
+  },
+  "status": "unverified",
+  "limitations": [
+    "Static analysis mode only: test execution not run.",
+    "Public repositories and Python projects only.",
+    "Small models can propose weak replacements; validation gate determines acceptance."
+  ]
+}

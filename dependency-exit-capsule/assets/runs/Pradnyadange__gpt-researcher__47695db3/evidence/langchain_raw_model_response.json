@@ -1,0 +1,15 @@
+{
+  "proposed_replacement": {
+    "name": "text-splitter-from-langchain",
+    "type": "pypi"
+  },
+  "migration_steps": [
+    "Replace the imports for the `langchain.text_splitter.CharacterTextSplitter` with the equivalent from the `text-splitter-from-langchain` package."
+  ],
+  "suggested_tests": [
+    "Ensure that the tests related to the text-splitter functionality continue to pass after the replacement"
+  ],
+  "gap_analysis": [
+    "There might be potential dependency conflicts with the `text-splitter-from-langchain` package, and a thorough analysis of the project's dependencies is required."
+  ]
+}

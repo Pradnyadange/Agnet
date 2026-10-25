@@ -1,0 +1,19 @@
+{
+  "proposed_replacement": {
+    "name": "scikit-learn",
+    "type": "pypi"
+  },
+  "migration_steps": [
+    "Update the import statements to use the 'from sklearn.cluster' and 'from sklearn.metrics' syntax",
+    "Update the code to use the new API for DBSCAN (if any changes are necessary)",
+    "Run tests to ensure the replacement works as expected"
+  ],
+  "suggested_tests": [
+    "Test the DBSCAN function with various datasets and parameters",
+    "Test the cosine_similarity function with various inputs"
+  ],
+  "gap_analysis": [
+    "Potential incompatibility 1: DBSCAN API changes may require manual adaptation",
+    "Potential incompatibility 2: cosine_similarity API changes may require manual adaptation"
+  ]
+}

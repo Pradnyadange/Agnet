@@ -1,0 +1,137 @@
+{
+  "schema_version": "2.0.0",
+  "capsule_id": "capsule-float-chat-sentence-transformers-20261024_201750",
+  "generated_at": "2026-10-24T20:17:50.240786+00:00",
+  "capsule_type": "unused_dependency",
+  "target_repo": {
+    "name": "Float-Chat",
+    "url": "https://github.com/Pradnyadange/Float-Chat",
+    "commit_sha": "48d6102ca918f8714b52d6a72a2933f2c99aab5f",
+    "python_version": "3.14.6"
+  },
+  "maintenance_problem": "Dependency 'sentence-transformers' analyzed during static risk triage.",
+  "dependency": {
+    "name": "sentence-transformers",
+    "declared_specifier": "==4.1.0",
+    "declared_in": [
+      "requirements.txt"
+    ]
+  },
+  "observed": {
+    "risk_indicators": [
+      {
+        "id": "days_since_release",
+        "value": 3,
+        "source_url": "https://pypi.org/pypi/sentence-transformers/json",
+        "fetched_at": "2026-10-24T20:13:23.938833+00:00"
+      },
+      {
+        "id": "yanked",
+        "value": false,
+        "source_url": "https://pypi.org/pypi/sentence-transformers/json",
+        "fetched_at": "2026-10-24T20:13:23.938833+00:00"
+      }
+    ],
+    "scan": {
+      "files_scanned": 6,
+      "dynamic_imports": []
+    },
+    "usage_locations": [],
+    "test_results": {
+      "baseline": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "candidate": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "new_failures": [],
+      "pip_check": {
+        "baseline": "Tests not run in static analyze mode.",
+        "candidate": "Tests not run in static analyze mode."
+      }
+    },
+    "evidence": [
+      {
+        "path": "assets/runs/Pradnyadange__Float-Chat__48d6102c/evidence/sentence-transformers_raw_model_response.json",
+        "sha256": "1eb68c9ab4ff255547da13d503644f047095d788fa47eaa5d8420f946345d7d4",
+        "command": "ollama run llama3.2:3b",
+        "exit_code": 0,
+        "captured_at": "2026-10-24T20:17:50.240746+00:00"
+      }
+    ],
+    "trust_check": {
+      "skipped": false,
+      "candidate_name": "sentence-transformers",
+      "candidate_type": "pypi",
+      "first_release_date": "2019-07-25T08:09:22.676208Z",
+      "release_count": 85,
+      "last_release_date": "2026-10-21T12:26:50.404905Z",
+      "project_urls": {
+        "Homepage": "https://www.SBERT.net",
+        "Repository": "https://github.com/huggingface/sentence-transformers/"
+      },
+      "has_source_repo_url": true,
+      "min_edit_distance_to_popular": 12,
+      "closest_popular_package": "s3transfer",
+      "needs_human_review": false,
+      "reasons": []
+    },
+    "secret_redactions_count": 0
+  },
+  "ai_generated": {
+    "proposed_replacement": {
+      "name": "sentence-transformers",
+      "type": "pypi"
+    },
+    "migration_steps": [
+      "Update existing dependencies to use sentence-transformers"
+    ],
+    "suggested_tests": [
+      "Test model functionality with sentence-transformers"
+    ],
+    "gap_analysis": [
+      "Verify compatibility with Python 3.14.6"
+    ],
+    "provenance": {
+      "provider": "ollama",
+      "model_id": "llama3.2:3b",
+      "model_license_name": "LLAMA 3.2 COMMUNITY LICENSE AGREEMENT",
+      "model_card_url": "https://ollama.com/library/llama3.2",
+      "prompt_sha256": "f918486225653080add75fa14360e46fd4df595490045812117a302e6ecf8112",
+      "raw_response_path": "assets/runs/Pradnyadange__Float-Chat__48d6102c/evidence/sentence-transformers_raw_model_response.json",
+      "secret_redactions_count": 0,
+      "trust_check": {
+        "skipped": false,
+        "candidate_name": "sentence-transformers",
+        "candidate_type": "pypi",
+        "first_release_date": "2019-07-25T08:09:22.676208Z",
+        "release_count": 85,
+        "last_release_date": "2026-10-21T12:26:50.404905Z",
+        "project_urls": {
+          "Homepage": "https://www.SBERT.net",
+          "Repository": "https://github.com/huggingface/sentence-transformers/"
+        },
+        "has_source_repo_url": true,
+        "min_edit_distance_to_popular": 12,
+        "closest_popular_package": "s3transfer",
+        "needs_human_review": false,
+        "reasons": []
+      },
+      "validation": {
+        "passed": true,
+        "api_coverage": 1.0,
+        "rejected_candidates": []
+      }
+    }
+  },
+  "status": "not_testable",
+  "limitations": [
+    "Static analysis mode only: test execution not run.",
+    "Public repositories and Python projects only.",
+    "Small models can propose weak replacements; validation gate determines acceptance."
+  ]
+}

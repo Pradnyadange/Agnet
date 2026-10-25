@@ -1,0 +1,129 @@
+{
+  "schema_version": "2.0.0",
+  "capsule_id": "capsule-linkwatch-toml-20261024_202258",
+  "generated_at": "2026-10-24T20:22:58.851488+00:00",
+  "capsule_type": "replacement",
+  "target_repo": {
+    "name": "LinkWatch",
+    "url": "https://github.com/rishrek/LinkWatch",
+    "commit_sha": "f52f3930c8e7c33d934ccf614955a38e26984bd5",
+    "python_version": "3.14.6"
+  },
+  "maintenance_problem": "Dependency 'toml' analyzed during static risk triage.",
+  "dependency": {
+    "name": "toml",
+    "declared_specifier": "==0.10.2",
+    "declared_in": [
+      "requirements.txt",
+      "pyproject.toml"
+    ]
+  },
+  "observed": {
+    "risk_indicators": [
+      {
+        "id": "days_since_release",
+        "value": 2183,
+        "source_url": "https://pypi.org/pypi/toml/json",
+        "fetched_at": "2026-10-24T20:21:51.605968+00:00"
+      },
+      {
+        "id": "yanked",
+        "value": false,
+        "source_url": "https://pypi.org/pypi/toml/json",
+        "fetched_at": "2026-10-24T20:21:51.605968+00:00"
+      }
+    ],
+    "scan": {
+      "files_scanned": 15,
+      "dynamic_imports": []
+    },
+    "usage_locations": [
+      {
+        "file": "linkwatch/config.py",
+        "line": 3,
+        "symbol": "toml",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "linkwatch/config.py",
+        "line": 37,
+        "symbol": "load",
+        "kind": "call",
+        "covered_by_tests": false
+      }
+    ],
+    "test_results": {
+      "baseline": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "candidate": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "new_failures": [],
+      "pip_check": {
+        "baseline": "Tests not run in static analyze mode.",
+        "candidate": "Tests not run in static analyze mode."
+      }
+    },
+    "evidence": [
+      {
+        "path": "assets/runs/rishrek__LinkWatch__f52f3930/evidence/toml_raw_model_response.json",
+        "sha256": "eba94d755a59ee974bd9e72fa898a9639620e8f64fefc86325fbb0152c4e12b8",
+        "command": "ollama run llama3.2:3b",
+        "exit_code": 0,
+        "captured_at": "2026-10-24T20:22:58.851441+00:00"
+      }
+    ],
+    "trust_check": {
+      "skipped": true,
+      "candidate_type": "stdlib",
+      "needs_human_review": false,
+      "reasons": []
+    },
+    "secret_redactions_count": 0
+  },
+  "ai_generated": {
+    "proposed_replacement": {
+      "name": "no_valid_proposal",
+      "type": "stdlib"
+    },
+    "migration_steps": [],
+    "suggested_tests": [],
+    "gap_analysis": [
+      "Candidate rejected by validation gate: not in stdlib"
+    ],
+    "provenance": {
+      "provider": "ollama",
+      "model_id": "llama3.2:3b",
+      "model_license_name": "LLAMA 3.2 COMMUNITY LICENSE AGREEMENT",
+      "model_card_url": "https://ollama.com/library/llama3.2",
+      "prompt_sha256": "90b249212fab33ad379d8ea1e69e1f50e699db2bcdd71ad02f645d6a10b33843",
+      "raw_response_path": "assets/runs/rishrek__LinkWatch__f52f3930/evidence/toml_raw_model_response.json",
+      "secret_redactions_count": 0,
+      "trust_check": {
+        "skipped": true,
+        "candidate_type": "stdlib",
+        "needs_human_review": false,
+        "reasons": []
+      },
+      "validation": {
+        "passed": false,
+        "api_coverage": 0.0,
+        "rejected_candidates": [
+          "tomli is not in sys.stdlib_module_names"
+        ]
+      }
+    }
+  },
+  "status": "unverified",
+  "limitations": [
+    "Static analysis mode only: test execution not run.",
+    "Public repositories and Python projects only.",
+    "Small models can propose weak replacements; validation gate determines acceptance."
+  ]
+}

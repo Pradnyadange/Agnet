@@ -1,0 +1,176 @@
+{
+  "schema_version": "2.0.0",
+  "capsule_id": "capsule-civicpulse-scikit-learn-20261025_071016",
+  "generated_at": "2026-10-25T07:10:16.781315+00:00",
+  "capsule_type": "replacement",
+  "target_repo": {
+    "name": "civicPulse",
+    "url": "https://github.com/Pradnyadange/civicPulse",
+    "commit_sha": "ab56de63bfc3db719c675c0390455df7db4525e0",
+    "python_version": "3.14.6"
+  },
+  "maintenance_problem": "Dependency 'scikit-learn' analyzed during static risk triage.",
+  "dependency": {
+    "name": "scikit-learn",
+    "declared_specifier": "",
+    "declared_in": [
+      "requirements.txt"
+    ]
+  },
+  "observed": {
+    "risk_indicators": [
+      {
+        "id": "days_since_release",
+        "value": 44,
+        "source_url": "https://pypi.org/pypi/scikit-learn/json",
+        "fetched_at": "2026-10-25T07:07:15.796162+00:00"
+      },
+      {
+        "id": "yanked",
+        "value": false,
+        "source_url": "https://pypi.org/pypi/scikit-learn/json",
+        "fetched_at": "2026-10-25T07:07:15.796162+00:00"
+      }
+    ],
+    "scan": {
+      "files_scanned": 15,
+      "dynamic_imports": []
+    },
+    "usage_locations": [
+      {
+        "file": "mongodb/clustering_pipeline.py",
+        "line": 9,
+        "symbol": "sklearn.cluster.DBSCAN",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "mongodb/clustering_pipeline.py",
+        "line": 76,
+        "symbol": "DBSCAN",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "mongodb/handlers.py",
+        "line": 4,
+        "symbol": "sklearn.metrics.pairwise.cosine_similarity",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "mongodb/handlers.py",
+        "line": 128,
+        "symbol": "cosine_similarity",
+        "kind": "call",
+        "covered_by_tests": false
+      }
+    ],
+    "test_results": {
+      "baseline": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "candidate": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "new_failures": [],
+      "pip_check": {
+        "baseline": "Tests not run in static analyze mode.",
+        "candidate": "Tests not run in static analyze mode."
+      }
+    },
+    "evidence": [
+      {
+        "path": "assets/runs/Pradnyadange__civicPulse__ab56de63/evidence/scikit-learn_raw_model_response.json",
+        "sha256": "10730b798e5db78eb412a3db098a5bf560b7f5856522b0c45b16529848f3c8a4",
+        "command": "ollama run llama3.1:8b",
+        "exit_code": 0,
+        "captured_at": "2026-10-25T07:10:16.781290+00:00"
+      }
+    ],
+    "trust_check": {
+      "skipped": false,
+      "candidate_name": "scikit-learn",
+      "candidate_type": "pypi",
+      "first_release_date": "2011-09-22T00:03:10.112867Z",
+      "release_count": 76,
+      "last_release_date": "2026-09-10T18:34:04.679234Z",
+      "project_urls": {
+        "download": "https://pypi.org/project/scikit-learn/#files",
+        "homepage": "https://scikit-learn.org",
+        "release notes": "https://scikit-learn.org/stable/whats_new",
+        "source": "https://github.com/scikit-learn/scikit-learn",
+        "tracker": "https://github.com/scikit-learn/scikit-learn/issues"
+      },
+      "has_source_repo_url": true,
+      "min_edit_distance_to_popular": 9,
+      "closest_popular_package": "s3transfer",
+      "needs_human_review": false,
+      "reasons": []
+    },
+    "secret_redactions_count": 0
+  },
+  "ai_generated": {
+    "proposed_replacement": {
+      "name": "scikit-learn",
+      "type": "pypi"
+    },
+    "migration_steps": [
+      "Update the import statements to use the 'from sklearn.cluster' and 'from sklearn.metrics' syntax",
+      "Update the code to use the new API for DBSCAN (if any changes are necessary)",
+      "Run tests to ensure the replacement works as expected"
+    ],
+    "suggested_tests": [
+      "Test the DBSCAN function with various datasets and parameters",
+      "Test the cosine_similarity function with various inputs"
+    ],
+    "gap_analysis": [
+      "Potential incompatibility 1: DBSCAN API changes may require manual adaptation",
+      "Potential incompatibility 2: cosine_similarity API changes may require manual adaptation"
+    ],
+    "provenance": {
+      "provider": "ollama",
+      "model_id": "llama3.1:8b",
+      "model_license_name": "LLAMA 3.1 COMMUNITY LICENSE AGREEMENT",
+      "model_card_url": "https://ollama.com/library/llama3.1",
+      "prompt_sha256": "7b52163cb9314ddd21f49c2efa681f893dea2ce64f488c0bc44d4474af0f4f94",
+      "raw_response_path": "assets/runs/Pradnyadange__civicPulse__ab56de63/evidence/scikit-learn_raw_model_response.json",
+      "secret_redactions_count": 0,
+      "trust_check": {
+        "skipped": false,
+        "candidate_name": "scikit-learn",
+        "candidate_type": "pypi",
+        "first_release_date": "2011-09-22T00:03:10.112867Z",
+        "release_count": 76,
+        "last_release_date": "2026-09-10T18:34:04.679234Z",
+        "project_urls": {
+          "download": "https://pypi.org/project/scikit-learn/#files",
+          "homepage": "https://scikit-learn.org",
+          "release notes": "https://scikit-learn.org/stable/whats_new",
+          "source": "https://github.com/scikit-learn/scikit-learn",
+          "tracker": "https://github.com/scikit-learn/scikit-learn/issues"
+        },
+        "has_source_repo_url": true,
+        "min_edit_distance_to_popular": 9,
+        "closest_popular_package": "s3transfer",
+        "needs_human_review": false,
+        "reasons": []
+      },
+      "validation": {
+        "passed": true,
+        "api_coverage": 1.0,
+        "rejected_candidates": []
+      }
+    }
+  },
+  "status": "unverified",
+  "limitations": [
+    "Static analysis mode only: test execution not run.",
+    "Public repositories and Python projects only.",
+    "Small models can propose weak replacements; validation gate determines acceptance."
+  ]
+}

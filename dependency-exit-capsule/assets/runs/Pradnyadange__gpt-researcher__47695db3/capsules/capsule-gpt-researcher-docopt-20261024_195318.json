@@ -1,0 +1,121 @@
+{
+  "schema_version": "2.0.0",
+  "capsule_id": "capsule-gpt-researcher-docopt-20261024_195318",
+  "generated_at": "2026-10-24T19:53:18.478086+00:00",
+  "capsule_type": "unused_dependency",
+  "target_repo": {
+    "name": "gpt-researcher",
+    "url": "https://github.com/Pradnyadange/gpt-researcher",
+    "commit_sha": "47695db37ee39029a48b90ae1a381f93da38b20c",
+    "python_version": "3.14.6"
+  },
+  "maintenance_problem": "Dependency 'docopt' analyzed during static risk triage.",
+  "dependency": {
+    "name": "docopt",
+    "declared_specifier": ">=0.6.2",
+    "declared_in": [
+      "pyproject.toml"
+    ]
+  },
+  "observed": {
+    "risk_indicators": [
+      {
+        "id": "days_since_release",
+        "value": 4513,
+        "source_url": "https://pypi.org/pypi/docopt/json",
+        "fetched_at": "2026-10-24T19:52:27.388727+00:00"
+      },
+      {
+        "id": "yanked",
+        "value": false,
+        "source_url": "https://pypi.org/pypi/docopt/json",
+        "fetched_at": "2026-10-24T19:52:27.388727+00:00"
+      }
+    ],
+    "scan": {
+      "files_scanned": 364,
+      "dynamic_imports": [
+        "gpt_researcher/llm_provider/generic/base.py:419 (importlib.import_module)",
+        "tests/backend/test_report_chat_route_uniqueness.py:29 (importlib.import_module)",
+        "tests/test_report_generation_available_images.py:38 (__import__)",
+        "tests/test_retriever_requires_scraping.py:128 (importlib.import_module)",
+        "tests/test_websocket_manager.py:75 (importlib.import_module)",
+        "tests/test_websocket_manager.py:80 (importlib.import_module)",
+        "tests/test_websocket_manager.py:84 (importlib.import_module)"
+      ]
+    },
+    "usage_locations": [],
+    "test_results": {
+      "baseline": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "candidate": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "new_failures": [],
+      "pip_check": {
+        "baseline": "Tests not run in static analyze mode.",
+        "candidate": "Tests not run in static analyze mode."
+      }
+    },
+    "evidence": [
+      {
+        "path": "assets/runs/Pradnyadange__gpt-researcher__47695db3/evidence/docopt_raw_model_response.json",
+        "sha256": "27a213a5f0b7686d7cfa3901a1b50d06cd7038fecf840b19a7b873a0218766dc",
+        "command": "ollama run gemma2:2b",
+        "exit_code": 0,
+        "captured_at": "2026-10-24T19:53:18.478060+00:00"
+      }
+    ],
+    "trust_check": {
+      "skipped": true,
+      "candidate_type": "stdlib",
+      "needs_human_review": false,
+      "reasons": []
+    },
+    "secret_redactions_count": 0
+  },
+  "ai_generated": {
+    "proposed_replacement": {
+      "name": "no_valid_proposal",
+      "type": "stdlib"
+    },
+    "migration_steps": [],
+    "suggested_tests": [],
+    "gap_analysis": [
+      "Candidate rejected by validation gate: not in stdlib"
+    ],
+    "provenance": {
+      "provider": "ollama",
+      "model_id": "gemma2:2b",
+      "model_license_name": "Gemma Terms of Use ",
+      "model_card_url": "https://ollama.com/library/gemma2",
+      "prompt_sha256": "5bdc260550280cb2cdbc50a66d5d73c9d5aa69e42ff46b2e7b3089bb282d588f",
+      "raw_response_path": "assets/runs/Pradnyadange__gpt-researcher__47695db3/evidence/docopt_raw_model_response.json",
+      "secret_redactions_count": 0,
+      "trust_check": {
+        "skipped": true,
+        "candidate_type": "stdlib",
+        "needs_human_review": false,
+        "reasons": []
+      },
+      "validation": {
+        "passed": false,
+        "api_coverage": 0.0,
+        "rejected_candidates": [
+          "docopt.py is not in sys.stdlib_module_names"
+        ]
+      }
+    }
+  },
+  "status": "not_testable",
+  "limitations": [
+    "Static analysis mode only: test execution not run.",
+    "Public repositories and Python projects only.",
+    "Small models can propose weak replacements; validation gate determines acceptance."
+  ]
+}

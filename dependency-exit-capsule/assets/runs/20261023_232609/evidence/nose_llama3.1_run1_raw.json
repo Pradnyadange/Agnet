@@ -1,0 +1,17 @@
+{
+  "proposed_replacement": {
+    "name": "unittest",
+    "type": "stdlib"
+  },
+  "migration_steps": [
+    "Update import statements to use unittest",
+    "Replace nose-specific code with unittest APIs"
+  ],
+  "suggested_tests": [
+    "Test that unittest replacement works as expected",
+    "Verify that all nose-specific tests pass with unittest"
+  ],
+  "gap_analysis": [
+    "nose has been deprecated since 2016 and is no longer maintained"
+  ]
+}

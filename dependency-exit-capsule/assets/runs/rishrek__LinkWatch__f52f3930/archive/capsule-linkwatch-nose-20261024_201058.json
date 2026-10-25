@@ -1,0 +1,117 @@
+{
+  "schema_version": "2.0.0",
+  "capsule_id": "capsule-linkwatch-nose-20261024_201058",
+  "generated_at": "2026-10-24T20:10:58.484590+00:00",
+  "capsule_type": "unused_dependency",
+  "target_repo": {
+    "name": "LinkWatch",
+    "url": "https://github.com/rishrek/LinkWatch",
+    "commit_sha": "f52f3930c8e7c33d934ccf614955a38e26984bd5",
+    "python_version": "3.14.6"
+  },
+  "maintenance_problem": "Dependency 'nose' analyzed during static risk triage.",
+  "dependency": {
+    "name": "nose",
+    "declared_specifier": "==1.3.7",
+    "declared_in": [
+      "requirements-dev.txt"
+    ]
+  },
+  "observed": {
+    "risk_indicators": [
+      {
+        "id": "days_since_release",
+        "value": 4162,
+        "source_url": "https://pypi.org/pypi/nose/json",
+        "fetched_at": "2026-10-24T20:09:07.417412+00:00"
+      },
+      {
+        "id": "yanked",
+        "value": false,
+        "source_url": "https://pypi.org/pypi/nose/json",
+        "fetched_at": "2026-10-24T20:09:07.417412+00:00"
+      }
+    ],
+    "scan": {
+      "files_scanned": 15,
+      "dynamic_imports": []
+    },
+    "usage_locations": [],
+    "test_results": {
+      "baseline": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "candidate": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "new_failures": [],
+      "pip_check": {
+        "baseline": "Tests not run in static analyze mode.",
+        "candidate": "Tests not run in static analyze mode."
+      }
+    },
+    "evidence": [
+      {
+        "path": "assets/runs/rishrek__LinkWatch__f52f3930/evidence/nose_raw_model_response.json",
+        "sha256": "f78fa95aa42bf232ebe2d47154d08be17c59291f845cd84a239df158ae23b848",
+        "command": "ollama run llama3.1:8b",
+        "exit_code": 0,
+        "captured_at": "2026-10-24T20:10:58.484556+00:00"
+      }
+    ],
+    "trust_check": {
+      "skipped": true,
+      "candidate_type": "stdlib",
+      "needs_human_review": false,
+      "reasons": []
+    },
+    "secret_redactions_count": 0
+  },
+  "ai_generated": {
+    "proposed_replacement": {
+      "name": "unittest",
+      "type": "stdlib"
+    },
+    "migration_steps": [
+      "Remove nose dependency from requirements.txt",
+      "Update test suite to use unittest instead of nose"
+    ],
+    "suggested_tests": [
+      "Run tests with Python 3.14.6 to ensure unittest works as expected",
+      "Verify test coverage using tools like coverage.py"
+    ],
+    "gap_analysis": [
+      "No significant incompatibilities are expected since unittest is the standard testing framework for Python"
+    ],
+    "provenance": {
+      "provider": "ollama",
+      "model_id": "llama3.1:8b",
+      "model_license_name": "LLAMA 3.1 COMMUNITY LICENSE AGREEMENT",
+      "model_card_url": "https://ollama.com/library/llama3.1",
+      "prompt_sha256": "6b839697da761d062b174fa10d4f3d9a09036d107d0964aa616f66c31d179aa7",
+      "raw_response_path": "assets/runs/rishrek__LinkWatch__f52f3930/evidence/nose_raw_model_response.json",
+      "secret_redactions_count": 0,
+      "trust_check": {
+        "skipped": true,
+        "candidate_type": "stdlib",
+        "needs_human_review": false,
+        "reasons": []
+      },
+      "validation": {
+        "passed": true,
+        "api_coverage": 1.0,
+        "rejected_candidates": []
+      }
+    }
+  },
+  "status": "not_testable",
+  "limitations": [
+    "Static analysis mode only: test execution not run.",
+    "Public repositories and Python projects only.",
+    "Small models can propose weak replacements; validation gate determines acceptance."
+  ]
+}

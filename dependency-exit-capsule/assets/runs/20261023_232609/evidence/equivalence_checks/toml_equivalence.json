@@ -1,0 +1,18 @@
+{
+  "target_file": "D:\\mlh\\LinkWatch\\sites.toml",
+  "toml_vs_tomllib_identical": true,
+  "toml_vs_tomli_identical": true,
+  "tomllib_vs_tomli_identical": true,
+  "diff_tomllib_lines": 0,
+  "diff_tomli_lines": 0,
+  "parsed_sections": [
+    "title",
+    "output",
+    "sites"
+  ],
+  "runtime_env": {
+    "os": "Windows",
+    "python_version": "3.12.10",
+    "limitations": "Windows and Python 3.12 only. Both tomllib and tomli parse TOML 1.0 strictly; legacy toml accepts some looser TOML 0.5 constructs."
+  }
+}

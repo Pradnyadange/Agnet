@@ -1,0 +1,25 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.12.10, pytest-9.1.1, pluggy-1.7.0
+rootdir: D:\Agent\work\20261023_232609\cand2_markupsafe_bound\repo
+configfile: pyproject.toml
+plugins: cov-7.1.0
+collected 10 items
+
+work\20261023_232609\cand2_markupsafe_bound\repo\tests\test_cache.py .   [ 10%]
+work\20261023_232609\cand2_markupsafe_bound\repo\tests\test_checker.py . [ 20%]
+......                                                                   [ 80%]
+work\20261023_232609\cand2_markupsafe_bound\repo\tests\test_config.py .  [ 90%]
+work\20261023_232609\cand2_markupsafe_bound\repo\tests\test_report.py .  [100%]
+
+============================== warnings summary ===============================
+work\20261023_232609\cand2_markupsafe_bound\repo\linkwatch\resources.py:1
+  D:\Agent\work\20261023_232609\cand2_markupsafe_bound\repo\linkwatch\resources.py:1: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+    import pkg_resources
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: D:\Agent\dependency-exit-capsule\assets\runs\20261023_232609\evidence\cand2_markupsafe_bound\junit.xml -
+=============================== tests coverage ================================
+______________ coverage: platform win32, python 3.12.10-final-0 _______________
+
+Coverage JSON written to file D:\Agent\dependency-exit-capsule\assets\runs\20261023_232609\evidence\cand2_markupsafe_bound\coverage.json
+======================== 10 passed, 1 warning in 8.91s ========================

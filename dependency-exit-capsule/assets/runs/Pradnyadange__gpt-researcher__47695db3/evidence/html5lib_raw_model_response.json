@@ -1,0 +1,19 @@
+{
+  "proposed_replacement": {
+    "name": "xmlschema",
+    "type": "pypi"
+  },
+  "migration_steps": [
+    "Install xmlschema using pip: `pip install xmlschema`",
+    "Update your import statements to import from xmlschema instead of html5lib",
+    "If using html5lib for HTML parsing, consider migrating to a modern parser like lxml or html.parser"
+  ],
+  "suggested_tests": [
+    "Test that xmlschema correctly parses and validates HTML documents",
+    "Verify that xmlschema does not introduce any regressions or performance issues"
+  ],
+  "gap_analysis": [
+    "Potential incompatibility: xmlschema may not support all features and edge cases of html5lib",
+    "Potential incompatibility: xmlschema may have different performance characteristics compared to html5lib"
+  ]
+}

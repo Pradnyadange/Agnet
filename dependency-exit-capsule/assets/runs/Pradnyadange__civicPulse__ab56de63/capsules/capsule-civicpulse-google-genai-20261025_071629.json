@@ -1,0 +1,166 @@
+{
+  "schema_version": "2.0.0",
+  "capsule_id": "capsule-civicpulse-google-genai-20261025_071629",
+  "generated_at": "2026-10-25T07:16:30.005191+00:00",
+  "capsule_type": "replacement",
+  "target_repo": {
+    "name": "civicPulse",
+    "url": "https://github.com/Pradnyadange/civicPulse",
+    "commit_sha": "ab56de63bfc3db719c675c0390455df7db4525e0",
+    "python_version": "3.14.6"
+  },
+  "maintenance_problem": "Dependency 'google-genai' analyzed during static risk triage.",
+  "dependency": {
+    "name": "google-genai",
+    "declared_specifier": "",
+    "declared_in": [
+      "requirements.txt"
+    ]
+  },
+  "observed": {
+    "risk_indicators": [
+      {
+        "id": "days_since_release",
+        "value": 2,
+        "source_url": "https://pypi.org/pypi/google-genai/json",
+        "fetched_at": "2026-10-25T07:07:14.672024+00:00"
+      },
+      {
+        "id": "yanked",
+        "value": false,
+        "source_url": "https://pypi.org/pypi/google-genai/json",
+        "fetched_at": "2026-10-25T07:07:14.672024+00:00"
+      }
+    ],
+    "scan": {
+      "files_scanned": 15,
+      "dynamic_imports": []
+    },
+    "usage_locations": [
+      {
+        "file": "llm/agents.py",
+        "line": 5,
+        "symbol": "google.genai.types",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "llm/chat.py",
+        "line": 6,
+        "symbol": "google.genai.types",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "llm/llm_client.py",
+        "line": 2,
+        "symbol": "google.genai",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "mongodb/clustering_pipeline.py",
+        "line": 11,
+        "symbol": "google.genai.types",
+        "kind": "import",
+        "covered_by_tests": false
+      }
+    ],
+    "test_results": {
+      "baseline": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "candidate": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "new_failures": [],
+      "pip_check": {
+        "baseline": "Tests not run in static analyze mode.",
+        "candidate": "Tests not run in static analyze mode."
+      }
+    },
+    "evidence": [
+      {
+        "path": "assets/runs/Pradnyadange__civicPulse__ab56de63/evidence/google-genai_raw_model_response.json",
+        "sha256": "bed64736a264f6e5eef43f1c15c2f45082da2253df19b5ee1571aebf9bce3f1c",
+        "command": "ollama run llama3.1:8b",
+        "exit_code": 0,
+        "captured_at": "2026-10-25T07:16:30.005160+00:00"
+      }
+    ],
+    "trust_check": {
+      "skipped": false,
+      "candidate_name": "google-genai",
+      "candidate_type": "pypi",
+      "first_release_date": "2024-12-10T19:42:33.488897Z",
+      "release_count": 134,
+      "last_release_date": "2026-10-23T00:06:28.332660Z",
+      "project_urls": {
+        "Homepage": "https://github.com/googleapis/python-genai"
+      },
+      "has_source_repo_url": true,
+      "min_edit_distance_to_popular": 9,
+      "closest_popular_package": "tomli",
+      "needs_human_review": false,
+      "reasons": []
+    },
+    "secret_redactions_count": 0
+  },
+  "ai_generated": {
+    "proposed_replacement": {
+      "name": "google-genai",
+      "type": "pypi"
+    },
+    "migration_steps": [
+      "Update import statements in relevant files to point to the new package.",
+      "Verify that the new package is correctly installed and working as expected."
+    ],
+    "suggested_tests": [
+      "Test the replacement package thoroughly to ensure it is working as expected.",
+      "Write unit tests to cover the usage of the replacement package."
+    ],
+    "gap_analysis": [
+      "Potential for regressions if the new package does not provide the same level of functionality as the original package."
+    ],
+    "provenance": {
+      "provider": "ollama",
+      "model_id": "llama3.1:8b",
+      "model_license_name": "LLAMA 3.1 COMMUNITY LICENSE AGREEMENT",
+      "model_card_url": "https://ollama.com/library/llama3.1",
+      "prompt_sha256": "a73473bc9c9f09bd64afee00cc8462dd700502282627a1908349702ebfd47bf2",
+      "raw_response_path": "assets/runs/Pradnyadange__civicPulse__ab56de63/evidence/google-genai_raw_model_response.json",
+      "secret_redactions_count": 0,
+      "trust_check": {
+        "skipped": false,
+        "candidate_name": "google-genai",
+        "candidate_type": "pypi",
+        "first_release_date": "2024-12-10T19:42:33.488897Z",
+        "release_count": 134,
+        "last_release_date": "2026-10-23T00:06:28.332660Z",
+        "project_urls": {
+          "Homepage": "https://github.com/googleapis/python-genai"
+        },
+        "has_source_repo_url": true,
+        "min_edit_distance_to_popular": 9,
+        "closest_popular_package": "tomli",
+        "needs_human_review": false,
+        "reasons": []
+      },
+      "validation": {
+        "passed": true,
+        "api_coverage": 1.0,
+        "rejected_candidates": []
+      }
+    }
+  },
+  "status": "unverified",
+  "limitations": [
+    "Static analysis mode only: test execution not run.",
+    "Public repositories and Python projects only.",
+    "Small models can propose weak replacements; validation gate determines acceptance."
+  ]
+}

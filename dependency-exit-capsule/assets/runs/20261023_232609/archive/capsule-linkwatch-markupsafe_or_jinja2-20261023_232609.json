@@ -1,0 +1,255 @@
+{
+  "schema_version": "2.0.0",
+  "capsule_id": "capsule-linkwatch-markupsafe_or_jinja2-20261023_232609",
+  "generated_at": "2026-10-23T18:42:25.266349+00:00",
+  "capsule_type": "version_fix",
+  "target_repo": {
+    "name": "LinkWatch",
+    "url": "https://github.com/rishrek/LinkWatch.git",
+    "commit_sha": "f52f3930c8e7c33d934ccf614955a38e26984bd5",
+    "python_version": "3.12.10"
+  },
+  "maintenance_problem": "Jinja2==2.11.3 requires MarkupSafe>=0.23 with no upper bound. MarkupSafe 2.1.0 removed soft_unicode, which causes an ImportError when Jinja2 2.11.3 filters are imported under modern environments.",
+  "dependency": {
+    "name": "MarkupSafe",
+    "declared_specifier": "<2.1.0",
+    "declared_in": [
+      "requirements.txt",
+      "pyproject.toml"
+    ]
+  },
+  "observed": {
+    "risk_indicators": [
+      {
+        "id": "days_since_release",
+        "value": 1610,
+        "source_url": "https://pypi.org/pypi/MarkupSafe/2.0.1/json",
+        "fetched_at": "2026-10-23T17:59:32Z"
+      }
+    ],
+    "scan": {
+      "files_scanned": 9,
+      "dynamic_imports": []
+    },
+    "usage_locations": [
+      {
+        "file": "linkwatch/report.py",
+        "line": 3,
+        "symbol": "Environment",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "linkwatch/report.py",
+        "line": 3,
+        "symbol": "FileSystemLoader",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "linkwatch/report.py",
+        "line": 3,
+        "symbol": "select_autoescape",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "linkwatch/report.py",
+        "line": 12,
+        "symbol": "Environment",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "linkwatch/report.py",
+        "line": 13,
+        "symbol": "FileSystemLoader",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "linkwatch/report.py",
+        "line": 14,
+        "symbol": "select_autoescape",
+        "kind": "call",
+        "covered_by_tests": false
+      }
+    ],
+    "test_results": {
+      "baseline": {
+        "passed": 9,
+        "failed": 1,
+        "junit_path": "assets/runs/20261023_232609/evidence/baseline/junit.xml"
+      },
+      "candidate": {
+        "passed": 10,
+        "failed": 0,
+        "junit_path": "assets/runs/20261023_232609/evidence/cand2_markupsafe_bound/junit.xml"
+      },
+      "new_failures": [],
+      "pip_check": {
+        "baseline": "No broken requirements found.",
+        "candidate": "No broken requirements found."
+      }
+    },
+    "evidence": [
+      {
+        "path": "assets/runs/20261023_232609/evidence/baseline/pip_freeze.txt",
+        "sha256": "d1d159e334fb411aa5a9195a882d6c26fafda5fbfc899c1c1c00910ebaca4f98",
+        "command": "pip freeze",
+        "exit_code": 0,
+        "captured_at": "2026-10-23T17:58:17Z"
+      },
+      {
+        "path": "assets/runs/20261023_232609/evidence/baseline/pip_check.txt",
+        "sha256": "62a7bed1b63f3145e4a1f662db6de145fcc24a75271861405b20d49df601b4ee",
+        "command": "pip check",
+        "exit_code": 0,
+        "captured_at": "2026-10-23T17:58:17Z"
+      },
+      {
+        "path": "assets/runs/20261023_232609/evidence/baseline/junit.xml",
+        "sha256": "2d25d2b9d7cc24fbec3a3273c9ac70d3161001363c18b6ebf9700822bec7b304",
+        "command": "pytest --junitxml=... --cov=linkwatch",
+        "exit_code": 1,
+        "captured_at": "2026-10-23T17:58:35Z"
+      },
+      {
+        "path": "assets/runs/20261023_232609/evidence/baseline/coverage.json",
+        "sha256": "be2dadfb83dd94ac5207bc452ea78afd0a216e07b314ad50a110384f6a081bf1",
+        "command": "pytest --cov-report=json",
+        "exit_code": 1,
+        "captured_at": "2026-10-23T17:58:35Z"
+      },
+      {
+        "path": "assets/runs/20261023_232609/evidence/baseline/pytest_output.txt",
+        "sha256": "e09dc9d73d5b19f8a603ece701d75965f842480adbeb269021b254c976332342",
+        "command": "pytest",
+        "exit_code": 1,
+        "captured_at": "2026-10-23T17:58:35Z"
+      },
+      {
+        "path": "assets/runs/20261023_232609/evidence/baseline/python_version.txt",
+        "sha256": "7ebfc96927951ee45104db9fe755b60efd55465cb5aef6f296e79c2ddc5653b4",
+        "command": "python --version",
+        "exit_code": 0,
+        "captured_at": "2026-10-23T17:58:17Z"
+      },
+      {
+        "path": "assets/runs/20261023_232609/evidence/cand1_markupsafe_pin/pip_check.txt",
+        "sha256": "62a7bed1b63f3145e4a1f662db6de145fcc24a75271861405b20d49df601b4ee",
+        "command": "pip check",
+        "exit_code": 0,
+        "captured_at": "2026-10-23T18:03:00Z"
+      },
+      {
+        "path": "assets/runs/20261023_232609/evidence/cand1_markupsafe_pin/junit.xml",
+        "sha256": "333a7845d0391efffe8bd40e7571e9658c6037f4cd6ed59ddda1babd396be1e5",
+        "command": "pytest --junitxml=...",
+        "exit_code": 0,
+        "captured_at": "2026-10-23T18:03:00Z"
+      },
+      {
+        "path": "assets/runs/20261023_232609/evidence/cand2_markupsafe_bound/pip_check.txt",
+        "sha256": "62a7bed1b63f3145e4a1f662db6de145fcc24a75271861405b20d49df601b4ee",
+        "command": "pip check",
+        "exit_code": 0,
+        "captured_at": "2026-10-23T18:03:30Z"
+      },
+      {
+        "path": "assets/runs/20261023_232609/evidence/cand2_markupsafe_bound/junit.xml",
+        "sha256": "6d0c15cbf9e0864675c5e7c113c87e3dfa585a73dff37d36c6bd3e65dbb4b43a",
+        "command": "pytest --junitxml=...",
+        "exit_code": 0,
+        "captured_at": "2026-10-23T18:03:30Z"
+      },
+      {
+        "path": "assets/runs/20261023_232609/evidence/cand_model_proposal_markupsafe_211/pip_check.txt",
+        "sha256": "62a7bed1b63f3145e4a1f662db6de145fcc24a75271861405b20d49df601b4ee",
+        "command": "pip check",
+        "exit_code": 0,
+        "captured_at": "2026-10-23T18:33:00Z"
+      },
+      {
+        "path": "assets/runs/20261023_232609/evidence/cand_model_proposal_markupsafe_211/junit.xml",
+        "sha256": "611c29df043f5c2713f53ed40a89f8fc2f138f1622085dc44a154f0258014430",
+        "command": "pytest --junitxml=...",
+        "exit_code": 1,
+        "captured_at": "2026-10-23T18:33:22Z"
+      },
+      {
+        "path": "assets/runs/20261023_232609/evidence/cand_jinja2_newest_316/pip_check.txt",
+        "sha256": "62a7bed1b63f3145e4a1f662db6de145fcc24a75271861405b20d49df601b4ee",
+        "command": "pip check",
+        "exit_code": 0,
+        "captured_at": "2026-10-23T18:35:00Z"
+      },
+      {
+        "path": "assets/runs/20261023_232609/evidence/cand_jinja2_newest_316/junit.xml",
+        "sha256": "7a13dc01584bf8c4ca9be3974b4ca078b0275ec809772a9d839ffdbb5b8f90f3",
+        "command": "pytest --junitxml=...",
+        "exit_code": 0,
+        "captured_at": "2026-10-23T18:35:07Z"
+      },
+      {
+        "path": "assets/runs/20261023_232609/evidence/html_render/candidate_report.html",
+        "sha256": "2770fbdfcba8c14c6a7a225a3d72dd75aa4960cc466805fce2e12f0b6bb5ad8f",
+        "command": "linkwatch report -o candidate_report.html",
+        "exit_code": 0,
+        "captured_at": "2026-10-23T18:05:18Z"
+      },
+      {
+        "path": "assets/runs/20261023_232609/evidence/html_render/cand1_report.html",
+        "sha256": "2770fbdfcba8c14c6a7a225a3d72dd75aa4960cc466805fce2e12f0b6bb5ad8f",
+        "command": "linkwatch report -o cand1_report.html",
+        "exit_code": 0,
+        "captured_at": "2026-10-23T18:05:32Z"
+      },
+      {
+        "path": "assets/runs/20261023_232609/evidence/version_fix/raw_model_response.json",
+        "sha256": "5e415b2b0e5dc91d28752d3490a99efe275ffc82be4ff860bb8177e0263077d5",
+        "command": "ollama chat llama3.1:8b",
+        "exit_code": 0,
+        "captured_at": "2026-10-23T18:06:49Z"
+      }
+    ]
+  },
+  "ai_generated": {
+    "proposed_replacement": {
+      "name": "MarkupSafe",
+      "type": "version_constraint"
+    },
+    "migration_steps": [
+      "Tested primary candidate: Add constraint MarkupSafe<2.1.0 to requirements.txt (minimal diff, no major bump).",
+      "Alternative candidate: Upgrade Jinja2==3.1.6 in requirements.txt and pyproject.toml (trade-off: major version bump across Jinja2 2.x -> 3.x, but resolves root issue without constraining dependencies)."
+    ],
+    "suggested_tests": [
+      "pytest tests/test_report.py::test_report_renders_all_sites",
+      "linkwatch report -o test_render.html"
+    ],
+    "gap_analysis": [
+      "Model evaluation: The model recommended MarkupSafe==2.1.1, but testing proved MarkupSafe 2.1.1 fails because soft_unicode was removed in MarkupSafe 2.1.0.",
+      "Limitation of pip check: pip check was completely clean at baseline despite test failure, because Jinja2 2.11.3 declared MarkupSafe>=0.23 with no upper bound."
+    ],
+    "provenance": {
+      "provider": "ollama",
+      "model_id": "llama3.1:8b",
+      "model_license_name": "LLAMA 3.1 COMMUNITY LICENSE AGREEMENT",
+      "model_card_url": "https://ollama.com/library/llama3.1",
+      "prompt_sha256": "f1f2da09c682b84d76645b4b2f740e8506e71e9f6a05fe075f3bcdc82398e00c",
+      "raw_response_path": "assets/runs/20261023_232609/evidence/version_fix/raw_model_response.json",
+      "validation": {
+        "passed": true,
+        "api_coverage": 1.0,
+        "rejected_candidates": [
+          "MarkupSafe==2.1.1"
+        ]
+      }
+    }
+  },
+  "status": "verified",
+  "limitations": [
+    "verified in a copy of the repository; original repository unchanged",
+    "Limitation of pip check: pip check reported clean at baseline although test_report_renders_all_sites failed, because upstream metadata lacked an upper version bound."
+  ]
+}

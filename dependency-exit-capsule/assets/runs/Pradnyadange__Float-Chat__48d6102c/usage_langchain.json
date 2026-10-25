@@ -1,0 +1,35 @@
+{
+  "dependency": "langchain",
+  "files_scanned": 6,
+  "dynamic_imports": [],
+  "usage_locations": [
+    {
+      "file": "src/helpers.py",
+      "line": 2,
+      "symbol": "langchain.text_splitter.RecursiveCharacterTextSplitter",
+      "kind": "import",
+      "covered_by_tests": false
+    },
+    {
+      "file": "src/helpers.py",
+      "line": 6,
+      "symbol": "langchain.schema.Document",
+      "kind": "import",
+      "covered_by_tests": false
+    },
+    {
+      "file": "src/helpers.py",
+      "line": 24,
+      "symbol": "Document",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "src/helpers.py",
+      "line": 33,
+      "symbol": "RecursiveCharacterTextSplitter",
+      "kind": "call",
+      "covered_by_tests": false
+    }
+  ]
+}

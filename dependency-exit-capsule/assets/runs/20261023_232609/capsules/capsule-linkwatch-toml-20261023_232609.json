@@ -1,0 +1,239 @@
+{
+  "schema_version": "2.0.0",
+  "capsule_id": "capsule-linkwatch-toml-20261023_232609",
+  "capsule_type": "replacement",
+  "generated_at": "2026-10-24T18:45:00Z",
+  "status": "verified",
+  "maintenance_problem": "toml 0.10.2 has had no releases in >2180 days; Python 3.11+ includes standard library tomllib, eliminating the dependency entirely.",
+  "target_repo": {
+    "name": "LinkWatch",
+    "url": "https://github.com/rishrek/LinkWatch",
+    "commit_sha": "f52f3930c8e7c33d934ccf614955a38e26984bd5",
+    "python_version": "3.12.10"
+  },
+  "dependency": {
+    "name": "toml",
+    "declared_specifier": "==0.10.2",
+    "declared_in": [
+      "requirements.txt",
+      "pyproject.toml"
+    ]
+  },
+  "observed": {
+    "risk_indicators": [
+      {
+        "id": "days_since_latest_release",
+        "value": 2183,
+        "source_url": "https://pypi.org/pypi/toml/json",
+        "fetched_at": "2026-10-24T18:45:00Z"
+      },
+      {
+        "id": "pinned_version_release_date",
+        "value": "2020-11-01T01:40:20.672915Z",
+        "source_url": "https://pypi.org/pypi/toml/json",
+        "fetched_at": "2026-10-24T18:45:00Z"
+      },
+      {
+        "id": "versions_behind_latest",
+        "value": 0,
+        "source_url": "https://pypi.org/pypi/toml/json",
+        "fetched_at": "2026-10-24T18:45:00Z"
+      }
+    ],
+    "scan": {
+      "files_scanned": 15,
+      "dynamic_imports": []
+    },
+    "non_python_references": [
+      {
+        "file": "pyproject.toml",
+        "line": 13,
+        "match_term": "toml",
+        "line_content": "\"toml==0.10.2\","
+      },
+      {
+        "file": "README.md",
+        "line": 27,
+        "match_term": "toml",
+        "line_content": "- \ud83d\udccb **One config file**: list every site you care about in `sites.toml`"
+      },
+      {
+        "file": "README.md",
+        "line": 108,
+        "match_term": "toml",
+        "line_content": "| `check` | `--config PATH` | `sites.toml` | Use a different sites file |"
+      },
+      {
+        "file": "README.md",
+        "line": 124,
+        "match_term": "toml",
+        "line_content": "All sites live in **`sites.toml`** in the project folder:"
+      },
+      {
+        "file": "README.md",
+        "line": 126,
+        "match_term": "toml",
+        "line_content": "```toml"
+      },
+      {
+        "file": "README.md",
+        "line": 163,
+        "match_term": "toml",
+        "line_content": "A[\"sites.toml\"] -->|\"check\"| B[\"Live table in terminal\"]"
+      },
+      {
+        "file": "README.md",
+        "line": 168,
+        "match_term": "toml",
+        "line_content": "1. **Load**: `sites.toml` is read and validated (every site needs a name and a valid URL)."
+      },
+      {
+        "file": "README.md",
+        "line": 179,
+        "match_term": "toml",
+        "line_content": "\u2502   \u251c\u2500\u2500 config.py         # reads and validates sites.toml"
+      },
+      {
+        "file": "README.md",
+        "line": 190,
+        "match_term": "toml",
+        "line_content": "\u251c\u2500\u2500 sites.toml            # your list of sites"
+      },
+      {
+        "file": "requirements.txt",
+        "line": 1,
+        "match_term": "toml",
+        "line_content": "toml==0.10.2"
+      }
+    ],
+    "usage_locations": [
+      {
+        "file": "linkwatch/config.py",
+        "line": 3,
+        "symbol": "toml",
+        "kind": "import",
+        "covered_by_tests": true
+      },
+      {
+        "file": "linkwatch/config.py",
+        "line": 37,
+        "symbol": "load",
+        "kind": "call",
+        "covered_by_tests": true
+      }
+    ],
+    "test_results": {
+      "baseline": {
+        "passed": 9,
+        "failed": 1,
+        "junit_path": "assets/runs/20261023_232609/evidence/baseline/junit.xml"
+      },
+      "candidate": {
+        "passed": 10,
+        "failed": 0,
+        "junit_path": "assets/runs/20261023_232609/evidence/toml_tomllib_junit.xml"
+      },
+      "new_failures": [],
+      "pip_check": {
+        "baseline": "No broken requirements found.",
+        "candidate": "No broken requirements found."
+      }
+    },
+    "evidence": [
+      {
+        "path": "assets/runs/20261023_232609/evidence/toml_tomllib_pip_check.txt",
+        "sha256": "9bc9eff87ccde9a897a86ea3cf9096facadba3cc998bc2b74cc3d856cf1cc971",
+        "command": "python -m pip check",
+        "exit_code": 0,
+        "captured_at": "2026-10-24T18:45:00Z"
+      },
+      {
+        "path": "assets/runs/20261023_232609/evidence/toml_tomllib_junit.xml",
+        "sha256": "cbd3a08dc8f030f5b8e84524d14d10bafc8a8f206a4899765912e05f5ad481a8",
+        "command": "python -m pytest --junitxml=toml_tomllib_junit.xml",
+        "exit_code": 0,
+        "captured_at": "2026-10-24T18:45:00Z"
+      },
+      {
+        "path": "assets/runs/20261023_232609/evidence/toml_tomllib_coverage.json",
+        "sha256": "d78e1987409ea39f40c331068247f8d5298bd51c91d054a1791c921d9ae3682a",
+        "command": "python -m pytest --cov=linkwatch",
+        "exit_code": 0,
+        "captured_at": "2026-10-24T18:45:00Z"
+      },
+      {
+        "path": "assets/runs/20261023_232609/evidence/toml_tomli_junit.xml",
+        "sha256": "7f7bf71ef649eb03447c225899a391270d23263214c056cc67889286de785fa6",
+        "command": "python -m pytest --junitxml=toml_tomli_junit.xml",
+        "exit_code": 0,
+        "captured_at": "2026-10-24T18:45:00Z"
+      },
+      {
+        "path": "assets/runs/20261023_232609/evidence/toml_tomli_coverage.json",
+        "sha256": "c0d08b9e384691691b0a408b6bc266e6cfe96b4534fb2c683cd8f31fcde53248",
+        "command": "python -m pytest --cov=linkwatch",
+        "exit_code": 0,
+        "captured_at": "2026-10-24T18:45:00Z"
+      },
+      {
+        "path": "assets/runs/20261023_232609/evidence/toml_llama3.1_run2_raw.json",
+        "sha256": "8b2fcbf9493163faf05497416c3ac404cf36b296d7a33362e5126878bf254ce0",
+        "command": "ollama run llama3.1:8b (prompt sha: 5f58affe6a27c57e)",
+        "exit_code": 0,
+        "captured_at": "2026-10-24T18:45:00Z"
+      },
+      {
+        "path": "assets/runs/20261023_232609/evidence/equivalence_checks/toml_equivalence.json",
+        "sha256": "eb4cdd204d57aa92b4f60817704dbe968f536efb7d3a39d41cc1ac4f74dc44f6",
+        "command": "compare toml vs tomllib vs tomli on sites.toml",
+        "exit_code": 0,
+        "captured_at": "2026-10-24T18:45:00Z"
+      },
+      {
+        "path": "assets/runs/20261023_232609/evidence/non_python_references.json",
+        "sha256": "23e626f96c65ffd9c712235bcc81606f1cebdf2b6c315288f068b8a57c3e0e46",
+        "command": "scan non-python repository files",
+        "exit_code": 0,
+        "captured_at": "2026-10-24T18:45:00Z"
+      }
+    ]
+  },
+  "ai_generated": {
+    "proposed_replacement": {
+      "name": "tomllib",
+      "type": "stdlib"
+    },
+    "migration_steps": [
+      "Remove toml==0.10.2 from requirements.txt and pyproject.toml",
+      "In linkwatch/config.py, change 'import toml' to 'import tomllib'",
+      "Update load_settings to open file in binary mode 'rb': with open(path, 'rb') as fh: data = tomllib.load(fh)",
+      "Python version note: LinkWatch target specifies requires-python = >=3.10 in pyproject.toml. tomllib is introduced in Python 3.11. If Python 3.10 runtime support is required, tomli (>=3.8) was also verified (10 passed, clean pip check) as an alternative candidate."
+    ],
+    "suggested_tests": [
+      "Test load_settings with sites.toml to verify identical Settings object construction"
+    ],
+    "gap_analysis": [
+      "Python-version gate: tomllib requires Python 3.11+; LinkWatch pyproject.toml specifies >=3.10. Therefore tomllib is incompatible with Python 3.10 runtimes unless python bound is updated to >=3.11. tomli supports >=3.8.",
+      "Equivalence check on sites.toml: 0 line diff between toml.load, tomllib.load, and tomli.load."
+    ],
+    "provenance": {
+      "provider": "ollama",
+      "model_id": "llama3.1:8b",
+      "model_license_name": "Llama 3.1 Community License",
+      "model_card_url": "https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/MODEL_CARD.md",
+      "prompt_sha256": "5f58affe6a27c57ed5ea325605d33f78a7ff8b8e05cb3ee07ff52fef9bc70b13",
+      "raw_response_path": "assets/runs/20261023_232609/evidence/toml_llama3.1_run2_raw.json",
+      "applied_model_run": "Run 2 of 3 (selected by stdlib-preference rule over PyPI packages to eliminate external dependencies; Run 1 and Run 3 proposed tomli which was also tested and verified as fallback)",
+      "validation": {
+        "passed": true,
+        "api_coverage": 1.0,
+        "rejected_candidates": []
+      }
+    }
+  },
+  "limitations": [
+    "verified for the existing test suite on Windows 10/11 x64 / Python 3.12.10 in a copy; original unchanged; 4 tests exercise the changed lines (tests/test_config.py)",
+    "Equivalence testing confirmed on Windows x64, Python 3.12 only.",
+    "tomllib requires Python 3.11+; if LinkWatch must run on Python 3.10, tomli must be used."
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "schema_version": "2.0.0",
+  "capsule_id": "capsule-float-chat-langchain-pinecone-20261024_201422",
+  "generated_at": "2026-10-24T20:14:22.964387+00:00",
+  "capsule_type": "replacement",
+  "target_repo": {
+    "name": "Float-Chat",
+    "url": "https://github.com/Pradnyadange/Float-Chat",
+    "commit_sha": "48d6102ca918f8714b52d6a72a2933f2c99aab5f",
+    "python_version": "3.14.6"
+  },
+  "maintenance_problem": "Dependency 'langchain-pinecone' analyzed during static risk triage.",
+  "dependency": {
+    "name": "langchain-pinecone",
+    "declared_specifier": "==0.2.8",
+    "declared_in": [
+      "requirements.txt"
+    ]
+  },
+  "observed": {
+    "risk_indicators": [
+      {
+        "id": "days_since_release",
+        "value": 356,
+        "source_url": "https://pypi.org/pypi/langchain-pinecone/json",
+        "fetched_at": "2026-10-24T20:13:24.657539+00:00"
+      },
+      {
+        "id": "yanked",
+        "value": false,
+        "source_url": "https://pypi.org/pypi/langchain-pinecone/json",
+        "fetched_at": "2026-10-24T20:13:24.657539+00:00"
+      }
+    ],
+    "scan": {
+      "files_scanned": 6,
+      "dynamic_imports": []
+    },
+    "usage_locations": [
+      {
+        "file": "store_index.py",
+        "line": 5,
+        "symbol": "langchain_pinecone.PineconeVectorStore",
+        "kind": "import",
+        "covered_by_tests": false
+      }
+    ],
+    "test_results": {
+      "baseline": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "candidate": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "new_failures": [],
+      "pip_check": {
+        "baseline": "Tests not run in static analyze mode.",
+        "candidate": "Tests not run in static analyze mode."
+      }
+    },
+    "evidence": [
+      {
+        "path": "assets/runs/Pradnyadange__Float-Chat__48d6102c/evidence/langchain-pinecone_raw_model_response.json",
+        "sha256": "b36c5a16ccd0e92feb5ec3ce2dfefd70705c1ff1446499d034a6e2c2a26c5f88",
+        "command": "ollama run llama3.2:3b",
+        "exit_code": 0,
+        "captured_at": "2026-10-24T20:14:22.964357+00:00"
+      }
+    ],
+    "trust_check": {
+      "skipped": false,
+      "candidate_name": "huggingface/datasets",
+      "candidate_type": "pypi",
+      "first_release_date": null,
+      "release_count": 0,
+      "last_release_date": null,
+      "project_urls": {},
+      "has_source_repo_url": false,
+      "min_edit_distance_to_popular": 15,
+      "closest_popular_package": "typing-extensions",
+      "needs_human_review": true,
+      "reasons": [
+        "Candidate package 'huggingface/datasets' returned HTTP 404 on PyPI",
+        "No public source repository URL (GitHub/GitLab/etc.) found in PyPI project_urls",
+        "Low release count (0 releases)"
+      ]
+    },
+    "secret_redactions_count": 0
+  },
+  "ai_generated": {
+    "proposed_replacement": {
+      "name": "no_valid_proposal",
+      "type": "stdlib"
+    },
+    "migration_steps": [],
+    "suggested_tests": [],
+    "gap_analysis": [
+      "Candidate rejected by validation gate: package does not exist on PyPI"
+    ],
+    "provenance": {
+      "provider": "ollama",
+      "model_id": "llama3.2:3b",
+      "model_license_name": "LLAMA 3.2 COMMUNITY LICENSE AGREEMENT",
+      "model_card_url": "https://ollama.com/library/llama3.2",
+      "prompt_sha256": "8f9859f88a6f890a4e8b4bb51a66710874cf7ca83e836ecae55c02cba15c6535",
+      "raw_response_path": "assets/runs/Pradnyadange__Float-Chat__48d6102c/evidence/langchain-pinecone_raw_model_response.json",
+      "secret_redactions_count": 0,
+      "trust_check": {
+        "skipped": false,
+        "candidate_name": "huggingface/datasets",
+        "candidate_type": "pypi",
+        "first_release_date": null,
+        "release_count": 0,
+        "last_release_date": null,
+        "project_urls": {},
+        "has_source_repo_url": false,
+        "min_edit_distance_to_popular": 15,
+        "closest_popular_package": "typing-extensions",
+        "needs_human_review": true,
+        "reasons": [
+          "Candidate package 'huggingface/datasets' returned HTTP 404 on PyPI",
+          "No public source repository URL (GitHub/GitLab/etc.) found in PyPI project_urls",
+          "Low release count (0 releases)"
+        ]
+      },
+      "validation": {
+        "passed": false,
+        "api_coverage": 0.0,
+        "rejected_candidates": [
+          "PyPI package huggingface/datasets does not exist or is unreachable"
+        ]
+      }
+    }
+  },
+  "status": "unverified",
+  "limitations": [
+    "Static analysis mode only: test execution not run.",
+    "Public repositories and Python projects only.",
+    "Small models can propose weak replacements; validation gate determines acceptance."
+  ]
+}

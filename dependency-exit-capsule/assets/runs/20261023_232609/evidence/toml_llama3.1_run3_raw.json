@@ -1,0 +1,9 @@
+{
+  "proposed_replacement": {"name": "tomli", "type": "pypi"},
+  "migration_steps": [
+    "Update the import statement in linkwatch/config.py to use tomli instead of toml.",
+    "Review the usage of the load function in linkwatch/config.py and ensure it is compatible with the new tomli library."
+  ],
+  "suggested_tests": ["Test the new tomli library in linkwatch/config.py, ensuring it loads configuration correctly."],
+  "gap_analysis": []
+}

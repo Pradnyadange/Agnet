@@ -1,0 +1,15 @@
+{
+  "proposed_replacement": {
+    "name": "pyhtmldocx",
+    "type": "pypi"
+  },
+  "migration_steps": [
+    "Update imports to use `pyhtmldocx` instead of `htmldocx`."
+  ],
+  "suggested_tests": [
+    "Run unit tests for the new import and call site."
+  ],
+  "gap_analysis": [
+    "Test the functionality of the code after replacement to ensure there are no major code regressions."
+  ]
+}

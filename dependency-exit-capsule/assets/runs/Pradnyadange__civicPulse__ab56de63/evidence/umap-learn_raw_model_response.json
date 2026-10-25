@@ -1,0 +1,17 @@
+{
+  "proposed_replacement": {
+    "name": "scipy",
+    "type": "stdlib"
+  },
+  "migration_steps": [
+    "Update import statements to use scipy instead of umap-learn",
+    "Verify that the `umap_` function from scipy is correctly used in the code"
+  ],
+  "suggested_tests": [
+    "Test the code with scipy installed to ensure compatibility",
+    "Verify that the code passes the tests that were previously failing"
+  ],
+  "gap_analysis": [
+    "The `UMAP` class in scipy may not have the exact same API as the one in umap-learn, so additional testing may be required"
+  ]
+}

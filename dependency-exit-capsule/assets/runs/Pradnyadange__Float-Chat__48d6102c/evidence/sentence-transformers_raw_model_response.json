@@ -1,0 +1,1 @@
+{ "proposed_replacement": { "name": "sentence-transformers", "type": "pypi" }, "migration_steps": [ "Update existing dependencies to use sentence-transformers" ], "suggested_tests": [ "Test model functionality with sentence-transformers" ], "gap_analysis": [ "Verify compatibility with Python 3.14.6" ] }

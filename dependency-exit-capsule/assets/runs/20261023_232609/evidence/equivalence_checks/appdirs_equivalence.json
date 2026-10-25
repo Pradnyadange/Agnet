@@ -1,0 +1,11 @@
+{
+  "call_expression": "user_cache_dir(\"linkwatch\")",
+  "appdirs_output": "C:\\Users\\pradn\\AppData\\Local\\linkwatch\\linkwatch\\Cache",
+  "platformdirs_output": "C:\\Users\\pradn\\AppData\\Local\\linkwatch\\linkwatch\\Cache",
+  "identical": true,
+  "runtime_env": {
+    "os": "Windows",
+    "python_version": "3.12.10",
+    "limitations": "Tested on Windows 10/11 x64, Python 3.12 only. On macOS/Linux, platformdirs follows XDG standards while appdirs uses macOS legacy Library/Caches."
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "schema_version": "2.0.0",
+  "capsule_id": "capsule-linkwatch-appdirs-20261024_202242",
+  "generated_at": "2026-10-24T20:22:42.113874+00:00",
+  "capsule_type": "replacement",
+  "target_repo": {
+    "name": "LinkWatch",
+    "url": "https://github.com/rishrek/LinkWatch",
+    "commit_sha": "f52f3930c8e7c33d934ccf614955a38e26984bd5",
+    "python_version": "3.14.6"
+  },
+  "maintenance_problem": "Dependency 'appdirs' analyzed during static risk triage.",
+  "dependency": {
+    "name": "appdirs",
+    "declared_specifier": "==1.4.4",
+    "declared_in": [
+      "requirements.txt",
+      "pyproject.toml"
+    ]
+  },
+  "observed": {
+    "risk_indicators": [
+      {
+        "id": "days_since_release",
+        "value": 2357,
+        "source_url": "https://pypi.org/pypi/appdirs/json",
+        "fetched_at": "2026-10-24T20:21:51.658592+00:00"
+      },
+      {
+        "id": "yanked",
+        "value": false,
+        "source_url": "https://pypi.org/pypi/appdirs/json",
+        "fetched_at": "2026-10-24T20:21:51.658592+00:00"
+      }
+    ],
+    "scan": {
+      "files_scanned": 15,
+      "dynamic_imports": []
+    },
+    "usage_locations": [
+      {
+        "file": "linkwatch/cache.py",
+        "line": 4,
+        "symbol": "appdirs.user_cache_dir",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "linkwatch/cache.py",
+        "line": 10,
+        "symbol": "user_cache_dir",
+        "kind": "call",
+        "covered_by_tests": false
+      }
+    ],
+    "test_results": {
+      "baseline": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "candidate": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "new_failures": [],
+      "pip_check": {
+        "baseline": "Tests not run in static analyze mode.",
+        "candidate": "Tests not run in static analyze mode."
+      }
+    },
+    "evidence": [
+      {
+        "path": "assets/runs/rishrek__LinkWatch__f52f3930/evidence/appdirs_raw_model_response.json",
+        "sha256": "681809c0689146752ac44ab42173b70c3be7fd25b057ef0420c637d919a352a9",
+        "command": "ollama run llama3.2:3b",
+        "exit_code": 0,
+        "captured_at": "2026-10-24T20:22:42.113836+00:00"
+      }
+    ],
+    "trust_check": {
+      "skipped": true,
+      "candidate_type": "stdlib",
+      "needs_human_review": false,
+      "reasons": []
+    },
+    "secret_redactions_count": 0
+  },
+  "ai_generated": {
+    "proposed_replacement": {
+      "name": "no_valid_proposal",
+      "type": "stdlib"
+    },
+    "migration_steps": [],
+    "suggested_tests": [],
+    "gap_analysis": [
+      "Candidate rejected by validation gate: API coverage below 100% (0%)"
+    ],
+    "provenance": {
+      "provider": "ollama",
+      "model_id": "llama3.2:3b",
+      "model_license_name": "LLAMA 3.2 COMMUNITY LICENSE AGREEMENT",
+      "model_card_url": "https://ollama.com/library/llama3.2",
+      "prompt_sha256": "76e3407d000c937aca2caf0d65677fca62856d59eb9090e45fc0b180eb86a195",
+      "raw_response_path": "assets/runs/rishrek__LinkWatch__f52f3930/evidence/appdirs_raw_model_response.json",
+      "secret_redactions_count": 0,
+      "trust_check": {
+        "skipped": true,
+        "candidate_type": "stdlib",
+        "needs_human_review": false,
+        "reasons": []
+      },
+      "validation": {
+        "passed": false,
+        "api_coverage": 0.0,
+        "rejected_candidates": [
+          "Candidate pathlib missing symbols: user_cache_dir"
+        ]
+      }
+    }
+  },
+  "status": "unverified",
+  "limitations": [
+    "Static analysis mode only: test execution not run.",
+    "Public repositories and Python projects only.",
+    "Small models can propose weak replacements; validation gate determines acceptance."
+  ]
+}

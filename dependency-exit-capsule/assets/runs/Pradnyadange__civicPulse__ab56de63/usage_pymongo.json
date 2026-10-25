@@ -1,0 +1,70 @@
+{
+  "dependency": "pymongo",
+  "files_scanned": 15,
+  "dynamic_imports": [],
+  "usage_locations": [
+    {
+      "file": "mongodb/handlers.py",
+      "line": 3,
+      "symbol": "bson.ObjectId",
+      "kind": "import",
+      "covered_by_tests": false
+    },
+    {
+      "file": "mongodb/handlers.py",
+      "line": 36,
+      "symbol": "ObjectId",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "mongodb/handlers.py",
+      "line": 57,
+      "symbol": "ObjectId",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "mongodb/handlers.py",
+      "line": 68,
+      "symbol": "ObjectId",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "mongodb/handlers.py",
+      "line": 100,
+      "symbol": "ObjectId",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "mongodb/handlers.py",
+      "line": 114,
+      "symbol": "ObjectId",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "mongodb/handlers.py",
+      "line": 121,
+      "symbol": "ObjectId",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "mongodb/mongo_client.py",
+      "line": 2,
+      "symbol": "pymongo.MongoClient",
+      "kind": "import",
+      "covered_by_tests": false
+    },
+    {
+      "file": "mongodb/mongo_client.py",
+      "line": 13,
+      "symbol": "MongoClient",
+      "kind": "call",
+      "covered_by_tests": false
+    }
+  ]
+}

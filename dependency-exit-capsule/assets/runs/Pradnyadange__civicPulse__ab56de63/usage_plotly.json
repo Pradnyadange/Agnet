@@ -1,0 +1,35 @@
+{
+  "dependency": "plotly",
+  "files_scanned": 15,
+  "dynamic_imports": [],
+  "usage_locations": [
+    {
+      "file": "admin_analytics.py",
+      "line": 3,
+      "symbol": "plotly.express",
+      "kind": "import",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 94,
+      "symbol": "pie",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 101,
+      "symbol": "pie",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 111,
+      "symbol": "bar",
+      "kind": "call",
+      "covered_by_tests": false
+    }
+  ]
+}

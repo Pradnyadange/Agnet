@@ -1,0 +1,145 @@
+{
+  "schema_version": "2.0.0",
+  "capsule_id": "capsule-gpt-researcher-python-magic-20261024_181738",
+  "generated_at": "2026-10-24T18:17:38.288514+00:00",
+  "capsule_type": "unused_dependency",
+  "target_repo": {
+    "name": "gpt-researcher",
+    "url": "https://github.com/Pradnyadange/gpt-researcher",
+    "commit_sha": "47695db37ee39029a48b90ae1a381f93da38b20c",
+    "python_version": "3.14.6"
+  },
+  "maintenance_problem": "Dependency 'python-magic' analyzed during static risk triage.",
+  "dependency": {
+    "name": "python-magic",
+    "declared_specifier": ">=0.4.27",
+    "declared_in": [
+      "pyproject.toml"
+    ]
+  },
+  "observed": {
+    "risk_indicators": [
+      {
+        "id": "days_since_release",
+        "value": 1599,
+        "source_url": "https://pypi.org/pypi/python-magic/json",
+        "fetched_at": "2026-10-24T18:13:41.818159+00:00"
+      },
+      {
+        "id": "yanked",
+        "value": false,
+        "source_url": "https://pypi.org/pypi/python-magic/json",
+        "fetched_at": "2026-10-24T18:13:41.818159+00:00"
+      }
+    ],
+    "scan": {
+      "files_scanned": 364,
+      "dynamic_imports": [
+        "gpt_researcher/llm_provider/generic/base.py:419 (importlib.import_module)",
+        "tests/backend/test_report_chat_route_uniqueness.py:29 (importlib.import_module)",
+        "tests/test_report_generation_available_images.py:38 (__import__)",
+        "tests/test_retriever_requires_scraping.py:128 (importlib.import_module)",
+        "tests/test_websocket_manager.py:75 (importlib.import_module)",
+        "tests/test_websocket_manager.py:80 (importlib.import_module)",
+        "tests/test_websocket_manager.py:84 (importlib.import_module)"
+      ]
+    },
+    "usage_locations": [],
+    "test_results": {
+      "baseline": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "candidate": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "new_failures": [],
+      "pip_check": {
+        "baseline": "Tests not run in static analyze mode.",
+        "candidate": "Tests not run in static analyze mode."
+      }
+    },
+    "evidence": [
+      {
+        "path": "assets/runs/Pradnyadange__gpt-researcher__47695db3/evidence/python-magic_raw_model_response.json",
+        "sha256": "8d1f9db1d1c4174af61dad66f9e4916774d0e83be5697e7a986c2c13c932c0df",
+        "command": "ollama run gemma2:2b",
+        "exit_code": 0,
+        "captured_at": "2026-10-24T18:17:38.288462+00:00"
+      }
+    ],
+    "trust_check": {
+      "skipped": false,
+      "candidate_name": "no_valid_proposal",
+      "candidate_type": "no_valid_proposal",
+      "first_release_date": null,
+      "release_count": 0,
+      "last_release_date": null,
+      "project_urls": {},
+      "has_source_repo_url": false,
+      "min_edit_distance_to_popular": 13,
+      "closest_popular_package": "aiobotocore",
+      "needs_human_review": true,
+      "reasons": [
+        "Candidate package 'no_valid_proposal' returned HTTP 404 on PyPI",
+        "No public source repository URL (GitHub/GitLab/etc.) found in PyPI project_urls",
+        "Low release count (0 releases)"
+      ]
+    },
+    "secret_redactions_count": 0
+  },
+  "ai_generated": {
+    "proposed_replacement": {
+      "name": "no_valid_proposal",
+      "type": "stdlib"
+    },
+    "migration_steps": [],
+    "suggested_tests": [],
+    "gap_analysis": [
+      "Candidate rejected by validation gate: unknown replacement type"
+    ],
+    "provenance": {
+      "provider": "ollama",
+      "model_id": "gemma2:2b",
+      "model_license_name": "Gemma Terms of Use ",
+      "model_card_url": "https://ollama.com/library/gemma2",
+      "prompt_sha256": "3fb33eead9d7cb7c08616cb15786274895e0931295b605cc4bd27a18e92369b7",
+      "raw_response_path": "assets/runs/Pradnyadange__gpt-researcher__47695db3/evidence/python-magic_raw_model_response.json",
+      "secret_redactions_count": 0,
+      "trust_check": {
+        "skipped": false,
+        "candidate_name": "no_valid_proposal",
+        "candidate_type": "no_valid_proposal",
+        "first_release_date": null,
+        "release_count": 0,
+        "last_release_date": null,
+        "project_urls": {},
+        "has_source_repo_url": false,
+        "min_edit_distance_to_popular": 13,
+        "closest_popular_package": "aiobotocore",
+        "needs_human_review": true,
+        "reasons": [
+          "Candidate package 'no_valid_proposal' returned HTTP 404 on PyPI",
+          "No public source repository URL (GitHub/GitLab/etc.) found in PyPI project_urls",
+          "Low release count (0 releases)"
+        ]
+      },
+      "validation": {
+        "passed": false,
+        "api_coverage": 0.0,
+        "rejected_candidates": [
+          "Unknown candidate type: no_valid_proposal"
+        ]
+      }
+    }
+  },
+  "status": "not_testable",
+  "limitations": [
+    "Static analysis mode only: test execution not run.",
+    "Public repositories and Python projects only.",
+    "Small models can propose weak replacements; validation gate determines acceptance."
+  ]
+}

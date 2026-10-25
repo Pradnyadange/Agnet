@@ -1,0 +1,9 @@
+{
+  "proposed_replacement": {"name": "tomlib", "type": "stdlib"},
+  "migration_steps": [
+    "Update import statement in linkwatch/config.py to use tomllib",
+    "Verify the load function is correctly using tomllib"
+  ],
+  "suggested_tests": ["Test load function with tomllib"],
+  "gap_analysis": []
+}

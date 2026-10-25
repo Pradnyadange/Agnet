@@ -1,0 +1,14 @@
+{
+  "proposed_replacement": {"name": "pathlib", "type": "stdlib"},
+  "migration_steps": [
+    "Migrate all imports from appdirs to pathlib",
+    "Update code to use pathlib.Path instead of appdirs.user_cache_dir for user cache directories"
+  ],
+  "suggested_tests": [
+    "Verify that pathlib.Path returns the correct cache directory",
+    "Test that the migration did not break any other functionality"
+  ],
+  "gap_analysis": [
+    "Potential incompatibility: pathlib's API is slightly different from appdirs' API, but it is a widely-used and well-maintained package."
+  ]
+}

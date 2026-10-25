@@ -1,0 +1,157 @@
+{
+  "schema_version": "2.0.0",
+  "capsule_id": "capsule-linkwatch-jinja2-20261024_201505",
+  "generated_at": "2026-10-24T20:15:05.954889+00:00",
+  "capsule_type": "replacement",
+  "target_repo": {
+    "name": "LinkWatch",
+    "url": "https://github.com/rishrek/LinkWatch",
+    "commit_sha": "f52f3930c8e7c33d934ccf614955a38e26984bd5",
+    "python_version": "3.14.6"
+  },
+  "maintenance_problem": "Dependency 'jinja2' analyzed during static risk triage.",
+  "dependency": {
+    "name": "jinja2",
+    "declared_specifier": "==2.11.3",
+    "declared_in": [
+      "requirements.txt",
+      "pyproject.toml"
+    ]
+  },
+  "observed": {
+    "risk_indicators": [
+      {
+        "id": "days_since_release",
+        "value": 598,
+        "source_url": "https://pypi.org/pypi/jinja2/json",
+        "fetched_at": "2026-10-24T20:09:08.265862+00:00"
+      },
+      {
+        "id": "yanked",
+        "value": false,
+        "source_url": "https://pypi.org/pypi/jinja2/json",
+        "fetched_at": "2026-10-24T20:09:08.265862+00:00"
+      }
+    ],
+    "scan": {
+      "files_scanned": 15,
+      "dynamic_imports": []
+    },
+    "usage_locations": [
+      {
+        "file": "linkwatch/report.py",
+        "line": 3,
+        "symbol": "jinja2.Environment",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "linkwatch/report.py",
+        "line": 3,
+        "symbol": "jinja2.FileSystemLoader",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "linkwatch/report.py",
+        "line": 3,
+        "symbol": "jinja2.select_autoescape",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "linkwatch/report.py",
+        "line": 9,
+        "symbol": "Environment",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "linkwatch/report.py",
+        "line": 10,
+        "symbol": "FileSystemLoader",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "linkwatch/report.py",
+        "line": 11,
+        "symbol": "select_autoescape",
+        "kind": "call",
+        "covered_by_tests": false
+      }
+    ],
+    "test_results": {
+      "baseline": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "candidate": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "new_failures": [],
+      "pip_check": {
+        "baseline": "Tests not run in static analyze mode.",
+        "candidate": "Tests not run in static analyze mode."
+      }
+    },
+    "evidence": [
+      {
+        "path": "assets/runs/rishrek__LinkWatch__f52f3930/evidence/jinja2_raw_model_response.json",
+        "sha256": "e0edcbc2f313c897a45a75892ec6095b1205408291ae0119f021222b48529d00",
+        "command": "ollama run llama3.1:8b",
+        "exit_code": 0,
+        "captured_at": "2026-10-24T20:15:05.954826+00:00"
+      }
+    ],
+    "trust_check": {
+      "skipped": true,
+      "candidate_type": "stdlib",
+      "needs_human_review": false,
+      "reasons": []
+    },
+    "secret_redactions_count": 0
+  },
+  "ai_generated": {
+    "proposed_replacement": {
+      "name": "no_valid_proposal",
+      "type": "stdlib"
+    },
+    "migration_steps": [],
+    "suggested_tests": [],
+    "gap_analysis": [
+      "Candidate rejected by validation gate: not in stdlib"
+    ],
+    "provenance": {
+      "provider": "ollama",
+      "model_id": "llama3.1:8b",
+      "model_license_name": "LLAMA 3.1 COMMUNITY LICENSE AGREEMENT",
+      "model_card_url": "https://ollama.com/library/llama3.1",
+      "prompt_sha256": "b9a2117bb94f4ef720c1e8a2310c7ad4c1d104dd3f0a39a70c017e08d959f492",
+      "raw_response_path": "assets/runs/rishrek__LinkWatch__f52f3930/evidence/jinja2_raw_model_response.json",
+      "secret_redactions_count": 0,
+      "trust_check": {
+        "skipped": true,
+        "candidate_type": "stdlib",
+        "needs_human_review": false,
+        "reasons": []
+      },
+      "validation": {
+        "passed": false,
+        "api_coverage": 0.0,
+        "rejected_candidates": [
+          "jinja2 is not in sys.stdlib_module_names"
+        ]
+      }
+    }
+  },
+  "status": "unverified",
+  "limitations": [
+    "Static analysis mode only: test execution not run.",
+    "Public repositories and Python projects only.",
+    "Small models can propose weak replacements; validation gate determines acceptance."
+  ]
+}

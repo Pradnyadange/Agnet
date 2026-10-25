@@ -1,0 +1,190 @@
+{
+  "schema_version": "2.0.0",
+  "capsule_id": "capsule-gpt-researcher-uvicorn-20261025_064931",
+  "generated_at": "2026-10-25T06:49:31.970545+00:00",
+  "capsule_type": "replacement",
+  "target_repo": {
+    "name": "gpt-researcher",
+    "url": "https://github.com/Pradnyadange/gpt-researcher",
+    "commit_sha": "47695db37ee39029a48b90ae1a381f93da38b20c",
+    "python_version": "3.14.6"
+  },
+  "maintenance_problem": "Dependency 'uvicorn' analyzed during static risk triage.",
+  "dependency": {
+    "name": "uvicorn",
+    "declared_specifier": ">=0.27.0",
+    "declared_in": [
+      "requirements.txt",
+      "pyproject.toml"
+    ]
+  },
+  "observed": {
+    "risk_indicators": [
+      {
+        "id": "days_since_release",
+        "value": 29,
+        "source_url": "https://pypi.org/pypi/uvicorn/json",
+        "fetched_at": "2026-10-25T06:40:03.712770+00:00"
+      },
+      {
+        "id": "yanked",
+        "value": false,
+        "source_url": "https://pypi.org/pypi/uvicorn/json",
+        "fetched_at": "2026-10-25T06:40:03.712770+00:00"
+      }
+    ],
+    "scan": {
+      "files_scanned": 364,
+      "dynamic_imports": [
+        "gpt_researcher/llm_provider/generic/base.py:419 (importlib.import_module)",
+        "tests/backend/test_report_chat_route_uniqueness.py:29 (importlib.import_module)",
+        "tests/test_report_generation_available_images.py:38 (__import__)",
+        "tests/test_retriever_requires_scraping.py:128 (importlib.import_module)",
+        "tests/test_websocket_manager.py:75 (importlib.import_module)",
+        "tests/test_websocket_manager.py:80 (importlib.import_module)",
+        "tests/test_websocket_manager.py:84 (importlib.import_module)"
+      ]
+    },
+    "usage_locations": [
+      {
+        "file": "backend/run_server.py",
+        "line": 8,
+        "symbol": "uvicorn",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "backend/run_server.py",
+        "line": 21,
+        "symbol": "run",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "backend/server/app.py",
+        "line": 791,
+        "symbol": "uvicorn",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "backend/server/app.py",
+        "line": 792,
+        "symbol": "run",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "main.py",
+        "line": 34,
+        "symbol": "uvicorn",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "main.py",
+        "line": 37,
+        "symbol": "run",
+        "kind": "call",
+        "covered_by_tests": false
+      }
+    ],
+    "test_results": {
+      "baseline": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "candidate": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "new_failures": [],
+      "pip_check": {
+        "baseline": "Tests not run in static analyze mode.",
+        "candidate": "Tests not run in static analyze mode."
+      }
+    },
+    "evidence": [
+      {
+        "path": "assets/runs/Pradnyadange__gpt-researcher__47695db3/evidence/uvicorn_raw_model_response.json",
+        "sha256": "b43dffc89a4ef5d3ea36ecad176ae549ad65100e6d506fc44d60c432d855026b",
+        "command": "ollama run llama3.1:8b",
+        "exit_code": 0,
+        "captured_at": "2026-10-25T06:49:31.970491+00:00"
+      }
+    ],
+    "trust_check": {
+      "skipped": false,
+      "candidate_name": "hypercorn",
+      "candidate_type": "pypi",
+      "first_release_date": "2018-06-02T17:40:34.399909Z",
+      "release_count": 57,
+      "last_release_date": "2025-11-08T13:54:04.780563Z",
+      "project_urls": {},
+      "has_source_repo_url": false,
+      "min_edit_distance_to_popular": 6,
+      "closest_popular_package": "botocore",
+      "needs_human_review": true,
+      "reasons": [
+        "No public source repository URL (GitHub/GitLab/etc.) found in PyPI project_urls"
+      ]
+    },
+    "secret_redactions_count": 0
+  },
+  "ai_generated": {
+    "proposed_replacement": {
+      "name": "hypercorn",
+      "type": "pypi"
+    },
+    "migration_steps": [
+      "Update the import statements in all files to import from hypercorn",
+      "Replace calls to uvicorn.run() with hypercorn.run()"
+    ],
+    "suggested_tests": [
+      "Test that hypercorn.run() works as expected",
+      "Verify that hypercorn handles edge cases as uvicorn did"
+    ],
+    "gap_analysis": [
+      "hypercorn may not support all uvicorn features, may require additional configuration",
+      "hypercorn may introduce new features that require application-specific handling"
+    ],
+    "provenance": {
+      "provider": "ollama",
+      "model_id": "llama3.1:8b",
+      "model_license_name": "LLAMA 3.1 COMMUNITY LICENSE AGREEMENT",
+      "model_card_url": "https://ollama.com/library/llama3.1",
+      "prompt_sha256": "40db818b6dd6c12fee64304311612c728c3ae7b71ab7018c427418f1dbc15769",
+      "raw_response_path": "assets/runs/Pradnyadange__gpt-researcher__47695db3/evidence/uvicorn_raw_model_response.json",
+      "secret_redactions_count": 0,
+      "trust_check": {
+        "skipped": false,
+        "candidate_name": "hypercorn",
+        "candidate_type": "pypi",
+        "first_release_date": "2018-06-02T17:40:34.399909Z",
+        "release_count": 57,
+        "last_release_date": "2025-11-08T13:54:04.780563Z",
+        "project_urls": {},
+        "has_source_repo_url": false,
+        "min_edit_distance_to_popular": 6,
+        "closest_popular_package": "botocore",
+        "needs_human_review": true,
+        "reasons": [
+          "No public source repository URL (GitHub/GitLab/etc.) found in PyPI project_urls"
+        ]
+      },
+      "validation": {
+        "passed": true,
+        "api_coverage": 1.0,
+        "rejected_candidates": []
+      }
+    }
+  },
+  "status": "unverified",
+  "limitations": [
+    "Static analysis mode only: test execution not run.",
+    "Public repositories and Python projects only.",
+    "Small models can propose weak replacements; validation gate determines acceptance."
+  ]
+}

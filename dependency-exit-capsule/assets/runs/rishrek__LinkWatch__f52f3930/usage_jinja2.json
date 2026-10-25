@@ -1,0 +1,49 @@
+{
+  "dependency": "jinja2",
+  "files_scanned": 15,
+  "dynamic_imports": [],
+  "usage_locations": [
+    {
+      "file": "linkwatch/report.py",
+      "line": 3,
+      "symbol": "jinja2.Environment",
+      "kind": "import",
+      "covered_by_tests": false
+    },
+    {
+      "file": "linkwatch/report.py",
+      "line": 3,
+      "symbol": "jinja2.FileSystemLoader",
+      "kind": "import",
+      "covered_by_tests": false
+    },
+    {
+      "file": "linkwatch/report.py",
+      "line": 3,
+      "symbol": "jinja2.select_autoescape",
+      "kind": "import",
+      "covered_by_tests": false
+    },
+    {
+      "file": "linkwatch/report.py",
+      "line": 9,
+      "symbol": "Environment",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "linkwatch/report.py",
+      "line": 10,
+      "symbol": "FileSystemLoader",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "linkwatch/report.py",
+      "line": 11,
+      "symbol": "select_autoescape",
+      "kind": "call",
+      "covered_by_tests": false
+    }
+  ]
+}

@@ -1,0 +1,1225 @@
+{
+  "dependency": "streamlit",
+  "files_scanned": 15,
+  "dynamic_imports": [],
+  "usage_locations": [
+    {
+      "file": "admin_analytics.py",
+      "line": 1,
+      "symbol": "streamlit",
+      "kind": "import",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 15,
+      "symbol": "header",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 16,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 21,
+      "symbol": "columns",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 24,
+      "symbol": "expander",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 26,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 53,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 56,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 63,
+      "symbol": "columns",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 65,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 72,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 81,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 88,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 89,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 96,
+      "symbol": "plotly_chart",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 103,
+      "symbol": "plotly_chart",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 113,
+      "symbol": "plotly_chart",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 118,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 119,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 129,
+      "symbol": "button",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 130,
+      "symbol": "spinner",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 146,
+      "symbol": "columns",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 149,
+      "symbol": "container",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 150,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 175,
+      "symbol": "columns",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 177,
+      "symbol": "button",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 179,
+      "symbol": "rerun",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 181,
+      "symbol": "button",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 183,
+      "symbol": "rerun",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 184,
+      "symbol": "caption",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 186,
+      "symbol": "get",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 187,
+      "symbol": "info",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 189,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 193,
+      "symbol": "columns",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 196,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 197,
+      "symbol": "write",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 200,
+      "symbol": "write",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 201,
+      "symbol": "button",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 202,
+      "symbol": "spinner",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 205,
+      "symbol": "success",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 206,
+      "symbol": "rerun",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 208,
+      "symbol": "error",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 216,
+      "symbol": "warning",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 231,
+      "symbol": "columns",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 234,
+      "symbol": "container",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 235,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 263,
+      "symbol": "columns",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 265,
+      "symbol": "button",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 267,
+      "symbol": "rerun",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 269,
+      "symbol": "button",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 271,
+      "symbol": "rerun",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 272,
+      "symbol": "caption",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 274,
+      "symbol": "error",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "admin_analytics.py",
+      "line": 276,
+      "symbol": "warning",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 6,
+      "symbol": "streamlit",
+      "kind": "import",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 11,
+      "symbol": "cache_data",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 21,
+      "symbol": "header",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 22,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 34,
+      "symbol": "columns",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 57,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 59,
+      "symbol": "container",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 60,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 61,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 65,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 68,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 69,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 70,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 71,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 76,
+      "symbol": "button",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 83,
+      "symbol": "expander",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 85,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 87,
+      "symbol": "columns",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 89,
+      "symbol": "button",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 98,
+      "symbol": "button",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 106,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 109,
+      "symbol": "columns",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 111,
+      "symbol": "button",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 113,
+      "symbol": "rerun",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 115,
+      "symbol": "button",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 117,
+      "symbol": "rerun",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 118,
+      "symbol": "caption",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 121,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 123,
+      "symbol": "container",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 124,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 125,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 128,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 131,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 132,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 133,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 134,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 139,
+      "symbol": "button",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 146,
+      "symbol": "expander",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 148,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 150,
+      "symbol": "columns",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 152,
+      "symbol": "button",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 161,
+      "symbol": "button",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 169,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 172,
+      "symbol": "columns",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 174,
+      "symbol": "button",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 176,
+      "symbol": "rerun",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 178,
+      "symbol": "button",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 180,
+      "symbol": "rerun",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 181,
+      "symbol": "caption",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 184,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 186,
+      "symbol": "container",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 187,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 188,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 191,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 194,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 195,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 196,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 197,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 202,
+      "symbol": "button",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 209,
+      "symbol": "expander",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 211,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 213,
+      "symbol": "columns",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 215,
+      "symbol": "button",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 224,
+      "symbol": "button",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 232,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 235,
+      "symbol": "columns",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 237,
+      "symbol": "button",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 239,
+      "symbol": "rerun",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 241,
+      "symbol": "button",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 243,
+      "symbol": "rerun",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 244,
+      "symbol": "caption",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 247,
+      "symbol": "spinner",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 250,
+      "symbol": "toast",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "cards_dasboard.py",
+      "line": 251,
+      "symbol": "rerun",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "interface.py",
+      "line": 3,
+      "symbol": "streamlit",
+      "kind": "import",
+      "covered_by_tests": false
+    },
+    {
+      "file": "interface.py",
+      "line": 6,
+      "symbol": "set_page_config",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "interface.py",
+      "line": 14,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "interface.py",
+      "line": 111,
+      "symbol": "header",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "interface.py",
+      "line": 112,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "interface.py",
+      "line": 114,
+      "symbol": "text_area",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "interface.py",
+      "line": 115,
+      "symbol": "button",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "interface.py",
+      "line": 117,
+      "symbol": "warning",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "interface.py",
+      "line": 119,
+      "symbol": "spinner",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "interface.py",
+      "line": 121,
+      "symbol": "container",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "interface.py",
+      "line": 122,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "interface.py",
+      "line": 123,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "interface.py",
+      "line": 133,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "interface.py",
+      "line": 142,
+      "symbol": "columns",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "interface.py",
+      "line": 145,
+      "symbol": "button",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "interface.py",
+      "line": 152,
+      "symbol": "button",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "interface.py",
+      "line": 160,
+      "symbol": "subheader",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "interface.py",
+      "line": 162,
+      "symbol": "text_input",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "interface.py",
+      "line": 163,
+      "symbol": "text_input",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "interface.py",
+      "line": 165,
+      "symbol": "button",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "interface.py",
+      "line": 168,
+      "symbol": "success",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "interface.py",
+      "line": 169,
+      "symbol": "rerun",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "interface.py",
+      "line": 171,
+      "symbol": "error",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "interface.py",
+      "line": 179,
+      "symbol": "title",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "interface.py",
+      "line": 180,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "interface.py",
+      "line": 187,
+      "symbol": "button",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "interface.py",
+      "line": 189,
+      "symbol": "rerun",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "interface.py",
+      "line": 193,
+      "symbol": "get",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "interface.py",
+      "line": 197,
+      "symbol": "title",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "interface.py",
+      "line": 199,
+      "symbol": "tabs",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "interface.py",
+      "line": 210,
+      "symbol": "button",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "interface.py",
+      "line": 211,
+      "symbol": "clear",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "interface.py",
+      "line": 212,
+      "symbol": "rerun",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "report_complaint.py",
+      "line": 2,
+      "symbol": "streamlit",
+      "kind": "import",
+      "covered_by_tests": false
+    },
+    {
+      "file": "report_complaint.py",
+      "line": 9,
+      "symbol": "header",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "report_complaint.py",
+      "line": 10,
+      "symbol": "markdown",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "report_complaint.py",
+      "line": 12,
+      "symbol": "container",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "report_complaint.py",
+      "line": 13,
+      "symbol": "columns",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "report_complaint.py",
+      "line": 15,
+      "symbol": "text_input",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "report_complaint.py",
+      "line": 17,
+      "symbol": "selectbox",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "report_complaint.py",
+      "line": 25,
+      "symbol": "text_area",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "report_complaint.py",
+      "line": 33,
+      "symbol": "button",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "report_complaint.py",
+      "line": 35,
+      "symbol": "spinner",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "report_complaint.py",
+      "line": 39,
+      "symbol": "success",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "report_complaint.py",
+      "line": 41,
+      "symbol": "error",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "report_complaint.py",
+      "line": 43,
+      "symbol": "warning",
+      "kind": "call",
+      "covered_by_tests": false
+    }
+  ]
+}

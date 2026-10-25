@@ -1,0 +1,149 @@
+{
+  "schema_version": "2.0.0",
+  "capsule_id": "capsule-civicpulse-python-dotenv-20261025_071303",
+  "generated_at": "2026-10-25T07:13:03.320684+00:00",
+  "capsule_type": "replacement",
+  "target_repo": {
+    "name": "civicPulse",
+    "url": "https://github.com/Pradnyadange/civicPulse",
+    "commit_sha": "ab56de63bfc3db719c675c0390455df7db4525e0",
+    "python_version": "3.14.6"
+  },
+  "maintenance_problem": "Dependency 'python-dotenv' analyzed during static risk triage.",
+  "dependency": {
+    "name": "python-dotenv",
+    "declared_specifier": "",
+    "declared_in": [
+      "requirements.txt"
+    ]
+  },
+  "observed": {
+    "risk_indicators": [
+      {
+        "id": "days_since_release",
+        "value": 24,
+        "source_url": "https://pypi.org/pypi/python-dotenv/json",
+        "fetched_at": "2026-10-25T07:07:14.333709+00:00"
+      },
+      {
+        "id": "yanked",
+        "value": false,
+        "source_url": "https://pypi.org/pypi/python-dotenv/json",
+        "fetched_at": "2026-10-25T07:07:14.333709+00:00"
+      }
+    ],
+    "scan": {
+      "files_scanned": 15,
+      "dynamic_imports": []
+    },
+    "usage_locations": [
+      {
+        "file": "llm/agents.py",
+        "line": 4,
+        "symbol": "dotenv.load_dotenv",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "llm/llm_client.py",
+        "line": 3,
+        "symbol": "dotenv.load_dotenv",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "llm/llm_client.py",
+        "line": 5,
+        "symbol": "load_dotenv",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "mongodb/mongo_client.py",
+        "line": 3,
+        "symbol": "dotenv.load_dotenv",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "mongodb/mongo_client.py",
+        "line": 5,
+        "symbol": "load_dotenv",
+        "kind": "call",
+        "covered_by_tests": false
+      }
+    ],
+    "test_results": {
+      "baseline": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "candidate": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "new_failures": [],
+      "pip_check": {
+        "baseline": "Tests not run in static analyze mode.",
+        "candidate": "Tests not run in static analyze mode."
+      }
+    },
+    "evidence": [
+      {
+        "path": "assets/runs/Pradnyadange__civicPulse__ab56de63/evidence/python-dotenv_raw_model_response.json",
+        "sha256": "78d2e98bb1df9b7d95ee9e92addc4b1cd5b0ce506f19237313ae0f709e0a268e",
+        "command": "ollama run llama3.1:8b",
+        "exit_code": 0,
+        "captured_at": "2026-10-25T07:13:03.320642+00:00"
+      }
+    ],
+    "trust_check": {
+      "skipped": true,
+      "candidate_type": "stdlib",
+      "needs_human_review": false,
+      "reasons": []
+    },
+    "secret_redactions_count": 0
+  },
+  "ai_generated": {
+    "proposed_replacement": {
+      "name": "no_valid_proposal",
+      "type": "stdlib"
+    },
+    "migration_steps": [],
+    "suggested_tests": [],
+    "gap_analysis": [
+      "Candidate rejected by validation gate: API coverage below 100% (0%)"
+    ],
+    "provenance": {
+      "provider": "ollama",
+      "model_id": "llama3.1:8b",
+      "model_license_name": "LLAMA 3.1 COMMUNITY LICENSE AGREEMENT",
+      "model_card_url": "https://ollama.com/library/llama3.1",
+      "prompt_sha256": "4c884a73951f70b42e9724d89a9cfdfd6fc972919ddeaa1f3195f3080d73db57",
+      "raw_response_path": "assets/runs/Pradnyadange__civicPulse__ab56de63/evidence/python-dotenv_raw_model_response.json",
+      "secret_redactions_count": 0,
+      "trust_check": {
+        "skipped": true,
+        "candidate_type": "stdlib",
+        "needs_human_review": false,
+        "reasons": []
+      },
+      "validation": {
+        "passed": false,
+        "api_coverage": 0.0,
+        "rejected_candidates": [
+          "Candidate pathlib missing symbols: load_dotenv"
+        ]
+      }
+    }
+  },
+  "status": "unverified",
+  "limitations": [
+    "Static analysis mode only: test execution not run.",
+    "Public repositories and Python projects only.",
+    "Small models can propose weak replacements; validation gate determines acceptance."
+  ]
+}

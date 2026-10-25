@@ -1,0 +1,55 @@
+{
+  "_comment": "Risk policy thresholds for action_decision.py (labelled policy data – shown in About tab)",
+  "_label": "dependency-exit-capsule risk policy v1",
+  "_schema": "risk_policy_v1",
+
+  "stale_days_replace": 730,
+  "stale_days_upgrade": 180,
+  "version_lag_upgrade": 5,
+
+  "deprecation_keywords": [
+    "deprecated", "unmaintained", "no longer maintained", "archived",
+    "end of life", "eol", "abandoned", "discontinued", "no longer supported",
+    "superseded", "not maintained", "use X instead", "migrated to", "successor is"
+  ],
+
+  "dev_scope_patterns": [
+    "pytest", "pytest-cov", "pytest-mock", "pytest-asyncio",
+    "nose", "nose2", "coverage", "codecov",
+    "black", "isort", "flake8", "pylint", "mypy", "pyflakes",
+    "tox", "nox", "pre-commit",
+    "hypothesis", "factory-boy", "faker",
+    "responses", "httpretty", "vcrpy", "freezegun", "time-machine",
+    "bandit", "safety", "pipdeptree",
+    "sphinx", "mkdocs", "pydoc-markdown",
+    "build", "twine", "wheel", "setuptools", "flit"
+  ],
+
+  "dev_file_patterns": [
+    "requirements-dev*.txt",
+    "requirements.dev*.txt",
+    "requirements_dev*.txt",
+    "requirements_test*.txt",
+    "requirements-test*.txt",
+    "requirements-ci*.txt",
+    "dev-requirements*.txt",
+    "test-requirements*.txt"
+  ],
+
+  "non_python_ref_globs": [
+    "Makefile", "makefile", "GNUmakefile",
+    "tox.ini", "noxfile.py",
+    "setup.cfg",
+    ".github/**/*.yml", ".github/**/*.yaml",
+    "*.cfg", "*.ini",
+    "Dockerfile*", "docker-compose*.yml", "docker-compose*.yaml",
+    ".pre-commit-config.yaml"
+  ],
+
+  "max_dependencies_hard": 100,
+  "model_runs_per_dep": 1,
+  "pypi_max_workers": 8,
+  "pypi_retry_count": 3,
+  "pypi_retry_backoff_seconds": 2.0,
+  "rate_limit_sleep_seconds": 5.0
+}

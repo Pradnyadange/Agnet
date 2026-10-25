@@ -1,0 +1,49 @@
+{
+  "dependency": "rich",
+  "files_scanned": 15,
+  "dynamic_imports": [],
+  "usage_locations": [
+    {
+      "file": "linkwatch/cli.py",
+      "line": 2,
+      "symbol": "rich.console.Console",
+      "kind": "import",
+      "covered_by_tests": false
+    },
+    {
+      "file": "linkwatch/cli.py",
+      "line": 3,
+      "symbol": "rich.live.Live",
+      "kind": "import",
+      "covered_by_tests": false
+    },
+    {
+      "file": "linkwatch/cli.py",
+      "line": 4,
+      "symbol": "rich.table.Table",
+      "kind": "import",
+      "covered_by_tests": false
+    },
+    {
+      "file": "linkwatch/cli.py",
+      "line": 9,
+      "symbol": "Console",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "linkwatch/cli.py",
+      "line": 13,
+      "symbol": "Table",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "linkwatch/cli.py",
+      "line": 40,
+      "symbol": "Live",
+      "kind": "call",
+      "covered_by_tests": false
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "manifest_version": "1.0",
+  "run_id": "Pradnyadange__civicPulse__ab56de63",
+  "generated_at": "2026-10-25T07:18:39.144927+00:00",
+  "files": {
+    "assets/runs/Pradnyadange__civicPulse__ab56de63/capsules/capsule-civicpulse-google-genai-20261025_071629.json": "dd907584c5e883b4a9bcab8cb98a6411c5fef6ec2e9cdd19373adf41b28876e0",
+    "assets/runs/Pradnyadange__civicPulse__ab56de63/capsules/capsule-civicpulse-plotly-20261025_071159.json": "dcdc935e3e042487cfac039052ee536b42c568dfd8ddc81a346646cba79856ce",
+    "assets/runs/Pradnyadange__civicPulse__ab56de63/capsules/capsule-civicpulse-pymongo-20261025_071441.json": "042eb0dc75f9bd0920b6197b2566a80134bad8a81d6291b45e5c67942ecd854f",
+    "assets/runs/Pradnyadange__civicPulse__ab56de63/capsules/capsule-civicpulse-python-dotenv-20261025_071303.json": "391dc9bab2e097418c2adfd009e7b5ced4058fcdbb8d17e438ee0f81b1fbdb60",
+    "assets/runs/Pradnyadange__civicPulse__ab56de63/capsules/capsule-civicpulse-scikit-learn-20261025_071016.json": "8ca84e8ac42028018cc0378e7ee42fe6bbbb083a4f2038036cf4a4ef4a975bf4",
+    "assets/runs/Pradnyadange__civicPulse__ab56de63/capsules/capsule-civicpulse-streamlit-20261025_071839.json": "a3884641cc8dc3c7b6944f2bfccf86bb138e019e0e66d4023f1e420eeca2db6d",
+    "assets/runs/Pradnyadange__civicPulse__ab56de63/capsules/capsule-civicpulse-umap-learn-20261025_070907.json": "cd43cdfbc67c079a2fd23109dfd4b4cb39ce7c5a1d24e2299f5a82f6d5c1db23",
+    "assets/runs/Pradnyadange__civicPulse__ab56de63/evidence/google-genai_raw_model_response.json": "bed64736a264f6e5eef43f1c15c2f45082da2253df19b5ee1571aebf9bce3f1c",
+    "assets/runs/Pradnyadange__civicPulse__ab56de63/evidence/plotly_raw_model_response.json": "ff22c9d6c4c39fc71732cad95c379252e3d55b40f6881a6a8c505013b790622f",
+    "assets/runs/Pradnyadange__civicPulse__ab56de63/evidence/pymongo_raw_model_response.json": "aa78989a0cb6e8be54447bef68d2b9d4bd205f7ab8aab7cc016e6dcde415b44f",
+    "assets/runs/Pradnyadange__civicPulse__ab56de63/evidence/python-dotenv_raw_model_response.json": "78d2e98bb1df9b7d95ee9e92addc4b1cd5b0ce506f19237313ae0f709e0a268e",
+    "assets/runs/Pradnyadange__civicPulse__ab56de63/evidence/scikit-learn_raw_model_response.json": "10730b798e5db78eb412a3db098a5bf560b7f5856522b0c45b16529848f3c8a4",
+    "assets/runs/Pradnyadange__civicPulse__ab56de63/evidence/streamlit_raw_model_response.json": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "assets/runs/Pradnyadange__civicPulse__ab56de63/evidence/umap-learn_raw_model_response.json": "33c69c5957db314da8ca9c6838c6d299617531401c77bef37ba0a94c28204b96",
+    "assets/runs/Pradnyadange__civicPulse__ab56de63/scan.json": "52fdb516541c0cbb87baa7b751c59b0cc37c3f8d051ab82a23c082480f81def2",
+    "assets/runs/Pradnyadange__civicPulse__ab56de63/usage_google-genai.json": "b09da473f01cd6f4370eca68dbd7bc8cded496eb626fe31737b9a2cd438be2c9",
+    "assets/runs/Pradnyadange__civicPulse__ab56de63/usage_plotly.json": "3b107144c1e788f88f3e089640e3da4f9a9a83650015d8f3f4a8b94885d3a7a5",
+    "assets/runs/Pradnyadange__civicPulse__ab56de63/usage_pymongo.json": "0e854fbaef1bcebf393fc47aae7201823f34b09d2e145a09f6410467a719808b",
+    "assets/runs/Pradnyadange__civicPulse__ab56de63/usage_python-dotenv.json": "20da6aff502eb7f6ded59fdbf6176b68ce4ae0deab8973502648818acee8b57e",
+    "assets/runs/Pradnyadange__civicPulse__ab56de63/usage_scikit-learn.json": "98400c376f2ea4f8a8c3c37ad1de44b7aaabc4fc81b4242a63ff41f2fdd83eb8",
+    "assets/runs/Pradnyadange__civicPulse__ab56de63/usage_streamlit.json": "1e14f7b14aac058ef993e9969e52855d5c884985dd9a46f55e4f9f3736d5fbf3",
+    "assets/runs/Pradnyadange__civicPulse__ab56de63/usage_umap-learn.json": "3cdfedfa31cc62349fb028db5506369e2ff0656f926d5c7f2282697521e9cae2"
+  }
+}

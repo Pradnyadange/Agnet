@@ -1,0 +1,39 @@
+﻿python.exe : <string>:7: SyntaxWarning: invalid escape sequence '\A'
+At line:9 char:1
++ & $base_py -c "
++ ~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (<string>:7: Syn...e sequence '\A':String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Traceback (most recent call last):
+  File "<string>", line 7, in <module>
+  File "D:\Agent\work\20261023_232609\venv_base\Lib\site-packages\click\testing.py", line 687, in invoke
+    return_value = cli.main(args=args or (), prog_name=prog_name, **extra)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Agent\work\20261023_232609\venv_base\Lib\site-packages\click\core.py", line 1552, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "D:\Agent\work\20261023_232609\venv_base\Lib\site-packages\click\core.py", line 2032, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Agent\work\20261023_232609\venv_base\Lib\site-packages\click\core.py", line 1415, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Agent\work\20261023_232609\venv_base\Lib\site-packages\click\core.py", line 910, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Agent\work\20261023_232609\repo_copy\linkwatch\cli.py", line 56, in report
+    from .report import render_report
+  File "D:\Agent\work\20261023_232609\repo_copy\linkwatch\report.py", line 3, in <module>
+    from jinja2 import Environment, FileSystemLoader, select_autoescape
+  File "D:\Agent\work\20261023_232609\venv_base\Lib\site-packages\jinja2\__init__.py", line 12, in <module>
+    from .environment import Environment
+  File "D:\Agent\work\20261023_232609\venv_base\Lib\site-packages\jinja2\environment.py", line 25, in <module>
+    from .defaults import BLOCK_END_STRING
+  File "D:\Agent\work\20261023_232609\venv_base\Lib\site-packages\jinja2\defaults.py", line 3, in <module>
+    from .filters import FILTERS as DEFAULT_FILTERS  # noqa: F401
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Agent\work\20261023_232609\venv_base\Lib\site-packages\jinja2\filters.py", line 13, in <module>
+    from markupsafe import soft_unicode
+ImportError: cannot import name 'soft_unicode' from 'markupsafe' 
+(D:\Agent\work\20261023_232609\venv_base\Lib\site-packages\markupsafe\__init__.py)

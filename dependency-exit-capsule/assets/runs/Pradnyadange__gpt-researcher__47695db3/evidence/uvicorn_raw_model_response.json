@@ -1,0 +1,15 @@
+{
+  "proposed_replacement": {"name": "hypercorn", "type": "pypi"},
+  "migration_steps": [
+    "Update the import statements in all files to import from hypercorn",
+    "Replace calls to uvicorn.run() with hypercorn.run()"
+  ],
+  "suggested_tests": [
+    "Test that hypercorn.run() works as expected",
+    "Verify that hypercorn handles edge cases as uvicorn did"
+  ],
+  "gap_analysis": [
+    "hypercorn may not support all uvicorn features, may require additional configuration",
+    "hypercorn may introduce new features that require application-specific handling"
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "schema_version": "2.0.0",
+  "capsule_id": "capsule-gpt-researcher-langdetect-20261024_194729",
+  "generated_at": "2026-10-24T19:47:29.967124+00:00",
+  "capsule_type": "unused_dependency",
+  "target_repo": {
+    "name": "gpt-researcher",
+    "url": "https://github.com/Pradnyadange/gpt-researcher",
+    "commit_sha": "47695db37ee39029a48b90ae1a381f93da38b20c",
+    "python_version": "3.14.6"
+  },
+  "maintenance_problem": "Dependency 'langdetect' analyzed during static risk triage.",
+  "dependency": {
+    "name": "langdetect",
+    "declared_specifier": ">=1.0.9",
+    "declared_in": [
+      "pyproject.toml"
+    ]
+  },
+  "observed": {
+    "risk_indicators": [
+      {
+        "id": "days_since_release",
+        "value": 1996,
+        "source_url": "https://pypi.org/pypi/langdetect/json",
+        "fetched_at": "2026-10-24T19:45:05.182073+00:00"
+      },
+      {
+        "id": "yanked",
+        "value": false,
+        "source_url": "https://pypi.org/pypi/langdetect/json",
+        "fetched_at": "2026-10-24T19:45:05.182073+00:00"
+      }
+    ],
+    "scan": {
+      "files_scanned": 364,
+      "dynamic_imports": [
+        "gpt_researcher/llm_provider/generic/base.py:419 (importlib.import_module)",
+        "tests/backend/test_report_chat_route_uniqueness.py:29 (importlib.import_module)",
+        "tests/test_report_generation_available_images.py:38 (__import__)",
+        "tests/test_retriever_requires_scraping.py:128 (importlib.import_module)",
+        "tests/test_websocket_manager.py:75 (importlib.import_module)",
+        "tests/test_websocket_manager.py:80 (importlib.import_module)",
+        "tests/test_websocket_manager.py:84 (importlib.import_module)"
+      ]
+    },
+    "usage_locations": [],
+    "test_results": {
+      "baseline": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "candidate": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "new_failures": [],
+      "pip_check": {
+        "baseline": "Tests not run in static analyze mode.",
+        "candidate": "Tests not run in static analyze mode."
+      }
+    },
+    "evidence": [
+      {
+        "path": "assets/runs/Pradnyadange__gpt-researcher__47695db3/evidence/langdetect_raw_model_response.json",
+        "sha256": "78ea3a1c971100fd904b9658c14c20c10003faa2f0c77b8c12d355071692eee7",
+        "command": "ollama run gemma2:2b",
+        "exit_code": 0,
+        "captured_at": "2026-10-24T19:47:29.967087+00:00"
+      }
+    ],
+    "trust_check": {
+      "skipped": false,
+      "candidate_name": "langdetect",
+      "candidate_type": "pypi",
+      "first_release_date": "2014-05-14T00:28:13.256342Z",
+      "release_count": 11,
+      "last_release_date": "2021-05-07T07:54:13.562344Z",
+      "project_urls": {
+        "Homepage": "https://github.com/Mimino666/langdetect"
+      },
+      "has_source_repo_url": true,
+      "min_edit_distance_to_popular": 7,
+      "closest_popular_package": "pytest",
+      "needs_human_review": false,
+      "reasons": []
+    },
+    "secret_redactions_count": 0
+  },
+  "ai_generated": {
+    "proposed_replacement": {
+      "name": "langdetect",
+      "type": "pypi"
+    },
+    "migration_steps": [
+      "1. Update dependencies to `langdetect` (with the new version):  `pip install langdetect`",
+      "2. Verify functionality: Test the new version by using it in your application.",
+      "3.  Document the change:  Update the README with details of the migration and the new version."
+    ],
+    "suggested_tests": [
+      "Verify that the code in the application works correctly with the updated `langdetect` version.",
+      "Test different languages and environments (e.g., API, web, or CLI)."
+    ],
+    "gap_analysis": [
+      "Potential incompatibility issues might arise if the new version does not fully replace the original functionality or have a different API."
+    ],
+    "provenance": {
+      "provider": "ollama",
+      "model_id": "gemma2:2b",
+      "model_license_name": "Gemma Terms of Use ",
+      "model_card_url": "https://ollama.com/library/gemma2",
+      "prompt_sha256": "39a08c6ca793ace6158ef2ef576f8fac6d5f75e0d6cd9d78a111602dab3fb1a2",
+      "raw_response_path": "assets/runs/Pradnyadange__gpt-researcher__47695db3/evidence/langdetect_raw_model_response.json",
+      "secret_redactions_count": 0,
+      "trust_check": {
+        "skipped": false,
+        "candidate_name": "langdetect",
+        "candidate_type": "pypi",
+        "first_release_date": "2014-05-14T00:28:13.256342Z",
+        "release_count": 11,
+        "last_release_date": "2021-05-07T07:54:13.562344Z",
+        "project_urls": {
+          "Homepage": "https://github.com/Mimino666/langdetect"
+        },
+        "has_source_repo_url": true,
+        "min_edit_distance_to_popular": 7,
+        "closest_popular_package": "pytest",
+        "needs_human_review": false,
+        "reasons": []
+      },
+      "validation": {
+        "passed": true,
+        "api_coverage": 1.0,
+        "rejected_candidates": []
+      }
+    }
+  },
+  "status": "not_testable",
+  "limitations": [
+    "Static analysis mode only: test execution not run.",
+    "Public repositories and Python projects only.",
+    "Small models can propose weak replacements; validation gate determines acceptance."
+  ]
+}

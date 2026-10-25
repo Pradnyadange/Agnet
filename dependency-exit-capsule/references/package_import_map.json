@@ -1,0 +1,21 @@
+{
+  "pyyaml": ["yaml"],
+  "beautifulsoup4": ["bs4"],
+  "python-dateutil": ["dateutil"],
+  "jinja2": ["jinja2"],
+  "markupsafe": ["markupsafe"],
+  "platformdirs": ["platformdirs"],
+  "appdirs": ["appdirs"],
+  "toml": ["toml"],
+  "tomli": ["tomli"],
+  "pytest": ["pytest", "pytest_mock"],
+  "nose": ["nose"],
+  "requests": ["requests"],
+  "pillow": ["PIL"],
+  "opencv-python": ["cv2"],
+  "scikit-learn": ["sklearn"],
+  "protobuf": ["google.protobuf"],
+  "attrs": ["attr", "attrs"],
+  "pydantic": ["pydantic"],
+  "click": ["click"]
+}

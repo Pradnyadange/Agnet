@@ -1,0 +1,303 @@
+{
+  "schema_version": "2.0.0",
+  "capsule_id": "capsule-float-chat-flask-20261024_201530",
+  "generated_at": "2026-10-24T20:15:30.569654+00:00",
+  "capsule_type": "replacement",
+  "target_repo": {
+    "name": "Float-Chat",
+    "url": "https://github.com/Pradnyadange/Float-Chat",
+    "commit_sha": "48d6102ca918f8714b52d6a72a2933f2c99aab5f",
+    "python_version": "3.14.6"
+  },
+  "maintenance_problem": "Dependency 'flask' analyzed during static risk triage.",
+  "dependency": {
+    "name": "flask",
+    "declared_specifier": "==3.1.1",
+    "declared_in": [
+      "requirements.txt"
+    ]
+  },
+  "observed": {
+    "risk_indicators": [
+      {
+        "id": "days_since_release",
+        "value": 247,
+        "source_url": "https://pypi.org/pypi/flask/json",
+        "fetched_at": "2026-10-24T20:13:23.636219+00:00"
+      },
+      {
+        "id": "yanked",
+        "value": false,
+        "source_url": "https://pypi.org/pypi/flask/json",
+        "fetched_at": "2026-10-24T20:13:23.636219+00:00"
+      }
+    ],
+    "scan": {
+      "files_scanned": 6,
+      "dynamic_imports": []
+    },
+    "usage_locations": [
+      {
+        "file": "app.py",
+        "line": 16,
+        "symbol": "flask.Flask",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "app.py",
+        "line": 16,
+        "symbol": "flask.jsonify",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "app.py",
+        "line": 16,
+        "symbol": "flask.redirect",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "app.py",
+        "line": 16,
+        "symbol": "flask.render_template",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "app.py",
+        "line": 16,
+        "symbol": "flask.request",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "app.py",
+        "line": 16,
+        "symbol": "flask.session",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "app.py",
+        "line": 16,
+        "symbol": "flask.url_for",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "app.py",
+        "line": 16,
+        "symbol": "flask.send_file",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "app.py",
+        "line": 21,
+        "symbol": "Flask",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "app.py",
+        "line": 500,
+        "symbol": "send_file",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "app.py",
+        "line": 504,
+        "symbol": "redirect",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "app.py",
+        "line": 504,
+        "symbol": "url_for",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "app.py",
+        "line": 505,
+        "symbol": "render_template",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "app.py",
+        "line": 509,
+        "symbol": "redirect",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "app.py",
+        "line": 509,
+        "symbol": "url_for",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "app.py",
+        "line": 510,
+        "symbol": "render_template",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "app.py",
+        "line": 515,
+        "symbol": "redirect",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "app.py",
+        "line": 515,
+        "symbol": "url_for",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "app.py",
+        "line": 527,
+        "symbol": "jsonify",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "app.py",
+        "line": 529,
+        "symbol": "jsonify",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "app.py",
+        "line": 540,
+        "symbol": "jsonify",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "app.py",
+        "line": 541,
+        "symbol": "jsonify",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "app.py",
+        "line": 545,
+        "symbol": "jsonify",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "app.py",
+        "line": 550,
+        "symbol": "jsonify",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "app.py",
+        "line": 554,
+        "symbol": "jsonify",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "app.py",
+        "line": 563,
+        "symbol": "jsonify",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "app.py",
+        "line": 574,
+        "symbol": "jsonify",
+        "kind": "call",
+        "covered_by_tests": false
+      }
+    ],
+    "test_results": {
+      "baseline": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "candidate": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "new_failures": [],
+      "pip_check": {
+        "baseline": "Tests not run in static analyze mode.",
+        "candidate": "Tests not run in static analyze mode."
+      }
+    },
+    "evidence": [
+      {
+        "path": "assets/runs/Pradnyadange__Float-Chat__48d6102c/evidence/flask_raw_model_response.json",
+        "sha256": "f8a98c74bac8cd70ccca5df4bd096ccb3ad41ab88e3256702029f6a2be2e56af",
+        "command": "ollama run llama3.2:3b",
+        "exit_code": 0,
+        "captured_at": "2026-10-24T20:15:30.569621+00:00"
+      }
+    ],
+    "trust_check": {
+      "skipped": true,
+      "candidate_type": "stdlib",
+      "needs_human_review": false,
+      "reasons": []
+    },
+    "secret_redactions_count": 0
+  },
+  "ai_generated": {
+    "proposed_replacement": {
+      "name": "no_valid_proposal",
+      "type": "stdlib"
+    },
+    "migration_steps": [],
+    "suggested_tests": [],
+    "gap_analysis": [
+      "Candidate rejected by validation gate: not in stdlib"
+    ],
+    "provenance": {
+      "provider": "ollama",
+      "model_id": "llama3.2:3b",
+      "model_license_name": "LLAMA 3.2 COMMUNITY LICENSE AGREEMENT",
+      "model_card_url": "https://ollama.com/library/llama3.2",
+      "prompt_sha256": "ec6d6c06c8d8dd7e65a0492161e10a6399a24e392418844c07aa405770250cdf",
+      "raw_response_path": "assets/runs/Pradnyadange__Float-Chat__48d6102c/evidence/flask_raw_model_response.json",
+      "secret_redactions_count": 0,
+      "trust_check": {
+        "skipped": true,
+        "candidate_type": "stdlib",
+        "needs_human_review": false,
+        "reasons": []
+      },
+      "validation": {
+        "passed": false,
+        "api_coverage": 0.0,
+        "rejected_candidates": [
+          "flask is not in sys.stdlib_module_names"
+        ]
+      }
+    }
+  },
+  "status": "unverified",
+  "limitations": [
+    "Static analysis mode only: test execution not run.",
+    "Public repositories and Python projects only.",
+    "Small models can propose weak replacements; validation gate determines acceptance."
+  ]
+}

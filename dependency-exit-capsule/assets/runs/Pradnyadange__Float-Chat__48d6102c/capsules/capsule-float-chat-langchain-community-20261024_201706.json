@@ -1,0 +1,169 @@
+{
+  "schema_version": "2.0.0",
+  "capsule_id": "capsule-float-chat-langchain-community-20261024_201706",
+  "generated_at": "2026-10-24T20:17:06.714840+00:00",
+  "capsule_type": "replacement",
+  "target_repo": {
+    "name": "Float-Chat",
+    "url": "https://github.com/Pradnyadange/Float-Chat",
+    "commit_sha": "48d6102ca918f8714b52d6a72a2933f2c99aab5f",
+    "python_version": "3.14.6"
+  },
+  "maintenance_problem": "Dependency 'langchain-community' analyzed during static risk triage.",
+  "dependency": {
+    "name": "langchain-community",
+    "declared_specifier": "==0.3.26",
+    "declared_in": [
+      "requirements.txt"
+    ]
+  },
+  "observed": {
+    "risk_indicators": [
+      {
+        "id": "days_since_release",
+        "value": 155,
+        "source_url": "https://pypi.org/pypi/langchain-community/json",
+        "fetched_at": "2026-10-24T20:13:25.235525+00:00"
+      },
+      {
+        "id": "yanked",
+        "value": false,
+        "source_url": "https://pypi.org/pypi/langchain-community/json",
+        "fetched_at": "2026-10-24T20:13:25.235525+00:00"
+      }
+    ],
+    "scan": {
+      "files_scanned": 6,
+      "dynamic_imports": []
+    },
+    "usage_locations": [
+      {
+        "file": "src/helpers.py",
+        "line": 1,
+        "symbol": "langchain_community.document_loaders.DirectoryLoader",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "src/helpers.py",
+        "line": 1,
+        "symbol": "langchain_community.document_loaders.PyPDFLoader",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "src/helpers.py",
+        "line": 3,
+        "symbol": "langchain_community.embeddings.HuggingFaceEmbeddings",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "src/helpers.py",
+        "line": 10,
+        "symbol": "DirectoryLoader",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "src/helpers.py",
+        "line": 43,
+        "symbol": "HuggingFaceEmbeddings",
+        "kind": "call",
+        "covered_by_tests": false
+      }
+    ],
+    "test_results": {
+      "baseline": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "candidate": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "new_failures": [],
+      "pip_check": {
+        "baseline": "Tests not run in static analyze mode.",
+        "candidate": "Tests not run in static analyze mode."
+      }
+    },
+    "evidence": [
+      {
+        "path": "assets/runs/Pradnyadange__Float-Chat__48d6102c/evidence/langchain-community_raw_model_response.json",
+        "sha256": "a059fa7563cc26f1c98e62867a84e1b6c3cd9e67e32e62d9dcccbf12e953f522",
+        "command": "ollama run llama3.2:3b",
+        "exit_code": 0,
+        "captured_at": "2026-10-24T20:17:06.714814+00:00"
+      }
+    ],
+    "trust_check": {
+      "skipped": false,
+      "candidate_name": "transformers",
+      "candidate_type": "pypi",
+      "first_release_date": "2016-08-17T06:13:12.929751Z",
+      "release_count": 247,
+      "last_release_date": "2026-10-19T17:46:03.092052Z",
+      "project_urls": {
+        "Homepage": "https://github.com/huggingface/transformers"
+      },
+      "has_source_repo_url": true,
+      "min_edit_distance_to_popular": 6,
+      "closest_popular_package": "s3transfer",
+      "needs_human_review": false,
+      "reasons": []
+    },
+    "secret_redactions_count": 0
+  },
+  "ai_generated": {
+    "proposed_replacement": {
+      "name": "no_valid_proposal",
+      "type": "stdlib"
+    },
+    "migration_steps": [],
+    "suggested_tests": [],
+    "gap_analysis": [
+      "Candidate rejected by validation gate: API coverage below 100% (0%)"
+    ],
+    "provenance": {
+      "provider": "ollama",
+      "model_id": "llama3.2:3b",
+      "model_license_name": "LLAMA 3.2 COMMUNITY LICENSE AGREEMENT",
+      "model_card_url": "https://ollama.com/library/llama3.2",
+      "prompt_sha256": "0a862eaec0d674524a10f902b5aa0d385f7ef073ebf4a2ef1dd7563fbc895527",
+      "raw_response_path": "assets/runs/Pradnyadange__Float-Chat__48d6102c/evidence/langchain-community_raw_model_response.json",
+      "secret_redactions_count": 0,
+      "trust_check": {
+        "skipped": false,
+        "candidate_name": "transformers",
+        "candidate_type": "pypi",
+        "first_release_date": "2016-08-17T06:13:12.929751Z",
+        "release_count": 247,
+        "last_release_date": "2026-10-19T17:46:03.092052Z",
+        "project_urls": {
+          "Homepage": "https://github.com/huggingface/transformers"
+        },
+        "has_source_repo_url": true,
+        "min_edit_distance_to_popular": 6,
+        "closest_popular_package": "s3transfer",
+        "needs_human_review": false,
+        "reasons": []
+      },
+      "validation": {
+        "passed": false,
+        "api_coverage": 0.0,
+        "rejected_candidates": [
+          "Candidate transformers missing symbols: DirectoryLoader, HuggingFaceEmbeddings"
+        ]
+      }
+    }
+  },
+  "status": "unverified",
+  "limitations": [
+    "Static analysis mode only: test execution not run.",
+    "Public repositories and Python projects only.",
+    "Small models can propose weak replacements; validation gate determines acceptance."
+  ]
+}

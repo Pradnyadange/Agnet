@@ -1,0 +1,4 @@
+{ "proposed_replacement": {"name": "pathlib", "type": "stdlib"}, 
+"migration_steps": ["Replace `import six` with `import pathlib`", "Update code to use pathlib API for path manipulation."], 
+"suggested_tests": ["Verify pathlib import and usage", "Check for regressions in path manipulation."], 
+"gap_analysis": ["Potential incompatibility: pathlib API differences might require additional updates depending on the specific usage sites."] }

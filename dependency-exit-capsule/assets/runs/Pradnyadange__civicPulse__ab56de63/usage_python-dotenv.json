@@ -1,0 +1,42 @@
+{
+  "dependency": "python-dotenv",
+  "files_scanned": 15,
+  "dynamic_imports": [],
+  "usage_locations": [
+    {
+      "file": "llm/agents.py",
+      "line": 4,
+      "symbol": "dotenv.load_dotenv",
+      "kind": "import",
+      "covered_by_tests": false
+    },
+    {
+      "file": "llm/llm_client.py",
+      "line": 3,
+      "symbol": "dotenv.load_dotenv",
+      "kind": "import",
+      "covered_by_tests": false
+    },
+    {
+      "file": "llm/llm_client.py",
+      "line": 5,
+      "symbol": "load_dotenv",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "mongodb/mongo_client.py",
+      "line": 3,
+      "symbol": "dotenv.load_dotenv",
+      "kind": "import",
+      "covered_by_tests": false
+    },
+    {
+      "file": "mongodb/mongo_client.py",
+      "line": 5,
+      "symbol": "load_dotenv",
+      "kind": "call",
+      "covered_by_tests": false
+    }
+  ]
+}

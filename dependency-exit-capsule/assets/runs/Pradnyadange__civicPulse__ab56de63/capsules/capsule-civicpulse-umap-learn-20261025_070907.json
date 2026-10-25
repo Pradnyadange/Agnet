@@ -1,0 +1,128 @@
+{
+  "schema_version": "2.0.0",
+  "capsule_id": "capsule-civicpulse-umap-learn-20261025_070907",
+  "generated_at": "2026-10-25T07:09:07.559392+00:00",
+  "capsule_type": "replacement",
+  "target_repo": {
+    "name": "civicPulse",
+    "url": "https://github.com/Pradnyadange/civicPulse",
+    "commit_sha": "ab56de63bfc3db719c675c0390455df7db4525e0",
+    "python_version": "3.14.6"
+  },
+  "maintenance_problem": "Dependency 'umap-learn' analyzed during static risk triage.",
+  "dependency": {
+    "name": "umap-learn",
+    "declared_specifier": "",
+    "declared_in": [
+      "requirements.txt"
+    ]
+  },
+  "observed": {
+    "risk_indicators": [
+      {
+        "id": "days_since_release",
+        "value": 199,
+        "source_url": "https://pypi.org/pypi/umap-learn/json",
+        "fetched_at": "2026-10-25T07:07:16.258669+00:00"
+      },
+      {
+        "id": "yanked",
+        "value": false,
+        "source_url": "https://pypi.org/pypi/umap-learn/json",
+        "fetched_at": "2026-10-25T07:07:16.258669+00:00"
+      }
+    ],
+    "scan": {
+      "files_scanned": 15,
+      "dynamic_imports": []
+    },
+    "usage_locations": [
+      {
+        "file": "mongodb/clustering_pipeline.py",
+        "line": 10,
+        "symbol": "umap.umap_",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "mongodb/clustering_pipeline.py",
+        "line": 67,
+        "symbol": "UMAP",
+        "kind": "call",
+        "covered_by_tests": false
+      }
+    ],
+    "test_results": {
+      "baseline": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "candidate": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "new_failures": [],
+      "pip_check": {
+        "baseline": "Tests not run in static analyze mode.",
+        "candidate": "Tests not run in static analyze mode."
+      }
+    },
+    "evidence": [
+      {
+        "path": "assets/runs/Pradnyadange__civicPulse__ab56de63/evidence/umap-learn_raw_model_response.json",
+        "sha256": "33c69c5957db314da8ca9c6838c6d299617531401c77bef37ba0a94c28204b96",
+        "command": "ollama run llama3.1:8b",
+        "exit_code": 0,
+        "captured_at": "2026-10-25T07:09:07.559356+00:00"
+      }
+    ],
+    "trust_check": {
+      "skipped": true,
+      "candidate_type": "stdlib",
+      "needs_human_review": false,
+      "reasons": []
+    },
+    "secret_redactions_count": 0
+  },
+  "ai_generated": {
+    "proposed_replacement": {
+      "name": "no_valid_proposal",
+      "type": "stdlib"
+    },
+    "migration_steps": [],
+    "suggested_tests": [],
+    "gap_analysis": [
+      "Candidate rejected by validation gate: not in stdlib"
+    ],
+    "provenance": {
+      "provider": "ollama",
+      "model_id": "llama3.1:8b",
+      "model_license_name": "LLAMA 3.1 COMMUNITY LICENSE AGREEMENT",
+      "model_card_url": "https://ollama.com/library/llama3.1",
+      "prompt_sha256": "4d2e4ed4e1a31fc3e1d860631482b00cd81f2212cecb4a4ea5057dee8f8f4504",
+      "raw_response_path": "assets/runs/Pradnyadange__civicPulse__ab56de63/evidence/umap-learn_raw_model_response.json",
+      "secret_redactions_count": 0,
+      "trust_check": {
+        "skipped": true,
+        "candidate_type": "stdlib",
+        "needs_human_review": false,
+        "reasons": []
+      },
+      "validation": {
+        "passed": false,
+        "api_coverage": 0.0,
+        "rejected_candidates": [
+          "scipy is not in sys.stdlib_module_names"
+        ]
+      }
+    }
+  },
+  "status": "unverified",
+  "limitations": [
+    "Static analysis mode only: test execution not run.",
+    "Public repositories and Python projects only.",
+    "Small models can propose weak replacements; validation gate determines acceptance."
+  ]
+}
