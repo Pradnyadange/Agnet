@@ -1,0 +1,41 @@
+{
+  "nose": {
+    "pip_code": 0,
+    "pip_output": "No broken requirements found.",
+    "pytest_code": 0,
+    "junit": {
+      "passed": 10,
+      "failed": 0,
+      "skipped": 0,
+      "failures": []
+    },
+    "junit_path": "D:/Agent/dependency-exit-capsule/assets/runs/20261023_232609/evidence/nose_removal_junit.xml",
+    "cov_path": "D:/Agent/dependency-exit-capsule/assets/runs/20261023_232609/evidence/nose_removal_coverage.json"
+  },
+  "appdirs": {
+    "pip_code": 0,
+    "pip_output": "No broken requirements found.",
+    "pytest_code": 0,
+    "junit": {
+      "passed": 10,
+      "failed": 0,
+      "skipped": 0,
+      "failures": []
+    },
+    "junit_path": "D:/Agent/dependency-exit-capsule/assets/runs/20261023_232609/evidence/appdirs_platformdirs_junit.xml",
+    "cov_path": "D:/Agent/dependency-exit-capsule/assets/runs/20261023_232609/evidence/appdirs_platformdirs_coverage.json"
+  },
+  "toml": {
+    "pip_code": 0,
+    "pip_output": "No broken requirements found.",
+    "pytest_code": 0,
+    "junit": {
+      "passed": 10,
+      "failed": 0,
+      "skipped": 0,
+      "failures": []
+    },
+    "junit_path": "D:/Agent/dependency-exit-capsule/assets/runs/20261023_232609/evidence/toml_tomllib_junit.xml",
+    "cov_path": "D:/Agent/dependency-exit-capsule/assets/runs/20261023_232609/evidence/toml_tomllib_coverage.json"
+  }
+}

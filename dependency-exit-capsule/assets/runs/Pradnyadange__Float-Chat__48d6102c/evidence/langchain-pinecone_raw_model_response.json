@@ -1,0 +1,9 @@
+{
+  "proposed_replacement": {
+    "name": "huggingface/datasets",
+    "type": "pypi"
+  },
+  "migration_steps": ["Update `langchain_pinecone.PineconeVectorStore` to `datasets.PineconeDataset`", "Migrate `langchain_pinecone.PineconeVectorizer` to `datasets.PineconeVectorizer`"],
+  "suggested_tests": ["Test `datasets.PineconeDataset` usage", "Test `datasets.PineconeVectorizer` usage"],
+  "gap_analysis": ["Potential incompatibility: `langchain_pinecone.PineconeVectorStore` depends on deprecated `pinecone` library; `huggingface/datasets` uses the modern `pinecone` library instead."]
+}

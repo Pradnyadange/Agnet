@@ -1,0 +1,21 @@
+{
+  "dependency": "toml",
+  "files_scanned": 15,
+  "dynamic_imports": [],
+  "usage_locations": [
+    {
+      "file": "linkwatch/config.py",
+      "line": 3,
+      "symbol": "toml",
+      "kind": "import",
+      "covered_by_tests": false
+    },
+    {
+      "file": "linkwatch/config.py",
+      "line": 37,
+      "symbol": "load",
+      "kind": "call",
+      "covered_by_tests": false
+    }
+  ]
+}

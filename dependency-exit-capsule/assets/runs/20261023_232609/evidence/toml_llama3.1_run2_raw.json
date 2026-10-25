@@ -1,0 +1,14 @@
+{
+  "proposed_replacement": {"name": "tomli", "type": "pypi"},
+  "migration_steps": [
+    "Replace all `import toml` statements with `import tomli` in the `config.py` file.",
+    "Update the `load` function calls to use `tomli.load()` instead of `toml.load()`."
+  ],
+  "suggested_tests": [
+    "Test that the `config.py` file can load TOML files correctly with `tomli`.",
+    "Verify that the migration does not break any other parts of the codebase."
+  ],
+  "gap_analysis": [
+    "Potential incompatibility with Python versions prior to 3.12, as `tomli` is a Python 3.12+ native alternative."
+  ]
+}

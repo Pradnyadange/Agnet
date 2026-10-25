@@ -1,0 +1,26 @@
+{
+  "proposed_replacement": {
+    "name": "no_valid_proposal",
+    "type": "stdlib"
+  },
+  "migration_steps": [],
+  "suggested_tests": [],
+  "gap_analysis": [
+    "No rule-based migration found for this package in offline mode."
+  ],
+  "provenance": {
+    "provider": "rule_based_knowledge_base",
+    "model_id": "none",
+    "model_license_name": "N/A",
+    "model_card_url": "N/A",
+    "prompt_sha256": "N/A",
+    "raw_response_path": "N/A",
+    "validation": {
+      "passed": false,
+      "api_coverage": 0.0,
+      "rejected_candidates": [
+        "no_valid_proposal"
+      ]
+    }
+  }
+}

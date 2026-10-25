@@ -1,0 +1,14 @@
+{
+  "dependency": "langchain-pinecone",
+  "files_scanned": 6,
+  "dynamic_imports": [],
+  "usage_locations": [
+    {
+      "file": "store_index.py",
+      "line": 5,
+      "symbol": "langchain_pinecone.PineconeVectorStore",
+      "kind": "import",
+      "covered_by_tests": false
+    }
+  ]
+}

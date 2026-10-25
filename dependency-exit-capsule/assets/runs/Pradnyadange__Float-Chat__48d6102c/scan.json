@@ -1,0 +1,176 @@
+{
+  "repo_path": "C:\\Users\\pradn\\AppData\\Local\\Temp\\dec_repo_vy25t_9h",
+  "repo_url": "https://github.com/Pradnyadange/Float-Chat",
+  "commit_sha": "48d6102ca918f8714b52d6a72a2933f2c99aab5f",
+  "scanned_at": "2026-10-24T20:13:25.316553+00:00",
+  "dependencies": {
+    "langchain": {
+      "name": "langchain",
+      "declared_specifier": "==0.3.26",
+      "declared_in": [
+        "requirements.txt"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 2,
+          "source_url": "https://pypi.org/pypi/langchain/json",
+          "fetched_at": "2026-10-24T20:13:23.484817+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/langchain/json",
+          "fetched_at": "2026-10-24T20:13:23.484817+00:00"
+        }
+      ]
+    },
+    "flask": {
+      "name": "flask",
+      "declared_specifier": "==3.1.1",
+      "declared_in": [
+        "requirements.txt"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 247,
+          "source_url": "https://pypi.org/pypi/flask/json",
+          "fetched_at": "2026-10-24T20:13:23.636219+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/flask/json",
+          "fetched_at": "2026-10-24T20:13:23.636219+00:00"
+        }
+      ]
+    },
+    "sentence-transformers": {
+      "name": "sentence-transformers",
+      "declared_specifier": "==4.1.0",
+      "declared_in": [
+        "requirements.txt"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 3,
+          "source_url": "https://pypi.org/pypi/sentence-transformers/json",
+          "fetched_at": "2026-10-24T20:13:23.938833+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/sentence-transformers/json",
+          "fetched_at": "2026-10-24T20:13:23.938833+00:00"
+        }
+      ]
+    },
+    "pypdf": {
+      "name": "pypdf",
+      "declared_specifier": "==5.6.1",
+      "declared_in": [
+        "requirements.txt"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 3,
+          "source_url": "https://pypi.org/pypi/pypdf/json",
+          "fetched_at": "2026-10-24T20:13:24.276198+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/pypdf/json",
+          "fetched_at": "2026-10-24T20:13:24.276198+00:00"
+        }
+      ]
+    },
+    "python-dotenv": {
+      "name": "python-dotenv",
+      "declared_specifier": "==1.1.0",
+      "declared_in": [
+        "requirements.txt"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 23,
+          "source_url": "https://pypi.org/pypi/python-dotenv/json",
+          "fetched_at": "2026-10-24T20:13:24.356555+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/python-dotenv/json",
+          "fetched_at": "2026-10-24T20:13:24.356555+00:00"
+        }
+      ]
+    },
+    "langchain-pinecone": {
+      "name": "langchain-pinecone",
+      "declared_specifier": "==0.2.8",
+      "declared_in": [
+        "requirements.txt"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 356,
+          "source_url": "https://pypi.org/pypi/langchain-pinecone/json",
+          "fetched_at": "2026-10-24T20:13:24.657539+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/langchain-pinecone/json",
+          "fetched_at": "2026-10-24T20:13:24.657539+00:00"
+        }
+      ]
+    },
+    "langchain-openai": {
+      "name": "langchain-openai",
+      "declared_specifier": "==0.3.24",
+      "declared_in": [
+        "requirements.txt"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 10,
+          "source_url": "https://pypi.org/pypi/langchain-openai/json",
+          "fetched_at": "2026-10-24T20:13:24.931246+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/langchain-openai/json",
+          "fetched_at": "2026-10-24T20:13:24.931246+00:00"
+        }
+      ]
+    },
+    "langchain-community": {
+      "name": "langchain-community",
+      "declared_specifier": "==0.3.26",
+      "declared_in": [
+        "requirements.txt"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 155,
+          "source_url": "https://pypi.org/pypi/langchain-community/json",
+          "fetched_at": "2026-10-24T20:13:25.235525+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/langchain-community/json",
+          "fetched_at": "2026-10-24T20:13:25.235525+00:00"
+        }
+      ]
+    }
+  }
+}

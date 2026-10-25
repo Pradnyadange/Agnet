@@ -1,0 +1,6 @@
+{
+  "proposed_replacement": {"name": "typer", "type": "pypi"},
+  "migration_steps": ["Update import statements to use 'typer' package", "Replace 'rich.console.Console' with 'typer.terminal.Terminal'", "Replace 'rich.table.Table' with 'typer.tables.Table'"],
+  "suggested_tests": ["Verify console output", "Verify table formatting"],
+  "gap_analysis": ["Potential incompatibility with 'rich' package configuration"]
+}

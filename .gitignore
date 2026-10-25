@@ -8,3 +8,5 @@ coverage.json
 junit.xml
 targets/
 scratch/
+work/
+.env

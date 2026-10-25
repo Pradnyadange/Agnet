@@ -1,0 +1,19 @@
+{
+  "proposed_replacement": {
+    "name": "transformers",
+    "type": "pypi"
+  },
+  "migration_steps": [
+    "Update DirectoryLoader to transformer.HuggingFaceDirectoryLoader",
+    "Update PyPDFLoader to transformer.PyPDFLoader",
+    "Update HuggingFaceEmbeddings to transformer.HuggingFaceEmbeddings"
+  ],
+  "suggested_tests": [
+    "test transformers DirectoryLoader",
+    "test transformers PyPDFLoader",
+    "test transformers HuggingFaceEmbeddings"
+  ],
+  "gap_analysis": [
+    "Potential incompatibility: transformer.HuggingFaceDirectoryLoader may not handle non- PDF documents"
+  ]
+}

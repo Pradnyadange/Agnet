@@ -1,0 +1,9 @@
+{
+  "proposed_replacement": {"name": "unittest", "type": "stdlib"},
+  "migration_steps": [
+    "Update test files to use unittest instead of nose",
+    "Replace nose-specific import statements with unittest imports"
+  ],
+  "suggested_tests": ["Verify test suite execution with unittest"],
+  "gap_analysis": ["nose is deprecated and unmaintained, requiring replacement for modern Python projects"]
+}

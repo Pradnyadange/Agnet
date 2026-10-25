@@ -1,0 +1,118 @@
+{
+  "schema_version": "2.0.0",
+  "capsule_id": "capsule-linkwatch-six-20261024_201305",
+  "generated_at": "2026-10-24T20:13:05.033085+00:00",
+  "capsule_type": "unused_dependency",
+  "target_repo": {
+    "name": "LinkWatch",
+    "url": "https://github.com/rishrek/LinkWatch",
+    "commit_sha": "f52f3930c8e7c33d934ccf614955a38e26984bd5",
+    "python_version": "3.14.6"
+  },
+  "maintenance_problem": "Dependency 'six' analyzed during static risk triage.",
+  "dependency": {
+    "name": "six",
+    "declared_specifier": "",
+    "declared_in": [
+      "requirements.txt",
+      "pyproject.toml"
+    ]
+  },
+  "observed": {
+    "risk_indicators": [
+      {
+        "id": "days_since_release",
+        "value": 689,
+        "source_url": "https://pypi.org/pypi/six/json",
+        "fetched_at": "2026-10-24T20:09:08.711173+00:00"
+      },
+      {
+        "id": "yanked",
+        "value": false,
+        "source_url": "https://pypi.org/pypi/six/json",
+        "fetched_at": "2026-10-24T20:09:08.711173+00:00"
+      }
+    ],
+    "scan": {
+      "files_scanned": 15,
+      "dynamic_imports": []
+    },
+    "usage_locations": [],
+    "test_results": {
+      "baseline": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "candidate": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "new_failures": [],
+      "pip_check": {
+        "baseline": "Tests not run in static analyze mode.",
+        "candidate": "Tests not run in static analyze mode."
+      }
+    },
+    "evidence": [
+      {
+        "path": "assets/runs/rishrek__LinkWatch__f52f3930/evidence/six_raw_model_response.json",
+        "sha256": "7c9c95d8d942c63698d7731ef1d319e770d813ef1f9cad08ca4d744307469569",
+        "command": "ollama run llama3.1:8b",
+        "exit_code": 0,
+        "captured_at": "2026-10-24T20:13:05.033056+00:00"
+      }
+    ],
+    "trust_check": {
+      "skipped": true,
+      "candidate_type": "stdlib",
+      "needs_human_review": false,
+      "reasons": []
+    },
+    "secret_redactions_count": 0
+  },
+  "ai_generated": {
+    "proposed_replacement": {
+      "name": "pathlib",
+      "type": "stdlib"
+    },
+    "migration_steps": [
+      "Replace `import six` with `import pathlib`",
+      "Update code to use pathlib API for path manipulation."
+    ],
+    "suggested_tests": [
+      "Verify pathlib import and usage",
+      "Check for regressions in path manipulation."
+    ],
+    "gap_analysis": [
+      "Potential incompatibility: pathlib API differences might require additional updates depending on the specific usage sites."
+    ],
+    "provenance": {
+      "provider": "ollama",
+      "model_id": "llama3.1:8b",
+      "model_license_name": "LLAMA 3.1 COMMUNITY LICENSE AGREEMENT",
+      "model_card_url": "https://ollama.com/library/llama3.1",
+      "prompt_sha256": "3dad0f87cd27a113e0410fabf9dd70d1c760e530a95d87e31e23fff0309e0053",
+      "raw_response_path": "assets/runs/rishrek__LinkWatch__f52f3930/evidence/six_raw_model_response.json",
+      "secret_redactions_count": 0,
+      "trust_check": {
+        "skipped": true,
+        "candidate_type": "stdlib",
+        "needs_human_review": false,
+        "reasons": []
+      },
+      "validation": {
+        "passed": true,
+        "api_coverage": 1.0,
+        "rejected_candidates": []
+      }
+    }
+  },
+  "status": "not_testable",
+  "limitations": [
+    "Static analysis mode only: test execution not run.",
+    "Public repositories and Python projects only.",
+    "Small models can propose weak replacements; validation gate determines acceptance."
+  ]
+}

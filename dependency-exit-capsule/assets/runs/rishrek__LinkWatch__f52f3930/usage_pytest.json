@@ -1,0 +1,21 @@
+{
+  "dependency": "pytest",
+  "files_scanned": 15,
+  "dynamic_imports": [],
+  "usage_locations": [
+    {
+      "file": "tests/conftest.py",
+      "line": 6,
+      "symbol": "pytest",
+      "kind": "import",
+      "covered_by_tests": false
+    },
+    {
+      "file": "tests/conftest.py",
+      "line": 60,
+      "symbol": "fixture",
+      "kind": "call",
+      "covered_by_tests": false
+    }
+  ]
+}

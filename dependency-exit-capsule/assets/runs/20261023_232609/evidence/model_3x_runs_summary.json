@@ -1,0 +1,237 @@
+{
+  "nose": {
+    "prompt_sha256": "074d89f5f1820f35df1d877b47e6bb2c0eaf44284d16ea5d78a896e65ab02c66",
+    "runs": [
+      {
+        "run_index": 1,
+        "duration_seconds": 94.26,
+        "valid_json": true,
+        "proposed_name": "unittest",
+        "proposed_type": "stdlib",
+        "raw_response_path": "D:/Agent/dependency-exit-capsule/assets/runs/20261023_232609/evidence/nose_llama3.1_run1_raw.json",
+        "generated_json": {
+          "proposed_replacement": {
+            "name": "unittest",
+            "type": "stdlib"
+          },
+          "migration_steps": [
+            "Update import statements to use unittest",
+            "Replace nose-specific code with unittest APIs"
+          ],
+          "suggested_tests": [
+            "Test that unittest replacement works as expected",
+            "Verify that all nose-specific tests pass with unittest"
+          ],
+          "gap_analysis": [
+            "nose has been deprecated since 2016 and is no longer maintained"
+          ]
+        }
+      },
+      {
+        "run_index": 2,
+        "duration_seconds": 22.95,
+        "valid_json": true,
+        "proposed_name": "unittest",
+        "proposed_type": "stdlib",
+        "raw_response_path": "D:/Agent/dependency-exit-capsule/assets/runs/20261023_232609/evidence/nose_llama3.1_run2_raw.json",
+        "generated_json": {
+          "proposed_replacement": {
+            "name": "unittest",
+            "type": "stdlib"
+          },
+          "migration_steps": [
+            "Update test files to use unittest instead of nose",
+            "Replace nose-specific import statements with unittest imports"
+          ],
+          "suggested_tests": [
+            "Verify test suite execution with unittest"
+          ],
+          "gap_analysis": [
+            "nose is deprecated and unmaintained, requiring replacement for modern Python projects"
+          ]
+        }
+      },
+      {
+        "run_index": 3,
+        "duration_seconds": 28.2,
+        "valid_json": true,
+        "proposed_name": "unittest",
+        "proposed_type": "stdlib",
+        "raw_response_path": "D:/Agent/dependency-exit-capsule/assets/runs/20261023_232609/evidence/nose_llama3.1_run3_raw.json",
+        "generated_json": {
+          "proposed_replacement": {
+            "name": "unittest",
+            "type": "stdlib"
+          },
+          "migration_steps": [
+            "Update your tests to use the unittest module instead of nose.",
+            "Remove nose from your requirements.txt"
+          ],
+          "suggested_tests": [
+            "Check that all tests are running without any errors.",
+            "Verify that no new tests are failing after the migration"
+          ],
+          "gap_analysis": [
+            "nose is an older testing framework and does not have the same level of support as unittest."
+          ]
+        }
+      }
+    ]
+  },
+  "appdirs": {
+    "prompt_sha256": "ae3165020796f5bed7d94eff5a9c767d9d3a9795a90fc7df0f253817a6febbea",
+    "runs": [
+      {
+        "run_index": 1,
+        "duration_seconds": 55.22,
+        "valid_json": true,
+        "proposed_name": "platformdirs",
+        "proposed_type": "pypi",
+        "raw_response_path": "D:/Agent/dependency-exit-capsule/assets/runs/20261023_232609/evidence/appdirs_llama3.1_run1_raw.json",
+        "generated_json": {
+          "proposed_replacement": {
+            "name": "platformdirs",
+            "type": "pypi"
+          },
+          "migration_steps": [
+            "Install `platformdirs` using pip: `pip install platformdirs`",
+            "Update `linkwatch/cache.py` to import from `platformdirs`: `from platformdirs import user_cache_dir`",
+            "Replace `appdirs.user_cache_dir` with `user_cache_dir` in `linkwatch/cache.py`"
+          ],
+          "suggested_tests": [
+            "Test that `user_cache_dir` returns the correct path for user cache directory"
+          ],
+          "gap_analysis": [
+            "Potential incompatibility: `platformdirs` may have different behavior or API changes compared to `appdirs`",
+            "Potential incompatibility: `platformdirs` may not be compatible with Python versions prior to 3.12"
+          ]
+        }
+      },
+      {
+        "run_index": 2,
+        "duration_seconds": 32.02,
+        "valid_json": true,
+        "proposed_name": "platformdirs",
+        "proposed_type": "pypi",
+        "raw_response_path": "D:/Agent/dependency-exit-capsule/assets/runs/20261023_232609/evidence/appdirs_llama3.1_run2_raw.json",
+        "generated_json": {
+          "proposed_replacement": {
+            "name": "platformdirs",
+            "type": "pypi"
+          },
+          "migration_steps": [
+            "Remove `appdirs` from dependencies",
+            "Update `linkwatch/cache.py` to import `platformdirs`",
+            "Replace `user_cache_dir` calls with `platformdirs.user_cache_dir`",
+            "Verify API coverage of required symbols"
+          ],
+          "suggested_tests": [
+            "Test `platformdirs` usage in `linkwatch/cache.py`"
+          ],
+          "gap_analysis": [
+            "No known incompatibilities with `platformdirs`"
+          ]
+        }
+      },
+      {
+        "run_index": 3,
+        "duration_seconds": 35.93,
+        "valid_json": true,
+        "proposed_name": "pathlib",
+        "proposed_type": "stdlib",
+        "raw_response_path": "D:/Agent/dependency-exit-capsule/assets/runs/20261023_232609/evidence/appdirs_llama3.1_run3_raw.json",
+        "generated_json": {
+          "proposed_replacement": {
+            "name": "pathlib",
+            "type": "stdlib"
+          },
+          "migration_steps": [
+            "Migrate all imports from appdirs to pathlib",
+            "Update code to use pathlib.Path instead of appdirs.user_cache_dir for user cache directories"
+          ],
+          "suggested_tests": [
+            "Verify that pathlib.Path returns the correct cache directory",
+            "Test that the migration did not break any other functionality"
+          ],
+          "gap_analysis": [
+            "Potential incompatibility: pathlib's API is slightly different from appdirs' API, but it is a widely-used and well-maintained package."
+          ]
+        }
+      }
+    ]
+  },
+  "toml": {
+    "prompt_sha256": "5f58affe6a27c57ed10d1068f213805ab98cd6a62c8b13e07c290ec5dab3db9a",
+    "runs": [
+      {
+        "run_index": 1,
+        "duration_seconds": 30.35,
+        "valid_json": true,
+        "proposed_name": "tomlib",
+        "proposed_type": "stdlib",
+        "raw_response_path": "D:/Agent/dependency-exit-capsule/assets/runs/20261023_232609/evidence/toml_llama3.1_run1_raw.json",
+        "generated_json": {
+          "proposed_replacement": {
+            "name": "tomlib",
+            "type": "stdlib"
+          },
+          "migration_steps": [
+            "Update import statement in linkwatch/config.py to use tomllib",
+            "Verify the load function is correctly using tomllib"
+          ],
+          "suggested_tests": [
+            "Test load function with tomllib"
+          ],
+          "gap_analysis": []
+        }
+      },
+      {
+        "run_index": 2,
+        "duration_seconds": 42.46,
+        "valid_json": true,
+        "proposed_name": "tomli",
+        "proposed_type": "pypi",
+        "raw_response_path": "D:/Agent/dependency-exit-capsule/assets/runs/20261023_232609/evidence/toml_llama3.1_run2_raw.json",
+        "generated_json": {
+          "proposed_replacement": {
+            "name": "tomli",
+            "type": "pypi"
+          },
+          "migration_steps": [
+            "Replace all `import toml` statements with `import tomli` in the `config.py` file.",
+            "Update the `load` function calls to use `tomli.load()` instead of `toml.load()`."
+          ],
+          "suggested_tests": [
+            "Test that the `config.py` file can load TOML files correctly with `tomli`.",
+            "Verify that the migration does not break any other parts of the codebase."
+          ],
+          "gap_analysis": [
+            "Potential incompatibility with Python versions prior to 3.12, as `tomli` is a Python 3.12+ native alternative."
+          ]
+        }
+      },
+      {
+        "run_index": 3,
+        "duration_seconds": 29.21,
+        "valid_json": true,
+        "proposed_name": "tomli",
+        "proposed_type": "pypi",
+        "raw_response_path": "D:/Agent/dependency-exit-capsule/assets/runs/20261023_232609/evidence/toml_llama3.1_run3_raw.json",
+        "generated_json": {
+          "proposed_replacement": {
+            "name": "tomli",
+            "type": "pypi"
+          },
+          "migration_steps": [
+            "Update the import statement in linkwatch/config.py to use tomli instead of toml.",
+            "Review the usage of the load function in linkwatch/config.py and ensure it is compatible with the new tomli library."
+          ],
+          "suggested_tests": [
+            "Test the new tomli library in linkwatch/config.py, ensuring it loads configuration correctly."
+          ],
+          "gap_analysis": []
+        }
+      }
+    ]
+  }
+}

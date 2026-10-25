@@ -1,0 +1,177 @@
+{
+  "schema_version": "2.0.0",
+  "capsule_id": "capsule-linkwatch-appdirs-20261023_232609",
+  "capsule_type": "replacement",
+  "generated_at": "2026-10-24T18:45:00Z",
+  "status": "verified",
+  "maintenance_problem": "appdirs 1.4.4 has had no releases in >2350 days; actively maintained platformdirs is the drop-in community replacement.",
+  "target_repo": {
+    "name": "LinkWatch",
+    "url": "https://github.com/rishrek/LinkWatch",
+    "commit_sha": "f52f3930c8e7c33d934ccf614955a38e26984bd5",
+    "python_version": "3.12.10"
+  },
+  "dependency": {
+    "name": "appdirs",
+    "declared_specifier": "==1.4.4",
+    "declared_in": [
+      "requirements.txt",
+      "pyproject.toml"
+    ]
+  },
+  "observed": {
+    "risk_indicators": [
+      {
+        "id": "days_since_latest_release",
+        "value": 2357,
+        "source_url": "https://pypi.org/pypi/appdirs/json",
+        "fetched_at": "2026-10-24T18:45:00Z"
+      },
+      {
+        "id": "pinned_version_release_date",
+        "value": "2020-05-11T07:59:49.499913Z",
+        "source_url": "https://pypi.org/pypi/appdirs/json",
+        "fetched_at": "2026-10-24T18:45:00Z"
+      },
+      {
+        "id": "versions_behind_latest",
+        "value": 0,
+        "source_url": "https://pypi.org/pypi/appdirs/json",
+        "fetched_at": "2026-10-24T18:45:00Z"
+      }
+    ],
+    "scan": {
+      "files_scanned": 15,
+      "dynamic_imports": []
+    },
+    "non_python_references": [
+      {
+        "file": "pyproject.toml",
+        "line": 14,
+        "match_term": "appdirs",
+        "line_content": "\"appdirs==1.4.4\","
+      },
+      {
+        "file": "requirements.txt",
+        "line": 2,
+        "match_term": "appdirs",
+        "line_content": "appdirs==1.4.4"
+      }
+    ],
+    "usage_locations": [
+      {
+        "file": "linkwatch/cache.py",
+        "line": 4,
+        "symbol": "appdirs.user_cache_dir",
+        "kind": "import",
+        "covered_by_tests": true
+      },
+      {
+        "file": "linkwatch/cache.py",
+        "line": 10,
+        "symbol": "user_cache_dir",
+        "kind": "call",
+        "covered_by_tests": true
+      }
+    ],
+    "test_results": {
+      "baseline": {
+        "passed": 9,
+        "failed": 1,
+        "junit_path": "assets/runs/20261023_232609/evidence/baseline/junit.xml"
+      },
+      "candidate": {
+        "passed": 10,
+        "failed": 0,
+        "junit_path": "assets/runs/20261023_232609/evidence/appdirs_platformdirs_junit.xml"
+      },
+      "new_failures": [],
+      "pip_check": {
+        "baseline": "No broken requirements found.",
+        "candidate": "No broken requirements found."
+      }
+    },
+    "evidence": [
+      {
+        "path": "assets/runs/20261023_232609/evidence/appdirs_platformdirs_pip_check.txt",
+        "sha256": "9bc9eff87ccde9a897a86ea3cf9096facadba3cc998bc2b74cc3d856cf1cc971",
+        "command": "python -m pip check",
+        "exit_code": 0,
+        "captured_at": "2026-10-24T18:45:00Z"
+      },
+      {
+        "path": "assets/runs/20261023_232609/evidence/appdirs_platformdirs_junit.xml",
+        "sha256": "cfe51e584455402fc6d004cb5060c873b2e37b5e96c9613bbea86ce4c34fe88e",
+        "command": "python -m pytest --junitxml=appdirs_platformdirs_junit.xml",
+        "exit_code": 0,
+        "captured_at": "2026-10-24T18:45:00Z"
+      },
+      {
+        "path": "assets/runs/20261023_232609/evidence/appdirs_platformdirs_coverage.json",
+        "sha256": "f3a84ad2d772df8972c9a0ac7b325103c37a4a7300e8cbfe2aafaffd6db1d083",
+        "command": "python -m pytest --cov=linkwatch",
+        "exit_code": 0,
+        "captured_at": "2026-10-24T18:45:00Z"
+      },
+      {
+        "path": "assets/runs/20261023_232609/evidence/appdirs_llama3.1_run1_raw.json",
+        "sha256": "b1c4fa4ee74c41b847481b265fff3c15fb785b89964aa41167fdf9d3b1b5beec",
+        "command": "ollama run llama3.1:8b (prompt sha: ae3165020796f5be)",
+        "exit_code": 0,
+        "captured_at": "2026-10-24T18:45:00Z"
+      },
+      {
+        "path": "assets/runs/20261023_232609/evidence/equivalence_checks/appdirs_equivalence.json",
+        "sha256": "0ff98281c419537d5764a6706092cbdaa086364cb009d649f20cf2735ad0ed2c",
+        "command": "compare appdirs vs platformdirs user_cache_dir('linkwatch')",
+        "exit_code": 0,
+        "captured_at": "2026-10-24T18:45:00Z"
+      },
+      {
+        "path": "assets/runs/20261023_232609/evidence/non_python_references.json",
+        "sha256": "23e626f96c65ffd9c712235bcc81606f1cebdf2b6c315288f068b8a57c3e0e46",
+        "command": "scan non-python repository files",
+        "exit_code": 0,
+        "captured_at": "2026-10-24T18:45:00Z"
+      }
+    ]
+  },
+  "ai_generated": {
+    "proposed_replacement": {
+      "name": "platformdirs",
+      "type": "pypi"
+    },
+    "migration_steps": [
+      "Replace appdirs==1.4.4 with platformdirs==4.13.5 in requirements.txt and pyproject.toml",
+      "Update linkwatch/cache.py from 'from appdirs import user_cache_dir' to 'from platformdirs import user_cache_dir'",
+      "Run test suite and verify cache directory creation"
+    ],
+    "suggested_tests": [
+      "Test user_cache_dir('linkwatch') returns valid path and creates cache folder"
+    ],
+    "gap_analysis": [
+      "Observed equivalence check: identical return value on Windows ('AppData/Local/linkwatch/linkwatch/Cache')",
+      "Python version compatibility: platformdirs requires >=3.11, LinkWatch requires >=3.10; on Python 3.10 environments platformdirs would not install."
+    ],
+    "provenance": {
+      "provider": "ollama",
+      "model_id": "llama3.1:8b",
+      "model_license_name": "Llama 3.1 Community License",
+      "model_card_url": "https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/MODEL_CARD.md",
+      "prompt_sha256": "ae3165020796f5bef0fec2753a99e84fcfa42f63f5383a1a629b3ae3ec8ec12f",
+      "raw_response_path": "assets/runs/20261023_232609/evidence/appdirs_llama3.1_run1_raw.json",
+      "applied_model_run": "Run 1 of 3 (selected by majority voting: platformdirs appeared in 2 of 3 runs; Run 3 proposed pathlib which was rejected by API gate with 0% coverage)",
+      "validation": {
+        "passed": true,
+        "api_coverage": 1.0,
+        "rejected_candidates": [
+          "pathlib"
+        ]
+      }
+    }
+  },
+  "limitations": [
+    "verified for the existing test suite on Windows 10/11 x64 / Python 3.12.10 in a copy; original unchanged; 2 tests exercise the changed lines (tests/test_cache.py)",
+    "Equivalence testing confirmed on Windows x64 and Python 3.12 only. On macOS/Linux path differences exist due to platform standards (XDG vs legacy macOS Library/Caches)."
+  ]
+}

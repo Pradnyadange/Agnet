@@ -1,0 +1,38 @@
+{
+  "proposed_replacement": {
+    "name": "platformdirs",
+    "type": "pypi"
+  },
+  "migration_steps": [
+    "Replace 'appdirs' with 'platformdirs' in requirements.txt",
+    "Update import statements from 'import appdirs' to 'import platformdirs as appdirs' or rename usages to 'platformdirs'",
+    "Verify directory paths match platform standard directories"
+  ],
+  "suggested_tests": [
+    "Validate user_cache_dir returns identical or standard OS path",
+    "Check compatibility of custom appname arguments"
+  ],
+  "gap_analysis": [
+    "platformdirs is actively maintained; minor differences in macOS path resolution for specific system flags"
+  ],
+  "symbol_map": {
+    "user_cache_dir": "user_cache_dir",
+    "user_data_dir": "user_data_dir",
+    "user_config_dir": "user_config_dir",
+    "user_log_dir": "user_log_dir",
+    "AppDirs": "PlatformDirs"
+  },
+  "provenance": {
+    "provider": "rule_based_knowledge_base",
+    "model_id": "none",
+    "model_license_name": "N/A",
+    "model_card_url": "N/A",
+    "prompt_sha256": "N/A",
+    "raw_response_path": "N/A",
+    "validation": {
+      "passed": true,
+      "api_coverage": 1.0,
+      "rejected_candidates": []
+    }
+  }
+}

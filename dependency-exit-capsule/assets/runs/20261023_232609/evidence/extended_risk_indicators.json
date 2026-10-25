@@ -1,0 +1,82 @@
+{
+  "nose": {
+    "pinned_version": "1.3.7",
+    "pinned_version_release_date": "2015-06-02T09:12:36.801799Z",
+    "latest_version": "1.3.7",
+    "days_since_latest_release": 4162,
+    "versions_behind_latest": 0,
+    "source_url": "https://pypi.org/pypi/nose/json"
+  },
+  "appdirs": {
+    "pinned_version": "1.4.4",
+    "pinned_version_release_date": "2020-05-11T07:59:49.499913Z",
+    "latest_version": "1.4.4",
+    "days_since_latest_release": 2357,
+    "versions_behind_latest": 0,
+    "source_url": "https://pypi.org/pypi/appdirs/json"
+  },
+  "toml": {
+    "pinned_version": "0.10.2",
+    "pinned_version_release_date": "2020-11-01T01:40:20.672915Z",
+    "latest_version": "0.10.2",
+    "days_since_latest_release": 2183,
+    "versions_behind_latest": 0,
+    "source_url": "https://pypi.org/pypi/toml/json"
+  },
+  "jinja2": {
+    "pinned_version": "2.11.3",
+    "pinned_version_release_date": "2021-01-31T16:33:07.289264Z",
+    "latest_version": "3.1.6",
+    "days_since_latest_release": 597,
+    "versions_behind_latest": 13,
+    "source_url": "https://pypi.org/pypi/jinja2/json"
+  },
+  "requests": {
+    "pinned_version": "2.31.0",
+    "pinned_version_release_date": "2023-05-22T15:12:42.313790Z",
+    "latest_version": "2.34.2",
+    "days_since_latest_release": 162,
+    "versions_behind_latest": 12,
+    "source_url": "https://pypi.org/pypi/requests/json"
+  },
+  "pydantic": {
+    "pinned_version": "1.10.13",
+    "pinned_version_release_date": "2023-09-27T17:43:07.172408Z",
+    "latest_version": "2.14.1",
+    "days_since_latest_release": 12,
+    "versions_behind_latest": 86,
+    "source_url": "https://pypi.org/pypi/pydantic/json"
+  },
+  "click": {
+    "pinned_version": "7.0",
+    "pinned_version_release_date": "2018-09-25T20:57:05.462110Z",
+    "latest_version": "8.5.0",
+    "days_since_latest_release": 58,
+    "versions_behind_latest": 30,
+    "source_url": "https://pypi.org/pypi/click/json"
+  },
+  "chardet": {
+    "pinned_version": "5.2.0",
+    "pinned_version_release_date": "2023-08-01T19:23:00.661021Z",
+    "latest_version": "7.7.0",
+    "days_since_latest_release": 6,
+    "versions_behind_latest": 17,
+    "source_url": "https://pypi.org/pypi/chardet/json"
+  },
+  "idna": {
+    "pinned_version": "2.7",
+    "pinned_version_release_date": "2018-06-11T02:52:19.321873Z",
+    "latest_version": "3.20",
+    "days_since_latest_release": 36,
+    "versions_behind_latest": 24,
+    "source_url": "https://pypi.org/pypi/idna/json"
+  },
+  "setuptools": {
+    "pinned_version": "75.8.0",
+    "pinned_version_release_date": "2025-01-08T18:28:20.912929Z",
+    "latest_version": "84.2.1",
+    "days_since_latest_release": 3,
+    "versions_behind_latest": 40,
+    "source_url": "https://pypi.org/pypi/setuptools/json"
+  }
+}

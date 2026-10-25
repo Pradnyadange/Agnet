@@ -1,0 +1,176 @@
+{
+  "repo_path": "C:\\Users\\pradn\\AppData\\Local\\Temp\\dec_repo_op0q_de_",
+  "repo_url": "https://github.com/Pradnyadange/civicPulse",
+  "commit_sha": "ab56de63bfc3db719c675c0390455df7db4525e0",
+  "scanned_at": "2026-10-25T07:07:16.911812+00:00",
+  "dependencies": {
+    "pymongo": {
+      "name": "pymongo",
+      "declared_specifier": "",
+      "declared_in": [
+        "requirements.txt"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 10,
+          "source_url": "https://pypi.org/pypi/pymongo/json",
+          "fetched_at": "2026-10-25T07:07:13.793131+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/pymongo/json",
+          "fetched_at": "2026-10-25T07:07:13.793131+00:00"
+        }
+      ]
+    },
+    "python-dotenv": {
+      "name": "python-dotenv",
+      "declared_specifier": "",
+      "declared_in": [
+        "requirements.txt"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 24,
+          "source_url": "https://pypi.org/pypi/python-dotenv/json",
+          "fetched_at": "2026-10-25T07:07:14.333709+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/python-dotenv/json",
+          "fetched_at": "2026-10-25T07:07:14.333709+00:00"
+        }
+      ]
+    },
+    "google-genai": {
+      "name": "google-genai",
+      "declared_specifier": "",
+      "declared_in": [
+        "requirements.txt"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 2,
+          "source_url": "https://pypi.org/pypi/google-genai/json",
+          "fetched_at": "2026-10-25T07:07:14.672024+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/google-genai/json",
+          "fetched_at": "2026-10-25T07:07:14.672024+00:00"
+        }
+      ]
+    },
+    "streamlit": {
+      "name": "streamlit",
+      "declared_specifier": "",
+      "declared_in": [
+        "requirements.txt"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 3,
+          "source_url": "https://pypi.org/pypi/streamlit/json",
+          "fetched_at": "2026-10-25T07:07:15.044448+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/streamlit/json",
+          "fetched_at": "2026-10-25T07:07:15.044448+00:00"
+        }
+      ]
+    },
+    "numpy": {
+      "name": "numpy",
+      "declared_specifier": "",
+      "declared_in": [
+        "requirements.txt"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 14,
+          "source_url": "https://pypi.org/pypi/numpy/json",
+          "fetched_at": "2026-10-25T07:07:15.353701+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/numpy/json",
+          "fetched_at": "2026-10-25T07:07:15.353701+00:00"
+        }
+      ]
+    },
+    "scikit-learn": {
+      "name": "scikit-learn",
+      "declared_specifier": "",
+      "declared_in": [
+        "requirements.txt"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 44,
+          "source_url": "https://pypi.org/pypi/scikit-learn/json",
+          "fetched_at": "2026-10-25T07:07:15.796162+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/scikit-learn/json",
+          "fetched_at": "2026-10-25T07:07:15.796162+00:00"
+        }
+      ]
+    },
+    "umap-learn": {
+      "name": "umap-learn",
+      "declared_specifier": "",
+      "declared_in": [
+        "requirements.txt"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 199,
+          "source_url": "https://pypi.org/pypi/umap-learn/json",
+          "fetched_at": "2026-10-25T07:07:16.258669+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/umap-learn/json",
+          "fetched_at": "2026-10-25T07:07:16.258669+00:00"
+        }
+      ]
+    },
+    "plotly": {
+      "name": "plotly",
+      "declared_specifier": "",
+      "declared_in": [
+        "requirements.txt"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 39,
+          "source_url": "https://pypi.org/pypi/plotly/json",
+          "fetched_at": "2026-10-25T07:07:16.569741+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/plotly/json",
+          "fetched_at": "2026-10-25T07:07:16.569741+00:00"
+        }
+      ]
+    }
+  }
+}

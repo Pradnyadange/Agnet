@@ -1,0 +1,4 @@
+{"timestamp": "2026-10-25T06:37:49.646828+00:00", "step": "fetch", "status": "running", "message": "Fetching repository (clone or zip extraction)...", "data": {}}
+{"timestamp": "2026-10-25T06:37:50.938895+00:00", "step": "fetch", "status": "completed", "message": "Repository fetched: Pradnyadange/Ninja---game (2a84b79e), 34 files", "data": {"owner": "Pradnyadange", "repo": "Ninja---game", "commit_sha": "2a84b79e64120d4590815bde843fce0d198ba50e"}}
+{"timestamp": "2026-10-25T06:37:50.939714+00:00", "step": "parse", "status": "running", "message": "Scanning for requirements*.txt, pyproject.toml, and setup.cfg...", "data": {}}
+{"timestamp": "2026-10-25T06:37:50.941148+00:00", "step": "parse", "status": "unsupported", "message": "Unsupported repository: No supported dependency manifests found (requirements*.txt, pyproject.toml, or setup.cfg).", "data": {}}

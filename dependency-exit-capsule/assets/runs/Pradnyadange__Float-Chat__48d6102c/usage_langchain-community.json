@@ -1,0 +1,42 @@
+{
+  "dependency": "langchain-community",
+  "files_scanned": 6,
+  "dynamic_imports": [],
+  "usage_locations": [
+    {
+      "file": "src/helpers.py",
+      "line": 1,
+      "symbol": "langchain_community.document_loaders.DirectoryLoader",
+      "kind": "import",
+      "covered_by_tests": false
+    },
+    {
+      "file": "src/helpers.py",
+      "line": 1,
+      "symbol": "langchain_community.document_loaders.PyPDFLoader",
+      "kind": "import",
+      "covered_by_tests": false
+    },
+    {
+      "file": "src/helpers.py",
+      "line": 3,
+      "symbol": "langchain_community.embeddings.HuggingFaceEmbeddings",
+      "kind": "import",
+      "covered_by_tests": false
+    },
+    {
+      "file": "src/helpers.py",
+      "line": 10,
+      "symbol": "DirectoryLoader",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "src/helpers.py",
+      "line": 43,
+      "symbol": "HuggingFaceEmbeddings",
+      "kind": "call",
+      "covered_by_tests": false
+    }
+  ]
+}

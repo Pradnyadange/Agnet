@@ -1,0 +1,247 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "DependencyExitCapsule",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "capsule_id",
+    "generated_at",
+    "capsule_type",
+    "target_repo",
+    "maintenance_problem",
+    "dependency",
+    "observed",
+    "ai_generated",
+    "status",
+    "limitations"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "enum": ["2.0.0"]
+    },
+    "capsule_id": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "capsule_type": {
+      "type": "string",
+      "enum": ["replacement", "unused_dependency", "version_fix", "upgrade", "no_action"]
+    },
+    "target_repo": {
+      "type": "object",
+      "required": ["name", "url", "commit_sha", "python_version"],
+      "properties": {
+        "name": { "type": "string" },
+        "url": { "type": "string" },
+        "commit_sha": { "type": "string" },
+        "python_version": { "type": "string" }
+      }
+    },
+    "maintenance_problem": {
+      "type": "string"
+    },
+    "dependency": {
+      "type": "object",
+      "required": ["name", "declared_specifier", "declared_in"],
+      "properties": {
+        "name": { "type": "string" },
+        "declared_specifier": { "type": "string" },
+        "declared_in": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "scope": { "type": "string", "enum": ["runtime", "dev"] },
+        "required_by": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "observed": {
+      "type": "object",
+      "required": ["risk_indicators", "scan", "usage_locations", "test_results", "evidence"],
+      "properties": {
+        "risk_indicators": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "value", "source_url", "fetched_at"],
+            "properties": {
+              "id": { "type": "string" },
+              "value": {},
+              "source_url": { "type": "string" },
+              "fetched_at": { "type": "string" }
+            }
+          }
+        },
+        "scan": {
+          "type": "object",
+          "required": ["files_scanned", "dynamic_imports"],
+          "properties": {
+            "files_scanned": { "type": "integer" },
+            "dynamic_imports": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          }
+        },
+        "usage_locations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["file", "line", "symbol", "kind", "covered_by_tests"],
+            "properties": {
+              "file": { "type": "string" },
+              "line": { "type": "integer" },
+              "symbol": { "type": "string" },
+              "kind": { "type": "string", "enum": ["import", "call"] },
+              "covered_by_tests": { "type": "boolean" }
+            }
+          }
+        },
+        "test_results": {
+          "type": "object",
+          "required": ["baseline", "candidate", "new_failures", "pip_check"],
+          "properties": {
+            "baseline": {
+              "type": "object",
+              "required": ["passed", "failed", "junit_path"],
+              "properties": {
+                "passed": { "type": "integer" },
+                "failed": { "type": "integer" },
+                "junit_path": { "type": "string" }
+              }
+            },
+            "candidate": {
+              "type": "object",
+              "required": ["passed", "failed", "junit_path"],
+              "properties": {
+                "passed": { "type": "integer" },
+                "failed": { "type": "integer" },
+                "junit_path": { "type": "string" }
+              }
+            },
+            "new_failures": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "pip_check": {
+              "type": "object",
+              "required": ["baseline", "candidate"],
+              "properties": {
+                "baseline": { "type": "string" },
+                "candidate": { "type": "string" }
+              }
+            }
+          }
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["path", "sha256", "command", "exit_code", "captured_at"],
+            "properties": {
+              "path": { "type": "string" },
+              "sha256": { "type": "string" },
+              "command": { "type": "string" },
+              "exit_code": { "type": "integer" },
+              "captured_at": { "type": "string" }
+            }
+          }
+        },
+        "trust_check": {
+          "type": "object"
+        },
+        "secret_redactions_count": {
+          "type": "integer"
+        }
+      }
+    },
+    "ai_generated": {
+      "type": "object",
+      "required": ["proposed_replacement", "migration_steps", "suggested_tests", "gap_analysis", "provenance"],
+      "properties": {
+        "proposed_replacement": {
+          "type": "object",
+          "required": ["name", "type"],
+          "properties": {
+            "name": { "type": "string" },
+            "type": { "type": "string", "enum": ["stdlib", "pypi", "version_constraint"] }
+          }
+        },
+        "migration_steps": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "suggested_tests": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "gap_analysis": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "provenance": {
+          "type": "object",
+          "required": [
+            "provider",
+            "model_id",
+            "model_license_name",
+            "model_card_url",
+            "prompt_sha256",
+            "raw_response_path",
+            "validation"
+          ],
+          "properties": {
+            "provider": { "type": "string" },
+            "model_id": { "type": "string" },
+            "model_license_name": { "type": "string" },
+            "model_card_url": { "type": "string" },
+            "prompt_sha256": { "type": "string" },
+            "raw_response_path": { "type": "string" },
+            "validation": {
+              "type": "object",
+              "required": ["passed", "api_coverage", "rejected_candidates"],
+              "properties": {
+                "passed": { "type": "boolean" },
+                "api_coverage": { "type": ["number", "null"] },
+                "rejected_candidates": {
+                  "type": "array",
+                  "items": { "type": "string" }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": ["verified", "unverified", "not_testable", "not_run", "no_valid_proposal", "failed", "no_action"]
+    },
+    "status_reason": {
+      "type": "string",
+      "description": "Machine-readable reason code for the status (e.g. tests_not_executed, gate_rejected, no_usage_found, healthy_no_action)."
+    },
+    "action": {
+      "type": "string",
+      "enum": ["replace", "upgrade", "remove", "no_action"],
+      "description": "Decision made before any model call, from observed data only."
+    },
+    "action_reason": {
+      "type": "string",
+      "description": "Human-readable reason for the action decision."
+    },
+    "run_label": {
+      "type": "string",
+      "description": "Optional human-readable label for the run origin (e.g. 'fixture demo', 'linkwatch')."
+    },
+    "limitations": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

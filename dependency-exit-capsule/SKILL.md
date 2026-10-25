@@ -59,3 +59,10 @@ Inspect the generated capsules, diffs, and blast radius:
 ```bash
 streamlit run app.py
 ```
+
+## Security & Integrity Design
+- **Prompt Injection Defense**: Repository texts, code snippets, and README comments are isolated in delimited passive blocks labeled `UNTRUSTED DATA`. The model is restricted to JSON-only output and passes through validation gates before any candidate is entertained.
+- **Secret Redaction**: Common secret tokens (API keys, bearer tokens, passwords) are scrubbed before prompt submission. Redaction counts are permanently recorded in capsule metadata. Sensitive files such as `.env` are automatically excluded.
+- **Replacement Trust Verification**: Third-party replacement packages are checked against PyPI metadata (release history, source repository links, and typo-squatting edit distances).
+- **Vulnerability Data Policy**: Security vulnerabilities and advisory data (CVEs/GHSA) are NOT used to rank packages or determine capsule status (`verified`/`unverified`/`failed`). If vulnerability or advisory information is observed, it is recorded strictly as informational metadata and is never used in exit decision logic.
+

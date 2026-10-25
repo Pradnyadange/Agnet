@@ -1,0 +1,14 @@
+{
+  "dependency": "langdetect",
+  "files_scanned": 364,
+  "dynamic_imports": [
+    "gpt_researcher/llm_provider/generic/base.py:419 (importlib.import_module)",
+    "tests/backend/test_report_chat_route_uniqueness.py:29 (importlib.import_module)",
+    "tests/test_report_generation_available_images.py:38 (__import__)",
+    "tests/test_retriever_requires_scraping.py:128 (importlib.import_module)",
+    "tests/test_websocket_manager.py:75 (importlib.import_module)",
+    "tests/test_websocket_manager.py:80 (importlib.import_module)",
+    "tests/test_websocket_manager.py:84 (importlib.import_module)"
+  ],
+  "usage_locations": []
+}

@@ -1,0 +1,11 @@
+{
+  "proposed_replacement": {"name": "platformdirs", "type": "pypi"},
+  "migration_steps": [
+    "Remove `appdirs` from dependencies",
+    "Update `linkwatch/cache.py` to import `platformdirs`",
+    "Replace `user_cache_dir` calls with `platformdirs.user_cache_dir`",
+    "Verify API coverage of required symbols"
+  ],
+  "suggested_tests": ["Test `platformdirs` usage in `linkwatch/cache.py`"],
+  "gap_analysis": ["No known incompatibilities with `platformdirs`"]
+}

@@ -1,0 +1,177 @@
+{
+  "schema_version": "2.0.0",
+  "capsule_id": "capsule-civicpulse-pymongo-20261025_071441",
+  "generated_at": "2026-10-25T07:14:41.861321+00:00",
+  "capsule_type": "replacement",
+  "target_repo": {
+    "name": "civicPulse",
+    "url": "https://github.com/Pradnyadange/civicPulse",
+    "commit_sha": "ab56de63bfc3db719c675c0390455df7db4525e0",
+    "python_version": "3.14.6"
+  },
+  "maintenance_problem": "Dependency 'pymongo' analyzed during static risk triage.",
+  "dependency": {
+    "name": "pymongo",
+    "declared_specifier": "",
+    "declared_in": [
+      "requirements.txt"
+    ]
+  },
+  "observed": {
+    "risk_indicators": [
+      {
+        "id": "days_since_release",
+        "value": 10,
+        "source_url": "https://pypi.org/pypi/pymongo/json",
+        "fetched_at": "2026-10-25T07:07:13.793131+00:00"
+      },
+      {
+        "id": "yanked",
+        "value": false,
+        "source_url": "https://pypi.org/pypi/pymongo/json",
+        "fetched_at": "2026-10-25T07:07:13.793131+00:00"
+      }
+    ],
+    "scan": {
+      "files_scanned": 15,
+      "dynamic_imports": []
+    },
+    "usage_locations": [
+      {
+        "file": "mongodb/handlers.py",
+        "line": 3,
+        "symbol": "bson.ObjectId",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "mongodb/handlers.py",
+        "line": 36,
+        "symbol": "ObjectId",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "mongodb/handlers.py",
+        "line": 57,
+        "symbol": "ObjectId",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "mongodb/handlers.py",
+        "line": 68,
+        "symbol": "ObjectId",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "mongodb/handlers.py",
+        "line": 100,
+        "symbol": "ObjectId",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "mongodb/handlers.py",
+        "line": 114,
+        "symbol": "ObjectId",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "mongodb/handlers.py",
+        "line": 121,
+        "symbol": "ObjectId",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "mongodb/mongo_client.py",
+        "line": 2,
+        "symbol": "pymongo.MongoClient",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "mongodb/mongo_client.py",
+        "line": 13,
+        "symbol": "MongoClient",
+        "kind": "call",
+        "covered_by_tests": false
+      }
+    ],
+    "test_results": {
+      "baseline": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "candidate": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "new_failures": [],
+      "pip_check": {
+        "baseline": "Tests not run in static analyze mode.",
+        "candidate": "Tests not run in static analyze mode."
+      }
+    },
+    "evidence": [
+      {
+        "path": "assets/runs/Pradnyadange__civicPulse__ab56de63/evidence/pymongo_raw_model_response.json",
+        "sha256": "aa78989a0cb6e8be54447bef68d2b9d4bd205f7ab8aab7cc016e6dcde415b44f",
+        "command": "ollama run llama3.1:8b",
+        "exit_code": 0,
+        "captured_at": "2026-10-25T07:14:41.861284+00:00"
+      }
+    ],
+    "trust_check": {
+      "skipped": true,
+      "candidate_type": "stdlib",
+      "needs_human_review": false,
+      "reasons": []
+    },
+    "secret_redactions_count": 0
+  },
+  "ai_generated": {
+    "proposed_replacement": {
+      "name": "no_valid_proposal",
+      "type": "stdlib"
+    },
+    "migration_steps": [],
+    "suggested_tests": [],
+    "gap_analysis": [
+      "Candidate rejected by validation gate: not in stdlib"
+    ],
+    "provenance": {
+      "provider": "ollama",
+      "model_id": "llama3.1:8b",
+      "model_license_name": "LLAMA 3.1 COMMUNITY LICENSE AGREEMENT",
+      "model_card_url": "https://ollama.com/library/llama3.1",
+      "prompt_sha256": "276beef89c1e043bf9c565424c74b627ea19576d179db157bfe7e807a012c0e0",
+      "raw_response_path": "assets/runs/Pradnyadange__civicPulse__ab56de63/evidence/pymongo_raw_model_response.json",
+      "secret_redactions_count": 0,
+      "trust_check": {
+        "skipped": true,
+        "candidate_type": "stdlib",
+        "needs_human_review": false,
+        "reasons": []
+      },
+      "validation": {
+        "passed": false,
+        "api_coverage": 0.0,
+        "rejected_candidates": [
+          "bson is not in sys.stdlib_module_names"
+        ]
+      }
+    }
+  },
+  "status": "unverified",
+  "limitations": [
+    "Static analysis mode only: test execution not run.",
+    "Public repositories and Python projects only.",
+    "Small models can propose weak replacements; validation gate determines acceptance."
+  ]
+}

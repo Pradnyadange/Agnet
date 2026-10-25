@@ -1,0 +1,17 @@
+{
+  "proposed_replacement": {
+    "name": "tomllib",
+    "type": "stdlib"
+  },
+  "migration_steps": [
+    "Update Python to version 3.11 or later to use the built-in tomllib.",
+    "If running an older version, consider a temporary solution using the `tomli` package."
+  ],
+  "suggested_tests": [
+    "Verify that the replacement module can parse and write TOML files correctly.",
+    "Test that the replacement module can handle edge cases, such as malformed TOML files."
+  ],
+  "gap_analysis": [
+    "The `tomllib` module is not available in Python versions prior to 3.11, which may cause compatibility issues."
+  ]
+}

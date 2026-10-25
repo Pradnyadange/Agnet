@@ -1,0 +1,125 @@
+{
+  "schema_version": "2.0.0",
+  "capsule_id": "capsule-gpt-researcher-sgmllib3k-20261025_064253",
+  "generated_at": "2026-10-25T06:42:53.796807+00:00",
+  "capsule_type": "unused_dependency",
+  "target_repo": {
+    "name": "gpt-researcher",
+    "url": "https://github.com/Pradnyadange/gpt-researcher",
+    "commit_sha": "47695db37ee39029a48b90ae1a381f93da38b20c",
+    "python_version": "3.14.6"
+  },
+  "maintenance_problem": "Dependency 'sgmllib3k' analyzed during static risk triage.",
+  "dependency": {
+    "name": "sgmllib3k",
+    "declared_specifier": ">=1.0.0",
+    "declared_in": [
+      "pyproject.toml"
+    ]
+  },
+  "observed": {
+    "risk_indicators": [
+      {
+        "id": "days_since_release",
+        "value": 5905,
+        "source_url": "https://pypi.org/pypi/sgmllib3k/json",
+        "fetched_at": "2026-10-25T06:40:41.111729+00:00"
+      },
+      {
+        "id": "yanked",
+        "value": false,
+        "source_url": "https://pypi.org/pypi/sgmllib3k/json",
+        "fetched_at": "2026-10-25T06:40:41.111729+00:00"
+      }
+    ],
+    "scan": {
+      "files_scanned": 364,
+      "dynamic_imports": [
+        "gpt_researcher/llm_provider/generic/base.py:419 (importlib.import_module)",
+        "tests/backend/test_report_chat_route_uniqueness.py:29 (importlib.import_module)",
+        "tests/test_report_generation_available_images.py:38 (__import__)",
+        "tests/test_retriever_requires_scraping.py:128 (importlib.import_module)",
+        "tests/test_websocket_manager.py:75 (importlib.import_module)",
+        "tests/test_websocket_manager.py:80 (importlib.import_module)",
+        "tests/test_websocket_manager.py:84 (importlib.import_module)"
+      ]
+    },
+    "usage_locations": [],
+    "test_results": {
+      "baseline": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "candidate": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "new_failures": [],
+      "pip_check": {
+        "baseline": "Tests not run in static analyze mode.",
+        "candidate": "Tests not run in static analyze mode."
+      }
+    },
+    "evidence": [
+      {
+        "path": "assets/runs/Pradnyadange__gpt-researcher__47695db3/evidence/sgmllib3k_raw_model_response.json",
+        "sha256": "d19b07309ffb5c093f9378084c138ceebdf27ebf7511bbafcda85b048b512c10",
+        "command": "ollama run llama3.1:8b",
+        "exit_code": 0,
+        "captured_at": "2026-10-25T06:42:53.796768+00:00"
+      }
+    ],
+    "trust_check": {
+      "skipped": true,
+      "candidate_type": "stdlib",
+      "needs_human_review": false,
+      "reasons": []
+    },
+    "secret_redactions_count": 0
+  },
+  "ai_generated": {
+    "proposed_replacement": {
+      "name": "tomllib",
+      "type": "stdlib"
+    },
+    "migration_steps": [
+      "Update Python to version 3.11 or later to use the built-in tomllib.",
+      "If running an older version, consider a temporary solution using the `tomli` package."
+    ],
+    "suggested_tests": [
+      "Verify that the replacement module can parse and write TOML files correctly.",
+      "Test that the replacement module can handle edge cases, such as malformed TOML files."
+    ],
+    "gap_analysis": [
+      "The `tomllib` module is not available in Python versions prior to 3.11, which may cause compatibility issues."
+    ],
+    "provenance": {
+      "provider": "ollama",
+      "model_id": "llama3.1:8b",
+      "model_license_name": "LLAMA 3.1 COMMUNITY LICENSE AGREEMENT",
+      "model_card_url": "https://ollama.com/library/llama3.1",
+      "prompt_sha256": "651349aa3573d8767abaa04fae0c69a43616a53135716f97142bf647e06beeff",
+      "raw_response_path": "assets/runs/Pradnyadange__gpt-researcher__47695db3/evidence/sgmllib3k_raw_model_response.json",
+      "secret_redactions_count": 0,
+      "trust_check": {
+        "skipped": true,
+        "candidate_type": "stdlib",
+        "needs_human_review": false,
+        "reasons": []
+      },
+      "validation": {
+        "passed": true,
+        "api_coverage": 1.0,
+        "rejected_candidates": []
+      }
+    }
+  },
+  "status": "not_testable",
+  "limitations": [
+    "Static analysis mode only: test execution not run.",
+    "Public repositories and Python projects only.",
+    "Small models can propose weak replacements; validation gate determines acceptance."
+  ]
+}

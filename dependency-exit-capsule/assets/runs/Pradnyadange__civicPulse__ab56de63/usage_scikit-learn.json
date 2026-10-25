@@ -1,0 +1,35 @@
+{
+  "dependency": "scikit-learn",
+  "files_scanned": 15,
+  "dynamic_imports": [],
+  "usage_locations": [
+    {
+      "file": "mongodb/clustering_pipeline.py",
+      "line": 9,
+      "symbol": "sklearn.cluster.DBSCAN",
+      "kind": "import",
+      "covered_by_tests": false
+    },
+    {
+      "file": "mongodb/clustering_pipeline.py",
+      "line": 76,
+      "symbol": "DBSCAN",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "mongodb/handlers.py",
+      "line": 4,
+      "symbol": "sklearn.metrics.pairwise.cosine_similarity",
+      "kind": "import",
+      "covered_by_tests": false
+    },
+    {
+      "file": "mongodb/handlers.py",
+      "line": 128,
+      "symbol": "cosine_similarity",
+      "kind": "call",
+      "covered_by_tests": false
+    }
+  ]
+}

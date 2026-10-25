@@ -1,0 +1,161 @@
+{
+  "schema_version": "2.0.0",
+  "capsule_id": "capsule-gpt-researcher-langchain-20261024_195856",
+  "generated_at": "2026-10-24T19:58:56.530211+00:00",
+  "capsule_type": "replacement",
+  "target_repo": {
+    "name": "gpt-researcher",
+    "url": "https://github.com/Pradnyadange/gpt-researcher",
+    "commit_sha": "47695db37ee39029a48b90ae1a381f93da38b20c",
+    "python_version": "3.14.6"
+  },
+  "maintenance_problem": "Dependency 'langchain' analyzed during static risk triage.",
+  "dependency": {
+    "name": "langchain",
+    "declared_specifier": ">=1.0.0",
+    "declared_in": [
+      "requirements.txt",
+      "pyproject.toml"
+    ]
+  },
+  "observed": {
+    "risk_indicators": [
+      {
+        "id": "days_since_release",
+        "value": 2,
+        "source_url": "https://pypi.org/pypi/langchain/json",
+        "fetched_at": "2026-10-24T19:52:18.775059+00:00"
+      },
+      {
+        "id": "yanked",
+        "value": false,
+        "source_url": "https://pypi.org/pypi/langchain/json",
+        "fetched_at": "2026-10-24T19:52:18.775059+00:00"
+      }
+    ],
+    "scan": {
+      "files_scanned": 364,
+      "dynamic_imports": [
+        "gpt_researcher/llm_provider/generic/base.py:419 (importlib.import_module)",
+        "tests/backend/test_report_chat_route_uniqueness.py:29 (importlib.import_module)",
+        "tests/test_report_generation_available_images.py:38 (__import__)",
+        "tests/test_retriever_requires_scraping.py:128 (importlib.import_module)",
+        "tests/test_websocket_manager.py:75 (importlib.import_module)",
+        "tests/test_websocket_manager.py:80 (importlib.import_module)",
+        "tests/test_websocket_manager.py:84 (importlib.import_module)"
+      ]
+    },
+    "usage_locations": [
+      {
+        "file": "tests/vector-store.py",
+        "line": 6,
+        "symbol": "langchain.text_splitter.CharacterTextSplitter",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "tests/vector-store.py",
+        "line": 104,
+        "symbol": "CharacterTextSplitter",
+        "kind": "call",
+        "covered_by_tests": false
+      }
+    ],
+    "test_results": {
+      "baseline": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "candidate": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "new_failures": [],
+      "pip_check": {
+        "baseline": "Tests not run in static analyze mode.",
+        "candidate": "Tests not run in static analyze mode."
+      }
+    },
+    "evidence": [
+      {
+        "path": "assets/runs/Pradnyadange__gpt-researcher__47695db3/evidence/langchain_raw_model_response.json",
+        "sha256": "57801ace739fef2cd29f513975f172195b95d23f0431effd52cfa5c2c8bbead2",
+        "command": "ollama run gemma2:2b",
+        "exit_code": 0,
+        "captured_at": "2026-10-24T19:58:56.530188+00:00"
+      }
+    ],
+    "trust_check": {
+      "skipped": false,
+      "candidate_name": "text-splitter-from-langchain",
+      "candidate_type": "pypi",
+      "first_release_date": null,
+      "release_count": 0,
+      "last_release_date": null,
+      "project_urls": {},
+      "has_source_repo_url": false,
+      "min_edit_distance_to_popular": 22,
+      "closest_popular_package": "setuptools",
+      "needs_human_review": true,
+      "reasons": [
+        "Candidate package 'text-splitter-from-langchain' returned HTTP 404 on PyPI",
+        "No public source repository URL (GitHub/GitLab/etc.) found in PyPI project_urls",
+        "Low release count (0 releases)"
+      ]
+    },
+    "secret_redactions_count": 0
+  },
+  "ai_generated": {
+    "proposed_replacement": {
+      "name": "no_valid_proposal",
+      "type": "stdlib"
+    },
+    "migration_steps": [],
+    "suggested_tests": [],
+    "gap_analysis": [
+      "Candidate rejected by validation gate: package does not exist on PyPI"
+    ],
+    "provenance": {
+      "provider": "ollama",
+      "model_id": "gemma2:2b",
+      "model_license_name": "Gemma Terms of Use ",
+      "model_card_url": "https://ollama.com/library/gemma2",
+      "prompt_sha256": "10c18db3e8c632bbdd377028c9f9137d801289ecd8ebaeff51b51bcbb2684771",
+      "raw_response_path": "assets/runs/Pradnyadange__gpt-researcher__47695db3/evidence/langchain_raw_model_response.json",
+      "secret_redactions_count": 0,
+      "trust_check": {
+        "skipped": false,
+        "candidate_name": "text-splitter-from-langchain",
+        "candidate_type": "pypi",
+        "first_release_date": null,
+        "release_count": 0,
+        "last_release_date": null,
+        "project_urls": {},
+        "has_source_repo_url": false,
+        "min_edit_distance_to_popular": 22,
+        "closest_popular_package": "setuptools",
+        "needs_human_review": true,
+        "reasons": [
+          "Candidate package 'text-splitter-from-langchain' returned HTTP 404 on PyPI",
+          "No public source repository URL (GitHub/GitLab/etc.) found in PyPI project_urls",
+          "Low release count (0 releases)"
+        ]
+      },
+      "validation": {
+        "passed": false,
+        "api_coverage": 0.0,
+        "rejected_candidates": [
+          "PyPI package text-splitter-from-langchain does not exist or is unreachable"
+        ]
+      }
+    }
+  },
+  "status": "unverified",
+  "limitations": [
+    "Static analysis mode only: test execution not run.",
+    "Public repositories and Python projects only.",
+    "Small models can propose weak replacements; validation gate determines acceptance."
+  ]
+}

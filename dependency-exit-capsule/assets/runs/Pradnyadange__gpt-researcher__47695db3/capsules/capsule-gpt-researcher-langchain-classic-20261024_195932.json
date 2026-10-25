@@ -1,0 +1,210 @@
+{
+  "schema_version": "2.0.0",
+  "capsule_id": "capsule-gpt-researcher-langchain-classic-20261024_195932",
+  "generated_at": "2026-10-24T19:59:32.778183+00:00",
+  "capsule_type": "replacement",
+  "target_repo": {
+    "name": "gpt-researcher",
+    "url": "https://github.com/Pradnyadange/gpt-researcher",
+    "commit_sha": "47695db37ee39029a48b90ae1a381f93da38b20c",
+    "python_version": "3.14.6"
+  },
+  "maintenance_problem": "Dependency 'langchain-classic' analyzed during static risk triage.",
+  "dependency": {
+    "name": "langchain-classic",
+    "declared_specifier": ">=1.0.0",
+    "declared_in": [
+      "requirements.txt",
+      "pyproject.toml"
+    ]
+  },
+  "observed": {
+    "risk_indicators": [
+      {
+        "id": "days_since_release",
+        "value": 135,
+        "source_url": "https://pypi.org/pypi/langchain-classic/json",
+        "fetched_at": "2026-10-24T19:52:18.875749+00:00"
+      },
+      {
+        "id": "yanked",
+        "value": false,
+        "source_url": "https://pypi.org/pypi/langchain-classic/json",
+        "fetched_at": "2026-10-24T19:52:18.875749+00:00"
+      }
+    ],
+    "scan": {
+      "files_scanned": 364,
+      "dynamic_imports": [
+        "gpt_researcher/llm_provider/generic/base.py:419 (importlib.import_module)",
+        "tests/backend/test_report_chat_route_uniqueness.py:29 (importlib.import_module)",
+        "tests/test_report_generation_available_images.py:38 (__import__)",
+        "tests/test_retriever_requires_scraping.py:128 (importlib.import_module)",
+        "tests/test_websocket_manager.py:75 (importlib.import_module)",
+        "tests/test_websocket_manager.py:80 (importlib.import_module)",
+        "tests/test_websocket_manager.py:84 (importlib.import_module)"
+      ]
+    },
+    "usage_locations": [
+      {
+        "file": "gpt_researcher/context/compression.py",
+        "line": 21,
+        "symbol": "langchain_classic.retrievers.ContextualCompressionRetriever",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "gpt_researcher/context/compression.py",
+        "line": 22,
+        "symbol": "langchain_classic.retrievers.document_compressors.DocumentCompressorPipeline",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "gpt_researcher/context/compression.py",
+        "line": 22,
+        "symbol": "langchain_classic.retrievers.document_compressors.EmbeddingsFilter",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "gpt_researcher/context/compression.py",
+        "line": 135,
+        "symbol": "EmbeddingsFilter",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "gpt_researcher/context/compression.py",
+        "line": 137,
+        "symbol": "DocumentCompressorPipeline",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "gpt_researcher/context/compression.py",
+        "line": 143,
+        "symbol": "ContextualCompressionRetriever",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "gpt_researcher/context/compression.py",
+        "line": 225,
+        "symbol": "EmbeddingsFilter",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "gpt_researcher/context/compression.py",
+        "line": 227,
+        "symbol": "DocumentCompressorPipeline",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "gpt_researcher/context/compression.py",
+        "line": 233,
+        "symbol": "ContextualCompressionRetriever",
+        "kind": "call",
+        "covered_by_tests": false
+      }
+    ],
+    "test_results": {
+      "baseline": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "candidate": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "new_failures": [],
+      "pip_check": {
+        "baseline": "Tests not run in static analyze mode.",
+        "candidate": "Tests not run in static analyze mode."
+      }
+    },
+    "evidence": [
+      {
+        "path": "assets/runs/Pradnyadange__gpt-researcher__47695db3/evidence/langchain-classic_raw_model_response.json",
+        "sha256": "eca89dacae6eaef771b1fd73c4a1c7bc147dbfa858fe9cf27530eca85ba97b07",
+        "command": "ollama run gemma2:2b",
+        "exit_code": 0,
+        "captured_at": "2026-10-24T19:59:32.778143+00:00"
+      }
+    ],
+    "trust_check": {
+      "skipped": false,
+      "candidate_name": "no_valid_proposal",
+      "candidate_type": "no_valid_proposal",
+      "first_release_date": null,
+      "release_count": 0,
+      "last_release_date": null,
+      "project_urls": {},
+      "has_source_repo_url": false,
+      "min_edit_distance_to_popular": 13,
+      "closest_popular_package": "aiobotocore",
+      "needs_human_review": true,
+      "reasons": [
+        "Candidate package 'no_valid_proposal' returned HTTP 404 on PyPI",
+        "No public source repository URL (GitHub/GitLab/etc.) found in PyPI project_urls",
+        "Low release count (0 releases)"
+      ]
+    },
+    "secret_redactions_count": 0
+  },
+  "ai_generated": {
+    "proposed_replacement": {
+      "name": "no_valid_proposal",
+      "type": "stdlib"
+    },
+    "migration_steps": [],
+    "suggested_tests": [],
+    "gap_analysis": [
+      "Candidate rejected by validation gate: unknown replacement type"
+    ],
+    "provenance": {
+      "provider": "ollama",
+      "model_id": "gemma2:2b",
+      "model_license_name": "Gemma Terms of Use ",
+      "model_card_url": "https://ollama.com/library/gemma2",
+      "prompt_sha256": "806f2f6d3e117b90978f4962eb1b2ed42ac619535aafb2aae0156924a0fa149e",
+      "raw_response_path": "assets/runs/Pradnyadange__gpt-researcher__47695db3/evidence/langchain-classic_raw_model_response.json",
+      "secret_redactions_count": 0,
+      "trust_check": {
+        "skipped": false,
+        "candidate_name": "no_valid_proposal",
+        "candidate_type": "no_valid_proposal",
+        "first_release_date": null,
+        "release_count": 0,
+        "last_release_date": null,
+        "project_urls": {},
+        "has_source_repo_url": false,
+        "min_edit_distance_to_popular": 13,
+        "closest_popular_package": "aiobotocore",
+        "needs_human_review": true,
+        "reasons": [
+          "Candidate package 'no_valid_proposal' returned HTTP 404 on PyPI",
+          "No public source repository URL (GitHub/GitLab/etc.) found in PyPI project_urls",
+          "Low release count (0 releases)"
+        ]
+      },
+      "validation": {
+        "passed": false,
+        "api_coverage": 0.0,
+        "rejected_candidates": [
+          "Unknown candidate type: no_valid_proposal"
+        ]
+      }
+    }
+  },
+  "status": "unverified",
+  "limitations": [
+    "Static analysis mode only: test execution not run.",
+    "Public repositories and Python projects only.",
+    "Small models can propose weak replacements; validation gate determines acceptance."
+  ]
+}

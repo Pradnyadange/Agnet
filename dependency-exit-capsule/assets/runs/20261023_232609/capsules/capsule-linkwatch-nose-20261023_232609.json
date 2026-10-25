@@ -1,0 +1,172 @@
+{
+  "schema_version": "2.0.0",
+  "capsule_id": "capsule-linkwatch-nose-20261023_232609",
+  "capsule_type": "unused_dependency",
+  "generated_at": "2026-10-24T18:45:00Z",
+  "status": "unverified",
+  "maintenance_problem": "Stale unmaintained test framework (nose 1.3.7 released >4160 days ago); LinkWatch test suite uses modern pytest, making nose an unreferenced dependency in Python code.",
+  "target_repo": {
+    "name": "LinkWatch",
+    "url": "https://github.com/rishrek/LinkWatch",
+    "commit_sha": "f52f3930c8e7c33d934ccf614955a38e26984bd5",
+    "python_version": "3.12.10"
+  },
+  "dependency": {
+    "name": "nose",
+    "declared_specifier": "==1.3.7",
+    "declared_in": [
+      "requirements-dev.txt"
+    ]
+  },
+  "observed": {
+    "risk_indicators": [
+      {
+        "id": "days_since_latest_release",
+        "value": 4162,
+        "source_url": "https://pypi.org/pypi/nose/json",
+        "fetched_at": "2026-10-24T18:45:00Z"
+      },
+      {
+        "id": "pinned_version_release_date",
+        "value": "2015-06-02T09:12:36.801799Z",
+        "source_url": "https://pypi.org/pypi/nose/json",
+        "fetched_at": "2026-10-24T18:45:00Z"
+      },
+      {
+        "id": "versions_behind_latest",
+        "value": 0,
+        "source_url": "https://pypi.org/pypi/nose/json",
+        "fetched_at": "2026-10-24T18:45:00Z"
+      }
+    ],
+    "scan": {
+      "files_scanned": 15,
+      "dynamic_imports": []
+    },
+    "non_python_references": [
+      {
+        "file": "Makefile",
+        "line": 4,
+        "match_term": "nose",
+        "line_content": ".PHONY: setup test test-nose docker-build docker-test"
+      },
+      {
+        "file": "Makefile",
+        "line": 13,
+        "match_term": "nose",
+        "line_content": "test-nose:"
+      },
+      {
+        "file": "Makefile",
+        "line": 14,
+        "match_term": "nosetests",
+        "line_content": "nosetests tests/"
+      },
+      {
+        "file": "README.md",
+        "line": 214,
+        "match_term": "nose",
+        "line_content": "| `make test-nose` | Run the suite with nose |"
+      },
+      {
+        "file": "requirements-dev.txt",
+        "line": 2,
+        "match_term": "nose",
+        "line_content": "nose==1.3.7"
+      }
+    ],
+    "usage_locations": [],
+    "test_results": {
+      "baseline": {
+        "passed": 9,
+        "failed": 1,
+        "junit_path": "assets/runs/20261023_232609/evidence/baseline/junit.xml"
+      },
+      "candidate": {
+        "passed": 10,
+        "failed": 0,
+        "junit_path": "assets/runs/20261023_232609/evidence/nose_removal_junit.xml"
+      },
+      "new_failures": [],
+      "pip_check": {
+        "baseline": "No broken requirements found.",
+        "candidate": "No broken requirements found."
+      }
+    },
+    "evidence": [
+      {
+        "path": "assets/runs/20261023_232609/evidence/nose_removal_pip_check.txt",
+        "sha256": "9bc9eff87ccde9a897a86ea3cf9096facadba3cc998bc2b74cc3d856cf1cc971",
+        "command": "python -m pip check",
+        "exit_code": 0,
+        "captured_at": "2026-10-24T18:45:00Z"
+      },
+      {
+        "path": "assets/runs/20261023_232609/evidence/nose_removal_junit.xml",
+        "sha256": "56258f0dc69a8ff2347259f5b1063777c5fb56f9e0be3283638730b54176ee36",
+        "command": "python -m pytest --junitxml=nose_removal_junit.xml",
+        "exit_code": 0,
+        "captured_at": "2026-10-24T18:45:00Z"
+      },
+      {
+        "path": "assets/runs/20261023_232609/evidence/nose_removal_coverage.json",
+        "sha256": "c3231200d29a95d0f399caa24ace6704217cbdb78b8cee37f3daf42ac0621b06",
+        "command": "python -m pytest --cov=linkwatch",
+        "exit_code": 0,
+        "captured_at": "2026-10-24T18:45:00Z"
+      },
+      {
+        "path": "assets/runs/20261023_232609/evidence/nose_llama3.1_run1_raw.json",
+        "sha256": "378540f46426e6761931809f465a7564fbcaf90cd99a039f20ed18c5d8836c1f",
+        "command": "ollama run llama3.1:8b (prompt sha: 074d89f5f1820f35)",
+        "exit_code": 0,
+        "captured_at": "2026-10-24T18:45:00Z"
+      },
+      {
+        "path": "assets/runs/20261023_232609/evidence/non_python_references.json",
+        "sha256": "23e626f96c65ffd9c712235bcc81606f1cebdf2b6c315288f068b8a57c3e0e46",
+        "command": "scan non-python repository files",
+        "exit_code": 0,
+        "captured_at": "2026-10-24T18:45:00Z"
+      }
+    ]
+  },
+  "ai_generated": {
+    "proposed_replacement": {
+      "name": "remove_unused_dependency",
+      "type": "stdlib"
+    },
+    "migration_steps": [
+      "Remove nose==1.3.7 from requirements-dev.txt",
+      "Model proposal note: model proposed unittest, recorded as not applied (dependency unused in Python code)",
+      "Non-python concern: Makefile contains 'test-nose: nosetests tests/' and README mentions 'make test-nose'. These non-python targets must be updated or removed."
+    ],
+    "suggested_tests": [
+      "pytest -q in virtual environment without nose installed"
+    ],
+    "gap_analysis": [
+      "Makefile lines 4, 13, 14 reference 'test-nose' and 'nosetests tests/'.",
+      "README.md line 214 documents 'make test-nose'.",
+      "Running 'make test-nose' was not executed and will fail if nose/nosetests is removed."
+    ],
+    "provenance": {
+      "provider": "ollama",
+      "model_id": "llama3.1:8b",
+      "model_license_name": "Llama 3.1 Community License",
+      "model_card_url": "https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/MODEL_CARD.md",
+      "prompt_sha256": "074d89f5f1820f35df1d877b47e6bb2c0eaf44284d16ea5d78a896e65ab02c66",
+      "raw_response_path": "assets/runs/20261023_232609/evidence/nose_llama3.1_run1_raw.json",
+      "applied_model_run": "Run 1 of 3 (selected by deterministic tie-break; model proposal unittest recorded as not applied because dependency is unused)",
+      "validation": {
+        "passed": true,
+        "api_coverage": null,
+        "rejected_candidates": []
+      }
+    }
+  },
+  "limitations": [
+    "Status is unverified because non-python references exist in Makefile (lines 4, 13, 14) and README.md (line 214).",
+    "The nose test target ('make test-nose') was not run; removing nose breaks 'make test-nose' unless that target is migrated to pytest or removed.",
+    "verified for the existing test suite on Windows 10/11 x64 / Python 3.12.10 in a copy; original unchanged; 0 tests exercise the changed lines (0 usages in python code)."
+  ]
+}

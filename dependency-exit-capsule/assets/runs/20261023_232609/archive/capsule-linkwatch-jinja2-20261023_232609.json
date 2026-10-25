@@ -1,0 +1,145 @@
+{
+  "schema_version": "2.0.0",
+  "capsule_id": "capsule-linkwatch-jinja2-20261023_232609",
+  "generated_at": "2026-10-23T18:25:29.653817+00:00",
+  "capsule_type": "version_fix",
+  "target_repo": {
+    "name": "LinkWatch",
+    "url": "https://github.com/rishrek/LinkWatch.git",
+    "commit_sha": "f52f3930c8e7c33d934ccf614955a38e26984bd5",
+    "python_version": "3.12.10"
+  },
+  "maintenance_problem": "Jinja2==2.11.3 requires unconstrained MarkupSafe>=0.23, which pulls MarkupSafe 3.0.4 where soft_unicode was removed, breaking template rendering.",
+  "dependency": {
+    "name": "Jinja2",
+    "declared_specifier": "==2.11.3",
+    "declared_in": [
+      "requirements.txt"
+    ]
+  },
+  "observed": {
+    "risk_indicators": [
+      {
+        "id": "days_since_release",
+        "value": 2062,
+        "source_url": "https://pypi.org/pypi/Jinja2/json",
+        "fetched_at": "2026-10-23T17:59:32Z"
+      }
+    ],
+    "scan": {
+      "files_scanned": 9,
+      "dynamic_imports": []
+    },
+    "usage_locations": [
+      {
+        "file": "linkwatch/report.py",
+        "line": 3,
+        "symbol": "Environment",
+        "kind": "import",
+        "covered_by_tests": true
+      },
+      {
+        "file": "linkwatch/report.py",
+        "line": 3,
+        "symbol": "FileSystemLoader",
+        "kind": "import",
+        "covered_by_tests": true
+      },
+      {
+        "file": "linkwatch/report.py",
+        "line": 3,
+        "symbol": "select_autoescape",
+        "kind": "import",
+        "covered_by_tests": true
+      }
+    ],
+    "test_results": {
+      "baseline": {
+        "passed": 9,
+        "failed": 1,
+        "junit_path": "assets/runs/20261023_232609/evidence/baseline/junit.xml"
+      },
+      "candidate": {
+        "passed": 10,
+        "failed": 0,
+        "junit_path": "assets/runs/20261023_232609/evidence/cand3_jinja2_upgrade/junit.xml"
+      },
+      "new_failures": [],
+      "pip_check": {
+        "baseline": "No broken requirements found.",
+        "candidate": "No broken requirements found."
+      }
+    },
+    "evidence": [
+      {
+        "path": "assets/runs/20261023_232609/evidence/baseline/pip_check.txt",
+        "sha256": "62a7bed1b63f3145e4a1f662db6de145fcc24a75271861405b20d49df601b4ee",
+        "command": "pip check",
+        "exit_code": 0,
+        "captured_at": "2026-10-23T17:58:17Z"
+      },
+      {
+        "path": "assets/runs/20261023_232609/evidence/baseline/junit.xml",
+        "sha256": "2d25d2b9d7cc24fbec3a3273c9ac70d3161001363c18b6ebf9700822bec7b304",
+        "command": "pytest --junitxml=... --cov=linkwatch",
+        "exit_code": 1,
+        "captured_at": "2026-10-23T17:58:35Z"
+      },
+      {
+        "path": "assets/runs/20261023_232609/evidence/cand3_jinja2_upgrade/pip_check.txt",
+        "sha256": "62a7bed1b63f3145e4a1f662db6de145fcc24a75271861405b20d49df601b4ee",
+        "command": "pip check",
+        "exit_code": 0,
+        "captured_at": "2026-10-23T18:03:00Z"
+      },
+      {
+        "path": "assets/runs/20261023_232609/evidence/cand3_jinja2_upgrade/junit.xml",
+        "sha256": "f88554222a6af25f27f2623688d437a2e79522c2ea738d3d0e003227b50827d0",
+        "command": "pytest --junitxml=... --cov=linkwatch",
+        "exit_code": 0,
+        "captured_at": "2026-10-23T18:04:00Z"
+      },
+      {
+        "path": "assets/runs/20261023_232609/evidence/version_fix/raw_model_response.json",
+        "sha256": "5e415b2b0e5dc91d28752d3490a99efe275ffc82be4ff860bb8177e0263077d5",
+        "command": "ollama chat llama3.1:8b",
+        "exit_code": 0,
+        "captured_at": "2026-10-23T18:06:49Z"
+      }
+    ]
+  },
+  "ai_generated": {
+    "proposed_replacement": {
+      "name": "Jinja2",
+      "type": "version_constraint"
+    },
+    "migration_steps": [
+      "Model proposed: Downgrade MarkupSafe to version 2.1.1 in the project's requirements. You can do this by updating the `setup.py` or `pyproject.toml` file to pin MarkupSafe to 2.1.1.",
+      "Tested empirical candidate: Upgrade Jinja2 to ==3.1.4 in requirements.txt"
+    ],
+    "suggested_tests": [
+      "pytest tests/test_report.py::test_report_renders_all_sites"
+    ],
+    "gap_analysis": [
+      "The observed test failure is caused by an incompatibility between the MarkupSafe version 3.0.4 and the project's dependency on Jinja2 2.11.3. The Jinja2 version requires MarkupSafe version 2.1.1 or greater, but the project has installed version 3.0.4. The 'soft_unicode' function has been removed in MarkupSafe 3.0.0, which is why the import error occurs.",
+      "Jinja2 3.1.4 is fully compatible with modern MarkupSafe and Python 3.12 without pinning transitive dependencies."
+    ],
+    "provenance": {
+      "provider": "ollama",
+      "model_id": "llama3.1:8b",
+      "model_license_name": "LLAMA 3.1 COMMUNITY LICENSE AGREEMENT",
+      "model_card_url": "https://ollama.com/library/llama3.1",
+      "prompt_sha256": "f1f2da09c682b84d76645b4b2f740e8506e71e9f6a05fe075f3bcdc82398e00c",
+      "raw_response_path": "assets/runs/20261023_232609/evidence/version_fix/raw_model_response.json",
+      "validation": {
+        "passed": true,
+        "api_coverage": 1.0,
+        "rejected_candidates": []
+      }
+    }
+  },
+  "status": "verified",
+  "limitations": [
+    "Fix was tested on isolated copy; original target repository was not touched."
+  ]
+}

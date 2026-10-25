@@ -1,0 +1,196 @@
+{
+  "dependency": "flask",
+  "files_scanned": 6,
+  "dynamic_imports": [],
+  "usage_locations": [
+    {
+      "file": "app.py",
+      "line": 16,
+      "symbol": "flask.Flask",
+      "kind": "import",
+      "covered_by_tests": false
+    },
+    {
+      "file": "app.py",
+      "line": 16,
+      "symbol": "flask.jsonify",
+      "kind": "import",
+      "covered_by_tests": false
+    },
+    {
+      "file": "app.py",
+      "line": 16,
+      "symbol": "flask.redirect",
+      "kind": "import",
+      "covered_by_tests": false
+    },
+    {
+      "file": "app.py",
+      "line": 16,
+      "symbol": "flask.render_template",
+      "kind": "import",
+      "covered_by_tests": false
+    },
+    {
+      "file": "app.py",
+      "line": 16,
+      "symbol": "flask.request",
+      "kind": "import",
+      "covered_by_tests": false
+    },
+    {
+      "file": "app.py",
+      "line": 16,
+      "symbol": "flask.session",
+      "kind": "import",
+      "covered_by_tests": false
+    },
+    {
+      "file": "app.py",
+      "line": 16,
+      "symbol": "flask.url_for",
+      "kind": "import",
+      "covered_by_tests": false
+    },
+    {
+      "file": "app.py",
+      "line": 16,
+      "symbol": "flask.send_file",
+      "kind": "import",
+      "covered_by_tests": false
+    },
+    {
+      "file": "app.py",
+      "line": 21,
+      "symbol": "Flask",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "app.py",
+      "line": 500,
+      "symbol": "send_file",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "app.py",
+      "line": 504,
+      "symbol": "redirect",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "app.py",
+      "line": 504,
+      "symbol": "url_for",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "app.py",
+      "line": 505,
+      "symbol": "render_template",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "app.py",
+      "line": 509,
+      "symbol": "redirect",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "app.py",
+      "line": 509,
+      "symbol": "url_for",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "app.py",
+      "line": 510,
+      "symbol": "render_template",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "app.py",
+      "line": 515,
+      "symbol": "redirect",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "app.py",
+      "line": 515,
+      "symbol": "url_for",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "app.py",
+      "line": 527,
+      "symbol": "jsonify",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "app.py",
+      "line": 529,
+      "symbol": "jsonify",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "app.py",
+      "line": 540,
+      "symbol": "jsonify",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "app.py",
+      "line": 541,
+      "symbol": "jsonify",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "app.py",
+      "line": 545,
+      "symbol": "jsonify",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "app.py",
+      "line": 550,
+      "symbol": "jsonify",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "app.py",
+      "line": 554,
+      "symbol": "jsonify",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "app.py",
+      "line": 563,
+      "symbol": "jsonify",
+      "kind": "call",
+      "covered_by_tests": false
+    },
+    {
+      "file": "app.py",
+      "line": 574,
+      "symbol": "jsonify",
+      "kind": "call",
+      "covered_by_tests": false
+    }
+  ]
+}

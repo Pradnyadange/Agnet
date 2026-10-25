@@ -1,0 +1,11 @@
+{
+  "proposed_replacement": {"name": "pydantic", "type": "pypi"},
+  "migration_steps": [
+    "Run `pip install pydantic` in the project root.",
+    "Update import statements to use `from pydantic import BaseModel, Field`."
+  ],
+  "suggested_tests": ["Verify that the project still compiles and runs as expected."],
+  "gap_analysis": [
+    "Potential incompatibility with existing project code if not updated to use new import statements."
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "proposed_replacement": {"name": "plotnine", "type": "pypi"},
+  "migration_steps": ["Replace all `plotly.express` imports with `plotnine`", "Update code to use `plotnine`'s `pie` and `bar` functions"],
+  "suggested_tests": ["Test `plotnine`'s pie and bar functions with existing data", "Verify the replacement does not introduce new regressions"],
+  "gap_analysis": ["Potential incompatibility: `plotnine` does not have a direct equivalent to `plotly.express`'s functionality, may require code restructuring"]
+}

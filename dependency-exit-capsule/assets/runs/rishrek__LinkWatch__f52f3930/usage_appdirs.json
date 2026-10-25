@@ -1,0 +1,21 @@
+{
+  "dependency": "appdirs",
+  "files_scanned": 15,
+  "dynamic_imports": [],
+  "usage_locations": [
+    {
+      "file": "linkwatch/cache.py",
+      "line": 4,
+      "symbol": "appdirs.user_cache_dir",
+      "kind": "import",
+      "covered_by_tests": false
+    },
+    {
+      "file": "linkwatch/cache.py",
+      "line": 10,
+      "symbol": "user_cache_dir",
+      "kind": "call",
+      "covered_by_tests": false
+    }
+  ]
+}

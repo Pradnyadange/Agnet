@@ -1,0 +1,6 @@
+{
+  "proposed_replacement": {"name": "unittest", "type": "stdlib"},
+  "migration_steps": ["Update your tests to use the unittest module instead of nose.", "Remove nose from your requirements.txt"],
+  "suggested_tests": ["Check that all tests are running without any errors.", "Verify that no new tests are failing after the migration"],
+  "gap_analysis": ["nose is an older testing framework and does not have the same level of support as unittest."]
+}

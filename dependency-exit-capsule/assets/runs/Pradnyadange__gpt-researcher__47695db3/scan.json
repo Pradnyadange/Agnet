@@ -1,0 +1,3641 @@
+{
+  "repo_path": "C:\\Users\\pradn\\AppData\\Local\\Temp\\dec_repo_4xx4o_8r",
+  "repo_url": "https://github.com/Pradnyadange/gpt-researcher",
+  "commit_sha": "47695db37ee39029a48b90ae1a381f93da38b20c",
+  "scanned_at": "2026-10-25T06:40:53.784357+00:00",
+  "dependencies": {
+    "fastapi": {
+      "name": "fastapi",
+      "declared_specifier": ">=0.110.0",
+      "declared_in": [
+        "requirements.txt",
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 1,
+          "source_url": "https://pypi.org/pypi/fastapi/json",
+          "fetched_at": "2026-10-25T06:40:03.521679+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/fastapi/json",
+          "fetched_at": "2026-10-25T06:40:03.521679+00:00"
+        }
+      ]
+    },
+    "uvicorn": {
+      "name": "uvicorn",
+      "declared_specifier": ">=0.27.0",
+      "declared_in": [
+        "requirements.txt",
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 29,
+          "source_url": "https://pypi.org/pypi/uvicorn/json",
+          "fetched_at": "2026-10-25T06:40:03.712770+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/uvicorn/json",
+          "fetched_at": "2026-10-25T06:40:03.712770+00:00"
+        }
+      ]
+    },
+    "pydantic": {
+      "name": "pydantic",
+      "declared_specifier": ">=2.6.0",
+      "declared_in": [
+        "requirements.txt",
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 13,
+          "source_url": "https://pypi.org/pypi/pydantic/json",
+          "fetched_at": "2026-10-25T06:40:04.070919+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/pydantic/json",
+          "fetched_at": "2026-10-25T06:40:04.070919+00:00"
+        }
+      ]
+    },
+    "python-dotenv": {
+      "name": "python-dotenv",
+      "declared_specifier": ">=1.0.1",
+      "declared_in": [
+        "requirements.txt",
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 24,
+          "source_url": "https://pypi.org/pypi/python-dotenv/json",
+          "fetched_at": "2026-10-25T06:40:04.228836+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/python-dotenv/json",
+          "fetched_at": "2026-10-25T06:40:04.228836+00:00"
+        }
+      ]
+    },
+    "langchain": {
+      "name": "langchain",
+      "declared_specifier": ">=1.0.0",
+      "declared_in": [
+        "requirements.txt",
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 3,
+          "source_url": "https://pypi.org/pypi/langchain/json",
+          "fetched_at": "2026-10-25T06:40:04.314639+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/langchain/json",
+          "fetched_at": "2026-10-25T06:40:04.314639+00:00"
+        }
+      ]
+    },
+    "langchain-classic": {
+      "name": "langchain-classic",
+      "declared_specifier": ">=1.0.0",
+      "declared_in": [
+        "requirements.txt",
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 136,
+          "source_url": "https://pypi.org/pypi/langchain-classic/json",
+          "fetched_at": "2026-10-25T06:40:04.671756+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/langchain-classic/json",
+          "fetched_at": "2026-10-25T06:40:04.671756+00:00"
+        }
+      ]
+    },
+    "langchain-community": {
+      "name": "langchain-community",
+      "declared_specifier": ">=0.4.0",
+      "declared_in": [
+        "requirements.txt",
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 155,
+          "source_url": "https://pypi.org/pypi/langchain-community/json",
+          "fetched_at": "2026-10-25T06:40:04.993906+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/langchain-community/json",
+          "fetched_at": "2026-10-25T06:40:04.993906+00:00"
+        }
+      ]
+    },
+    "langchain-core": {
+      "name": "langchain-core",
+      "declared_specifier": ">=1.0.0",
+      "declared_in": [
+        "requirements.txt",
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 2,
+          "source_url": "https://pypi.org/pypi/langchain-core/json",
+          "fetched_at": "2026-10-25T06:40:05.347625+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/langchain-core/json",
+          "fetched_at": "2026-10-25T06:40:05.347625+00:00"
+        }
+      ]
+    },
+    "langchain-ollama": {
+      "name": "langchain-ollama",
+      "declared_specifier": ">=1.0.0",
+      "declared_in": [
+        "requirements.txt",
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 201,
+          "source_url": "https://pypi.org/pypi/langchain-ollama/json",
+          "fetched_at": "2026-10-25T06:40:05.729204+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/langchain-ollama/json",
+          "fetched_at": "2026-10-25T06:40:05.729204+00:00"
+        }
+      ]
+    },
+    "langchain-openai": {
+      "name": "langchain-openai",
+      "declared_specifier": ">=1.0.0",
+      "declared_in": [
+        "requirements.txt",
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 10,
+          "source_url": "https://pypi.org/pypi/langchain-openai/json",
+          "fetched_at": "2026-10-25T06:40:06.009621+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/langchain-openai/json",
+          "fetched_at": "2026-10-25T06:40:06.009621+00:00"
+        }
+      ]
+    },
+    "langchain-text-splitters": {
+      "name": "langchain-text-splitters",
+      "declared_specifier": ">=1.0.0",
+      "declared_in": [
+        "requirements.txt",
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 22,
+          "source_url": "https://pypi.org/pypi/langchain-text-splitters/json",
+          "fetched_at": "2026-10-25T06:40:06.323978+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/langchain-text-splitters/json",
+          "fetched_at": "2026-10-25T06:40:06.323978+00:00"
+        }
+      ]
+    },
+    "langgraph": {
+      "name": "langgraph",
+      "declared_specifier": ">=0.2.76",
+      "declared_in": [
+        "requirements.txt",
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 1,
+          "source_url": "https://pypi.org/pypi/langgraph/json",
+          "fetched_at": "2026-10-25T06:40:06.623350+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/langgraph/json",
+          "fetched_at": "2026-10-25T06:40:06.623350+00:00"
+        }
+      ]
+    },
+    "openai": {
+      "name": "openai",
+      "declared_specifier": ">=1.12.0",
+      "declared_in": [
+        "requirements.txt",
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 2,
+          "source_url": "https://pypi.org/pypi/openai/json",
+          "fetched_at": "2026-10-25T06:40:06.972983+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/openai/json",
+          "fetched_at": "2026-10-25T06:40:06.972983+00:00"
+        }
+      ]
+    },
+    "ollama": {
+      "name": "ollama",
+      "declared_specifier": ">=0.4.8",
+      "declared_in": [
+        "requirements.txt",
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 26,
+          "source_url": "https://pypi.org/pypi/ollama/json",
+          "fetched_at": "2026-10-25T06:40:07.313243+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/ollama/json",
+          "fetched_at": "2026-10-25T06:40:07.313243+00:00"
+        }
+      ]
+    },
+    "litellm": {
+      "name": "litellm",
+      "declared_specifier": ">=1.71.0",
+      "declared_in": [
+        "requirements.txt",
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 0,
+          "source_url": "https://pypi.org/pypi/litellm/json",
+          "fetched_at": "2026-10-25T06:40:08.859176+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/litellm/json",
+          "fetched_at": "2026-10-25T06:40:08.859176+00:00"
+        }
+      ]
+    },
+    "google-genai": {
+      "name": "google-genai",
+      "declared_specifier": ">=1.0.0",
+      "declared_in": [
+        "requirements.txt"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 2,
+          "source_url": "https://pypi.org/pypi/google-genai/json",
+          "fetched_at": "2026-10-25T06:40:10.482215+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/google-genai/json",
+          "fetched_at": "2026-10-25T06:40:10.482215+00:00"
+        }
+      ]
+    },
+    "tavily-python": {
+      "name": "tavily-python",
+      "declared_specifier": ">=0.7.12",
+      "declared_in": [
+        "requirements.txt"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 18,
+          "source_url": "https://pypi.org/pypi/tavily-python/json",
+          "fetched_at": "2026-10-25T06:40:10.585765+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/tavily-python/json",
+          "fetched_at": "2026-10-25T06:40:10.585765+00:00"
+        }
+      ]
+    },
+    "ddgs": {
+      "name": "ddgs",
+      "declared_specifier": ">=9.0.0",
+      "declared_in": [
+        "requirements.txt"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 1,
+          "source_url": "https://pypi.org/pypi/ddgs/json",
+          "fetched_at": "2026-10-25T06:40:10.913729+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/ddgs/json",
+          "fetched_at": "2026-10-25T06:40:10.913729+00:00"
+        }
+      ]
+    },
+    "arxiv": {
+      "name": "arxiv",
+      "declared_specifier": ">=2.1.0",
+      "declared_in": [
+        "requirements.txt",
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 85,
+          "source_url": "https://pypi.org/pypi/arxiv/json",
+          "fetched_at": "2026-10-25T06:40:10.998403+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/arxiv/json",
+          "fetched_at": "2026-10-25T06:40:10.998403+00:00"
+        }
+      ]
+    },
+    "beautifulsoup4": {
+      "name": "beautifulsoup4",
+      "declared_specifier": ">=4.12.3",
+      "declared_in": [
+        "requirements.txt",
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 139,
+          "source_url": "https://pypi.org/pypi/beautifulsoup4/json",
+          "fetched_at": "2026-10-25T06:40:11.283843+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/beautifulsoup4/json",
+          "fetched_at": "2026-10-25T06:40:11.283843+00:00"
+        }
+      ]
+    },
+    "brotli": {
+      "name": "brotli",
+      "declared_specifier": ">=1.2.0",
+      "declared_in": [
+        "requirements.txt",
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 2,
+          "source_url": "https://pypi.org/pypi/brotli/json",
+          "fetched_at": "2026-10-25T06:40:11.360528+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/brotli/json",
+          "fetched_at": "2026-10-25T06:40:11.360528+00:00"
+        }
+      ]
+    },
+    "pymupdf": {
+      "name": "pymupdf",
+      "declared_specifier": ">=1.23.23",
+      "declared_in": [
+        "requirements.txt",
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 5,
+          "source_url": "https://pypi.org/pypi/pymupdf/json",
+          "fetched_at": "2026-10-25T06:40:11.464232+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/pymupdf/json",
+          "fetched_at": "2026-10-25T06:40:11.464232+00:00"
+        }
+      ]
+    },
+    "python-docx": {
+      "name": "python-docx",
+      "declared_specifier": ">=1.1.0",
+      "declared_in": [
+        "requirements.txt",
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 495,
+          "source_url": "https://pypi.org/pypi/python-docx/json",
+          "fetched_at": "2026-10-25T06:40:11.934771+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/python-docx/json",
+          "fetched_at": "2026-10-25T06:40:11.934771+00:00"
+        }
+      ]
+    },
+    "python-pptx": {
+      "name": "python-pptx",
+      "declared_specifier": ">=1.0.2",
+      "declared_in": [
+        "requirements.txt"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 808,
+          "source_url": "https://pypi.org/pypi/python-pptx/json",
+          "fetched_at": "2026-10-25T06:40:12.281703+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/python-pptx/json",
+          "fetched_at": "2026-10-25T06:40:12.281703+00:00"
+        }
+      ]
+    },
+    "unstructured": {
+      "name": "unstructured",
+      "declared_specifier": ">=0.13.0",
+      "declared_in": [
+        "requirements.txt",
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 2,
+          "source_url": "https://pypi.org/pypi/unstructured/json",
+          "fetched_at": "2026-10-25T06:40:12.591863+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/unstructured/json",
+          "fetched_at": "2026-10-25T06:40:12.591863+00:00"
+        }
+      ]
+    },
+    "lxml": {
+      "name": "lxml",
+      "declared_specifier": ">=5.1.0",
+      "declared_in": [
+        "requirements.txt",
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 51,
+          "source_url": "https://pypi.org/pypi/lxml/json",
+          "fetched_at": "2026-10-25T06:40:12.694739+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/lxml/json",
+          "fetched_at": "2026-10-25T06:40:12.694739+00:00"
+        }
+      ]
+    },
+    "pandas": {
+      "name": "pandas",
+      "declared_specifier": ">=2.2.0",
+      "declared_in": [
+        "requirements.txt"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 2,
+          "source_url": "https://pypi.org/pypi/pandas/json",
+          "fetched_at": "2026-10-25T06:40:12.937765+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/pandas/json",
+          "fetched_at": "2026-10-25T06:40:12.937765+00:00"
+        }
+      ]
+    },
+    "tiktoken": {
+      "name": "tiktoken",
+      "declared_specifier": ">=0.6.0",
+      "declared_in": [
+        "requirements.txt",
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 68,
+          "source_url": "https://pypi.org/pypi/tiktoken/json",
+          "fetched_at": "2026-10-25T06:40:13.133226+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/tiktoken/json",
+          "fetched_at": "2026-10-25T06:40:13.133226+00:00"
+        }
+      ]
+    },
+    "numpy": {
+      "name": "numpy",
+      "declared_specifier": "<2.5.0,>=2.0.0",
+      "declared_in": [
+        "requirements.txt",
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 14,
+          "source_url": "https://pypi.org/pypi/numpy/json",
+          "fetched_at": "2026-10-25T06:40:13.451843+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/numpy/json",
+          "fetched_at": "2026-10-25T06:40:13.451843+00:00"
+        }
+      ]
+    },
+    "aiofiles": {
+      "name": "aiofiles",
+      "declared_specifier": ">=23.2.1",
+      "declared_in": [
+        "requirements.txt",
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 380,
+          "source_url": "https://pypi.org/pypi/aiofiles/json",
+          "fetched_at": "2026-10-25T06:40:13.695640+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/aiofiles/json",
+          "fetched_at": "2026-10-25T06:40:13.695640+00:00"
+        }
+      ]
+    },
+    "httpx": {
+      "name": "httpx",
+      "declared_specifier": ">=0.27.0",
+      "declared_in": [
+        "requirements.txt",
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 54,
+          "source_url": "https://pypi.org/pypi/httpx/json",
+          "fetched_at": "2026-10-25T06:40:13.990211+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/httpx/json",
+          "fetched_at": "2026-10-25T06:40:13.990211+00:00"
+        }
+      ]
+    },
+    "websockets": {
+      "name": "websockets",
+      "declared_specifier": ">=12.0",
+      "declared_in": [
+        "requirements.txt",
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 5,
+          "source_url": "https://pypi.org/pypi/websockets/json",
+          "fetched_at": "2026-10-25T06:40:14.088697+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/websockets/json",
+          "fetched_at": "2026-10-25T06:40:14.088697+00:00"
+        }
+      ]
+    },
+    "requests": {
+      "name": "requests",
+      "declared_specifier": ">=2.31.0",
+      "declared_in": [
+        "requirements.txt",
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 163,
+          "source_url": "https://pypi.org/pypi/requests/json",
+          "fetched_at": "2026-10-25T06:40:14.261392+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/requests/json",
+          "fetched_at": "2026-10-25T06:40:14.261392+00:00"
+        }
+      ]
+    },
+    "pyyaml": {
+      "name": "pyyaml",
+      "declared_specifier": ">=6.0.1",
+      "declared_in": [
+        "requirements.txt",
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 390,
+          "source_url": "https://pypi.org/pypi/pyyaml/json",
+          "fetched_at": "2026-10-25T06:40:14.367356+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/pyyaml/json",
+          "fetched_at": "2026-10-25T06:40:14.367356+00:00"
+        }
+      ]
+    },
+    "jinja2": {
+      "name": "jinja2",
+      "declared_specifier": ">=3.1.3",
+      "declared_in": [
+        "requirements.txt",
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 598,
+          "source_url": "https://pypi.org/pypi/jinja2/json",
+          "fetched_at": "2026-10-25T06:40:14.474080+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/jinja2/json",
+          "fetched_at": "2026-10-25T06:40:14.474080+00:00"
+        }
+      ]
+    },
+    "loguru": {
+      "name": "loguru",
+      "declared_specifier": ">=0.7.2",
+      "declared_in": [
+        "requirements.txt",
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 687,
+          "source_url": "https://pypi.org/pypi/loguru/json",
+          "fetched_at": "2026-10-25T06:40:14.571779+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/loguru/json",
+          "fetched_at": "2026-10-25T06:40:14.571779+00:00"
+        }
+      ]
+    },
+    "colorama": {
+      "name": "colorama",
+      "declared_specifier": ">=0.4.6",
+      "declared_in": [
+        "requirements.txt",
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 1461,
+          "source_url": "https://pypi.org/pypi/colorama/json",
+          "fetched_at": "2026-10-25T06:40:14.880724+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/colorama/json",
+          "fetched_at": "2026-10-25T06:40:14.880724+00:00"
+        }
+      ]
+    },
+    "md2pdf": {
+      "name": "md2pdf",
+      "declared_specifier": ">=1.0.1",
+      "declared_in": [
+        "requirements.txt",
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 207,
+          "source_url": "https://pypi.org/pypi/md2pdf/json",
+          "fetched_at": "2026-10-25T06:40:14.997209+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/md2pdf/json",
+          "fetched_at": "2026-10-25T06:40:14.997209+00:00"
+        }
+      ]
+    },
+    "mistune": {
+      "name": "mistune",
+      "declared_specifier": ">=3.0.2",
+      "declared_in": [
+        "requirements.txt",
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 5,
+          "source_url": "https://pypi.org/pypi/mistune/json",
+          "fetched_at": "2026-10-25T06:40:15.625404+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/mistune/json",
+          "fetched_at": "2026-10-25T06:40:15.625404+00:00"
+        }
+      ]
+    },
+    "htmldocx": {
+      "name": "htmldocx",
+      "declared_specifier": ">=0.0.6",
+      "declared_in": [
+        "requirements.txt",
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 1886,
+          "source_url": "https://pypi.org/pypi/htmldocx/json",
+          "fetched_at": "2026-10-25T06:40:15.922644+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/htmldocx/json",
+          "fetched_at": "2026-10-25T06:40:15.922644+00:00"
+        }
+      ]
+    },
+    "mcp": {
+      "name": "mcp",
+      "declared_specifier": "<2.0.0,>=1.9.1",
+      "declared_in": [
+        "requirements.txt",
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 22,
+          "source_url": "https://pypi.org/pypi/mcp/json",
+          "fetched_at": "2026-10-25T06:40:16.196164+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/mcp/json",
+          "fetched_at": "2026-10-25T06:40:16.196164+00:00"
+        }
+      ]
+    },
+    "langchain-mcp-adapters": {
+      "name": "langchain-mcp-adapters",
+      "declared_specifier": ">=0.1.0",
+      "declared_in": [
+        "requirements.txt"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 80,
+          "source_url": "https://pypi.org/pypi/langchain-mcp-adapters/json",
+          "fetched_at": "2026-10-25T06:40:16.604905+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/langchain-mcp-adapters/json",
+          "fetched_at": "2026-10-25T06:40:16.604905+00:00"
+        }
+      ]
+    },
+    "sqlalchemy": {
+      "name": "sqlalchemy",
+      "declared_specifier": ">=2.0.25",
+      "declared_in": [
+        "requirements.txt",
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 3,
+          "source_url": "https://pypi.org/pypi/sqlalchemy/json",
+          "fetched_at": "2026-10-25T06:40:16.960109+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/sqlalchemy/json",
+          "fetched_at": "2026-10-25T06:40:16.960109+00:00"
+        }
+      ]
+    },
+    "python-multipart": {
+      "name": "python-multipart",
+      "declared_specifier": ">=0.0.9",
+      "declared_in": [
+        "requirements.txt",
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 142,
+          "source_url": "https://pypi.org/pypi/python-multipart/json",
+          "fetched_at": "2026-10-25T06:40:17.458735+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/python-multipart/json",
+          "fetched_at": "2026-10-25T06:40:17.458735+00:00"
+        }
+      ]
+    },
+    "json-repair": {
+      "name": "json-repair",
+      "declared_specifier": ">=0.29.8",
+      "declared_in": [
+        "requirements.txt",
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 2,
+          "source_url": "https://pypi.org/pypi/json-repair/json",
+          "fetched_at": "2026-10-25T06:40:17.751405+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/json-repair/json",
+          "fetched_at": "2026-10-25T06:40:17.751405+00:00"
+        }
+      ]
+    },
+    "json5": {
+      "name": "json5",
+      "declared_specifier": ">=0.9.25",
+      "declared_in": [
+        "requirements.txt",
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 15,
+          "source_url": "https://pypi.org/pypi/json5/json",
+          "fetched_at": "2026-10-25T06:40:17.882691+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/json5/json",
+          "fetched_at": "2026-10-25T06:40:17.882691+00:00"
+        }
+      ]
+    },
+    "markdown": {
+      "name": "markdown",
+      "declared_specifier": ">=3.5.2",
+      "declared_in": [
+        "requirements.txt",
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 5,
+          "source_url": "https://pypi.org/pypi/markdown/json",
+          "fetched_at": "2026-10-25T06:40:18.247248+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/markdown/json",
+          "fetched_at": "2026-10-25T06:40:18.247248+00:00"
+        }
+      ]
+    },
+    "aiohappyeyeballs": {
+      "name": "aiohappyeyeballs",
+      "declared_specifier": ">=2.6.1",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 115,
+          "source_url": "https://pypi.org/pypi/aiohappyeyeballs/json",
+          "fetched_at": "2026-10-25T06:40:18.538785+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/aiohappyeyeballs/json",
+          "fetched_at": "2026-10-25T06:40:18.538785+00:00"
+        }
+      ]
+    },
+    "aiohttp": {
+      "name": "aiohttp",
+      "declared_specifier": ">=3.12.0",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 14,
+          "source_url": "https://pypi.org/pypi/aiohttp/json",
+          "fetched_at": "2026-10-25T06:40:18.829340+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/aiohttp/json",
+          "fetched_at": "2026-10-25T06:40:18.829340+00:00"
+        }
+      ]
+    },
+    "aiosignal": {
+      "name": "aiosignal",
+      "declared_specifier": ">=1.3.2",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 478,
+          "source_url": "https://pypi.org/pypi/aiosignal/json",
+          "fetched_at": "2026-10-25T06:40:19.494275+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/aiosignal/json",
+          "fetched_at": "2026-10-25T06:40:19.494275+00:00"
+        }
+      ]
+    },
+    "annotated-types": {
+      "name": "annotated-types",
+      "declared_specifier": ">=0.7.0",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 93,
+          "source_url": "https://pypi.org/pypi/annotated-types/json",
+          "fetched_at": "2026-10-25T06:40:19.758877+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/annotated-types/json",
+          "fetched_at": "2026-10-25T06:40:19.758877+00:00"
+        }
+      ]
+    },
+    "anyio": {
+      "name": "anyio",
+      "declared_specifier": ">=4.9.0",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 49,
+          "source_url": "https://pypi.org/pypi/anyio/json",
+          "fetched_at": "2026-10-25T06:40:19.833740+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/anyio/json",
+          "fetched_at": "2026-10-25T06:40:19.833740+00:00"
+        }
+      ]
+    },
+    "attrs": {
+      "name": "attrs",
+      "declared_specifier": ">=25.3.0",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 219,
+          "source_url": "https://pypi.org/pypi/attrs/json",
+          "fetched_at": "2026-10-25T06:40:19.926903+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/attrs/json",
+          "fetched_at": "2026-10-25T06:40:19.926903+00:00"
+        }
+      ]
+    },
+    "backoff": {
+      "name": "backoff",
+      "declared_specifier": ">=2.2.1",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 1480,
+          "source_url": "https://pypi.org/pypi/backoff/json",
+          "fetched_at": "2026-10-25T06:40:20.587776+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/backoff/json",
+          "fetched_at": "2026-10-25T06:40:20.587776+00:00"
+        }
+      ]
+    },
+    "certifi": {
+      "name": "certifi",
+      "declared_specifier": ">=2025.4.26",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 1,
+          "source_url": "https://pypi.org/pypi/certifi/json",
+          "fetched_at": "2026-10-25T06:40:20.887024+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/certifi/json",
+          "fetched_at": "2026-10-25T06:40:20.887024+00:00"
+        }
+      ]
+    },
+    "cffi": {
+      "name": "cffi",
+      "declared_specifier": ">=1.17.1",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 82,
+          "source_url": "https://pypi.org/pypi/cffi/json",
+          "fetched_at": "2026-10-25T06:40:20.976328+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/cffi/json",
+          "fetched_at": "2026-10-25T06:40:20.976328+00:00"
+        }
+      ]
+    },
+    "chardet": {
+      "name": "chardet",
+      "declared_specifier": ">=5.2.0",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 7,
+          "source_url": "https://pypi.org/pypi/chardet/json",
+          "fetched_at": "2026-10-25T06:40:21.142433+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/chardet/json",
+          "fetched_at": "2026-10-25T06:40:21.142433+00:00"
+        }
+      ]
+    },
+    "charset-normalizer": {
+      "name": "charset-normalizer",
+      "declared_specifier": ">=3.4.2",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 25,
+          "source_url": "https://pypi.org/pypi/charset-normalizer/json",
+          "fetched_at": "2026-10-25T06:40:21.448378+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/charset-normalizer/json",
+          "fetched_at": "2026-10-25T06:40:21.448378+00:00"
+        }
+      ]
+    },
+    "click": {
+      "name": "click",
+      "declared_specifier": ">=8.1.0",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 59,
+          "source_url": "https://pypi.org/pypi/click/json",
+          "fetched_at": "2026-10-25T06:40:21.627479+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/click/json",
+          "fetched_at": "2026-10-25T06:40:21.627479+00:00"
+        }
+      ]
+    },
+    "cryptography": {
+      "name": "cryptography",
+      "declared_specifier": ">=45.0.2",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 24,
+          "source_url": "https://pypi.org/pypi/cryptography/json",
+          "fetched_at": "2026-10-25T06:40:21.705360+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/cryptography/json",
+          "fetched_at": "2026-10-25T06:40:21.705360+00:00"
+        }
+      ]
+    },
+    "cssselect2": {
+      "name": "cssselect2",
+      "declared_specifier": ">=0.8.0",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 54,
+          "source_url": "https://pypi.org/pypi/cssselect2/json",
+          "fetched_at": "2026-10-25T06:40:21.889134+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/cssselect2/json",
+          "fetched_at": "2026-10-25T06:40:21.889134+00:00"
+        }
+      ]
+    },
+    "dataclasses-json": {
+      "name": "dataclasses-json",
+      "declared_specifier": ">=0.6.7",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 867,
+          "source_url": "https://pypi.org/pypi/dataclasses-json/json",
+          "fetched_at": "2026-10-25T06:40:22.203773+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/dataclasses-json/json",
+          "fetched_at": "2026-10-25T06:40:22.203773+00:00"
+        }
+      ]
+    },
+    "distro": {
+      "name": "distro",
+      "declared_specifier": ">=1.9.0",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 1035,
+          "source_url": "https://pypi.org/pypi/distro/json",
+          "fetched_at": "2026-10-25T06:40:22.570180+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/distro/json",
+          "fetched_at": "2026-10-25T06:40:22.570180+00:00"
+        }
+      ]
+    },
+    "docopt": {
+      "name": "docopt",
+      "declared_specifier": ">=0.6.2",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 4513,
+          "source_url": "https://pypi.org/pypi/docopt/json",
+          "fetched_at": "2026-10-25T06:40:22.674604+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/docopt/json",
+          "fetched_at": "2026-10-25T06:40:22.674604+00:00"
+        }
+      ]
+    },
+    "duckduckgo-search": {
+      "name": "duckduckgo-search",
+      "declared_specifier": ">=4.1.1",
+      "declared_in": [
+        "pyproject.toml",
+        "pyproject.toml [requirements-txt]"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 475,
+          "source_url": "https://pypi.org/pypi/duckduckgo-search/json",
+          "fetched_at": "2026-10-25T06:40:23.004091+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/duckduckgo-search/json",
+          "fetched_at": "2026-10-25T06:40:23.004091+00:00"
+        }
+      ]
+    },
+    "emoji": {
+      "name": "emoji",
+      "declared_specifier": ">=2.14.1",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 38,
+          "source_url": "https://pypi.org/pypi/emoji/json",
+          "fetched_at": "2026-10-25T06:40:23.312917+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/emoji/json",
+          "fetched_at": "2026-10-25T06:40:23.312917+00:00"
+        }
+      ]
+    },
+    "feedparser": {
+      "name": "feedparser",
+      "declared_specifier": ">=6.0.11",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 86,
+          "source_url": "https://pypi.org/pypi/feedparser/json",
+          "fetched_at": "2026-10-25T06:40:23.657733+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/feedparser/json",
+          "fetched_at": "2026-10-25T06:40:23.657733+00:00"
+        }
+      ]
+    },
+    "filelock": {
+      "name": "filelock",
+      "declared_specifier": ">=3.18.0",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 6,
+          "source_url": "https://pypi.org/pypi/filelock/json",
+          "fetched_at": "2026-10-25T06:40:23.732547+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/filelock/json",
+          "fetched_at": "2026-10-25T06:40:23.732547+00:00"
+        }
+      ]
+    },
+    "filetype": {
+      "name": "filetype",
+      "declared_specifier": ">=1.2.0",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 1452,
+          "source_url": "https://pypi.org/pypi/filetype/json",
+          "fetched_at": "2026-10-25T06:40:23.831785+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/filetype/json",
+          "fetched_at": "2026-10-25T06:40:23.831785+00:00"
+        }
+      ]
+    },
+    "fonttools": {
+      "name": "fonttools",
+      "declared_specifier": ">=4.58.0",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 10,
+          "source_url": "https://pypi.org/pypi/fonttools/json",
+          "fetched_at": "2026-10-25T06:40:24.146792+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/fonttools/json",
+          "fetched_at": "2026-10-25T06:40:24.146792+00:00"
+        }
+      ]
+    },
+    "frozenlist": {
+      "name": "frozenlist",
+      "declared_specifier": ">=1.6.0",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 384,
+          "source_url": "https://pypi.org/pypi/frozenlist/json",
+          "fetched_at": "2026-10-25T06:40:24.343915+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/frozenlist/json",
+          "fetched_at": "2026-10-25T06:40:24.343915+00:00"
+        }
+      ]
+    },
+    "fsspec": {
+      "name": "fsspec",
+      "declared_specifier": ">=2025.5.1",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 36,
+          "source_url": "https://pypi.org/pypi/fsspec/json",
+          "fetched_at": "2026-10-25T06:40:24.756165+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/fsspec/json",
+          "fetched_at": "2026-10-25T06:40:24.756165+00:00"
+        }
+      ]
+    },
+    "greenlet": {
+      "name": "greenlet",
+      "declared_specifier": ">=3.2.2",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 40,
+          "source_url": "https://pypi.org/pypi/greenlet/json",
+          "fetched_at": "2026-10-25T06:40:24.847379+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/greenlet/json",
+          "fetched_at": "2026-10-25T06:40:24.847379+00:00"
+        }
+      ]
+    },
+    "h11": {
+      "name": "h11",
+      "declared_specifier": ">=0.16.0",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 549,
+          "source_url": "https://pypi.org/pypi/h11/json",
+          "fetched_at": "2026-10-25T06:40:25.254556+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/h11/json",
+          "fetched_at": "2026-10-25T06:40:25.254556+00:00"
+        }
+      ]
+    },
+    "html5lib": {
+      "name": "html5lib",
+      "declared_specifier": ">=1.1",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 2315,
+          "source_url": "https://pypi.org/pypi/html5lib/json",
+          "fetched_at": "2026-10-25T06:40:25.357897+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/html5lib/json",
+          "fetched_at": "2026-10-25T06:40:25.357897+00:00"
+        }
+      ]
+    },
+    "httpcore": {
+      "name": "httpcore",
+      "declared_specifier": ">=1.0.9",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 548,
+          "source_url": "https://pypi.org/pypi/httpcore/json",
+          "fetched_at": "2026-10-25T06:40:25.645232+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/httpcore/json",
+          "fetched_at": "2026-10-25T06:40:25.645232+00:00"
+        }
+      ]
+    },
+    "httpx-aiohttp": {
+      "name": "httpx-aiohttp",
+      "declared_specifier": ">=0.1.4",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 91,
+          "source_url": "https://pypi.org/pypi/httpx-aiohttp/json",
+          "fetched_at": "2026-10-25T06:40:25.744057+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/httpx-aiohttp/json",
+          "fetched_at": "2026-10-25T06:40:25.744057+00:00"
+        }
+      ]
+    },
+    "httpx-sse": {
+      "name": "httpx-sse",
+      "declared_specifier": ">=0.4.0",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 379,
+          "source_url": "https://pypi.org/pypi/httpx-sse/json",
+          "fetched_at": "2026-10-25T06:40:25.813872+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/httpx-sse/json",
+          "fetched_at": "2026-10-25T06:40:25.813872+00:00"
+        }
+      ]
+    },
+    "huggingface-hub": {
+      "name": "huggingface-hub",
+      "declared_specifier": ">=0.32.0",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 1,
+          "source_url": "https://pypi.org/pypi/huggingface-hub/json",
+          "fetched_at": "2026-10-25T06:40:26.125451+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/huggingface-hub/json",
+          "fetched_at": "2026-10-25T06:40:26.125451+00:00"
+        }
+      ]
+    },
+    "idna": {
+      "name": "idna",
+      "declared_specifier": ">=3.10",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 37,
+          "source_url": "https://pypi.org/pypi/idna/json",
+          "fetched_at": "2026-10-25T06:40:26.504144+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/idna/json",
+          "fetched_at": "2026-10-25T06:40:26.504144+00:00"
+        }
+      ]
+    },
+    "importlib-metadata": {
+      "name": "importlib-metadata",
+      "declared_specifier": ">=8.7.0",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 1,
+          "source_url": "https://pypi.org/pypi/importlib-metadata/json",
+          "fetched_at": "2026-10-25T06:40:26.584501+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/importlib-metadata/json",
+          "fetched_at": "2026-10-25T06:40:26.584501+00:00"
+        }
+      ]
+    },
+    "jiter": {
+      "name": "jiter",
+      "declared_specifier": ">=0.10.0",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 1,
+          "source_url": "https://pypi.org/pypi/jiter/json",
+          "fetched_at": "2026-10-25T06:40:26.900464+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/jiter/json",
+          "fetched_at": "2026-10-25T06:40:26.900464+00:00"
+        }
+      ]
+    },
+    "joblib": {
+      "name": "joblib",
+      "declared_specifier": ">=1.5.1",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 54,
+          "source_url": "https://pypi.org/pypi/joblib/json",
+          "fetched_at": "2026-10-25T06:40:27.274401+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/joblib/json",
+          "fetched_at": "2026-10-25T06:40:27.274401+00:00"
+        }
+      ]
+    },
+    "jsonpatch": {
+      "name": "jsonpatch",
+      "declared_specifier": ">=1.33",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 0,
+          "source_url": "https://pypi.org/pypi/jsonpatch/json",
+          "fetched_at": "2026-10-25T06:40:27.381082+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/jsonpatch/json",
+          "fetched_at": "2026-10-25T06:40:27.381082+00:00"
+        }
+      ]
+    },
+    "jsonpointer": {
+      "name": "jsonpointer",
+      "declared_specifier": ">=3.0.0",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 0,
+          "source_url": "https://pypi.org/pypi/jsonpointer/json",
+          "fetched_at": "2026-10-25T06:40:27.693168+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/jsonpointer/json",
+          "fetched_at": "2026-10-25T06:40:27.693168+00:00"
+        }
+      ]
+    },
+    "jsonschema": {
+      "name": "jsonschema",
+      "declared_specifier": ">=4.23.0",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 290,
+          "source_url": "https://pypi.org/pypi/jsonschema/json",
+          "fetched_at": "2026-10-25T06:40:27.984717+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/jsonschema/json",
+          "fetched_at": "2026-10-25T06:40:27.984717+00:00"
+        }
+      ]
+    },
+    "jsonschema-specifications": {
+      "name": "jsonschema-specifications",
+      "declared_specifier": ">=2025.4.1",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 412,
+          "source_url": "https://pypi.org/pypi/jsonschema-specifications/json",
+          "fetched_at": "2026-10-25T06:40:28.288192+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/jsonschema-specifications/json",
+          "fetched_at": "2026-10-25T06:40:28.288192+00:00"
+        }
+      ]
+    },
+    "kiwisolver": {
+      "name": "kiwisolver",
+      "declared_specifier": ">=1.4.5",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 57,
+          "source_url": "https://pypi.org/pypi/kiwisolver/json",
+          "fetched_at": "2026-10-25T06:40:28.568469+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/kiwisolver/json",
+          "fetched_at": "2026-10-25T06:40:28.568469+00:00"
+        }
+      ]
+    },
+    "langdetect": {
+      "name": "langdetect",
+      "declared_specifier": ">=1.0.9",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 1996,
+          "source_url": "https://pypi.org/pypi/langdetect/json",
+          "fetched_at": "2026-10-25T06:40:28.712396+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/langdetect/json",
+          "fetched_at": "2026-10-25T06:40:28.712396+00:00"
+        }
+      ]
+    },
+    "langgraph-checkpoint": {
+      "name": "langgraph-checkpoint",
+      "declared_specifier": ">=2.0.26",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 12,
+          "source_url": "https://pypi.org/pypi/langgraph-checkpoint/json",
+          "fetched_at": "2026-10-25T06:40:29.157509+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/langgraph-checkpoint/json",
+          "fetched_at": "2026-10-25T06:40:29.157509+00:00"
+        }
+      ]
+    },
+    "langgraph-cli": {
+      "name": "langgraph-cli",
+      "declared_specifier": ">=0.2.10",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 1,
+          "source_url": "https://pypi.org/pypi/langgraph-cli/json",
+          "fetched_at": "2026-10-25T06:40:29.493646+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/langgraph-cli/json",
+          "fetched_at": "2026-10-25T06:40:29.493646+00:00"
+        }
+      ]
+    },
+    "langgraph-sdk": {
+      "name": "langgraph-sdk",
+      "declared_specifier": ">=0.1.70",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 1,
+          "source_url": "https://pypi.org/pypi/langgraph-sdk/json",
+          "fetched_at": "2026-10-25T06:40:29.599257+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/langgraph-sdk/json",
+          "fetched_at": "2026-10-25T06:40:29.599257+00:00"
+        }
+      ]
+    },
+    "langsmith": {
+      "name": "langsmith",
+      "declared_specifier": ">=0.3.42",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 3,
+          "source_url": "https://pypi.org/pypi/langsmith/json",
+          "fetched_at": "2026-10-25T06:40:29.907010+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/langsmith/json",
+          "fetched_at": "2026-10-25T06:40:29.907010+00:00"
+        }
+      ]
+    },
+    "markdown2": {
+      "name": "markdown2",
+      "declared_specifier": ">=2.5.3",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 236,
+          "source_url": "https://pypi.org/pypi/markdown2/json",
+          "fetched_at": "2026-10-25T06:40:30.262612+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/markdown2/json",
+          "fetched_at": "2026-10-25T06:40:30.262612+00:00"
+        }
+      ]
+    },
+    "markupsafe": {
+      "name": "markupsafe",
+      "declared_specifier": ">=3.0.2",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 22,
+          "source_url": "https://pypi.org/pypi/markupsafe/json",
+          "fetched_at": "2026-10-25T06:40:30.606735+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/markupsafe/json",
+          "fetched_at": "2026-10-25T06:40:30.606735+00:00"
+        }
+      ]
+    },
+    "marshmallow": {
+      "name": "marshmallow",
+      "declared_specifier": ">=3.26.1",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 77,
+          "source_url": "https://pypi.org/pypi/marshmallow/json",
+          "fetched_at": "2026-10-25T06:40:30.761828+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/marshmallow/json",
+          "fetched_at": "2026-10-25T06:40:30.761828+00:00"
+        }
+      ]
+    },
+    "multidict": {
+      "name": "multidict",
+      "declared_specifier": ">=6.4.4",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 0,
+          "source_url": "https://pypi.org/pypi/multidict/json",
+          "fetched_at": "2026-10-25T06:40:31.089440+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/multidict/json",
+          "fetched_at": "2026-10-25T06:40:31.089440+00:00"
+        }
+      ]
+    },
+    "mypy-extensions": {
+      "name": "mypy-extensions",
+      "declared_specifier": ">=1.1.0",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 550,
+          "source_url": "https://pypi.org/pypi/mypy-extensions/json",
+          "fetched_at": "2026-10-25T06:40:31.764063+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/mypy-extensions/json",
+          "fetched_at": "2026-10-25T06:40:31.764063+00:00"
+        }
+      ]
+    },
+    "nest-asyncio": {
+      "name": "nest-asyncio",
+      "declared_specifier": ">=1.6.0",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 1007,
+          "source_url": "https://pypi.org/pypi/nest-asyncio/json",
+          "fetched_at": "2026-10-25T06:40:32.071739+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/nest-asyncio/json",
+          "fetched_at": "2026-10-25T06:40:32.071739+00:00"
+        }
+      ]
+    },
+    "nltk": {
+      "name": "nltk",
+      "declared_specifier": ">=3.9.1",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 3,
+          "source_url": "https://pypi.org/pypi/nltk/json",
+          "fetched_at": "2026-10-25T06:40:32.448943+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/nltk/json",
+          "fetched_at": "2026-10-25T06:40:32.448943+00:00"
+        }
+      ]
+    },
+    "olefile": {
+      "name": "olefile",
+      "declared_specifier": ">=0.47",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 1058,
+          "source_url": "https://pypi.org/pypi/olefile/json",
+          "fetched_at": "2026-10-25T06:40:32.531375+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/olefile/json",
+          "fetched_at": "2026-10-25T06:40:32.531375+00:00"
+        }
+      ]
+    },
+    "orjson": {
+      "name": "orjson",
+      "declared_specifier": ">=3.10.18",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 17,
+          "source_url": "https://pypi.org/pypi/orjson/json",
+          "fetched_at": "2026-10-25T06:40:33.383486+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/orjson/json",
+          "fetched_at": "2026-10-25T06:40:33.383486+00:00"
+        }
+      ]
+    },
+    "ormsgpack": {
+      "name": "ormsgpack",
+      "declared_specifier": ">=1.10.0",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 9,
+          "source_url": "https://pypi.org/pypi/ormsgpack/json",
+          "fetched_at": "2026-10-25T06:40:33.998419+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/ormsgpack/json",
+          "fetched_at": "2026-10-25T06:40:33.998419+00:00"
+        }
+      ]
+    },
+    "packaging": {
+      "name": "packaging",
+      "declared_specifier": ">=24.2",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 81,
+          "source_url": "https://pypi.org/pypi/packaging/json",
+          "fetched_at": "2026-10-25T06:40:34.329701+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/packaging/json",
+          "fetched_at": "2026-10-25T06:40:34.329701+00:00"
+        }
+      ]
+    },
+    "pillow": {
+      "name": "pillow",
+      "declared_specifier": ">=11.2.1",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 8,
+          "source_url": "https://pypi.org/pypi/pillow/json",
+          "fetched_at": "2026-10-25T06:40:34.399404+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/pillow/json",
+          "fetched_at": "2026-10-25T06:40:34.399404+00:00"
+        }
+      ]
+    },
+    "primp": {
+      "name": "primp",
+      "declared_specifier": ">=0.15.0",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 42,
+          "source_url": "https://pypi.org/pypi/primp/json",
+          "fetched_at": "2026-10-25T06:40:34.580838+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/primp/json",
+          "fetched_at": "2026-10-25T06:40:34.580838+00:00"
+        }
+      ]
+    },
+    "propcache": {
+      "name": "propcache",
+      "declared_specifier": ">=0.3.1",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 39,
+          "source_url": "https://pypi.org/pypi/propcache/json",
+          "fetched_at": "2026-10-25T06:40:34.672175+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/propcache/json",
+          "fetched_at": "2026-10-25T06:40:34.672175+00:00"
+        }
+      ]
+    },
+    "psutil": {
+      "name": "psutil",
+      "declared_specifier": ">=6.0.0",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 269,
+          "source_url": "https://pypi.org/pypi/psutil/json",
+          "fetched_at": "2026-10-25T06:40:35.003867+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/psutil/json",
+          "fetched_at": "2026-10-25T06:40:35.003867+00:00"
+        }
+      ]
+    },
+    "pycparser": {
+      "name": "pycparser",
+      "declared_specifier": ">=2.22",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 2,
+          "source_url": "https://pypi.org/pypi/pycparser/json",
+          "fetched_at": "2026-10-25T06:40:35.409309+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/pycparser/json",
+          "fetched_at": "2026-10-25T06:40:35.409309+00:00"
+        }
+      ]
+    },
+    "pydantic-core": {
+      "name": "pydantic-core",
+      "declared_specifier": ">=2.33.2",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 13,
+          "source_url": "https://pypi.org/pypi/pydantic-core/json",
+          "fetched_at": "2026-10-25T06:40:35.473648+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/pydantic-core/json",
+          "fetched_at": "2026-10-25T06:40:35.473648+00:00"
+        }
+      ]
+    },
+    "pydantic-settings": {
+      "name": "pydantic-settings",
+      "declared_specifier": ">=2.9.1",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 4,
+          "source_url": "https://pypi.org/pypi/pydantic-settings/json",
+          "fetched_at": "2026-10-25T06:40:35.987622+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/pydantic-settings/json",
+          "fetched_at": "2026-10-25T06:40:35.987622+00:00"
+        }
+      ]
+    },
+    "pydyf": {
+      "name": "pydyf",
+      "declared_specifier": ">=0.11.0",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 10,
+          "source_url": "https://pypi.org/pypi/pydyf/json",
+          "fetched_at": "2026-10-25T06:40:36.322812+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/pydyf/json",
+          "fetched_at": "2026-10-25T06:40:36.322812+00:00"
+        }
+      ]
+    },
+    "pypdf": {
+      "name": "pypdf",
+      "declared_specifier": ">=5.5.0",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 3,
+          "source_url": "https://pypi.org/pypi/pypdf/json",
+          "fetched_at": "2026-10-25T06:40:36.674718+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/pypdf/json",
+          "fetched_at": "2026-10-25T06:40:36.674718+00:00"
+        }
+      ]
+    },
+    "pyphen": {
+      "name": "pyphen",
+      "declared_specifier": ">=0.17.2",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 71,
+          "source_url": "https://pypi.org/pypi/pyphen/json",
+          "fetched_at": "2026-10-25T06:40:36.971618+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/pyphen/json",
+          "fetched_at": "2026-10-25T06:40:36.971618+00:00"
+        }
+      ]
+    },
+    "python-iso639": {
+      "name": "python-iso639",
+      "declared_specifier": ">=2025.2.18",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 93,
+          "source_url": "https://pypi.org/pypi/python-iso639/json",
+          "fetched_at": "2026-10-25T06:40:37.306249+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/python-iso639/json",
+          "fetched_at": "2026-10-25T06:40:37.306249+00:00"
+        }
+      ]
+    },
+    "python-magic": {
+      "name": "python-magic",
+      "declared_specifier": ">=0.4.27",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 1600,
+          "source_url": "https://pypi.org/pypi/python-magic/json",
+          "fetched_at": "2026-10-25T06:40:37.697277+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/python-magic/json",
+          "fetched_at": "2026-10-25T06:40:37.697277+00:00"
+        }
+      ]
+    },
+    "python-oxmsg": {
+      "name": "python-oxmsg",
+      "declared_specifier": ">=0.0.2",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 628,
+          "source_url": "https://pypi.org/pypi/python-oxmsg/json",
+          "fetched_at": "2026-10-25T06:40:37.999740+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/python-oxmsg/json",
+          "fetched_at": "2026-10-25T06:40:37.999740+00:00"
+        }
+      ]
+    },
+    "rapidfuzz": {
+      "name": "rapidfuzz",
+      "declared_specifier": ">=3.13.0",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 55,
+          "source_url": "https://pypi.org/pypi/rapidfuzz/json",
+          "fetched_at": "2026-10-25T06:40:38.314865+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/rapidfuzz/json",
+          "fetched_at": "2026-10-25T06:40:38.314865+00:00"
+        }
+      ]
+    },
+    "referencing": {
+      "name": "referencing",
+      "declared_specifier": ">=0.36.2",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 376,
+          "source_url": "https://pypi.org/pypi/referencing/json",
+          "fetched_at": "2026-10-25T06:40:39.023479+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/referencing/json",
+          "fetched_at": "2026-10-25T06:40:39.023479+00:00"
+        }
+      ]
+    },
+    "regex": {
+      "name": "regex",
+      "declared_specifier": ">=2024.11.6",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 26,
+          "source_url": "https://pypi.org/pypi/regex/json",
+          "fetched_at": "2026-10-25T06:40:39.348480+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/regex/json",
+          "fetched_at": "2026-10-25T06:40:39.348480+00:00"
+        }
+      ]
+    },
+    "requests-toolbelt": {
+      "name": "requests-toolbelt",
+      "declared_specifier": ">=1.0.0",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 1273,
+          "source_url": "https://pypi.org/pypi/requests-toolbelt/json",
+          "fetched_at": "2026-10-25T06:40:39.657579+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/requests-toolbelt/json",
+          "fetched_at": "2026-10-25T06:40:39.657579+00:00"
+        }
+      ]
+    },
+    "rpds-py": {
+      "name": "rpds-py",
+      "declared_specifier": ">=0.25.1",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 20,
+          "source_url": "https://pypi.org/pypi/rpds-py/json",
+          "fetched_at": "2026-10-25T06:40:40.014864+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/rpds-py/json",
+          "fetched_at": "2026-10-25T06:40:40.014864+00:00"
+        }
+      ]
+    },
+    "sgmllib3k": {
+      "name": "sgmllib3k",
+      "declared_specifier": ">=1.0.0",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 5905,
+          "source_url": "https://pypi.org/pypi/sgmllib3k/json",
+          "fetched_at": "2026-10-25T06:40:41.111729+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/sgmllib3k/json",
+          "fetched_at": "2026-10-25T06:40:41.111729+00:00"
+        }
+      ]
+    },
+    "six": {
+      "name": "six",
+      "declared_specifier": ">=1.17.0",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 689,
+          "source_url": "https://pypi.org/pypi/six/json",
+          "fetched_at": "2026-10-25T06:40:41.186893+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/six/json",
+          "fetched_at": "2026-10-25T06:40:41.186893+00:00"
+        }
+      ]
+    },
+    "sniffio": {
+      "name": "sniffio",
+      "declared_specifier": ">=1.3.1",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 972,
+          "source_url": "https://pypi.org/pypi/sniffio/json",
+          "fetched_at": "2026-10-25T06:40:41.259628+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/sniffio/json",
+          "fetched_at": "2026-10-25T06:40:41.259628+00:00"
+        }
+      ]
+    },
+    "soupsieve": {
+      "name": "soupsieve",
+      "declared_specifier": ">=2.7",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 3,
+          "source_url": "https://pypi.org/pypi/soupsieve/json",
+          "fetched_at": "2026-10-25T06:40:41.325228+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/soupsieve/json",
+          "fetched_at": "2026-10-25T06:40:41.325228+00:00"
+        }
+      ]
+    },
+    "sse-starlette": {
+      "name": "sse-starlette",
+      "declared_specifier": ">=2.3.5",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 0,
+          "source_url": "https://pypi.org/pypi/sse-starlette/json",
+          "fetched_at": "2026-10-25T06:40:41.644145+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/sse-starlette/json",
+          "fetched_at": "2026-10-25T06:40:41.644145+00:00"
+        }
+      ]
+    },
+    "starlette": {
+      "name": "starlette",
+      "declared_specifier": ">=0.46.2",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 0,
+          "source_url": "https://pypi.org/pypi/starlette/json",
+          "fetched_at": "2026-10-25T06:40:41.726362+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/starlette/json",
+          "fetched_at": "2026-10-25T06:40:41.726362+00:00"
+        }
+      ]
+    },
+    "tenacity": {
+      "name": "tenacity",
+      "declared_specifier": ">=9.1.2",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 17,
+          "source_url": "https://pypi.org/pypi/tenacity/json",
+          "fetched_at": "2026-10-25T06:40:42.014033+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/tenacity/json",
+          "fetched_at": "2026-10-25T06:40:42.014033+00:00"
+        }
+      ]
+    },
+    "tinycss2": {
+      "name": "tinycss2",
+      "declared_specifier": ">=1.4.0",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 335,
+          "source_url": "https://pypi.org/pypi/tinycss2/json",
+          "fetched_at": "2026-10-25T06:40:42.095382+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/tinycss2/json",
+          "fetched_at": "2026-10-25T06:40:42.095382+00:00"
+        }
+      ]
+    },
+    "tinyhtml5": {
+      "name": "tinyhtml5",
+      "declared_specifier": ">=2.0.0",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 233,
+          "source_url": "https://pypi.org/pypi/tinyhtml5/json",
+          "fetched_at": "2026-10-25T06:40:42.374486+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/tinyhtml5/json",
+          "fetched_at": "2026-10-25T06:40:42.374486+00:00"
+        }
+      ]
+    },
+    "tokenizers": {
+      "name": "tokenizers",
+      "declared_specifier": ">=0.21.1",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 5,
+          "source_url": "https://pypi.org/pypi/tokenizers/json",
+          "fetched_at": "2026-10-25T06:40:42.733226+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/tokenizers/json",
+          "fetched_at": "2026-10-25T06:40:42.733226+00:00"
+        }
+      ]
+    },
+    "tqdm": {
+      "name": "tqdm",
+      "declared_specifier": ">=4.67.1",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 43,
+          "source_url": "https://pypi.org/pypi/tqdm/json",
+          "fetched_at": "2026-10-25T06:40:42.927243+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/tqdm/json",
+          "fetched_at": "2026-10-25T06:40:42.927243+00:00"
+        }
+      ]
+    },
+    "typing-extensions": {
+      "name": "typing-extensions",
+      "declared_specifier": ">=4.13.2",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 114,
+          "source_url": "https://pypi.org/pypi/typing-extensions/json",
+          "fetched_at": "2026-10-25T06:40:43.047567+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/typing-extensions/json",
+          "fetched_at": "2026-10-25T06:40:43.047567+00:00"
+        }
+      ]
+    },
+    "typing-inspect": {
+      "name": "typing-inspect",
+      "declared_specifier": ">=0.9.0",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 1249,
+          "source_url": "https://pypi.org/pypi/typing-inspect/json",
+          "fetched_at": "2026-10-25T06:40:43.145142+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/typing-inspect/json",
+          "fetched_at": "2026-10-25T06:40:43.145142+00:00"
+        }
+      ]
+    },
+    "typing-inspection": {
+      "name": "typing-inspection",
+      "declared_specifier": ">=0.4.1",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 73,
+          "source_url": "https://pypi.org/pypi/typing-inspection/json",
+          "fetched_at": "2026-10-25T06:40:43.434179+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/typing-inspection/json",
+          "fetched_at": "2026-10-25T06:40:43.434179+00:00"
+        }
+      ]
+    },
+    "unstructured-client": {
+      "name": "unstructured-client",
+      "declared_specifier": ">=0.35.0",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 5,
+          "source_url": "https://pypi.org/pypi/unstructured-client/json",
+          "fetched_at": "2026-10-25T06:40:43.513484+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/unstructured-client/json",
+          "fetched_at": "2026-10-25T06:40:43.513484+00:00"
+        }
+      ]
+    },
+    "urllib3": {
+      "name": "urllib3",
+      "declared_specifier": ">=2.4.0",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 39,
+          "source_url": "https://pypi.org/pypi/urllib3/json",
+          "fetched_at": "2026-10-25T06:40:43.827246+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/urllib3/json",
+          "fetched_at": "2026-10-25T06:40:43.827246+00:00"
+        }
+      ]
+    },
+    "weasyprint": {
+      "name": "weasyprint",
+      "declared_specifier": ">=65.1",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 46,
+          "source_url": "https://pypi.org/pypi/weasyprint/json",
+          "fetched_at": "2026-10-25T06:40:43.910773+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/weasyprint/json",
+          "fetched_at": "2026-10-25T06:40:43.910773+00:00"
+        }
+      ]
+    },
+    "webencodings": {
+      "name": "webencodings",
+      "declared_specifier": ">=0.5.1",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 70,
+          "source_url": "https://pypi.org/pypi/webencodings/json",
+          "fetched_at": "2026-10-25T06:40:44.245402+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/webencodings/json",
+          "fetched_at": "2026-10-25T06:40:44.245402+00:00"
+        }
+      ]
+    },
+    "win32-setctime": {
+      "name": "win32-setctime",
+      "declared_specifier": ">=1.2.0",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 686,
+          "source_url": "https://pypi.org/pypi/win32-setctime/json",
+          "fetched_at": "2026-10-25T06:40:44.565007+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/win32-setctime/json",
+          "fetched_at": "2026-10-25T06:40:44.565007+00:00"
+        }
+      ]
+    },
+    "wrapt": {
+      "name": "wrapt",
+      "declared_specifier": ">=1.17.2",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 6,
+          "source_url": "https://pypi.org/pypi/wrapt/json",
+          "fetched_at": "2026-10-25T06:40:45.359939+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/wrapt/json",
+          "fetched_at": "2026-10-25T06:40:45.359939+00:00"
+        }
+      ]
+    },
+    "yarl": {
+      "name": "yarl",
+      "declared_specifier": ">=1.20.0",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 39,
+          "source_url": "https://pypi.org/pypi/yarl/json",
+          "fetched_at": "2026-10-25T06:40:45.898932+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/yarl/json",
+          "fetched_at": "2026-10-25T06:40:45.898932+00:00"
+        }
+      ]
+    },
+    "zipp": {
+      "name": "zipp",
+      "declared_specifier": ">=3.21.0",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 3,
+          "source_url": "https://pypi.org/pypi/zipp/json",
+          "fetched_at": "2026-10-25T06:40:46.408358+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/zipp/json",
+          "fetched_at": "2026-10-25T06:40:46.408358+00:00"
+        }
+      ]
+    },
+    "zopfli": {
+      "name": "zopfli",
+      "declared_specifier": ">=0.2.3.post1",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 136,
+          "source_url": "https://pypi.org/pypi/zopfli/json",
+          "fetched_at": "2026-10-25T06:40:46.741510+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/zopfli/json",
+          "fetched_at": "2026-10-25T06:40:46.741510+00:00"
+        }
+      ]
+    },
+    "zstandard": {
+      "name": "zstandard",
+      "declared_specifier": ">=0.23.0",
+      "declared_in": [
+        "pyproject.toml"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 405,
+          "source_url": "https://pypi.org/pypi/zstandard/json",
+          "fetched_at": "2026-10-25T06:40:47.047040+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/zstandard/json",
+          "fetched_at": "2026-10-25T06:40:47.047040+00:00"
+        }
+      ]
+    },
+    "pytest": {
+      "name": "pytest",
+      "declared_specifier": ">=8.0",
+      "declared_in": [
+        "pyproject.toml [test]"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 127,
+          "source_url": "https://pypi.org/pypi/pytest/json",
+          "fetched_at": "2026-10-25T06:40:47.362880+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/pytest/json",
+          "fetched_at": "2026-10-25T06:40:47.362880+00:00"
+        }
+      ]
+    },
+    "pytest-asyncio": {
+      "name": "pytest-asyncio",
+      "declared_specifier": ">=0.24",
+      "declared_in": [
+        "pyproject.toml [test]"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 151,
+          "source_url": "https://pypi.org/pypi/pytest-asyncio/json",
+          "fetched_at": "2026-10-25T06:40:47.462338+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/pytest-asyncio/json",
+          "fetched_at": "2026-10-25T06:40:47.462338+00:00"
+        }
+      ]
+    },
+    "pytest-timeout": {
+      "name": "pytest-timeout",
+      "declared_specifier": ">=2.3",
+      "declared_in": [
+        "pyproject.toml [test]"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 69,
+          "source_url": "https://pypi.org/pypi/pytest-timeout/json",
+          "fetched_at": "2026-10-25T06:40:47.755389+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/pytest-timeout/json",
+          "fetched_at": "2026-10-25T06:40:47.755389+00:00"
+        }
+      ]
+    },
+    "pytest-forked": {
+      "name": "pytest-forked",
+      "declared_specifier": ">=1.6",
+      "declared_in": [
+        "pyproject.toml [test]"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 77,
+          "source_url": "https://pypi.org/pypi/pytest-forked/json",
+          "fetched_at": "2026-10-25T06:40:48.076420+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/pytest-forked/json",
+          "fetched_at": "2026-10-25T06:40:48.076420+00:00"
+        }
+      ]
+    },
+    "ag2": {
+      "name": "ag2",
+      "declared_specifier": ">=0.11.2",
+      "declared_in": [
+        "pyproject.toml [requirements-txt]"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 3,
+          "source_url": "https://pypi.org/pypi/ag2/json",
+          "fetched_at": "2026-10-25T06:40:48.360456+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/ag2/json",
+          "fetched_at": "2026-10-25T06:40:48.360456+00:00"
+        }
+      ]
+    },
+    "arxiv-client": {
+      "name": "arxiv-client",
+      "declared_specifier": "",
+      "declared_in": [
+        "pyproject.toml [requirements-txt]"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 926,
+          "source_url": "https://pypi.org/pypi/arxiv-client/json",
+          "fetched_at": "2026-10-25T06:40:48.445012+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/arxiv-client/json",
+          "fetched_at": "2026-10-25T06:40:48.445012+00:00"
+        }
+      ]
+    },
+    "azure-storage-blob": {
+      "name": "azure-storage-blob",
+      "declared_specifier": "",
+      "declared_in": [
+        "pyproject.toml [requirements-txt]"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 24,
+          "source_url": "https://pypi.org/pypi/azure-storage-blob/json",
+          "fetched_at": "2026-10-25T06:40:48.517398+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/azure-storage-blob/json",
+          "fetched_at": "2026-10-25T06:40:48.517398+00:00"
+        }
+      ]
+    },
+    "exa-py": {
+      "name": "exa-py",
+      "declared_specifier": "",
+      "declared_in": [
+        "pyproject.toml [requirements-txt]"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 5,
+          "source_url": "https://pypi.org/pypi/exa-py/json",
+          "fetched_at": "2026-10-25T06:40:48.917370+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/exa-py/json",
+          "fetched_at": "2026-10-25T06:40:48.917370+00:00"
+        }
+      ]
+    },
+    "firecrawl": {
+      "name": "firecrawl",
+      "declared_specifier": "",
+      "declared_in": [
+        "pyproject.toml [requirements-txt]"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 2,
+          "source_url": "https://pypi.org/pypi/firecrawl/json",
+          "fetched_at": "2026-10-25T06:40:49.244239+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/firecrawl/json",
+          "fetched_at": "2026-10-25T06:40:49.244239+00:00"
+        }
+      ]
+    },
+    "langchain-anthropic": {
+      "name": "langchain-anthropic",
+      "declared_specifier": "",
+      "declared_in": [
+        "pyproject.toml [requirements-txt]"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 12,
+          "source_url": "https://pypi.org/pypi/langchain-anthropic/json",
+          "fetched_at": "2026-10-25T06:40:49.393793+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/langchain-anthropic/json",
+          "fetched_at": "2026-10-25T06:40:49.393793+00:00"
+        }
+      ]
+    },
+    "langchain-cohere": {
+      "name": "langchain-cohere",
+      "declared_specifier": "",
+      "declared_in": [
+        "pyproject.toml [requirements-txt]"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 145,
+          "source_url": "https://pypi.org/pypi/langchain-cohere/json",
+          "fetched_at": "2026-10-25T06:40:49.712813+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/langchain-cohere/json",
+          "fetched_at": "2026-10-25T06:40:49.712813+00:00"
+        }
+      ]
+    },
+    "langchain-dashscope": {
+      "name": "langchain-dashscope",
+      "declared_specifier": "",
+      "declared_in": [
+        "pyproject.toml [requirements-txt]"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 829,
+          "source_url": "https://pypi.org/pypi/langchain-dashscope/json",
+          "fetched_at": "2026-10-25T06:40:50.168375+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/langchain-dashscope/json",
+          "fetched_at": "2026-10-25T06:40:50.168375+00:00"
+        }
+      ]
+    },
+    "langchain-fireworks": {
+      "name": "langchain-fireworks",
+      "declared_specifier": "",
+      "declared_in": [
+        "pyproject.toml [requirements-txt]"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 17,
+          "source_url": "https://pypi.org/pypi/langchain-fireworks/json",
+          "fetched_at": "2026-10-25T06:40:50.251740+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/langchain-fireworks/json",
+          "fetched_at": "2026-10-25T06:40:50.251740+00:00"
+        }
+      ]
+    },
+    "langchain-gigachat": {
+      "name": "langchain-gigachat",
+      "declared_specifier": "",
+      "declared_in": [
+        "pyproject.toml [requirements-txt]"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 15,
+          "source_url": "https://pypi.org/pypi/langchain-gigachat/json",
+          "fetched_at": "2026-10-25T06:40:50.578807+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/langchain-gigachat/json",
+          "fetched_at": "2026-10-25T06:40:50.578807+00:00"
+        }
+      ]
+    },
+    "langchain-google-genai": {
+      "name": "langchain-google-genai",
+      "declared_specifier": "",
+      "declared_in": [
+        "pyproject.toml [requirements-txt]"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 11,
+          "source_url": "https://pypi.org/pypi/langchain-google-genai/json",
+          "fetched_at": "2026-10-25T06:40:50.662662+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/langchain-google-genai/json",
+          "fetched_at": "2026-10-25T06:40:50.662662+00:00"
+        }
+      ]
+    },
+    "langchain-google-vertexai": {
+      "name": "langchain-google-vertexai",
+      "declared_specifier": "",
+      "declared_in": [
+        "pyproject.toml [requirements-txt]"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 1,
+          "source_url": "https://pypi.org/pypi/langchain-google-vertexai/json",
+          "fetched_at": "2026-10-25T06:40:50.959304+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/langchain-google-vertexai/json",
+          "fetched_at": "2026-10-25T06:40:50.959304+00:00"
+        }
+      ]
+    },
+    "langchain-groq": {
+      "name": "langchain-groq",
+      "declared_specifier": "",
+      "declared_in": [
+        "pyproject.toml [requirements-txt]"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 137,
+          "source_url": "https://pypi.org/pypi/langchain-groq/json",
+          "fetched_at": "2026-10-25T06:40:51.036376+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/langchain-groq/json",
+          "fetched_at": "2026-10-25T06:40:51.036376+00:00"
+        }
+      ]
+    },
+    "langchain-huggingface": {
+      "name": "langchain-huggingface",
+      "declared_specifier": "",
+      "declared_in": [
+        "pyproject.toml [requirements-txt]"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 17,
+          "source_url": "https://pypi.org/pypi/langchain-huggingface/json",
+          "fetched_at": "2026-10-25T06:40:51.376523+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/langchain-huggingface/json",
+          "fetched_at": "2026-10-25T06:40:51.376523+00:00"
+        }
+      ]
+    },
+    "langchain-mistralai": {
+      "name": "langchain-mistralai",
+      "declared_specifier": "",
+      "declared_in": [
+        "pyproject.toml [requirements-txt]"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 111,
+          "source_url": "https://pypi.org/pypi/langchain-mistralai/json",
+          "fetched_at": "2026-10-25T06:40:51.723217+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/langchain-mistralai/json",
+          "fetched_at": "2026-10-25T06:40:51.723217+00:00"
+        }
+      ]
+    },
+    "langchain-together": {
+      "name": "langchain-together",
+      "declared_specifier": "",
+      "declared_in": [
+        "pyproject.toml [requirements-txt]"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 214,
+          "source_url": "https://pypi.org/pypi/langchain-together/json",
+          "fetched_at": "2026-10-25T06:40:52.058423+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/langchain-together/json",
+          "fetched_at": "2026-10-25T06:40:52.058423+00:00"
+        }
+      ]
+    },
+    "langchain-xai": {
+      "name": "langchain-xai",
+      "declared_specifier": "",
+      "declared_in": [
+        "pyproject.toml [requirements-txt]"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 95,
+          "source_url": "https://pypi.org/pypi/langchain-xai/json",
+          "fetched_at": "2026-10-25T06:40:52.142434+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/langchain-xai/json",
+          "fetched_at": "2026-10-25T06:40:52.142434+00:00"
+        }
+      ]
+    },
+    "playwright": {
+      "name": "playwright",
+      "declared_specifier": "",
+      "declared_in": [
+        "pyproject.toml [requirements-txt]"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 2,
+          "source_url": "https://pypi.org/pypi/playwright/json",
+          "fetched_at": "2026-10-25T06:40:52.424041+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/playwright/json",
+          "fetched_at": "2026-10-25T06:40:52.424041+00:00"
+        }
+      ]
+    },
+    "scrapy": {
+      "name": "scrapy",
+      "declared_specifier": "",
+      "declared_in": [
+        "pyproject.toml [requirements-txt]"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 44,
+          "source_url": "https://pypi.org/pypi/scrapy/json",
+          "fetched_at": "2026-10-25T06:40:52.779035+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/scrapy/json",
+          "fetched_at": "2026-10-25T06:40:52.779035+00:00"
+        }
+      ]
+    },
+    "selenium": {
+      "name": "selenium",
+      "declared_specifier": "",
+      "declared_in": [
+        "pyproject.toml [requirements-txt]"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 15,
+          "source_url": "https://pypi.org/pypi/selenium/json",
+          "fetched_at": "2026-10-25T06:40:53.082234+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/selenium/json",
+          "fetched_at": "2026-10-25T06:40:53.082234+00:00"
+        }
+      ]
+    },
+    "monocle-apptrace": {
+      "name": "monocle-apptrace",
+      "declared_specifier": "",
+      "declared_in": [
+        "pyproject.toml [monocle]"
+      ],
+      "risk_indicators": [
+        {
+          "id": "days_since_release",
+          "value": 43,
+          "source_url": "https://pypi.org/pypi/monocle-apptrace/json",
+          "fetched_at": "2026-10-25T06:40:53.454909+00:00"
+        },
+        {
+          "id": "yanked",
+          "value": false,
+          "source_url": "https://pypi.org/pypi/monocle-apptrace/json",
+          "fetched_at": "2026-10-25T06:40:53.454909+00:00"
+        }
+      ]
+    }
+  }
+}

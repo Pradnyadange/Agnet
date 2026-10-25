@@ -1,0 +1,185 @@
+{
+  "schema_version": "2.0.0",
+  "capsule_id": "capsule-linkwatch-rich-20261024_201644",
+  "generated_at": "2026-10-24T20:16:44.740381+00:00",
+  "capsule_type": "replacement",
+  "target_repo": {
+    "name": "LinkWatch",
+    "url": "https://github.com/rishrek/LinkWatch",
+    "commit_sha": "f52f3930c8e7c33d934ccf614955a38e26984bd5",
+    "python_version": "3.14.6"
+  },
+  "maintenance_problem": "Dependency 'rich' analyzed during static risk triage.",
+  "dependency": {
+    "name": "rich",
+    "declared_specifier": "",
+    "declared_in": [
+      "requirements.txt",
+      "pyproject.toml"
+    ]
+  },
+  "observed": {
+    "risk_indicators": [
+      {
+        "id": "days_since_release",
+        "value": 195,
+        "source_url": "https://pypi.org/pypi/rich/json",
+        "fetched_at": "2026-10-24T20:09:09.771730+00:00"
+      },
+      {
+        "id": "yanked",
+        "value": false,
+        "source_url": "https://pypi.org/pypi/rich/json",
+        "fetched_at": "2026-10-24T20:09:09.771730+00:00"
+      }
+    ],
+    "scan": {
+      "files_scanned": 15,
+      "dynamic_imports": []
+    },
+    "usage_locations": [
+      {
+        "file": "linkwatch/cli.py",
+        "line": 2,
+        "symbol": "rich.console.Console",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "linkwatch/cli.py",
+        "line": 3,
+        "symbol": "rich.live.Live",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "linkwatch/cli.py",
+        "line": 4,
+        "symbol": "rich.table.Table",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "linkwatch/cli.py",
+        "line": 9,
+        "symbol": "Console",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "linkwatch/cli.py",
+        "line": 13,
+        "symbol": "Table",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "linkwatch/cli.py",
+        "line": 40,
+        "symbol": "Live",
+        "kind": "call",
+        "covered_by_tests": false
+      }
+    ],
+    "test_results": {
+      "baseline": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "candidate": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "new_failures": [],
+      "pip_check": {
+        "baseline": "Tests not run in static analyze mode.",
+        "candidate": "Tests not run in static analyze mode."
+      }
+    },
+    "evidence": [
+      {
+        "path": "assets/runs/rishrek__LinkWatch__f52f3930/evidence/rich_raw_model_response.json",
+        "sha256": "2e699c3f26c51c92b5209c5d67fc1305380f18eda96b8d237dbcbc23f01693e5",
+        "command": "ollama run llama3.1:8b",
+        "exit_code": 0,
+        "captured_at": "2026-10-24T20:16:44.740355+00:00"
+      }
+    ],
+    "trust_check": {
+      "skipped": false,
+      "candidate_name": "typer",
+      "candidate_type": "pypi",
+      "first_release_date": "2019-12-20T15:37:05.802053Z",
+      "release_count": 91,
+      "last_release_date": "2026-10-06T17:24:16.610941Z",
+      "project_urls": {
+        "Changelog": "https://typer.tiangolo.com/release-notes/",
+        "Documentation": "https://typer.tiangolo.com",
+        "Homepage": "https://github.com/fastapi/typer",
+        "Issues": "https://github.com/fastapi/typer/issues",
+        "Repository": "https://github.com/fastapi/typer"
+      },
+      "has_source_repo_url": true,
+      "min_edit_distance_to_popular": 3,
+      "closest_popular_package": "mypy",
+      "needs_human_review": false,
+      "reasons": []
+    },
+    "secret_redactions_count": 0
+  },
+  "ai_generated": {
+    "proposed_replacement": {
+      "name": "no_valid_proposal",
+      "type": "stdlib"
+    },
+    "migration_steps": [],
+    "suggested_tests": [],
+    "gap_analysis": [
+      "Candidate rejected by validation gate: API coverage below 100% (0%)"
+    ],
+    "provenance": {
+      "provider": "ollama",
+      "model_id": "llama3.1:8b",
+      "model_license_name": "LLAMA 3.1 COMMUNITY LICENSE AGREEMENT",
+      "model_card_url": "https://ollama.com/library/llama3.1",
+      "prompt_sha256": "f2173acff592cfed3ff2fecbea06e697182c822aa76796df9a74311fc6bf02e5",
+      "raw_response_path": "assets/runs/rishrek__LinkWatch__f52f3930/evidence/rich_raw_model_response.json",
+      "secret_redactions_count": 0,
+      "trust_check": {
+        "skipped": false,
+        "candidate_name": "typer",
+        "candidate_type": "pypi",
+        "first_release_date": "2019-12-20T15:37:05.802053Z",
+        "release_count": 91,
+        "last_release_date": "2026-10-06T17:24:16.610941Z",
+        "project_urls": {
+          "Changelog": "https://typer.tiangolo.com/release-notes/",
+          "Documentation": "https://typer.tiangolo.com",
+          "Homepage": "https://github.com/fastapi/typer",
+          "Issues": "https://github.com/fastapi/typer/issues",
+          "Repository": "https://github.com/fastapi/typer"
+        },
+        "has_source_repo_url": true,
+        "min_edit_distance_to_popular": 3,
+        "closest_popular_package": "mypy",
+        "needs_human_review": false,
+        "reasons": []
+      },
+      "validation": {
+        "passed": false,
+        "api_coverage": 0.0,
+        "rejected_candidates": [
+          "Candidate typer missing symbols: Live, Table, Console"
+        ]
+      }
+    }
+  },
+  "status": "unverified",
+  "limitations": [
+    "Static analysis mode only: test execution not run.",
+    "Public repositories and Python projects only.",
+    "Small models can propose weak replacements; validation gate determines acceptance."
+  ]
+}

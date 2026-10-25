@@ -1,0 +1,18 @@
+{
+  "proposed_replacement": {
+    "name": "platformdirs",
+    "type": "pypi"
+  },
+  "migration_steps": [
+    "Install `platformdirs` using pip: `pip install platformdirs`",
+    "Update `linkwatch/cache.py` to import from `platformdirs`: `from platformdirs import user_cache_dir`",
+    "Replace `appdirs.user_cache_dir` with `user_cache_dir` in `linkwatch/cache.py`"
+  ],
+  "suggested_tests": [
+    "Test that `user_cache_dir` returns the correct path for user cache directory"
+  ],
+  "gap_analysis": [
+    "Potential incompatibility: `platformdirs` may have different behavior or API changes compared to `appdirs`",
+    "Potential incompatibility: `platformdirs` may not be compatible with Python versions prior to 3.12"
+  ]
+}

@@ -1,0 +1,48 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.12.10, pytest-9.1.1, pluggy-1.7.0
+rootdir: D:\Agent\work\20261023_232609\optA_full_both_manifests\repo
+configfile: pyproject.toml
+plugins: cov-7.1.0
+collected 10 items
+
+work\20261023_232609\optA_full_both_manifests\repo\tests\test_cache.py . [ 10%]
+                                                                         [ 10%]
+work\20261023_232609\optA_full_both_manifests\repo\tests\test_checker.py . [ 20%]
+......                                                                   [ 80%]
+work\20261023_232609\optA_full_both_manifests\repo\tests\test_config.py . [ 90%]
+                                                                         [ 90%]
+work\20261023_232609\optA_full_both_manifests\repo\tests\test_report.py . [100%]
+
+============================== warnings summary ===============================
+work\20261023_232609\optA_full_both_manifests\venv_dot\Lib\site-packages\linkwatch\config.py:14
+  D:\Agent\work\20261023_232609\optA_full_both_manifests\venv_dot\Lib\site-packages\linkwatch\config.py:14: PydanticDeprecatedSince20: Pydantic V1 style `@validator` validators are deprecated. You should migrate to Pydantic V2 style `@field_validator` validators, see the migration guide for more details. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.14/migration/
+    @validator("name")
+
+work\20261023_232609\optA_full_both_manifests\venv_dot\Lib\site-packages\linkwatch\config.py:20
+  D:\Agent\work\20261023_232609\optA_full_both_manifests\venv_dot\Lib\site-packages\linkwatch\config.py:20: PydanticDeprecatedSince20: Pydantic V1 style `@validator` validators are deprecated. You should migrate to Pydantic V2 style `@field_validator` validators, see the migration guide for more details. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.14/migration/
+    @validator("url")
+
+work\20261023_232609\optA_full_both_manifests\venv_dot\Lib\site-packages\linkwatch\config.py:7
+  D:\Agent\work\20261023_232609\optA_full_both_manifests\venv_dot\Lib\site-packages\linkwatch\config.py:7: PydanticDeprecatedSince20: Support for class-based `config` is deprecated, use ConfigDict instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.14/migration/
+    class Site(BaseModel):
+
+work\20261023_232609\optA_full_both_manifests\venv_dot\Lib\site-packages\pydantic\_internal\_config.py:408
+  D:\Agent\work\20261023_232609\optA_full_both_manifests\venv_dot\Lib\site-packages\pydantic\_internal\_config.py:408: UserWarning: Valid config keys have changed in V2:
+  * 'anystr_strip_whitespace' has been renamed to 'str_strip_whitespace'
+    warnings.warn(message, UserWarning)
+
+work\20261023_232609\optA_full_both_manifests\venv_dot\Lib\site-packages\linkwatch\config.py:27
+  D:\Agent\work\20261023_232609\optA_full_both_manifests\venv_dot\Lib\site-packages\linkwatch\config.py:27: PydanticDeprecatedSince20: Support for class-based `config` is deprecated, use ConfigDict instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.14/migration/
+    class Settings(BaseModel):
+
+work\20261023_232609\optA_full_both_manifests\venv_dot\Lib\site-packages\linkwatch\resources.py:1
+  D:\Agent\work\20261023_232609\optA_full_both_manifests\venv_dot\Lib\site-packages\linkwatch\resources.py:1: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+    import pkg_resources
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: D:\Agent\dependency-exit-capsule\assets\runs\20261023_232609\evidence\optA_full\junit.xml -
+=============================== tests coverage ================================
+______________ coverage: platform win32, python 3.12.10-final-0 _______________
+
+Coverage JSON written to file D:\Agent\dependency-exit-capsule\assets\runs\20261023_232609\evidence\optA_full\coverage.json
+======================= 10 passed, 6 warnings in 9.02s ========================

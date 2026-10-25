@@ -1,0 +1,33 @@
+﻿python.exe : <string>:7: SyntaxWarning: invalid escape sequence '\A'
+At line:21 char:1
++ & $cand_py -c "
++ ~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (<string>:7: Syn...e sequence '\A':String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Traceback (most recent call last):
+  File "<string>", line 7, in <module>
+  File "D:\Agent\work\20261023_232609\cand3_jinja2_upgrade\venv\Lib\site-packages\click\testing.py", line 687, in 
+invoke
+    return_value = cli.main(args=args or (), prog_name=prog_name, **extra)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Agent\work\20261023_232609\cand3_jinja2_upgrade\venv\Lib\site-packages\click\core.py", line 1552, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "D:\Agent\work\20261023_232609\cand3_jinja2_upgrade\venv\Lib\site-packages\click\core.py", line 2032, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Agent\work\20261023_232609\cand3_jinja2_upgrade\venv\Lib\site-packages\click\core.py", line 1415, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Agent\work\20261023_232609\cand3_jinja2_upgrade\venv\Lib\site-packages\click\core.py", line 910, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Agent\work\20261023_232609\cand3_jinja2_upgrade\repo\linkwatch\cli.py", line 61, in report
+    path = render_report(results, output=output, title=title)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Agent\work\20261023_232609\cand3_jinja2_upgrade\repo\linkwatch\report.py", line 25, in render_report
+    with open(output, "w", encoding="utf-8") as fh:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 
+'D:\\Agent\\dependency-exit-capsule\x07ssets\runs\x8261023_232609\\evidence\\html_render\\candidate_report.html'

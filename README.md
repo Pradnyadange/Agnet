@@ -16,11 +16,14 @@ Point the skill at a Python repository. It finds dependencies that look risky, s
 ## Quick Start
 
 ### 1. Requirements
-- Python 3.10+ (Current environment: Python 3.14)
-- Dependencies: `pip install streamlit pytest pytest-cov jsonschema requests`
+- Python 3.12+
+- Dependencies: `pip install -r dependency-exit-capsule/requirements.txt`
 
 ### 2. Run Pipeline (Per Dependency)
+All commands are run from the self-contained `dependency-exit-capsule/` directory:
 ```bash
+cd dependency-exit-capsule
+
 python scripts/scan_risk.py --repo <path> --out assets/scan.json
 python scripts/map_usage.py --repo <path> --dep <name> --out assets/usage_<name>.json
 python scripts/propose_replacement.py --dep <name> --usage-file assets/usage_<name>.json --provider ollama --ollama-model qwen2.5-coder:7b --out assets/proposal_<name>.json

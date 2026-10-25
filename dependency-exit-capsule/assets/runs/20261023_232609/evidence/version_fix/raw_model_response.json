@@ -1,0 +1,5 @@
+{
+  "explanation": "The observed test failure is caused by an incompatibility between the MarkupSafe version 3.0.4 and the project's dependency on Jinja2 2.11.3. The Jinja2 version requires MarkupSafe version 2.1.1 or greater, but the project has installed version 3.0.4. The 'soft_unicode' function has been removed in MarkupSafe 3.0.0, which is why the import error occurs.",
+  "proposed_fix": "Downgrade MarkupSafe to version 2.1.1 in the project's requirements. You can do this by updating the `setup.py` or `pyproject.toml` file to pin MarkupSafe to 2.1.1.",
+  "affected_packages": ["Jinja2", "MarkupSafe"]
+}

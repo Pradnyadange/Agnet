@@ -1,0 +1,19 @@
+{
+  "proposed_replacement": {
+    "name": "jinja2",
+    "type": "stdlib"
+  },
+  "migration_steps": [
+    "Remove jinja2 from dependencies and imports",
+    "Replace jinja2.Environment with tempfile.mkstemp() and tempfile.NamedTemporaryFile() for template rendering",
+    "Replace jinja2.FileSystemLoader with pathlib.Path() and os.path.join() for file loading"
+  ],
+  "suggested_tests": [
+    "Test template rendering with mock environment and loader",
+    "Test file loading with mock file system"
+  ],
+  "gap_analysis": [
+    "Potential incompatibility with Jinja2's autoescape feature",
+    "Potential incompatibility with Jinja2's template inheritance"
+  ]
+}

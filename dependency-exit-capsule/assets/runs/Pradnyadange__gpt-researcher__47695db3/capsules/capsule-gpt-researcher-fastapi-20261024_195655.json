@@ -1,0 +1,455 @@
+{
+  "schema_version": "2.0.0",
+  "capsule_id": "capsule-gpt-researcher-fastapi-20261024_195655",
+  "generated_at": "2026-10-24T19:56:55.050995+00:00",
+  "capsule_type": "replacement",
+  "target_repo": {
+    "name": "gpt-researcher",
+    "url": "https://github.com/Pradnyadange/gpt-researcher",
+    "commit_sha": "47695db37ee39029a48b90ae1a381f93da38b20c",
+    "python_version": "3.14.6"
+  },
+  "maintenance_problem": "Dependency 'fastapi' analyzed during static risk triage.",
+  "dependency": {
+    "name": "fastapi",
+    "declared_specifier": ">=0.110.0",
+    "declared_in": [
+      "requirements.txt",
+      "pyproject.toml"
+    ]
+  },
+  "observed": {
+    "risk_indicators": [
+      {
+        "id": "days_since_release",
+        "value": 1,
+        "source_url": "https://pypi.org/pypi/fastapi/json",
+        "fetched_at": "2026-10-24T19:52:17.528549+00:00"
+      },
+      {
+        "id": "yanked",
+        "value": false,
+        "source_url": "https://pypi.org/pypi/fastapi/json",
+        "fetched_at": "2026-10-24T19:52:17.528549+00:00"
+      }
+    ],
+    "scan": {
+      "files_scanned": 364,
+      "dynamic_imports": [
+        "gpt_researcher/llm_provider/generic/base.py:419 (importlib.import_module)",
+        "tests/backend/test_report_chat_route_uniqueness.py:29 (importlib.import_module)",
+        "tests/test_report_generation_available_images.py:38 (__import__)",
+        "tests/test_retriever_requires_scraping.py:128 (importlib.import_module)",
+        "tests/test_websocket_manager.py:75 (importlib.import_module)",
+        "tests/test_websocket_manager.py:80 (importlib.import_module)",
+        "tests/test_websocket_manager.py:84 (importlib.import_module)"
+      ]
+    },
+    "usage_locations": [
+      {
+        "file": "backend/chat/chat.py",
+        "line": 4,
+        "symbol": "fastapi.WebSocket",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "backend/report_type/basic_report/basic_report.py",
+        "line": 3,
+        "symbol": "fastapi.WebSocket",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "backend/report_type/deep_research/example.py",
+        "line": 2,
+        "symbol": "fastapi.WebSocket",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "backend/report_type/detailed_report/detailed_report.py",
+        "line": 5,
+        "symbol": "fastapi.WebSocket",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "backend/server/app.py",
+        "line": 9,
+        "symbol": "fastapi.FastAPI",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "backend/server/app.py",
+        "line": 9,
+        "symbol": "fastapi.Request",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "backend/server/app.py",
+        "line": 9,
+        "symbol": "fastapi.WebSocket",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "backend/server/app.py",
+        "line": 9,
+        "symbol": "fastapi.WebSocketDisconnect",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "backend/server/app.py",
+        "line": 9,
+        "symbol": "fastapi.Form",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "backend/server/app.py",
+        "line": 9,
+        "symbol": "fastapi.HTTPException",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "backend/server/app.py",
+        "line": 13,
+        "symbol": "fastapi.responses.HTMLResponse",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "backend/server/app.py",
+        "line": 13,
+        "symbol": "fastapi.responses.RedirectResponse",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "backend/server/app.py",
+        "line": 13,
+        "symbol": "fastapi.responses.FileResponse",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "backend/server/app.py",
+        "line": 14,
+        "symbol": "fastapi.templating.Jinja2Templates",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "backend/server/app.py",
+        "line": 23,
+        "symbol": "FastAPI",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "backend/server/app.py",
+        "line": 26,
+        "symbol": "Jinja2Templates",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "backend/server/app.py",
+        "line": 179,
+        "symbol": "Form",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "backend/server/app.py",
+        "line": 191,
+        "symbol": "RedirectResponse",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "backend/server/app.py",
+        "line": 196,
+        "symbol": "RedirectResponse",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "backend/server/app.py",
+        "line": 201,
+        "symbol": "RedirectResponse",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "backend/server/app.py",
+        "line": 206,
+        "symbol": "RedirectResponse",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "backend/server/app.py",
+        "line": 221,
+        "symbol": "HTTPException",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "backend/server/app.py",
+        "line": 229,
+        "symbol": "HTTPException",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "backend/server/app.py",
+        "line": 243,
+        "symbol": "HTTPException",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "backend/server/app.py",
+        "line": 299,
+        "symbol": "HTTPException",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "backend/server/app.py",
+        "line": 337,
+        "symbol": "HTTPException",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "backend/server/app.py",
+        "line": 346,
+        "symbol": "HTTPException",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "backend/server/app.py",
+        "line": 431,
+        "symbol": "HTTPException",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "backend/server/app.py",
+        "line": 438,
+        "symbol": "HTTPException",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "backend/server/app.py",
+        "line": 547,
+        "symbol": "HTTPException",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "backend/server/app.py",
+        "line": 556,
+        "symbol": "HTTPException",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "backend/server/app.py",
+        "line": 647,
+        "symbol": "HTTPException",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "backend/server/app.py",
+        "line": 670,
+        "symbol": "HTTPException",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "backend/server/app.py",
+        "line": 692,
+        "symbol": "HTTPException",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "backend/server/app.py",
+        "line": 717,
+        "symbol": "HTTPException",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "backend/server/app.py",
+        "line": 754,
+        "symbol": "HTTPException",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "backend/server/server_utils.py",
+        "line": 3,
+        "symbol": "fastapi.WebSocket",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "backend/server/server_utils.py",
+        "line": 3,
+        "symbol": "fastapi.WebSocketDisconnect",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "backend/server/websocket_manager.py",
+        "line": 4,
+        "symbol": "fastapi.WebSocket",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "backend/server/websocket_manager.py",
+        "line": 4,
+        "symbol": "fastapi.WebSocketDisconnect",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "tests/backend/test_self_hosted_frontend_assets.py",
+        "line": 4,
+        "symbol": "fastapi.testclient.TestClient",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "tests/backend/test_self_hosted_frontend_assets.py",
+        "line": 33,
+        "symbol": "TestClient",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "tests/backend/test_websocket_disconnect_cleanup.py",
+        "line": 6,
+        "symbol": "fastapi.testclient.TestClient",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "tests/backend/test_websocket_disconnect_cleanup.py",
+        "line": 25,
+        "symbol": "TestClient",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "tests/test_logging.py",
+        "line": 3,
+        "symbol": "fastapi.WebSocket",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "tests/test_logging_output.py",
+        "line": 6,
+        "symbol": "fastapi.WebSocket",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "tests/test_security_fix.py",
+        "line": 13,
+        "symbol": "fastapi.HTTPException",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "tests/test_security_fix.py",
+        "line": 14,
+        "symbol": "fastapi.responses.JSONResponse",
+        "kind": "import",
+        "covered_by_tests": false
+      }
+    ],
+    "test_results": {
+      "baseline": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "candidate": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "new_failures": [],
+      "pip_check": {
+        "baseline": "Tests not run in static analyze mode.",
+        "candidate": "Tests not run in static analyze mode."
+      }
+    },
+    "evidence": [
+      {
+        "path": "assets/runs/Pradnyadange__gpt-researcher__47695db3/evidence/fastapi_raw_model_response.json",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "command": "ollama run gemma2:2b",
+        "exit_code": 0,
+        "captured_at": "2026-10-24T19:56:55.050974+00:00"
+      }
+    ],
+    "trust_check": {
+      "skipped": true,
+      "needs_human_review": false
+    },
+    "secret_redactions_count": 0
+  },
+  "ai_generated": {
+    "proposed_replacement": {
+      "name": "no_valid_proposal",
+      "type": "stdlib"
+    },
+    "migration_steps": [],
+    "suggested_tests": [],
+    "gap_analysis": [
+      "Model failed to return valid JSON and no rule-based fallback exists."
+    ],
+    "provenance": {
+      "provider": "ollama",
+      "model_id": "gemma2:2b",
+      "model_license_name": "Gemma Terms of Use ",
+      "model_card_url": "https://ollama.com/library/gemma2",
+      "prompt_sha256": "b1cd5c8b82a2c407fa9f4a8ff35efaae63a27a8113fd3f17a84426de9918192b",
+      "raw_response_path": "assets/runs/Pradnyadange__gpt-researcher__47695db3/evidence/fastapi_raw_model_response.json",
+      "secret_redactions_count": 0,
+      "trust_check": {
+        "skipped": true,
+        "needs_human_review": false
+      },
+      "validation": {
+        "passed": false,
+        "api_coverage": 0.0,
+        "rejected_candidates": [
+          "invalid_model_response"
+        ]
+      }
+    }
+  },
+  "status": "unverified",
+  "limitations": [
+    "Static analysis mode only: test execution not run.",
+    "Public repositories and Python projects only.",
+    "Small models can propose weak replacements; validation gate determines acceptance."
+  ]
+}

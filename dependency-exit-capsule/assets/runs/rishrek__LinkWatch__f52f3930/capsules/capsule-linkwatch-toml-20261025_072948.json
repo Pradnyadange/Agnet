@@ -1,0 +1,134 @@
+{
+  "schema_version": "2.0.0",
+  "capsule_id": "capsule-linkwatch-toml-20261025_072948",
+  "generated_at": "2026-10-25T07:29:48.289118+00:00",
+  "capsule_type": "replacement",
+  "target_repo": {
+    "name": "LinkWatch",
+    "url": "https://github.com/rishrek/LinkWatch",
+    "commit_sha": "f52f3930c8e7c33d934ccf614955a38e26984bd5",
+    "python_version": "3.14.6"
+  },
+  "maintenance_problem": "Dependency 'toml' analyzed during static risk triage.",
+  "dependency": {
+    "name": "toml",
+    "declared_specifier": "==0.10.2",
+    "declared_in": [
+      "requirements.txt",
+      "pyproject.toml"
+    ]
+  },
+  "observed": {
+    "risk_indicators": [
+      {
+        "id": "days_since_release",
+        "value": 2184,
+        "source_url": "https://pypi.org/pypi/toml/json",
+        "fetched_at": "2026-10-25T07:26:06.205079+00:00"
+      },
+      {
+        "id": "yanked",
+        "value": false,
+        "source_url": "https://pypi.org/pypi/toml/json",
+        "fetched_at": "2026-10-25T07:26:06.205079+00:00"
+      }
+    ],
+    "scan": {
+      "files_scanned": 15,
+      "dynamic_imports": []
+    },
+    "usage_locations": [
+      {
+        "file": "linkwatch/config.py",
+        "line": 3,
+        "symbol": "toml",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "linkwatch/config.py",
+        "line": 37,
+        "symbol": "load",
+        "kind": "call",
+        "covered_by_tests": false
+      }
+    ],
+    "test_results": {
+      "baseline": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "candidate": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "new_failures": [],
+      "pip_check": {
+        "baseline": "Tests not run in static analyze mode.",
+        "candidate": "Tests not run in static analyze mode."
+      }
+    },
+    "evidence": [
+      {
+        "path": "assets/runs/rishrek__LinkWatch__f52f3930/evidence/toml_raw_model_response.json",
+        "sha256": "166dd1901e8eee6f9678f613890b2b87d6440aab4e931b99c0957836babeeb3d",
+        "command": "ollama run llama3.1:8b",
+        "exit_code": 0,
+        "captured_at": "2026-10-25T07:29:48.289090+00:00"
+      }
+    ],
+    "trust_check": {
+      "skipped": true,
+      "candidate_type": "stdlib",
+      "needs_human_review": false,
+      "reasons": []
+    },
+    "secret_redactions_count": 0
+  },
+  "ai_generated": {
+    "proposed_replacement": {
+      "name": "tomllib",
+      "type": "stdlib"
+    },
+    "migration_steps": [
+      "Remove the `toml` import statement from `linkwatch/config.py`.",
+      "Replace the `toml.load()` call with `tomllib.loads()` or `tomllib.load()` depending on the exact usage context.",
+      "Update `setup.py` or `requirements.txt` to reflect the new dependency."
+    ],
+    "suggested_tests": [
+      "Run `python -m unittest linkwatch.tests` to ensure the replacement doesn't introduce new test failures.",
+      "Verify that the application still works as expected with the new dependency."
+    ],
+    "gap_analysis": [
+      "Potential incompatibility: If the application uses custom TOML parsing logic, it might not be directly compatible with `tomllib`. In this case, the migration steps may need to be adjusted or additional custom parsing logic implemented."
+    ],
+    "provenance": {
+      "provider": "ollama",
+      "model_id": "llama3.1:8b",
+      "model_license_name": "LLAMA 3.1 COMMUNITY LICENSE AGREEMENT",
+      "model_card_url": "https://ollama.com/library/llama3.1",
+      "prompt_sha256": "90b249212fab33ad379d8ea1e69e1f50e699db2bcdd71ad02f645d6a10b33843",
+      "raw_response_path": "assets/runs/rishrek__LinkWatch__f52f3930/evidence/toml_raw_model_response.json",
+      "secret_redactions_count": 0,
+      "trust_check": {
+        "skipped": true,
+        "candidate_type": "stdlib",
+        "needs_human_review": false,
+        "reasons": []
+      },
+      "validation": {
+        "passed": true,
+        "api_coverage": 1.0,
+        "rejected_candidates": []
+      }
+    }
+  },
+  "status": "unverified",
+  "limitations": [
+    "Static analysis mode only: test execution not run.",
+    "Public repositories and Python projects only.",
+    "Small models can propose weak replacements; validation gate determines acceptance."
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "manifest_version": "1.0",
+  "run_id": "Pradnyadange__Float-Chat__48d6102c",
+  "generated_at": "2026-10-24T20:17:50.310002+00:00",
+  "files": {
+    "assets/runs/Pradnyadange__Float-Chat__48d6102c/capsules/capsule-float-chat-flask-20261024_201530.json": "07d4e9f2df1214c72034c051860dec9312297ac5fb58ecd524f1cd15b69a3ef9",
+    "assets/runs/Pradnyadange__Float-Chat__48d6102c/capsules/capsule-float-chat-langchain-20261024_201732.json": "b6187bae048c89b656d8815718888b00f93e10214464466ec5a6de63b2078e34",
+    "assets/runs/Pradnyadange__Float-Chat__48d6102c/capsules/capsule-float-chat-langchain-community-20261024_201706.json": "5d808662d486689e90c714b741ce0a7b48f4e7b51abc73aff4ddf8de50da7238",
+    "assets/runs/Pradnyadange__Float-Chat__48d6102c/capsules/capsule-float-chat-langchain-pinecone-20261024_201422.json": "0824baf8152c87756df769a82775c1ebcd87451f4257703ed21d11f2a020cf9e",
+    "assets/runs/Pradnyadange__Float-Chat__48d6102c/capsules/capsule-float-chat-sentence-transformers-20261024_201750.json": "5800ddeb077997cceb8ee07748c7b624d077b0ccc255939bb5adfa3aafff5c68",
+    "assets/runs/Pradnyadange__Float-Chat__48d6102c/evidence/flask_raw_model_response.json": "f8a98c74bac8cd70ccca5df4bd096ccb3ad41ab88e3256702029f6a2be2e56af",
+    "assets/runs/Pradnyadange__Float-Chat__48d6102c/evidence/langchain-community_raw_model_response.json": "a059fa7563cc26f1c98e62867a84e1b6c3cd9e67e32e62d9dcccbf12e953f522",
+    "assets/runs/Pradnyadange__Float-Chat__48d6102c/evidence/langchain-pinecone_raw_model_response.json": "b36c5a16ccd0e92feb5ec3ce2dfefd70705c1ff1446499d034a6e2c2a26c5f88",
+    "assets/runs/Pradnyadange__Float-Chat__48d6102c/evidence/langchain_raw_model_response.json": "6c92b83cdd461b1f4fe4a97a2407cdae38cff72d2ace044648e6954bc0005060",
+    "assets/runs/Pradnyadange__Float-Chat__48d6102c/evidence/sentence-transformers_raw_model_response.json": "1eb68c9ab4ff255547da13d503644f047095d788fa47eaa5d8420f946345d7d4",
+    "assets/runs/Pradnyadange__Float-Chat__48d6102c/scan.json": "7f0b55f6e205b8217d14ffc9373feb8298134e74f8626ef17620151586b00ee9",
+    "assets/runs/Pradnyadange__Float-Chat__48d6102c/usage_flask.json": "95cbeb2a49522030df4a57ef28b6d060a8741b6d95eacc8af1d3e4a161a003e4",
+    "assets/runs/Pradnyadange__Float-Chat__48d6102c/usage_langchain-community.json": "c1c4d91f36f2086e58ed5624dacb9a7fc8c44d53a4ca18e0f153689d3b9cf9a3",
+    "assets/runs/Pradnyadange__Float-Chat__48d6102c/usage_langchain-pinecone.json": "72fd11b598f21a5a36cdc21921d9188a1eb5ef703f619dc4c7cb0b9d82fb139c",
+    "assets/runs/Pradnyadange__Float-Chat__48d6102c/usage_langchain.json": "072ba803ca898b4b8d767df0cfc632aedec5e5a0ebd49912d94671167eb2fc1f",
+    "assets/runs/Pradnyadange__Float-Chat__48d6102c/usage_sentence-transformers.json": "b62ac10140369308cac20326efe90d1fe85fd241180fc4e8a6e1c27154ecfcac"
+  }
+}

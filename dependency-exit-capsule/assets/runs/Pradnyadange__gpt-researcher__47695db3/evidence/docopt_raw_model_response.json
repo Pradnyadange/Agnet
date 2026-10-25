@@ -1,0 +1,15 @@
+{
+  "proposed_replacement": {"name": "argparse", "type": "stdlib"},
+  "migration_steps": [
+    "Install `argparse` using pip: `pip install argparse`",
+    "Update code to use `argparse.parse_args()` instead of `docopt`"
+  ],
+  "suggested_tests": [
+    "Verify correct parsing of command-line arguments",
+    "Test edge cases and error handling"
+  ],
+  "gap_analysis": [
+    "Note: `argparse` has slightly different syntax and options compared to `docopt`",
+    "May require additional configuration or customization"
+  ]
+}
