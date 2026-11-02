@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "capsule_id": "capsule-linkwatch-appdirs-20261025_072842",
   "generated_at": "2026-10-25T07:28:42.079409+00:00",
-  "capsule_type": "replacement",
+  "capsule_type": "replace",
   "target_repo": {
     "name": "LinkWatch",
     "url": "https://github.com/rishrek/LinkWatch",
@@ -16,12 +16,15 @@
     "declared_in": [
       "requirements.txt",
       "pyproject.toml"
-    ]
+    ],
+    "scope": "runtime",
+    "required_by": [],
+    "non_python_references": []
   },
   "observed": {
     "risk_indicators": [
       {
-        "id": "days_since_release",
+        "id": "days_since_latest_release",
         "value": 2357,
         "source_url": "https://pypi.org/pypi/appdirs/json",
         "fetched_at": "2026-10-25T07:26:06.480270+00:00"
@@ -120,10 +123,13 @@
       }
     }
   },
-  "status": "unverified",
+  "status": "no_valid_proposal",
   "limitations": [
     "Static analysis mode only: test execution not run.",
     "Public repositories and Python projects only.",
     "Small models can propose weak replacements; validation gate determines acceptance."
-  ]
+  ],
+  "action": "replace",
+  "action_reason": "no release in 2357 days (threshold 730)",
+  "status_reason": "gate_rejected"
 }

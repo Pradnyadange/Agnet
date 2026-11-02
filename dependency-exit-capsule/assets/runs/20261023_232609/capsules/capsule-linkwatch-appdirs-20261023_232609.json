@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
   "capsule_id": "capsule-linkwatch-appdirs-20261023_232609",
-  "capsule_type": "replacement",
+  "capsule_type": "replace",
   "generated_at": "2026-10-24T18:45:00Z",
   "status": "verified",
   "maintenance_problem": "appdirs 1.4.4 has had no releases in >2350 days; actively maintained platformdirs is the drop-in community replacement.",
@@ -17,6 +17,22 @@
     "declared_in": [
       "requirements.txt",
       "pyproject.toml"
+    ],
+    "scope": "runtime",
+    "required_by": [],
+    "non_python_references": [
+      {
+        "file": "pyproject.toml",
+        "line": 14,
+        "match_term": "appdirs",
+        "line_content": "\"appdirs==1.4.4\","
+      },
+      {
+        "file": "requirements.txt",
+        "line": 2,
+        "match_term": "appdirs",
+        "line_content": "appdirs==1.4.4"
+      }
     ]
   },
   "observed": {
@@ -173,5 +189,8 @@
   "limitations": [
     "verified for the existing test suite on Windows 10/11 x64 / Python 3.12.10 in a copy; original unchanged; 2 tests exercise the changed lines (tests/test_cache.py)",
     "Equivalence testing confirmed on Windows x64 and Python 3.12 only. On macOS/Linux path differences exist due to platform standards (XDG vs legacy macOS Library/Caches)."
-  ]
+  ],
+  "action": "replace",
+  "action_reason": "no release in 2357 days (threshold 730)",
+  "status_reason": "tests_passed_clean"
 }

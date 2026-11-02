@@ -1,0 +1,424 @@
+{
+  "schema_version": "2.0.0",
+  "capsule_id": "capsule-gpt-researcher-python-dotenv-20261024_195131",
+  "generated_at": "2026-10-24T19:51:31.260987+00:00",
+  "capsule_type": "replacement",
+  "target_repo": {
+    "name": "gpt-researcher",
+    "url": "https://github.com/Pradnyadange/gpt-researcher",
+    "commit_sha": "47695db37ee39029a48b90ae1a381f93da38b20c",
+    "python_version": "3.14.6"
+  },
+  "maintenance_problem": "Dependency 'python-dotenv' analyzed during static risk triage.",
+  "dependency": {
+    "name": "python-dotenv",
+    "declared_specifier": ">=1.0.1",
+    "declared_in": [
+      "requirements.txt",
+      "pyproject.toml"
+    ]
+  },
+  "observed": {
+    "risk_indicators": [
+      {
+        "id": "days_since_release",
+        "value": 23,
+        "source_url": "https://pypi.org/pypi/python-dotenv/json",
+        "fetched_at": "2026-10-24T19:44:38.632040+00:00"
+      },
+      {
+        "id": "yanked",
+        "value": false,
+        "source_url": "https://pypi.org/pypi/python-dotenv/json",
+        "fetched_at": "2026-10-24T19:44:38.632040+00:00"
+      }
+    ],
+    "scan": {
+      "files_scanned": 364,
+      "dynamic_imports": [
+        "gpt_researcher/llm_provider/generic/base.py:419 (importlib.import_module)",
+        "tests/backend/test_report_chat_route_uniqueness.py:29 (importlib.import_module)",
+        "tests/test_report_generation_available_images.py:38 (__import__)",
+        "tests/test_retriever_requires_scraping.py:128 (importlib.import_module)",
+        "tests/test_websocket_manager.py:75 (importlib.import_module)",
+        "tests/test_websocket_manager.py:80 (importlib.import_module)",
+        "tests/test_websocket_manager.py:84 (importlib.import_module)"
+      ]
+    },
+    "usage_locations": [
+      {
+        "file": "cli.py",
+        "line": 19,
+        "symbol": "dotenv.load_dotenv",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "cli.py",
+        "line": 360,
+        "symbol": "load_dotenv",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "deep_agents/benchmark.py",
+        "line": 17,
+        "symbol": "dotenv.load_dotenv",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "deep_agents/benchmark.py",
+        "line": 24,
+        "symbol": "load_dotenv",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "deep_agents/breadth_benchmark.py",
+        "line": 25,
+        "symbol": "dotenv.load_dotenv",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "deep_agents/breadth_benchmark.py",
+        "line": 36,
+        "symbol": "load_dotenv",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "deep_agents/drb_generate.py",
+        "line": 12,
+        "symbol": "dotenv.load_dotenv",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "deep_agents/drb_generate.py",
+        "line": 25,
+        "symbol": "load_dotenv",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "deep_agents/hybrid_benchmark.py",
+        "line": 38,
+        "symbol": "dotenv.load_dotenv",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "deep_agents/hybrid_benchmark.py",
+        "line": 51,
+        "symbol": "load_dotenv",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "deep_agents/main.py",
+        "line": 1,
+        "symbol": "dotenv.load_dotenv",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "deep_agents/main.py",
+        "line": 10,
+        "symbol": "load_dotenv",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "deep_agents/recency_benchmark.py",
+        "line": 27,
+        "symbol": "dotenv.load_dotenv",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "deep_agents/recency_benchmark.py",
+        "line": 40,
+        "symbol": "load_dotenv",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "deep_agents/report_benchmark.py",
+        "line": 27,
+        "symbol": "dotenv.load_dotenv",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "deep_agents/report_benchmark.py",
+        "line": 42,
+        "symbol": "load_dotenv",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "evals/hallucination_eval/evaluate.py",
+        "line": 8,
+        "symbol": "dotenv.load_dotenv",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "evals/hallucination_eval/run_eval.py",
+        "line": 12,
+        "symbol": "dotenv.load_dotenv",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "evals/hallucination_eval/run_eval.py",
+        "line": 28,
+        "symbol": "load_dotenv",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "evals/quality_eval/benchmark.py",
+        "line": 35,
+        "symbol": "dotenv.load_dotenv",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "evals/quality_eval/benchmark.py",
+        "line": 494,
+        "symbol": "load_dotenv",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "evals/quality_eval/run_eval.py",
+        "line": 31,
+        "symbol": "dotenv.load_dotenv",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "evals/quality_eval/run_eval.py",
+        "line": 71,
+        "symbol": "load_dotenv",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "evals/simple_evals/run_eval.py",
+        "line": 16,
+        "symbol": "dotenv.load_dotenv",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "evals/simple_evals/run_eval.py",
+        "line": 47,
+        "symbol": "load_dotenv",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "main.py",
+        "line": 1,
+        "symbol": "dotenv.load_dotenv",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "main.py",
+        "line": 29,
+        "symbol": "load_dotenv",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "multi_agents/ag2/main.py",
+        "line": 2,
+        "symbol": "dotenv.load_dotenv",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "multi_agents/ag2/main.py",
+        "line": 12,
+        "symbol": "load_dotenv",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "multi_agents/main.py",
+        "line": 1,
+        "symbol": "dotenv.load_dotenv",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "multi_agents/main.py",
+        "line": 8,
+        "symbol": "load_dotenv",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "tests/documents-report-source.py",
+        "line": 6,
+        "symbol": "dotenv.load_dotenv",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "tests/documents-report-source.py",
+        "line": 7,
+        "symbol": "load_dotenv",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "tests/test-openai-llm.py",
+        "line": 4,
+        "symbol": "dotenv.load_dotenv",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "tests/test-openai-llm.py",
+        "line": 5,
+        "symbol": "load_dotenv",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "tests/test-your-embeddings.py",
+        "line": 5,
+        "symbol": "dotenv.load_dotenv",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "tests/test-your-embeddings.py",
+        "line": 6,
+        "symbol": "load_dotenv",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "tests/test-your-llm.py",
+        "line": 4,
+        "symbol": "dotenv.load_dotenv",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "tests/test-your-llm.py",
+        "line": 5,
+        "symbol": "load_dotenv",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "tests/test-your-retriever.py",
+        "line": 2,
+        "symbol": "dotenv.load_dotenv",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "tests/test-your-retriever.py",
+        "line": 8,
+        "symbol": "load_dotenv",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "tests/test_new_agents.py",
+        "line": 4,
+        "symbol": "dotenv.load_dotenv",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "tests/test_new_agents.py",
+        "line": 24,
+        "symbol": "load_dotenv",
+        "kind": "call",
+        "covered_by_tests": false
+      }
+    ],
+    "test_results": {
+      "baseline": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "candidate": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "new_failures": [],
+      "pip_check": {
+        "baseline": "Tests not run in static analyze mode.",
+        "candidate": "Tests not run in static analyze mode."
+      }
+    },
+    "evidence": [
+      {
+        "path": "assets/runs/Pradnyadange__gpt-researcher__47695db3/evidence/python-dotenv_raw_model_response.json",
+        "sha256": "3ce80121197c391b8d124dcaf7c39af1c7e68ee286ae3afa2fe75b52530702b4",
+        "command": "ollama run gemma2:2b",
+        "exit_code": 0,
+        "captured_at": "2026-10-24T19:51:31.260954+00:00"
+      }
+    ],
+    "trust_check": {
+      "skipped": true,
+      "candidate_type": "stdlib",
+      "needs_human_review": false,
+      "reasons": []
+    },
+    "secret_redactions_count": 0
+  },
+  "ai_generated": {
+    "proposed_replacement": {
+      "name": "no_valid_proposal",
+      "type": "stdlib"
+    },
+    "migration_steps": [],
+    "suggested_tests": [],
+    "gap_analysis": [
+      "Candidate rejected by validation gate: not in stdlib"
+    ],
+    "provenance": {
+      "provider": "ollama",
+      "model_id": "gemma2:2b",
+      "model_license_name": "Gemma Terms of Use ",
+      "model_card_url": "https://ollama.com/library/gemma2",
+      "prompt_sha256": "8f092c3431a53c35e42ae984521c1ab58ebd4de5b2cc17d992b1078494c498f9",
+      "raw_response_path": "assets/runs/Pradnyadange__gpt-researcher__47695db3/evidence/python-dotenv_raw_model_response.json",
+      "secret_redactions_count": 0,
+      "trust_check": {
+        "skipped": true,
+        "candidate_type": "stdlib",
+        "needs_human_review": false,
+        "reasons": []
+      },
+      "validation": {
+        "passed": false,
+        "api_coverage": 0.0,
+        "rejected_candidates": [
+          "python-dotenv-stdlib is not in sys.stdlib_module_names"
+        ]
+      }
+    }
+  },
+  "status": "unverified",
+  "limitations": [
+    "Static analysis mode only: test execution not run.",
+    "Public repositories and Python projects only.",
+    "Small models can propose weak replacements; validation gate determines acceptance."
+  ]
+}

@@ -271,7 +271,7 @@ def test_breaking_fixture_pipeline_produces_failed_capsule(tmp_path):
             "covered_by_tests": True,
         }
     ]
-    status = determine_status(
+    status, _status_reason = determine_status(
         baseline_passed=base_j["passed"],
         candidate_passed=cand_j["passed"],
         new_failures=new_failures,

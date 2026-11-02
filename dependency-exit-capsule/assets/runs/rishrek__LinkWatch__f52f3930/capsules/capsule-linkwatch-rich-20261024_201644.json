@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "capsule_id": "capsule-linkwatch-rich-20261024_201644",
   "generated_at": "2026-10-24T20:16:44.740381+00:00",
-  "capsule_type": "replacement",
+  "capsule_type": "no_action",
   "target_repo": {
     "name": "LinkWatch",
     "url": "https://github.com/rishrek/LinkWatch",
@@ -16,12 +16,15 @@
     "declared_in": [
       "requirements.txt",
       "pyproject.toml"
-    ]
+    ],
+    "scope": "runtime",
+    "required_by": [],
+    "non_python_references": []
   },
   "observed": {
     "risk_indicators": [
       {
-        "id": "days_since_release",
+        "id": "days_since_latest_release",
         "value": 195,
         "source_url": "https://pypi.org/pypi/rich/json",
         "fetched_at": "2026-10-24T20:09:09.771730+00:00"
@@ -176,10 +179,13 @@
       }
     }
   },
-  "status": "unverified",
+  "status": "no_action",
   "limitations": [
     "Static analysis mode only: test execution not run.",
     "Public repositories and Python projects only.",
     "Small models can propose weak replacements; validation gate determines acceptance."
-  ]
+  ],
+  "action": "no_action",
+  "action_reason": "healthy and current",
+  "status_reason": "healthy_no_action"
 }

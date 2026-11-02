@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "capsule_id": "capsule-linkwatch-jinja2-20261024_201505",
   "generated_at": "2026-10-24T20:15:05.954889+00:00",
-  "capsule_type": "replacement",
+  "capsule_type": "upgrade",
   "target_repo": {
     "name": "LinkWatch",
     "url": "https://github.com/rishrek/LinkWatch",
@@ -16,12 +16,15 @@
     "declared_in": [
       "requirements.txt",
       "pyproject.toml"
-    ]
+    ],
+    "scope": "runtime",
+    "required_by": [],
+    "non_python_references": []
   },
   "observed": {
     "risk_indicators": [
       {
-        "id": "days_since_release",
+        "id": "days_since_latest_release",
         "value": 598,
         "source_url": "https://pypi.org/pypi/jinja2/json",
         "fetched_at": "2026-10-24T20:09:08.265862+00:00"
@@ -148,10 +151,13 @@
       }
     }
   },
-  "status": "unverified",
+  "status": "no_valid_proposal",
   "limitations": [
     "Static analysis mode only: test execution not run.",
     "Public repositories and Python projects only.",
     "Small models can propose weak replacements; validation gate determines acceptance."
-  ]
+  ],
+  "action": "upgrade",
+  "action_reason": "pinned version is 13 releases behind latest; 598 days since last release",
+  "status_reason": "gate_rejected"
 }

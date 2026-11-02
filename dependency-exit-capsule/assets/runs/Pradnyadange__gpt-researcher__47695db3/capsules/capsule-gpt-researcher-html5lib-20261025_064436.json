@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "capsule_id": "capsule-gpt-researcher-html5lib-20261025_064436",
   "generated_at": "2026-10-25T06:44:36.330069+00:00",
-  "capsule_type": "unused_dependency",
+  "capsule_type": "replace",
   "target_repo": {
     "name": "gpt-researcher",
     "url": "https://github.com/Pradnyadange/gpt-researcher",
@@ -15,12 +15,15 @@
     "declared_specifier": ">=1.1",
     "declared_in": [
       "pyproject.toml"
-    ]
+    ],
+    "scope": "runtime",
+    "required_by": [],
+    "non_python_references": []
   },
   "observed": {
     "risk_indicators": [
       {
-        "id": "days_since_release",
+        "id": "days_since_latest_release",
         "value": 2315,
         "source_url": "https://pypi.org/pypi/html5lib/json",
         "fetched_at": "2026-10-25T06:40:25.357897+00:00"
@@ -138,10 +141,13 @@
       }
     }
   },
-  "status": "not_testable",
+  "status": "not_run",
   "limitations": [
     "Static analysis mode only: test execution not run.",
     "Public repositories and Python projects only.",
     "Small models can propose weak replacements; validation gate determines acceptance."
-  ]
+  ],
+  "action": "replace",
+  "action_reason": "no release in 2315 days (threshold 730)",
+  "status_reason": "tests_not_executed"
 }

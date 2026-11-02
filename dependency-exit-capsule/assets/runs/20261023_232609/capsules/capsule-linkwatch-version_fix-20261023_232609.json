@@ -16,15 +16,37 @@
     "declared_in": [
       "requirements.txt",
       "pyproject.toml"
+    ],
+    "scope": "runtime",
+    "required_by": [],
+    "non_python_references": [
+      {
+        "file": "pyproject.toml",
+        "line": 16,
+        "match_term": "jinja2",
+        "line_content": "\"Jinja2==2.11.3\","
+      },
+      {
+        "file": "requirements.txt",
+        "line": 4,
+        "match_term": "jinja2",
+        "line_content": "Jinja2==2.11.3"
+      }
     ]
   },
   "observed": {
     "risk_indicators": [
       {
-        "id": "days_since_release",
+        "id": "days_since_latest_release",
         "value": 2062,
         "source_url": "https://pypi.org/pypi/Jinja2/json",
         "fetched_at": "2026-10-23T17:59:32Z"
+      },
+      {
+        "id": "versions_behind_latest",
+        "value": 13,
+        "source_url": "https://pypi.org/pypi/jinja2/json",
+        "fetched_at": "2026-11-02T08:03:56.280516+00:00"
       }
     ],
     "scan": {
@@ -88,33 +110,63 @@
       },
       "candidate_results": [
         {
-          "candidate_name": "MarkupSafe==2.1.1 (Model proposal)",
+          "candidate_name": "MarkupSafe==2.1.1",
+          "change": "Pin MarkupSafe==2.1.1 to fix soft_unicode import",
+          "install_result": "ok",
+          "pip_check": "clean",
           "passed": 9,
           "failed": 1,
           "verdict": "rejected_by_tests",
-          "rejection_reason": "ImportError: cannot import name 'soft_unicode' from 'markupsafe'",
+          "rejection_reason": "1 test failed: soft_unicode removed in MarkupSafe 2.1.0",
           "failing_tests": [
-            "tests.test_report::test_report_renders_all_sites"
+            "tests/test_report.py::test_report_renders_all_sites"
           ],
-          "junit_path": "assets/runs/20261023_232609/evidence/cand_model_proposal_markupsafe_211/junit.xml"
+          "evidence_paths": [
+            "evidence/cand_model_proposal_markupsafe_211/junit.xml"
+          ],
+          "chosen": false
         },
         {
-          "candidate_name": "MarkupSafe<2.1.0 (Option A - Cap transitive)",
+          "candidate_name": "nose",
+          "change": "replace nose",
+          "install_result": "ok",
+          "pip_check": "No broken requirements found.",
           "passed": 10,
           "failed": 0,
-          "verdict": "passed_tests",
-          "rejection_reason": null,
+          "verdict": "accepted",
           "failing_tests": [],
-          "junit_path": "assets/runs/20261023_232609/evidence/optA_full/junit.xml"
+          "evidence_paths": [
+            "evidence/nose_removal_junit.xml"
+          ],
+          "chosen": true
         },
         {
-          "candidate_name": "Jinja2==3.1.6 (Option B - Upgrade direct)",
+          "candidate_name": "appdirs",
+          "change": "replace appdirs",
+          "install_result": "ok",
+          "pip_check": "No broken requirements found.",
           "passed": 10,
           "failed": 0,
-          "verdict": "passed_tests",
-          "rejection_reason": null,
+          "verdict": "accepted",
           "failing_tests": [],
-          "junit_path": "assets/runs/20261023_232609/evidence/optB_full/junit.xml"
+          "evidence_paths": [
+            "evidence/appdirs_platformdirs_junit.xml"
+          ],
+          "chosen": true
+        },
+        {
+          "candidate_name": "toml",
+          "change": "replace toml",
+          "install_result": "ok",
+          "pip_check": "No broken requirements found.",
+          "passed": 10,
+          "failed": 0,
+          "verdict": "accepted",
+          "failing_tests": [],
+          "evidence_paths": [
+            "evidence/toml_tomllib_junit.xml"
+          ],
+          "chosen": true
         }
       ],
       "new_failures": [],
@@ -335,5 +387,20 @@
     "A single test (tests/test_report.py::test_report_renders_all_sites) covers the Jinja2 call sites.",
     "Limitation of pip check: pip check reported clean at baseline although test_report_renders_all_sites failed, because upstream metadata lacked an upper version bound.",
     "Initial pip install . failure on Windows occurred due to UTF-8 BOM encoding prepended to pyproject.toml by PowerShell default redirection; resolved by writing standard UTF-8 without BOM."
+  ],
+  "action": "upgrade",
+  "action_reason": "version fix: pinned dependency causes runtime errors",
+  "status_reason": "tests_passed_clean",
+  "gate_rejection_details": [
+    {
+      "dep": "appdirs",
+      "run_index": 3,
+      "candidate": "pathlib",
+      "candidate_type": "stdlib",
+      "rejection_reason": "pathlib lacks user_cache_dir (API coverage 0%)",
+      "missing_symbols": [
+        "user_cache_dir"
+      ]
+    }
   ]
 }

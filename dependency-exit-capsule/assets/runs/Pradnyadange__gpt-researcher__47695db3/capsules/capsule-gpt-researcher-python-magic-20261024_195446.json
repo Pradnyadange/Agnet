@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "capsule_id": "capsule-gpt-researcher-python-magic-20261024_195446",
   "generated_at": "2026-10-24T19:54:46.463675+00:00",
-  "capsule_type": "unused_dependency",
+  "capsule_type": "replace",
   "target_repo": {
     "name": "gpt-researcher",
     "url": "https://github.com/Pradnyadange/gpt-researcher",
@@ -15,12 +15,15 @@
     "declared_specifier": ">=0.4.27",
     "declared_in": [
       "pyproject.toml"
-    ]
+    ],
+    "scope": "runtime",
+    "required_by": [],
+    "non_python_references": []
   },
   "observed": {
     "risk_indicators": [
       {
-        "id": "days_since_release",
+        "id": "days_since_latest_release",
         "value": 1599,
         "source_url": "https://pypi.org/pypi/python-magic/json",
         "fetched_at": "2026-10-24T19:52:36.635973+00:00"
@@ -136,10 +139,13 @@
       }
     }
   },
-  "status": "not_testable",
+  "status": "no_valid_proposal",
   "limitations": [
     "Static analysis mode only: test execution not run.",
     "Public repositories and Python projects only.",
     "Small models can propose weak replacements; validation gate determines acceptance."
-  ]
+  ],
+  "action": "replace",
+  "action_reason": "no release in 1599 days (threshold 730)",
+  "status_reason": "gate_rejected"
 }

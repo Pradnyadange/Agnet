@@ -1,0 +1,180 @@
+{
+  "schema_version": "2.0.0",
+  "capsule_id": "capsule-gpt-researcher-htmldocx-20261024_181713",
+  "generated_at": "2026-10-24T18:17:13.201942+00:00",
+  "capsule_type": "replacement",
+  "target_repo": {
+    "name": "gpt-researcher",
+    "url": "https://github.com/Pradnyadange/gpt-researcher",
+    "commit_sha": "47695db37ee39029a48b90ae1a381f93da38b20c",
+    "python_version": "3.14.6"
+  },
+  "maintenance_problem": "Dependency 'htmldocx' analyzed during static risk triage.",
+  "dependency": {
+    "name": "htmldocx",
+    "declared_specifier": ">=0.0.6",
+    "declared_in": [
+      "requirements.txt",
+      "pyproject.toml"
+    ]
+  },
+  "observed": {
+    "risk_indicators": [
+      {
+        "id": "days_since_release",
+        "value": 1886,
+        "source_url": "https://pypi.org/pypi/htmldocx/json",
+        "fetched_at": "2026-10-24T18:13:13.804650+00:00"
+      },
+      {
+        "id": "yanked",
+        "value": false,
+        "source_url": "https://pypi.org/pypi/htmldocx/json",
+        "fetched_at": "2026-10-24T18:13:13.804650+00:00"
+      }
+    ],
+    "scan": {
+      "files_scanned": 364,
+      "dynamic_imports": [
+        "gpt_researcher/llm_provider/generic/base.py:419 (importlib.import_module)",
+        "tests/backend/test_report_chat_route_uniqueness.py:29 (importlib.import_module)",
+        "tests/test_report_generation_available_images.py:38 (__import__)",
+        "tests/test_retriever_requires_scraping.py:128 (importlib.import_module)",
+        "tests/test_websocket_manager.py:75 (importlib.import_module)",
+        "tests/test_websocket_manager.py:80 (importlib.import_module)",
+        "tests/test_websocket_manager.py:84 (importlib.import_module)"
+      ]
+    },
+    "usage_locations": [
+      {
+        "file": "backend/utils.py",
+        "line": 130,
+        "symbol": "htmldocx.HtmlToDocx",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "backend/utils.py",
+        "line": 136,
+        "symbol": "HtmlToDocx",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "multi_agents/agents/utils/file_formats.py",
+        "line": 85,
+        "symbol": "htmldocx.HtmlToDocx",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "multi_agents/agents/utils/file_formats.py",
+        "line": 92,
+        "symbol": "HtmlToDocx",
+        "kind": "call",
+        "covered_by_tests": false
+      }
+    ],
+    "test_results": {
+      "baseline": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "candidate": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "new_failures": [],
+      "pip_check": {
+        "baseline": "Tests not run in static analyze mode.",
+        "candidate": "Tests not run in static analyze mode."
+      }
+    },
+    "evidence": [
+      {
+        "path": "assets/runs/Pradnyadange__gpt-researcher__47695db3/evidence/htmldocx_raw_model_response.json",
+        "sha256": "267f9453bc5e84120d543de9232b29aad5600ff9b71675025b0360dbec462bfe",
+        "command": "ollama run gemma2:2b",
+        "exit_code": 0,
+        "captured_at": "2026-10-24T18:17:13.201916+00:00"
+      }
+    ],
+    "trust_check": {
+      "skipped": false,
+      "candidate_name": "python-docx",
+      "candidate_type": "pypi",
+      "first_release_date": "2014-01-05T17:49:34.851313Z",
+      "release_count": 38,
+      "last_release_date": "2025-06-16T20:46:27.921066Z",
+      "project_urls": {
+        "Changelog": "https://github.com/python-openxml/python-docx/blob/master/HISTORY.rst",
+        "Documentation": "https://python-docx.readthedocs.org/en/latest/",
+        "Homepage": "https://github.com/python-openxml/python-docx",
+        "Repository": "https://github.com/python-openxml/python-docx"
+      },
+      "has_source_repo_url": true,
+      "min_edit_distance_to_popular": 7,
+      "closest_popular_package": "python-dateutil",
+      "needs_human_review": false,
+      "reasons": []
+    },
+    "secret_redactions_count": 0
+  },
+  "ai_generated": {
+    "proposed_replacement": {
+      "name": "python-docx",
+      "type": "pypi"
+    },
+    "migration_steps": [
+      "Update the 'htmldocx.HtmlToDocx' import to use 'python-docx.Document' instead.",
+      "Update all 'HtmlToDocx' calls to utilize the `python-docx` library."
+    ],
+    "suggested_tests": [
+      "Run unit tests to ensure that the new `python-docx` library is used correctly."
+    ],
+    "gap_analysis": [
+      "Ensure that 'python-docx' covers all functionalities of 'htmldocx'. "
+    ],
+    "provenance": {
+      "provider": "ollama",
+      "model_id": "gemma2:2b",
+      "model_license_name": "Gemma Terms of Use ",
+      "model_card_url": "https://ollama.com/library/gemma2",
+      "prompt_sha256": "697b57e77beef96da5ee5b2d05c7811776ebfb601cc8edcd5504704cbcfe386b",
+      "raw_response_path": "assets/runs/Pradnyadange__gpt-researcher__47695db3/evidence/htmldocx_raw_model_response.json",
+      "secret_redactions_count": 0,
+      "trust_check": {
+        "skipped": false,
+        "candidate_name": "python-docx",
+        "candidate_type": "pypi",
+        "first_release_date": "2014-01-05T17:49:34.851313Z",
+        "release_count": 38,
+        "last_release_date": "2025-06-16T20:46:27.921066Z",
+        "project_urls": {
+          "Changelog": "https://github.com/python-openxml/python-docx/blob/master/HISTORY.rst",
+          "Documentation": "https://python-docx.readthedocs.org/en/latest/",
+          "Homepage": "https://github.com/python-openxml/python-docx",
+          "Repository": "https://github.com/python-openxml/python-docx"
+        },
+        "has_source_repo_url": true,
+        "min_edit_distance_to_popular": 7,
+        "closest_popular_package": "python-dateutil",
+        "needs_human_review": false,
+        "reasons": []
+      },
+      "validation": {
+        "passed": true,
+        "api_coverage": 1.0,
+        "rejected_candidates": []
+      }
+    }
+  },
+  "status": "unverified",
+  "limitations": [
+    "Static analysis mode only: test execution not run.",
+    "Public repositories and Python projects only.",
+    "Small models can propose weak replacements; validation gate determines acceptance."
+  ]
+}

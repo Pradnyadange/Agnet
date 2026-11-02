@@ -118,13 +118,12 @@ with col_run_sel:
         display_name = r.get("display_name")  # e.g. "LinkWatch, tested run"
         mode = r.get("mode")  # "tested" | "static" | None
 
-        # Derive a short repo label without constructing any URL from the folder name
+        # Derive a clean repo name without constructing any URL from folder name
+        repo_label = None
         if display_name:
-            repo_label = display_name
+            repo_label = display_name.split(",")[0].strip()
         elif repo_url and repo_url.startswith("https://github.com/"):
-            repo_label = repo_url.replace("https://github.com/", "")
-        else:
-            repo_label = None  # show no link / no repo label
+            repo_label = repo_url.rstrip("/").split("/")[-1].replace(".git", "")
 
         ts = r["timestamp"]
         ts_display = ts[:19].replace("T", " ") + " UTC" if ts != "N/A" else "saved"
@@ -539,6 +538,16 @@ with tabs[1]:
     status_counts = count_capsule_statuses(capsules)
     scanned_count = max([c["observed"]["scan"]["files_scanned"] for c in capsules] or [0])
 
+    # Compute failure metrics
+    cands_rejected_by_tests = 0
+    props_rejected_by_gate = status_counts.get("no_valid_proposal", 0)
+    for cap in capsules:
+        c_res = cap.get("observed", {}).get("test_results", {}).get("candidate_results", [])
+        cands_rejected_by_tests += sum(1 for cr in c_res if cr.get("verdict") == "rejected_by_tests" or cr.get("failed", 0) > 0)
+        grd = cap.get("gate_rejection_details", [])
+        if grd:
+            props_rejected_by_gate += len(grd)
+
     # Top summary metrics
     c_meta1, c_meta2 = st.columns(2)
     with c_meta1:
@@ -546,8 +555,17 @@ with tabs[1]:
     with c_meta2:
         render_stat_card("Capsules Built", total_capsules)
 
+    st.markdown("<h4 style='margin-top:15px; margin-bottom:10px;'>Failure Visibility</h4>", unsafe_allow_html=True)
+    f_c1, f_c2, f_c3 = st.columns(3)
+    with f_c1:
+        render_stat_card("Capsules failed", status_counts["failed"])
+    with f_c2:
+        render_stat_card("Candidates rejected by tests", cands_rejected_by_tests)
+    with f_c3:
+        render_stat_card("Proposals rejected by the gate", props_rejected_by_gate)
+
     st.markdown("<h4 style='margin-top:15px; margin-bottom:10px;'>Capsule Statuses (Sum: " + str(sum(status_counts.values())) + ")</h4>", unsafe_allow_html=True)
-    c1, c2, c3, c4, c5, c6 = st.columns(6)
+    c1, c2, c3, c4, c5, c6, c7 = st.columns(7)
     with c1:
         render_stat_card("Verified", status_counts["verified"])
     with c2:
@@ -560,6 +578,8 @@ with tabs[1]:
         render_stat_card("Not Run", status_counts["not_run"])
     with c6:
         render_stat_card("No Proposal", status_counts["no_valid_proposal"])
+    with c7:
+        render_stat_card("No Action", status_counts["no_action"])
 
     st.markdown("<br>", unsafe_allow_html=True)
     st.markdown("### Scanned Dependencies")
@@ -568,9 +588,12 @@ with tabs[1]:
     for c in capsules:
         dep_name = c["dependency"]["name"]
         decl_spec = c["dependency"]["declared_specifier"] or "any"
+        scope_val = c["dependency"].get("scope", "runtime")
+        action_val = c.get("action", c.get("capsule_type", "-"))
+        status_reason_val = c.get("status_reason", "-")
         days_since = "unavailable"
         for r in c["observed"]["risk_indicators"]:
-            if r["id"] == "days_since_release":
+            if r["id"] in ("days_since_latest_release", "days_since_release"):
                 days_since = f"{r['value']} days" if isinstance(r['value'], int) else str(r['value'])
 
         usage_count = len(c["observed"]["usage_locations"])
@@ -582,12 +605,15 @@ with tabs[1]:
         table_rows.append({
             "capsule_id": c["capsule_id"],
             "name": dep_name,
+            "scope": scope_val,
+            "action": action_val,
             "version": decl_spec,
             "days_since": days_since,
             "usages": usage_count,
             "proposal": proposed_change,
             "provenance": prov_label,
-            "status_html": st_badge
+            "status_html": st_badge,
+            "status_reason": status_reason_val
         })
 
     dep_options = [c["dependency"]["name"] for c in capsules]
@@ -604,12 +630,12 @@ with tabs[1]:
                 st.rerun()
 
     rows_html = "".join([
-        f"<tr><td><strong>{r['name']}</strong></td><td><code>{r['version']}</code></td><td>{r['days_since']}</td><td>{r['usages']} sites</td><td><code>{r['proposal']}</code></td><td>{r['provenance']}</td><td>{r['status_html']}</td></tr>"
+        f"<tr><td><strong>{r['name']}</strong></td><td><span style='color:#93c5fd;'>{r['scope']}</span></td><td><code>{r['action']}</code></td><td><code>{r['version']}</code></td><td>{r['days_since']}</td><td>{r['usages']} sites</td><td><code>{r['proposal']}</code></td><td>{r['provenance']}</td><td>{r['status_html']}</td><td><small style='color:#94a3b8;'>{r['status_reason']}</small></td></tr>"
         for r in table_rows
     ])
     table_html = (
         '<table class="custom-table">'
-        '<thead><tr><th>Dependency</th><th>Declared Version</th><th>Staleness</th><th>AST Usages</th><th>Proposed Change</th><th>Provenance</th><th>Status</th></tr></thead>'
+        '<thead><tr><th>Dependency</th><th>Scope</th><th>Action</th><th>Declared Version</th><th>Days Since Release</th><th>AST Usages</th><th>Proposed Change</th><th>Provenance</th><th>Status</th><th>Reason</th></tr></thead>'
         f'<tbody>{rows_html}</tbody>'
         '</table>'
     )
@@ -641,8 +667,9 @@ with tabs[2]:
               <span style="color:#9AA7B4; margin-left:10px;">| {current_capsule['capsule_type']}</span>
               <span style="color:#9AA7B4; margin-left:10px;">| <code>{current_capsule['capsule_id']}</code></span>
             </div>
-            <div>
+            <div style="display:flex; flex-direction:column; align-items:flex-end;">
               {badge(status_val, status_val)}
+              <span style="font-size:0.75rem; color:#9AA7B4; margin-top:4px;"><code>{current_capsule.get('status_reason', '')}</code></span>
             </div>
           </div>
           <div style="margin-top:8px; font-size:0.85rem; color:#9AA7B4;">
@@ -791,6 +818,37 @@ with tabs[2]:
             st.markdown(f"- Rejected Candidates: `{', '.join(val['rejected_candidates'])}`")
 
         st.markdown("</div>", unsafe_allow_html=True)
+
+        # Rejected by the gate table
+        gate_rejections = current_capsule.get("gate_rejection_details", [])
+        if not gate_rejections:
+            # Check validation rejected candidates or other capsules in the run
+            if val.get("rejected_candidates"):
+                gate_rejections = [{"candidate": rc, "candidate_type": "stdlib/pypi", "run_index": 1, "missing_symbols": ["symbols check failed"], "rejection_reason": rc} for rc in val["rejected_candidates"]]
+            else:
+                for cap in capsules:
+                    grd = cap.get("gate_rejection_details", [])
+                    if grd and cap.get("dependency", {}).get("name") == current_capsule.get("dependency", {}).get("name"):
+                        gate_rejections = grd
+                        break
+
+        if gate_rejections:
+            st.markdown("#### 🛡️ Rejected by the Gate")
+            gr_rows = "".join([
+                f"<tr><td><code>{gr.get('candidate', '-')}</code></td><td>{gr.get('candidate_type', '-')}</td><td>Run #{gr.get('run_index', 1)}</td><td><code>{', '.join(gr.get('missing_symbols', []))}</code></td><td><span style='color:#f87171;'>{gr.get('rejection_reason', '-')}</span></td></tr>"
+                for gr in gate_rejections
+            ])
+            st.markdown(
+                f"""
+                <table class="custom-table">
+                  <thead>
+                    <tr><th>Candidate</th><th>Type</th><th>Model Run</th><th>Missing Symbols</th><th>Rejection Reason</th></tr>
+                  </thead>
+                  <tbody>{gr_rows}</tbody>
+                </table>
+                """,
+                unsafe_allow_html=True
+            )
 
 
 # ==========================================
@@ -1009,11 +1067,21 @@ with tabs[5]:
         st.markdown(f"#### Manifest Hashes (`{manifest_file.as_posix() if manifest_file else 'manifest.json'}`)")
         from scripts.common import compute_sha256_file
 
+        m_files = manifest["files"]
+        if isinstance(m_files, dict):
+            m_items = list(m_files.items())
+        elif isinstance(m_files, list):
+            m_items = [(f.get("path"), f.get("sha256")) for f in m_files if isinstance(f, dict)]
+        else:
+            m_items = []
+
         m_rows = []
-        for fp, exp_hash in manifest["files"].items():
+        for fp, exp_hash in m_items:
+            if not fp:
+                continue
             f_path = Path(fp)
             if not f_path.is_absolute():
-                f_path = BASE_DIR / f_path
+                f_path = current_run_path / fp if current_run_path and (current_run_path / fp).exists() else BASE_DIR / f_path
             if f_path.exists():
                 cur_hash = compute_sha256_file(f_path)
                 match = (cur_hash == exp_hash)
@@ -1022,7 +1090,7 @@ with tabs[5]:
                 match = False
             m_rows.append({
                 "file": fp,
-                "expected": exp_hash,
+                "expected": exp_hash or "",
                 "current": cur_hash,
                 "match": match
             })

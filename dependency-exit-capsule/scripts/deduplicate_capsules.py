@@ -175,14 +175,15 @@ def main():
         # Re-run verify_capsule.py if available
         verify_script = SCRIPTS_DIR / "verify_capsule.py"
         if verify_script.exists():
-            print("\nRe-running verify_capsule.py...")
-            result = subprocess.run(
-                [sys.executable, str(verify_script), "--runs-dir", str(runs_dir)],
-                capture_output=True, text=True
-            )
-            print(result.stdout[-3000:] if len(result.stdout) > 3000 else result.stdout)
-            if result.returncode != 0:
-                print(result.stderr[-1000:], file=sys.stderr)
+            print("\nRe-running verify_capsule.py on all manifests...")
+            for sub in runs_dir.iterdir():
+                manifest_p = sub / "manifest.json"
+                if manifest_p.is_file():
+                    result = subprocess.run(
+                        [sys.executable, str(verify_script), str(manifest_p)],
+                        capture_output=True, text=True
+                    )
+                    print(f"[{sub.name}] exit={result.returncode}: {result.stdout.strip() or result.stderr.strip()}")
 
 
 if __name__ == "__main__":

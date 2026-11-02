@@ -1,0 +1,121 @@
+{
+  "schema_version": "2.0.0",
+  "capsule_id": "capsule-gpt-researcher-html5lib-20261024_181559",
+  "generated_at": "2026-10-24T18:15:59.663079+00:00",
+  "capsule_type": "unused_dependency",
+  "target_repo": {
+    "name": "gpt-researcher",
+    "url": "https://github.com/Pradnyadange/gpt-researcher",
+    "commit_sha": "47695db37ee39029a48b90ae1a381f93da38b20c",
+    "python_version": "3.14.6"
+  },
+  "maintenance_problem": "Dependency 'html5lib' analyzed during static risk triage.",
+  "dependency": {
+    "name": "html5lib",
+    "declared_specifier": ">=1.1",
+    "declared_in": [
+      "pyproject.toml"
+    ]
+  },
+  "observed": {
+    "risk_indicators": [
+      {
+        "id": "days_since_release",
+        "value": 2314,
+        "source_url": "https://pypi.org/pypi/html5lib/json",
+        "fetched_at": "2026-10-24T18:13:27.236415+00:00"
+      },
+      {
+        "id": "yanked",
+        "value": false,
+        "source_url": "https://pypi.org/pypi/html5lib/json",
+        "fetched_at": "2026-10-24T18:13:27.236415+00:00"
+      }
+    ],
+    "scan": {
+      "files_scanned": 364,
+      "dynamic_imports": [
+        "gpt_researcher/llm_provider/generic/base.py:419 (importlib.import_module)",
+        "tests/backend/test_report_chat_route_uniqueness.py:29 (importlib.import_module)",
+        "tests/test_report_generation_available_images.py:38 (__import__)",
+        "tests/test_retriever_requires_scraping.py:128 (importlib.import_module)",
+        "tests/test_websocket_manager.py:75 (importlib.import_module)",
+        "tests/test_websocket_manager.py:80 (importlib.import_module)",
+        "tests/test_websocket_manager.py:84 (importlib.import_module)"
+      ]
+    },
+    "usage_locations": [],
+    "test_results": {
+      "baseline": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "candidate": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "new_failures": [],
+      "pip_check": {
+        "baseline": "Tests not run in static analyze mode.",
+        "candidate": "Tests not run in static analyze mode."
+      }
+    },
+    "evidence": [
+      {
+        "path": "assets/runs/Pradnyadange__gpt-researcher__47695db3/evidence/html5lib_raw_model_response.json",
+        "sha256": "42d7c21a9a52482d08a5b4365749a36ebc299c40bbc53ff54af50a0b5a68679f",
+        "command": "ollama run gemma2:2b",
+        "exit_code": 0,
+        "captured_at": "2026-10-24T18:15:59.663048+00:00"
+      }
+    ],
+    "trust_check": {
+      "skipped": true,
+      "candidate_type": "stdlib",
+      "needs_human_review": false,
+      "reasons": []
+    },
+    "secret_redactions_count": 0
+  },
+  "ai_generated": {
+    "proposed_replacement": {
+      "name": "no_valid_proposal",
+      "type": "stdlib"
+    },
+    "migration_steps": [],
+    "suggested_tests": [],
+    "gap_analysis": [
+      "Candidate rejected by validation gate: not in stdlib"
+    ],
+    "provenance": {
+      "provider": "ollama",
+      "model_id": "gemma2:2b",
+      "model_license_name": "Gemma Terms of Use ",
+      "model_card_url": "https://ollama.com/library/gemma2",
+      "prompt_sha256": "06aa23f624a3714b5abc1cfbd8f19221f80d677a852920aeb66e38dc09a376bc",
+      "raw_response_path": "assets/runs/Pradnyadange__gpt-researcher__47695db3/evidence/html5lib_raw_model_response.json",
+      "secret_redactions_count": 0,
+      "trust_check": {
+        "skipped": true,
+        "candidate_type": "stdlib",
+        "needs_human_review": false,
+        "reasons": []
+      },
+      "validation": {
+        "passed": false,
+        "api_coverage": 0.0,
+        "rejected_candidates": [
+          "html5lib is not in sys.stdlib_module_names"
+        ]
+      }
+    }
+  },
+  "status": "not_testable",
+  "limitations": [
+    "Static analysis mode only: test execution not run.",
+    "Public repositories and Python projects only.",
+    "Small models can propose weak replacements; validation gate determines acceptance."
+  ]
+}

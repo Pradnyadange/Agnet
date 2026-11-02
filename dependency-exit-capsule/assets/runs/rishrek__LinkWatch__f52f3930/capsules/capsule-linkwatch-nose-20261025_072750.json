@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "capsule_id": "capsule-linkwatch-nose-20261025_072750",
   "generated_at": "2026-10-25T07:27:50.259675+00:00",
-  "capsule_type": "unused_dependency",
+  "capsule_type": "replace",
   "target_repo": {
     "name": "LinkWatch",
     "url": "https://github.com/rishrek/LinkWatch",
@@ -15,12 +15,15 @@
     "declared_specifier": "==1.3.7",
     "declared_in": [
       "requirements-dev.txt"
-    ]
+    ],
+    "scope": "dev",
+    "required_by": [],
+    "non_python_references": []
   },
   "observed": {
     "risk_indicators": [
       {
-        "id": "days_since_release",
+        "id": "days_since_latest_release",
         "value": 4162,
         "source_url": "https://pypi.org/pypi/nose/json",
         "fetched_at": "2026-10-25T07:26:05.925243+00:00"
@@ -108,10 +111,13 @@
       }
     }
   },
-  "status": "not_testable",
+  "status": "not_run",
   "limitations": [
     "Static analysis mode only: test execution not run.",
     "Public repositories and Python projects only.",
     "Small models can propose weak replacements; validation gate determines acceptance."
-  ]
+  ],
+  "action": "replace",
+  "action_reason": "no release in 4162 days (threshold 730)",
+  "status_reason": "tests_not_executed"
 }
