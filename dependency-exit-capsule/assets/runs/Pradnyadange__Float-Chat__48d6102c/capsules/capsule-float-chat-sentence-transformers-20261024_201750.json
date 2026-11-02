@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "capsule_id": "capsule-float-chat-sentence-transformers-20261024_201750",
   "generated_at": "2026-10-24T20:17:50.240786+00:00",
-  "capsule_type": "unused_dependency",
+  "capsule_type": "remove",
   "target_repo": {
     "name": "Float-Chat",
     "url": "https://github.com/Pradnyadange/Float-Chat",
@@ -15,12 +15,15 @@
     "declared_specifier": "==4.1.0",
     "declared_in": [
       "requirements.txt"
-    ]
+    ],
+    "scope": "runtime",
+    "required_by": [],
+    "non_python_references": []
   },
   "observed": {
     "risk_indicators": [
       {
-        "id": "days_since_release",
+        "id": "days_since_latest_release",
         "value": 3,
         "source_url": "https://pypi.org/pypi/sentence-transformers/json",
         "fetched_at": "2026-10-24T20:13:23.938833+00:00"
@@ -128,10 +131,13 @@
       }
     }
   },
-  "status": "not_testable",
+  "status": "no_action",
   "limitations": [
     "Static analysis mode only: test execution not run.",
     "Public repositories and Python projects only.",
     "Small models can propose weak replacements; validation gate determines acceptance."
-  ]
+  ],
+  "action": "remove",
+  "action_reason": "no usage in Python files, no non-Python references, not required transitively",
+  "status_reason": "no_usage_found"
 }

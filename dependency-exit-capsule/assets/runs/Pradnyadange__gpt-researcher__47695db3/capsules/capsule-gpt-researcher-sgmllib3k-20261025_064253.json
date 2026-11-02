@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "capsule_id": "capsule-gpt-researcher-sgmllib3k-20261025_064253",
   "generated_at": "2026-10-25T06:42:53.796807+00:00",
-  "capsule_type": "unused_dependency",
+  "capsule_type": "replace",
   "target_repo": {
     "name": "gpt-researcher",
     "url": "https://github.com/Pradnyadange/gpt-researcher",
@@ -15,12 +15,15 @@
     "declared_specifier": ">=1.0.0",
     "declared_in": [
       "pyproject.toml"
-    ]
+    ],
+    "scope": "runtime",
+    "required_by": [],
+    "non_python_references": []
   },
   "observed": {
     "risk_indicators": [
       {
-        "id": "days_since_release",
+        "id": "days_since_latest_release",
         "value": 5905,
         "source_url": "https://pypi.org/pypi/sgmllib3k/json",
         "fetched_at": "2026-10-25T06:40:41.111729+00:00"
@@ -116,10 +119,13 @@
       }
     }
   },
-  "status": "not_testable",
+  "status": "not_run",
   "limitations": [
     "Static analysis mode only: test execution not run.",
     "Public repositories and Python projects only.",
     "Small models can propose weak replacements; validation gate determines acceptance."
-  ]
+  ],
+  "action": "replace",
+  "action_reason": "no release in 5905 days (threshold 730)",
+  "status_reason": "tests_not_executed"
 }

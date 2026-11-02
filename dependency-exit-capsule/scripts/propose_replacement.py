@@ -15,9 +15,54 @@ except ImportError:
     from scripts.llm_client import LLMClient
     from scripts.security import redact_secrets, format_untrusted_block, check_replacement_trust
 
+def _load_stdlib_introduced() -> dict:
+    """Load references/stdlib_introduced.json; maps module name -> min Python version string."""
+    p = Path(__file__).resolve().parent.parent / "references" / "stdlib_introduced.json"
+    if not p.is_file():
+        return {}
+    try:
+        data = json.loads(p.read_text(encoding="utf-8"))
+        return {k: v for k, v in data.items() if not k.startswith("_")}
+    except Exception:
+        return {}
+
+
+def _parse_python_version(ver_str: str) -> tuple[int, ...]:
+    """Parse '3.11' or '3.11.2' -> (3, 11) or (3, 11, 2)."""
+    try:
+        return tuple(int(x) for x in str(ver_str).split(".")[:2])
+    except Exception:
+        return (3, 0)
+
+
 def validate_stdlib_candidate(module_name: str) -> bool:
     """Check standard library names against sys.stdlib_module_names."""
     return module_name in sys.stdlib_module_names
+
+
+def check_stdlib_python_version_compat(
+    module_name: str, target_python_version: str
+) -> tuple[bool, str]:
+    """
+    Check if a stdlib module is compatible with the target Python version.
+    Returns (is_compatible, reason_if_not).
+    If the module was introduced in Python X.Y and target supports older Python,
+    the candidate is flagged incompatible.
+    """
+    stdlib_map = _load_stdlib_introduced()
+    min_ver_str = stdlib_map.get(module_name)
+    if min_ver_str is None:
+        return True, ""  # Not in the map → assume always available
+    min_ver = _parse_python_version(min_ver_str)
+    target_ver = _parse_python_version(target_python_version)
+    if target_ver < min_ver:
+        return False, (
+            f"{module_name} requires Python >= {min_ver_str} "
+            f"but target runtime uses Python {target_python_version}; "
+            f"consider tomli (PyPI, supports Python 3.6+) as an alternative."
+        )
+    return True, ""
+
 
 def validate_pypi_candidate(package_name: str, target_python_version: str) -> bool:
     """PyPI candidates must exist and support the target Python version."""
@@ -69,11 +114,12 @@ def check_api_symbol_coverage(candidate_name: str, candidate_type: str, used_sym
 
 def run_validation_gate(proposal: dict, used_symbols: list[str], python_version: str) -> tuple[bool, float, list[str], str]:
     """
-    Runs the 4 validation gate rules:
+    Runs the 5 validation gate rules:
     1. Standard library names checked against sys.stdlib_module_names
-    2. PyPI candidates must exist and support target Python version
-    3. API coverage: candidate provides symbols
-    4. Reject or downgrade candidates that fail
+    2. Python-version gate: stdlib modules introduced after target Python are rejected
+    3. PyPI candidates must exist and support target Python version
+    4. API coverage: candidate provides symbols
+    5. Reject or downgrade candidates that fail
     """
     replacement = proposal.get("proposed_replacement", {})
     name = replacement.get("name", "")
@@ -85,6 +131,11 @@ def run_validation_gate(proposal: dict, used_symbols: list[str], python_version:
         if not validate_stdlib_candidate(name):
             rejected.append(f"{name} is not in sys.stdlib_module_names")
             return False, 0.0, rejected, "not in stdlib"
+        # Python-version gate: check if stdlib module is available for the target Python version
+        compat, compat_reason = check_stdlib_python_version_compat(name, python_version)
+        if not compat:
+            rejected.append(compat_reason)
+            return False, 0.0, rejected, f"stdlib module {name} incompatible with Python {python_version}"
     elif cand_type == "pypi":
         # Check PyPI existence
         exists = validate_pypi_candidate(name, python_version)

@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "capsule_id": "capsule-linkwatch-toml-20261025_072948",
   "generated_at": "2026-10-25T07:29:48.289118+00:00",
-  "capsule_type": "replacement",
+  "capsule_type": "replace",
   "target_repo": {
     "name": "LinkWatch",
     "url": "https://github.com/rishrek/LinkWatch",
@@ -16,12 +16,15 @@
     "declared_in": [
       "requirements.txt",
       "pyproject.toml"
-    ]
+    ],
+    "scope": "runtime",
+    "required_by": [],
+    "non_python_references": []
   },
   "observed": {
     "risk_indicators": [
       {
-        "id": "days_since_release",
+        "id": "days_since_latest_release",
         "value": 2184,
         "source_url": "https://pypi.org/pypi/toml/json",
         "fetched_at": "2026-10-25T07:26:06.205079+00:00"
@@ -125,10 +128,13 @@
       }
     }
   },
-  "status": "unverified",
+  "status": "not_run",
   "limitations": [
     "Static analysis mode only: test execution not run.",
     "Public repositories and Python projects only.",
     "Small models can propose weak replacements; validation gate determines acceptance."
-  ]
+  ],
+  "action": "replace",
+  "action_reason": "no release in 2184 days (threshold 730)",
+  "status_reason": "tests_not_executed"
 }

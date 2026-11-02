@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "capsule_id": "capsule-civicpulse-pymongo-20261025_071441",
   "generated_at": "2026-10-25T07:14:41.861321+00:00",
-  "capsule_type": "replacement",
+  "capsule_type": "no_action",
   "target_repo": {
     "name": "civicPulse",
     "url": "https://github.com/Pradnyadange/civicPulse",
@@ -15,12 +15,15 @@
     "declared_specifier": "",
     "declared_in": [
       "requirements.txt"
-    ]
+    ],
+    "scope": "runtime",
+    "required_by": [],
+    "non_python_references": []
   },
   "observed": {
     "risk_indicators": [
       {
-        "id": "days_since_release",
+        "id": "days_since_latest_release",
         "value": 10,
         "source_url": "https://pypi.org/pypi/pymongo/json",
         "fetched_at": "2026-10-25T07:07:13.793131+00:00"
@@ -168,10 +171,13 @@
       }
     }
   },
-  "status": "unverified",
+  "status": "no_action",
   "limitations": [
     "Static analysis mode only: test execution not run.",
     "Public repositories and Python projects only.",
     "Small models can propose weak replacements; validation gate determines acceptance."
-  ]
+  ],
+  "action": "no_action",
+  "action_reason": "healthy and current",
+  "status_reason": "healthy_no_action"
 }

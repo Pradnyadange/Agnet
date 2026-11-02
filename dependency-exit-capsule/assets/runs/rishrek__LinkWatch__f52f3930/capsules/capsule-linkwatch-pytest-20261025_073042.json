@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "capsule_id": "capsule-linkwatch-pytest-20261025_073042",
   "generated_at": "2026-10-25T07:30:42.916045+00:00",
-  "capsule_type": "replacement",
+  "capsule_type": "no_action",
   "target_repo": {
     "name": "LinkWatch",
     "url": "https://github.com/rishrek/LinkWatch",
@@ -15,12 +15,15 @@
     "declared_specifier": "",
     "declared_in": [
       "requirements-dev.txt"
-    ]
+    ],
+    "scope": "dev",
+    "required_by": [],
+    "non_python_references": []
   },
   "observed": {
     "risk_indicators": [
       {
-        "id": "days_since_release",
+        "id": "days_since_latest_release",
         "value": 127,
         "source_url": "https://pypi.org/pypi/pytest/json",
         "fetched_at": "2026-10-25T07:26:05.511958+00:00"
@@ -149,10 +152,13 @@
       }
     }
   },
-  "status": "unverified",
+  "status": "no_action",
   "limitations": [
     "Static analysis mode only: test execution not run.",
     "Public repositories and Python projects only.",
     "Small models can propose weak replacements; validation gate determines acceptance."
-  ]
+  ],
+  "action": "no_action",
+  "action_reason": "dev-scope tool; replacement not proposed unless archived or deprecated",
+  "status_reason": "healthy_no_action"
 }

@@ -21,9 +21,21 @@ def verify_manifest(manifest_path: Path) -> tuple[bool, list[dict]]:
     files = data.get("files", {})
     all_match = True
     checks = []
-    
-    for rel_path, expected_hash in files.items():
+
+    file_items = []
+    if isinstance(files, dict):
+        file_items = list(files.items())
+    elif isinstance(files, list):
+        file_items = [(f.get("path"), f.get("sha256")) for f in files if isinstance(f, dict)]
+
+    run_dir = manifest_path.parent
+
+    for rel_path, expected_hash in file_items:
+        if not rel_path:
+            continue
         file_p = Path(rel_path)
+        if not file_p.exists():
+            file_p = run_dir / rel_path
         if not file_p.exists():
             checks.append({
                 "path": rel_path,

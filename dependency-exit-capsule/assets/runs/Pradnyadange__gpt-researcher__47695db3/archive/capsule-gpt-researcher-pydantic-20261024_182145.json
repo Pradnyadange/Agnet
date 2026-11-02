@@ -1,0 +1,151 @@
+{
+  "schema_version": "2.0.0",
+  "capsule_id": "capsule-gpt-researcher-pydantic-20261024_182145",
+  "generated_at": "2026-10-24T18:21:45.257584+00:00",
+  "capsule_type": "replacement",
+  "target_repo": {
+    "name": "gpt-researcher",
+    "url": "https://github.com/Pradnyadange/gpt-researcher",
+    "commit_sha": "47695db37ee39029a48b90ae1a381f93da38b20c",
+    "python_version": "3.14.6"
+  },
+  "maintenance_problem": "Dependency 'pydantic' analyzed during static risk triage.",
+  "dependency": {
+    "name": "pydantic",
+    "declared_specifier": ">=2.6.0",
+    "declared_in": [
+      "requirements.txt",
+      "pyproject.toml"
+    ]
+  },
+  "observed": {
+    "risk_indicators": [
+      {
+        "id": "days_since_release",
+        "value": 12,
+        "source_url": "https://pypi.org/pypi/pydantic/json",
+        "fetched_at": "2026-10-24T18:13:00.720077+00:00"
+      },
+      {
+        "id": "yanked",
+        "value": false,
+        "source_url": "https://pypi.org/pypi/pydantic/json",
+        "fetched_at": "2026-10-24T18:13:00.720077+00:00"
+      }
+    ],
+    "scan": {
+      "files_scanned": 364,
+      "dynamic_imports": [
+        "gpt_researcher/llm_provider/generic/base.py:419 (importlib.import_module)",
+        "tests/backend/test_report_chat_route_uniqueness.py:29 (importlib.import_module)",
+        "tests/test_report_generation_available_images.py:38 (__import__)",
+        "tests/test_retriever_requires_scraping.py:128 (importlib.import_module)",
+        "tests/test_websocket_manager.py:75 (importlib.import_module)",
+        "tests/test_websocket_manager.py:80 (importlib.import_module)",
+        "tests/test_websocket_manager.py:84 (importlib.import_module)"
+      ]
+    },
+    "usage_locations": [
+      {
+        "file": "gpt_researcher/utils/validators.py",
+        "line": 5,
+        "symbol": "pydantic.BaseModel",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "gpt_researcher/utils/validators.py",
+        "line": 5,
+        "symbol": "pydantic.Field",
+        "kind": "import",
+        "covered_by_tests": false
+      },
+      {
+        "file": "gpt_researcher/utils/validators.py",
+        "line": 14,
+        "symbol": "Field",
+        "kind": "call",
+        "covered_by_tests": false
+      },
+      {
+        "file": "json_schema_generator.py",
+        "line": 3,
+        "symbol": "pydantic.BaseModel",
+        "kind": "import",
+        "covered_by_tests": false
+      }
+    ],
+    "test_results": {
+      "baseline": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "candidate": {
+        "passed": 0,
+        "failed": 0,
+        "junit_path": "n/a"
+      },
+      "new_failures": [],
+      "pip_check": {
+        "baseline": "Tests not run in static analyze mode.",
+        "candidate": "Tests not run in static analyze mode."
+      }
+    },
+    "evidence": [
+      {
+        "path": "assets/runs/Pradnyadange__gpt-researcher__47695db3/evidence/pydantic_raw_model_response.json",
+        "sha256": "f87474b1cd28c9204b21864f3328630fedf40fa92f1594ff5d4fa2e68ed78c28",
+        "command": "ollama run gemma2:2b",
+        "exit_code": 0,
+        "captured_at": "2026-10-24T18:21:45.257548+00:00"
+      }
+    ],
+    "trust_check": {
+      "skipped": true,
+      "candidate_type": "stdlib",
+      "needs_human_review": false,
+      "reasons": []
+    },
+    "secret_redactions_count": 0
+  },
+  "ai_generated": {
+    "proposed_replacement": {
+      "name": "no_valid_proposal",
+      "type": "stdlib"
+    },
+    "migration_steps": [],
+    "suggested_tests": [],
+    "gap_analysis": [
+      "Candidate rejected by validation gate: not in stdlib"
+    ],
+    "provenance": {
+      "provider": "ollama",
+      "model_id": "gemma2:2b",
+      "model_license_name": "Gemma Terms of Use ",
+      "model_card_url": "https://ollama.com/library/gemma2",
+      "prompt_sha256": "e30be10e6e98aa698a13f2624cffe392d7b774d25a5d4d552589ffc1da9dccb1",
+      "raw_response_path": "assets/runs/Pradnyadange__gpt-researcher__47695db3/evidence/pydantic_raw_model_response.json",
+      "secret_redactions_count": 0,
+      "trust_check": {
+        "skipped": true,
+        "candidate_type": "stdlib",
+        "needs_human_review": false,
+        "reasons": []
+      },
+      "validation": {
+        "passed": false,
+        "api_coverage": 0.0,
+        "rejected_candidates": [
+          "pydantic is not in sys.stdlib_module_names"
+        ]
+      }
+    }
+  },
+  "status": "unverified",
+  "limitations": [
+    "Static analysis mode only: test execution not run.",
+    "Public repositories and Python projects only.",
+    "Small models can propose weak replacements; validation gate determines acceptance."
+  ]
+}

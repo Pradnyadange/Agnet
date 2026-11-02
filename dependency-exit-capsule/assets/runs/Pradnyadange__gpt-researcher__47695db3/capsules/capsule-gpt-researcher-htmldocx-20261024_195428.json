@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "capsule_id": "capsule-gpt-researcher-htmldocx-20261024_195428",
   "generated_at": "2026-10-24T19:54:28.480748+00:00",
-  "capsule_type": "replacement",
+  "capsule_type": "replace",
   "target_repo": {
     "name": "gpt-researcher",
     "url": "https://github.com/Pradnyadange/gpt-researcher",
@@ -16,12 +16,15 @@
     "declared_in": [
       "requirements.txt",
       "pyproject.toml"
-    ]
+    ],
+    "scope": "runtime",
+    "required_by": [],
+    "non_python_references": []
   },
   "observed": {
     "risk_indicators": [
       {
-        "id": "days_since_release",
+        "id": "days_since_latest_release",
         "value": 1886,
         "source_url": "https://pypi.org/pypi/htmldocx/json",
         "fetched_at": "2026-10-24T19:52:23.595249+00:00"
@@ -166,10 +169,13 @@
       }
     }
   },
-  "status": "unverified",
+  "status": "no_valid_proposal",
   "limitations": [
     "Static analysis mode only: test execution not run.",
     "Public repositories and Python projects only.",
     "Small models can propose weak replacements; validation gate determines acceptance."
-  ]
+  ],
+  "action": "replace",
+  "action_reason": "no release in 1886 days (threshold 730)",
+  "status_reason": "gate_rejected"
 }

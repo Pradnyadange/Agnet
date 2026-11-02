@@ -28,7 +28,7 @@
     },
     "capsule_type": {
       "type": "string",
-      "enum": ["replacement", "unused_dependency", "version_fix", "upgrade", "no_action"]
+      "enum": ["replacement", "unused_dependency", "version_fix", "upgrade", "no_action", "replace", "remove"]
     },
     "target_repo": {
       "type": "object",
@@ -57,6 +57,9 @@
         "required_by": {
           "type": "array",
           "items": { "type": "string" }
+        },
+        "non_python_references": {
+          "type": "array"
         }
       }
     },
@@ -135,6 +138,9 @@
                 "baseline": { "type": "string" },
                 "candidate": { "type": "string" }
               }
+            },
+            "candidate_results": {
+              "type": "array"
             }
           }
         },
@@ -234,6 +240,10 @@
     "action_reason": {
       "type": "string",
       "description": "Human-readable reason for the action decision."
+    },
+    "gate_rejection_details": {
+      "type": "array",
+      "description": "Details of candidate proposals rejected by validation gate."
     },
     "run_label": {
       "type": "string",

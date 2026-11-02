@@ -82,13 +82,16 @@ def list_runs(runs_dir: str | Path | None = None) -> list[dict]:
             except Exception:
                 pass
 
-        if capsules or manifest_p.exists():
+        effective_ts = sealed_at or timestamp
+        valid_capsules = [c for c in capsules if c.name != "manifest.json" and not c.name.startswith("scan")]
+
+        if valid_capsules or manifest_p.exists():
             runs.append({
                 "run_id": sub.name,
                 "path": sub,
                 "manifest": manifest_data,
-                "capsules_count": len(capsules),
-                "timestamp": timestamp,
+                "capsules_count": len(valid_capsules),
+                "timestamp": effective_ts,
                 # Metadata from run.json (may be None if absent)
                 "repo_url": repo_url,
                 "display_name": display_name,
@@ -299,9 +302,58 @@ def get_last_run_summary(runs_dir: str | Path | None = None) -> dict | None:
     if not run_dirs:
         return None
 
-    # Sort by mtime descending
-    run_dirs.sort(key=lambda d: d.stat().st_mtime, reverse=True)
-    newest = run_dirs[0]
+    # Find the most recent valid run by checking sealed_at from run.json,
+    # or the last pipeline.completed event in run.log, falling back to mtime of runs with capsules.
+    best_run = None
+    best_time = ""
+
+    for rd in run_dirs:
+        # Check run.log for pipeline completion target
+        log_p = rd / "run.log"
+        if log_p.is_file():
+            try:
+                for line in reversed(log_p.read_text(encoding="utf-8").splitlines()):
+                    if not line.strip():
+                        continue
+                    item = json.loads(line)
+                    if item.get("step") == "pipeline" and item.get("status") in ("completed", "complete"):
+                        t = item.get("timestamp", "")
+                        run_dir_val = item.get("data", {}).get("run_dir", "")
+                        target_p = Path(run_dir_val) if run_dir_val else rd
+                        if not target_p.is_absolute():
+                            target_p = p / target_p
+                        if target_p.is_dir() and t > best_time:
+                            best_time = t
+                            best_run = target_p
+                        break
+            except Exception:
+                pass
+
+        # Check run.json
+        rj = load_run_json(rd)
+        if rj and rj.get("sealed_at"):
+            t = rj["sealed_at"]
+            caps_d = rd / "capsules"
+            has_caps = any(caps_d.glob("*.json")) if caps_d.is_dir() else any(rd.glob("capsule-*.json"))
+            if has_caps and t > best_time:
+                best_time = t
+                best_run = rd
+
+    if best_run and best_run.is_dir():
+        newest = best_run
+    else:
+        # Fallback: newest folder by mtime that actually contains capsules
+        runs_with_caps = []
+        for rd in run_dirs:
+            cd = rd / "capsules"
+            if (cd.is_dir() and any(cd.glob("*.json"))) or any(rd.glob("capsule-*.json")):
+                runs_with_caps.append(rd)
+        if runs_with_caps:
+            runs_with_caps.sort(key=lambda d: d.stat().st_mtime, reverse=True)
+            newest = runs_with_caps[0]
+        else:
+            run_dirs.sort(key=lambda d: d.stat().st_mtime, reverse=True)
+            newest = run_dirs[0]
 
     log_p = newest / "run.log"
     manifest_p = newest / "manifest.json"
@@ -326,8 +378,9 @@ def get_last_run_summary(runs_dir: str | Path | None = None) -> dict | None:
         status_str = "failed"
 
     capsules_dir = newest / "capsules"
-    capsules = list(capsules_dir.glob("*.json")) if capsules_dir.is_dir() else list(newest.glob("capsule-*.json"))
-    ts = manifest_data.get("generated_at", "N/A") if manifest_data else "N/A"
+    capsules = [c for c in capsules_dir.glob("*.json") if c.name != "manifest.json"] if capsules_dir.is_dir() else [c for c in newest.glob("capsule-*.json") if c.name != "manifest.json"]
+    run_meta = load_run_json(newest)
+    ts = (run_meta.get("sealed_at") if run_meta else None) or (manifest_data.get("generated_at") if manifest_data else "N/A")
 
     return {
         "run_id": newest.name,

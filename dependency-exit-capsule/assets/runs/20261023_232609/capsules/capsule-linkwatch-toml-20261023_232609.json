@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
   "capsule_id": "capsule-linkwatch-toml-20261023_232609",
-  "capsule_type": "replacement",
+  "capsule_type": "replace",
   "generated_at": "2026-10-24T18:45:00Z",
   "status": "verified",
   "maintenance_problem": "toml 0.10.2 has had no releases in >2180 days; Python 3.11+ includes standard library tomllib, eliminating the dependency entirely.",
@@ -17,6 +17,70 @@
     "declared_in": [
       "requirements.txt",
       "pyproject.toml"
+    ],
+    "scope": "runtime",
+    "required_by": [],
+    "non_python_references": [
+      {
+        "file": "pyproject.toml",
+        "line": 13,
+        "match_term": "toml",
+        "line_content": "\"toml==0.10.2\","
+      },
+      {
+        "file": "README.md",
+        "line": 27,
+        "match_term": "toml",
+        "line_content": "- \ud83d\udccb **One config file**: list every site you care about in `sites.toml`"
+      },
+      {
+        "file": "README.md",
+        "line": 108,
+        "match_term": "toml",
+        "line_content": "| `check` | `--config PATH` | `sites.toml` | Use a different sites file |"
+      },
+      {
+        "file": "README.md",
+        "line": 124,
+        "match_term": "toml",
+        "line_content": "All sites live in **`sites.toml`** in the project folder:"
+      },
+      {
+        "file": "README.md",
+        "line": 126,
+        "match_term": "toml",
+        "line_content": "```toml"
+      },
+      {
+        "file": "README.md",
+        "line": 163,
+        "match_term": "toml",
+        "line_content": "A[\"sites.toml\"] -->|\"check\"| B[\"Live table in terminal\"]"
+      },
+      {
+        "file": "README.md",
+        "line": 168,
+        "match_term": "toml",
+        "line_content": "1. **Load**: `sites.toml` is read and validated (every site needs a name and a valid URL)."
+      },
+      {
+        "file": "README.md",
+        "line": 179,
+        "match_term": "toml",
+        "line_content": "\u2502   \u251c\u2500\u2500 config.py         # reads and validates sites.toml"
+      },
+      {
+        "file": "README.md",
+        "line": 190,
+        "match_term": "toml",
+        "line_content": "\u251c\u2500\u2500 sites.toml            # your list of sites"
+      },
+      {
+        "file": "requirements.txt",
+        "line": 1,
+        "match_term": "toml",
+        "line_content": "toml==0.10.2"
+      }
     ]
   },
   "observed": {
@@ -235,5 +299,8 @@
     "verified for the existing test suite on Windows 10/11 x64 / Python 3.12.10 in a copy; original unchanged; 4 tests exercise the changed lines (tests/test_config.py)",
     "Equivalence testing confirmed on Windows x64, Python 3.12 only.",
     "tomllib requires Python 3.11+; if LinkWatch must run on Python 3.10, tomli must be used."
-  ]
+  ],
+  "action": "replace",
+  "action_reason": "no release in 2183 days (threshold 730)",
+  "status_reason": "tests_passed_clean"
 }
