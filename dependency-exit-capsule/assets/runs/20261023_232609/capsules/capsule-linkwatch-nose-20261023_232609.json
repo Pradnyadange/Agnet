@@ -163,6 +163,17 @@
         "exit_code": 0,
         "captured_at": "2026-10-24T18:45:00Z"
       }
+    ],
+    "equivalence_checks": [
+      {
+        "call_site": "n/a",
+        "arguments": [],
+        "old_result": null,
+        "new_result": null,
+        "equal": null,
+        "notes": "not_probeable: No function call sites observed in repository",
+        "evidence_paths": []
+      }
     ]
   },
   "ai_generated": {

@@ -1,0 +1,8 @@
+refactor(deps): replace toml with tomllib
+
+Migrate imports and declarations from deprecated toml to tomllib.
+
+- Maintenance Problem: toml 0.10.2 has had no releases in >2180 days; Python 3.11+ includes standard library tomllib, eliminating the dependency entirely.
+- Action: replace
+- Replacement: tomllib
+- Status: verified

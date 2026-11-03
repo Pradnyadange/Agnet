@@ -1,0 +1,7 @@
+chore(deps): remove unused dependency six
+
+Remove six from project manifests as it has 0 observed usage in code.
+
+- Maintenance Problem: Dependency 'six' analyzed during static risk triage.
+- Action: remove
+- Status: no_action

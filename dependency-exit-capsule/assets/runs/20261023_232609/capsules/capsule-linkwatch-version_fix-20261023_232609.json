@@ -344,6 +344,17 @@
         "exit_code": 1,
         "captured_at": "2026-10-23T18:33:12Z"
       }
+    ],
+    "equivalence_checks": [
+      {
+        "call_site": "n/a",
+        "arguments": [],
+        "old_result": null,
+        "new_result": null,
+        "equal": null,
+        "notes": "not_probeable: Version upgrade capsule (pinned version bump, not alternative symbol replacement)",
+        "evidence_paths": []
+      }
     ]
   },
   "ai_generated": {
