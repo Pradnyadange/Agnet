@@ -1,0 +1,38 @@
+diff --git a/linkwatch/cache.py b/linkwatch/cache.py
+index fbcb878..c5bb3a3 100644
+--- a/linkwatch/cache.py
++++ b/linkwatch/cache.py
+@@ -1,7 +1,7 @@
+ import json
+ import os
+ 
+-from appdirs import user_cache_dir
++from platformdirs import user_cache_dir
+ 
+ RESULTS_FILE = "results.json"
+ 
+diff --git a/pyproject.toml b/pyproject.toml
+index 6c2754a..1de8ce1 100644
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -11,7 +11,7 @@ license = { text = "MIT" }
+ requires-python = ">=3.10"
+ dependencies = [
+     "toml==0.10.2",
+-    "appdirs==1.4.4",
++    "platformdirs==4.13.5",
+     "requests==2.31.0",
+     "Jinja2==2.11.3",
+     "pydantic>=2",
+diff --git a/requirements.txt b/requirements.txt
+index 6d525b7..cfb568f 100644
+--- a/requirements.txt
++++ b/requirements.txt
+@@ -1,5 +1,5 @@
+ toml==0.10.2
+-appdirs==1.4.4
++platformdirs==4.13.5
+ requests==2.31.0
+ Jinja2==2.11.3
+ pydantic==1.10.13
+

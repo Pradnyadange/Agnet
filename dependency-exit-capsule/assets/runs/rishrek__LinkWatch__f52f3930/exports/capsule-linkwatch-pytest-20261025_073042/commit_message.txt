@@ -1,0 +1,6 @@
+chore(deps): inspect pytest status
+
+Dependency pytest inspected with action no_action.
+
+- Action Reason: dev-scope tool; replacement not proposed unless archived or deprecated
+- Status: no_action

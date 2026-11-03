@@ -1,0 +1,16 @@
+{
+  "dep": "Jinja2",
+  "replacement": "Jinja2",
+  "symbol": "Environment",
+  "call_site": "linkwatch/report.py:9",
+  "arguments": [],
+  "probe_result": {
+    "old_result": null,
+    "new_result": null,
+    "equal": false,
+    "notes": "Probe execution error: old='ModuleNotFoundError: No module named 'Jinja2'' new='ModuleNotFoundError: No module named 'Jinja2''",
+    "old_error": "ModuleNotFoundError: No module named 'Jinja2'",
+    "new_error": "ModuleNotFoundError: No module named 'Jinja2'"
+  },
+  "timestamp": "2026-11-03T02:29:37.501337+00:00"
+}

@@ -1,0 +1,8 @@
+fix(deps): upgrade jinja2 to resolve dependency incompatibility
+
+Update jinja2 pinned specification to compatible modern release.
+
+- Maintenance Problem: Dependency 'jinja2' analyzed during static risk triage.
+- Action: upgrade
+- Action Reason: pinned version is 13 releases behind latest; 598 days since last release
+- Verified Status: no_valid_proposal

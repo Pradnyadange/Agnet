@@ -1,0 +1,8 @@
+refactor(deps): replace nose with remove_unused_dependency
+
+Migrate imports and declarations from deprecated nose to remove_unused_dependency.
+
+- Maintenance Problem: Stale unmaintained test framework (nose 1.3.7 released >4160 days ago); LinkWatch test suite uses modern pytest, making nose an unreferenced dependency in Python code.
+- Action: replace
+- Replacement: remove_unused_dependency
+- Status: unverified

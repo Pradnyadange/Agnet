@@ -260,6 +260,71 @@
         "exit_code": 0,
         "captured_at": "2026-10-24T18:45:00Z"
       }
+    ],
+    "equivalence_checks": [
+      {
+        "call_site": "linkwatch/config.py:37",
+        "arguments": [
+          "'sites.toml'"
+        ],
+        "old_result": {
+          "type": "dict",
+          "repr": "{'title': 'My sites', 'output': 'status.html', 'sites': [{'name': 'Python', 'url': 'https://www.python.org'}, {'name': 'PyPI', 'url': 'https://pypi.org'}, {'name': 'Example', 'url': 'https://example.com'}, {'name': 'GitHub', 'url': 'https://github.com'}]}",
+          "json_normalized": {
+            "title": "My sites",
+            "output": "status.html",
+            "sites": [
+              {
+                "name": "Python",
+                "url": "https://www.python.org"
+              },
+              {
+                "name": "PyPI",
+                "url": "https://pypi.org"
+              },
+              {
+                "name": "Example",
+                "url": "https://example.com"
+              },
+              {
+                "name": "GitHub",
+                "url": "https://github.com"
+              }
+            ]
+          }
+        },
+        "new_result": {
+          "type": "dict",
+          "repr": "{'title': 'My sites', 'output': 'status.html', 'sites': [{'name': 'Python', 'url': 'https://www.python.org'}, {'name': 'PyPI', 'url': 'https://pypi.org'}, {'name': 'Example', 'url': 'https://example.com'}, {'name': 'GitHub', 'url': 'https://github.com'}]}",
+          "json_normalized": {
+            "title": "My sites",
+            "output": "status.html",
+            "sites": [
+              {
+                "name": "Python",
+                "url": "https://www.python.org"
+              },
+              {
+                "name": "PyPI",
+                "url": "https://pypi.org"
+              },
+              {
+                "name": "Example",
+                "url": "https://example.com"
+              },
+              {
+                "name": "GitHub",
+                "url": "https://github.com"
+              }
+            ]
+          }
+        },
+        "equal": true,
+        "notes": "Outputs identical (type: dict)",
+        "evidence_paths": [
+          "evidence/equivalence_checks/toml_load_line37_probe.json"
+        ]
+      }
     ]
   },
   "ai_generated": {

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T08:04:49.091699+00:00",
+  "generated_at": "2026-11-03T02:31:51.120872+00:00",
   "capsule_count": 7,
   "files": [
     {
@@ -89,6 +89,90 @@
     {
       "path": "run.json",
       "sha256": "026fea16315f341b4cf6cb333df8eca272d970b025bd11a06d7dfd705f78a454"
+    },
+    {
+      "path": "exports/capsule-linkwatch-appdirs-20261025_072842/change.patch",
+      "sha256": "0754d77232b05b4643d30a65c54f53909a3cffa2ae25f06a66906061007048f7"
+    },
+    {
+      "path": "exports/capsule-linkwatch-appdirs-20261025_072842/commit_message.txt",
+      "sha256": "f23322f3d0a44a557e4431a61a8565d2b1b004b0eef3eeb2b9b5a25981e38dfc"
+    },
+    {
+      "path": "exports/capsule-linkwatch-appdirs-20261025_072842/pr_description.md",
+      "sha256": "b0485c28d4a57601dd3093bf48c680f3db3d90eb9d8e0be0d4fb9efaa7af1e5a"
+    },
+    {
+      "path": "exports/capsule-linkwatch-jinja2-20261024_201505/change.patch",
+      "sha256": "0754d77232b05b4643d30a65c54f53909a3cffa2ae25f06a66906061007048f7"
+    },
+    {
+      "path": "exports/capsule-linkwatch-jinja2-20261024_201505/commit_message.txt",
+      "sha256": "40faf8c67e16df2bca590d4766900379e432ac13017618d8f97af4b9e9b7f76d"
+    },
+    {
+      "path": "exports/capsule-linkwatch-jinja2-20261024_201505/pr_description.md",
+      "sha256": "de0f7884be086700da9a1999f94daf1bf9af57684c580aa6ac4fe87e2a970233"
+    },
+    {
+      "path": "exports/capsule-linkwatch-nose-20261025_072750/change.patch",
+      "sha256": "0d5fcaa331c35e66b25f2c4fa37d47be3b02bb4b39c916bdf1dc2a0cf8a9da91"
+    },
+    {
+      "path": "exports/capsule-linkwatch-nose-20261025_072750/commit_message.txt",
+      "sha256": "e0d7b68365cb3c5c996c42746479082c8c5e585840c22dde764c4f85f8391aa4"
+    },
+    {
+      "path": "exports/capsule-linkwatch-nose-20261025_072750/pr_description.md",
+      "sha256": "a97f61e05f27573656b5f75e46f12f6a1671fa3c275a82cc3fcbd16f10344e8a"
+    },
+    {
+      "path": "exports/capsule-linkwatch-pytest-20261025_073042/change.patch",
+      "sha256": "0754d77232b05b4643d30a65c54f53909a3cffa2ae25f06a66906061007048f7"
+    },
+    {
+      "path": "exports/capsule-linkwatch-pytest-20261025_073042/commit_message.txt",
+      "sha256": "4f57c7a9dec42f4437275619b18f7d8ff2ca323a0a8cebbde236e7efab553361"
+    },
+    {
+      "path": "exports/capsule-linkwatch-pytest-20261025_073042/pr_description.md",
+      "sha256": "38b7d0a8e0bde6d4b77498530cf0b13c0383bd2d1669fd26195df859d3677783"
+    },
+    {
+      "path": "exports/capsule-linkwatch-rich-20261024_201644/change.patch",
+      "sha256": "0754d77232b05b4643d30a65c54f53909a3cffa2ae25f06a66906061007048f7"
+    },
+    {
+      "path": "exports/capsule-linkwatch-rich-20261024_201644/commit_message.txt",
+      "sha256": "69b9add38ecdb9d678c9c3e6bc74adb943555dd796fe2b9fb319fe53b7a7450b"
+    },
+    {
+      "path": "exports/capsule-linkwatch-rich-20261024_201644/pr_description.md",
+      "sha256": "b31eb53a36292dea8176b78b7f095e7273803e70673cf9ba9a328657ac7d0381"
+    },
+    {
+      "path": "exports/capsule-linkwatch-six-20261024_201305/change.patch",
+      "sha256": "0754d77232b05b4643d30a65c54f53909a3cffa2ae25f06a66906061007048f7"
+    },
+    {
+      "path": "exports/capsule-linkwatch-six-20261024_201305/commit_message.txt",
+      "sha256": "0062a7f71d8e52ba90246ab46caf253030b968b7e1153748079aa99f98b56876"
+    },
+    {
+      "path": "exports/capsule-linkwatch-six-20261024_201305/pr_description.md",
+      "sha256": "2a6c115ca2f99685a28574e695aa5e7d5d4f35ac72b25c2fd5d142da47f2fe6c"
+    },
+    {
+      "path": "exports/capsule-linkwatch-toml-20261025_072948/change.patch",
+      "sha256": "2750bf1a0bc3c47f1e484d5ca2c8d1fd10a44b93d93ae9af5bd2e9c9abdb736c"
+    },
+    {
+      "path": "exports/capsule-linkwatch-toml-20261025_072948/commit_message.txt",
+      "sha256": "9ef1fefc8f78c3dee6a9b67b7243fe0deec64a1ca45c635d99dfa11c69a50ad2"
+    },
+    {
+      "path": "exports/capsule-linkwatch-toml-20261025_072948/pr_description.md",
+      "sha256": "8ad3444f199e45103b8b57abba7567f771ec0da13ddb971ce0f08783c93a6984"
     }
   ]
 }

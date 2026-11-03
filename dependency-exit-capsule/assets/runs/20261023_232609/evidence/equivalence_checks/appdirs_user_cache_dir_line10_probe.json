@@ -1,0 +1,30 @@
+{
+  "dep": "appdirs",
+  "replacement": "platformdirs",
+  "symbol": "user_cache_dir",
+  "call_site": "linkwatch/cache.py:10",
+  "arguments": [
+    {
+      "kind": "literal",
+      "value": "linkwatch",
+      "repr": "'linkwatch'"
+    }
+  ],
+  "probe_result": {
+    "old_result": {
+      "type": "str",
+      "repr": "'C:\\\\Users\\\\pradn\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4744a104-503c-49ff-9b9f-ace4228f09ad}\\\\AC\\\\linkwatch\\\\linkwatch\\\\Cache'",
+      "json_normalized": "C:\\Users\\pradn\\AppData\\Local\\Packages\\sandbox.{4744a104-503c-49ff-9b9f-ace4228f09ad}\\AC\\linkwatch\\linkwatch\\Cache"
+    },
+    "new_result": {
+      "type": "str",
+      "repr": "'C:\\\\Users\\\\pradn\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4744a104-503c-49ff-9b9f-ace4228f09ad}\\\\AC\\\\linkwatch\\\\linkwatch\\\\Cache'",
+      "json_normalized": "C:\\Users\\pradn\\AppData\\Local\\Packages\\sandbox.{4744a104-503c-49ff-9b9f-ace4228f09ad}\\AC\\linkwatch\\linkwatch\\Cache"
+    },
+    "equal": true,
+    "notes": "Outputs identical (type: str)",
+    "old_error": null,
+    "new_error": null
+  },
+  "timestamp": "2026-11-03T02:30:07.377191+00:00"
+}

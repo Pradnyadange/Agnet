@@ -850,6 +850,101 @@ with tabs[2]:
                 unsafe_allow_html=True
             )
 
+    # -------------------------------------------------------------------------
+    # Behavior (Equivalence) Checks Section
+    # -------------------------------------------------------------------------
+    eq_checks = current_capsule.get("observed", {}).get("equivalence_checks", [])
+    if eq_checks:
+        st.markdown("<hr style='border-color:#2d3b4d;'>", unsafe_allow_html=True)
+        st.markdown("#### ⚖️ Behavior (Equivalence) Probes")
+        eq_rows = []
+        for eq in eq_checks:
+            eq_val = eq.get("equal")
+            if eq_val is True:
+                eq_badge = "<span style='color:#4ADE80; font-weight:700;'>✓ EQUAL</span>"
+            elif eq_val is False:
+                eq_badge = "<span style='color:#F87171; font-weight:700;'>✕ DIFFERS</span>"
+            else:
+                eq_badge = "<span style='color:#94a3b8;'>N/A</span>"
+
+            old_r = eq.get("old_result")
+            old_str = f"<code>{old_r.get('repr', '')}</code>" if old_r else "-"
+            new_r = eq.get("new_result")
+            new_str = f"<code>{new_r.get('repr', '')}</code>" if new_r else "-"
+
+            ev_links = ", ".join([f"<code>{p}</code>" for p in eq.get("evidence_paths", [])]) or "-"
+
+            eq_rows.append(
+                f"<tr>"
+                f"<td><code>{eq.get('call_site', '-')}</code></td>"
+                f"<td>{eq_badge}</td>"
+                f"<td>{old_str}</td>"
+                f"<td>{new_str}</td>"
+                f"<td><small>{eq.get('notes', '-')}</small></td>"
+                f"<td><small>{ev_links}</small></td>"
+                f"</tr>"
+            )
+
+        st.markdown(
+            f"""
+            <table class="custom-table">
+              <thead>
+                <tr>
+                  <th>Call Site</th>
+                  <th>Equivalence</th>
+                  <th>Original Result</th>
+                  <th>Replacement Result</th>
+                  <th>Notes</th>
+                  <th>Evidence</th>
+                </tr>
+              </thead>
+              <tbody>{"".join(eq_rows)}</tbody>
+            </table>
+            """,
+            unsafe_allow_html=True
+        )
+
+    # -------------------------------------------------------------------------
+    # Maintainer Exports Download Section
+    # -------------------------------------------------------------------------
+    st.markdown("<hr style='border-color:#2d3b4d;'>", unsafe_allow_html=True)
+    st.markdown("#### 📦 Maintainer Exports")
+    
+    cap_id = current_capsule.get("capsule_id", "")
+    exp_dir = current_run_path / "exports" / cap_id if current_run_path else None
+    
+    col_exp1, col_exp2, col_exp3 = st.columns(3)
+    
+    patch_p = exp_dir / "change.patch" if exp_dir else None
+    patch_bytes = patch_p.read_bytes() if patch_p and patch_p.is_file() else b"# No patch file generated\n"
+    with col_exp1:
+        st.download_button(
+            label="📄 Download change.patch",
+            data=patch_bytes,
+            file_name=f"{dep_meta['name']}_change.patch",
+            mime="text/x-diff"
+        )
+
+    pr_p = exp_dir / "pr_description.md" if exp_dir else None
+    pr_bytes = pr_p.read_bytes() if pr_p and pr_p.is_file() else b"# No PR description generated\n"
+    with col_exp2:
+        st.download_button(
+            label="📝 Download pr_description.md",
+            data=pr_bytes,
+            file_name=f"{dep_meta['name']}_pr_description.md",
+            mime="text/markdown"
+        )
+
+    cm_p = exp_dir / "commit_message.txt" if exp_dir else None
+    cm_bytes = cm_p.read_bytes() if cm_p and cm_p.is_file() else b"# No commit message generated\n"
+    with col_exp3:
+        st.download_button(
+            label="💬 Download commit_message.txt",
+            data=cm_bytes,
+            file_name=f"{dep_meta['name']}_commit_message.txt",
+            mime="text/plain"
+        )
+
 
 # ==========================================
 # TAB 3: BLAST RADIUS

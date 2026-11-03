@@ -1,0 +1,8 @@
+fix(deps): upgrade Jinja2 to resolve dependency incompatibility
+
+Update Jinja2 pinned specification to compatible modern release.
+
+- Maintenance Problem: Jinja2==2.11.3 requires MarkupSafe>=0.23 with no upper bound. MarkupSafe 2.1.0 removed soft_unicode, which causes an ImportError when Jinja2 2.11.3 filters are imported under modern Python 3.12 environments.
+- Action: upgrade
+- Action Reason: version fix: pinned dependency causes runtime errors
+- Verified Status: verified

@@ -1,0 +1,8 @@
+refactor(deps): replace appdirs with no_valid_proposal
+
+Migrate imports and declarations from deprecated appdirs to no_valid_proposal.
+
+- Maintenance Problem: Dependency 'appdirs' analyzed during static risk triage.
+- Action: replace
+- Replacement: no_valid_proposal
+- Status: no_valid_proposal

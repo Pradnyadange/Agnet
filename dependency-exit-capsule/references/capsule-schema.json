@@ -163,6 +163,26 @@
         },
         "secret_redactions_count": {
           "type": "integer"
+        },
+        "equivalence_checks": {
+          "type": "array",
+          "description": "Behavior equivalence checks comparing baseline and replacement candidate calls on literal/in-repo arguments.",
+          "items": {
+            "type": "object",
+            "required": ["call_site", "arguments", "old_result", "new_result", "equal", "notes", "evidence_paths"],
+            "properties": {
+              "call_site": { "type": "string" },
+              "arguments": { "type": "array" },
+              "old_result": {},
+              "new_result": {},
+              "equal": { "type": ["boolean", "null"] },
+              "notes": { "type": "string" },
+              "evidence_paths": {
+                "type": "array",
+                "items": { "type": "string" }
+              }
+            }
+          }
         }
       }
     },

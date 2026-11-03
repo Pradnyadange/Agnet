@@ -1,0 +1,8 @@
+refactor(deps): replace toml with tomllib
+
+Migrate imports and declarations from deprecated toml to tomllib.
+
+- Maintenance Problem: Dependency 'toml' analyzed during static risk triage.
+- Action: replace
+- Replacement: tomllib
+- Status: not_run

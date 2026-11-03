@@ -1,0 +1,8 @@
+refactor(deps): replace nose with unittest
+
+Migrate imports and declarations from deprecated nose to unittest.
+
+- Maintenance Problem: Dependency 'nose' analyzed during static risk triage.
+- Action: replace
+- Replacement: unittest
+- Status: not_run

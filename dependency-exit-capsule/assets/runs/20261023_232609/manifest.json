@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-11-02T08:04:48.521112+00:00",
+  "generated_at": "2026-11-03T03:05:11.401075+00:00",
   "capsule_count": 4,
   "files": [
     {
       "path": "capsules/capsule-linkwatch-appdirs-20261023_232609.json",
-      "sha256": "46a84dc26711484816999dafb4567c47ed62089a4e804276e595dff7470f31d2"
+      "sha256": "657d3e29d7234ed9001fab890939d7ff9ce5bc31848d639c28f42cc46e06e64f"
     },
     {
       "path": "capsules/capsule-linkwatch-nose-20261023_232609.json",
-      "sha256": "26ac6175f10c43aa8a96bf9de7b0d917234c07931675237bf3dd039b742cf936"
+      "sha256": "e3d7057d3e53a79aafe1b9a929d0c59646b4dd3362b287b62ec6119edb9f4315"
     },
     {
       "path": "capsules/capsule-linkwatch-toml-20261023_232609.json",
-      "sha256": "8f7f244f1f5c2bbf3950887ee9300e9b979b87eed087c13622298ec422678c63"
+      "sha256": "cfc0ebd6dc95db4eeaa79b0531cd49c71f8a5966d0126dab6a6dd988c9f8a064"
     },
     {
       "path": "capsules/capsule-linkwatch-version_fix-20261023_232609.json",
-      "sha256": "dd1c7cf91d6d9d40770a4de1701f99abfa43b73d2fbd9f5f6199223031e20ec6"
+      "sha256": "fc75f08a3883fdb69802f99ec626e5a5a285183ce50438ec97cb1a3ca2791787"
     },
     {
       "path": "evidence/appdirs_llama3.1_run1_raw.json",
@@ -183,8 +183,20 @@
       "sha256": "0ff98281c419537d5764a6706092cbdaa086364cb009d649f20cf2735ad0ed2c"
     },
     {
+      "path": "evidence/equivalence_checks/appdirs_user_cache_dir_line10_probe.json",
+      "sha256": "75cc3eaad8772d8e1b69ea33ba02f466effdbc55efa55ddd67097add33f6d2d7"
+    },
+    {
+      "path": "evidence/equivalence_checks/Jinja2_Environment_line9_probe.json",
+      "sha256": "c61543f8cdf512d50f45823da7268609a0dc596b40cd91d39d9663ff98f2974d"
+    },
+    {
       "path": "evidence/equivalence_checks/toml_equivalence.json",
       "sha256": "eb4cdd204d57aa92b4f60817704dbe968f536efb7d3a39d41cc1ac4f74dc44f6"
+    },
+    {
+      "path": "evidence/equivalence_checks/toml_load_line37_probe.json",
+      "sha256": "1ea1bbce35f7601e4918ed2bec567cbf2bc1896033dc72219262fbd43e343618"
     },
     {
       "path": "evidence/equivalence_checks/toml_vs_tomli.diff",
@@ -357,6 +369,54 @@
     {
       "path": "run.json",
       "sha256": "def6b73ca02cc36408b0377c6b736e7139024a474b3d60e91f6acf1224e2a4a1"
+    },
+    {
+      "path": "exports/capsule-linkwatch-appdirs-20261023_232609/change.patch",
+      "sha256": "51778a756f32dbf72b2b2b9b5e82c428cf00e4b61ca773b4786910ab14b44e47"
+    },
+    {
+      "path": "exports/capsule-linkwatch-appdirs-20261023_232609/commit_message.txt",
+      "sha256": "3daf998202bdbbd0fe3507c0d3de0fcf2bd40f7e95667de361ebd65a7e8f00dc"
+    },
+    {
+      "path": "exports/capsule-linkwatch-appdirs-20261023_232609/pr_description.md",
+      "sha256": "162e4dd27dbff779defe70a11088770b5f1016ea67422bdc570332af4f643af3"
+    },
+    {
+      "path": "exports/capsule-linkwatch-nose-20261023_232609/change.patch",
+      "sha256": "88cb22651cff1496004da5618dae968251e20198af99bb5319b39c40524119d3"
+    },
+    {
+      "path": "exports/capsule-linkwatch-nose-20261023_232609/commit_message.txt",
+      "sha256": "6b02e154d8701cca838fad008413733a4d827394b16e52bb8425dba7d02c378c"
+    },
+    {
+      "path": "exports/capsule-linkwatch-nose-20261023_232609/pr_description.md",
+      "sha256": "d41b506ce7982761ad749f53c80c05022c9c6f9bb35d529737e13ac54e52c87d"
+    },
+    {
+      "path": "exports/capsule-linkwatch-toml-20261023_232609/change.patch",
+      "sha256": "9109c535420d8d5a04b0f4445bf0007a3e586d675e5134f8603a3b400e2227ae"
+    },
+    {
+      "path": "exports/capsule-linkwatch-toml-20261023_232609/commit_message.txt",
+      "sha256": "d1323f15279fe0a51e2ffddc522b76b9311aa8e75463b3bd849d8d22e42c3010"
+    },
+    {
+      "path": "exports/capsule-linkwatch-toml-20261023_232609/pr_description.md",
+      "sha256": "0378cb032a4dcc4dcaecf2759eda19687d0d963f09938ceaaa3a970a2cdb9d59"
+    },
+    {
+      "path": "exports/capsule-linkwatch-version_fix-20261023_232609/change.patch",
+      "sha256": "274219dee419ddf77113f4bb4adece3bf226312b690e3c17cd4415d9db406429"
+    },
+    {
+      "path": "exports/capsule-linkwatch-version_fix-20261023_232609/commit_message.txt",
+      "sha256": "bede1fe5b95004e490b10ba816e726e3f21725dc78bac00bf42f350dc43ec10e"
+    },
+    {
+      "path": "exports/capsule-linkwatch-version_fix-20261023_232609/pr_description.md",
+      "sha256": "fc8871878dbd336cbacb729e8e2b7384ff38880a34328aaf8bf9d28d4113ae14"
     }
   ]
 }

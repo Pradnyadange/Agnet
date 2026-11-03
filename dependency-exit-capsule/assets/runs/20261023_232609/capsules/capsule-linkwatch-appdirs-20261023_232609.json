@@ -150,6 +150,29 @@
         "exit_code": 0,
         "captured_at": "2026-10-24T18:45:00Z"
       }
+    ],
+    "equivalence_checks": [
+      {
+        "call_site": "linkwatch/cache.py:10",
+        "arguments": [
+          "'linkwatch'"
+        ],
+        "old_result": {
+          "type": "str",
+          "repr": "'C:\\\\Users\\\\pradn\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4744a104-503c-49ff-9b9f-ace4228f09ad}\\\\AC\\\\linkwatch\\\\linkwatch\\\\Cache'",
+          "json_normalized": "C:\\Users\\pradn\\AppData\\Local\\Packages\\sandbox.{4744a104-503c-49ff-9b9f-ace4228f09ad}\\AC\\linkwatch\\linkwatch\\Cache"
+        },
+        "new_result": {
+          "type": "str",
+          "repr": "'C:\\\\Users\\\\pradn\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4744a104-503c-49ff-9b9f-ace4228f09ad}\\\\AC\\\\linkwatch\\\\linkwatch\\\\Cache'",
+          "json_normalized": "C:\\Users\\pradn\\AppData\\Local\\Packages\\sandbox.{4744a104-503c-49ff-9b9f-ace4228f09ad}\\AC\\linkwatch\\linkwatch\\Cache"
+        },
+        "equal": true,
+        "notes": "Outputs identical (type: str)",
+        "evidence_paths": [
+          "evidence/equivalence_checks/appdirs_user_cache_dir_line10_probe.json"
+        ]
+      }
     ]
   },
   "ai_generated": {

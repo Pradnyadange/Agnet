@@ -1,0 +1,8 @@
+refactor(deps): replace appdirs with platformdirs
+
+Migrate imports and declarations from deprecated appdirs to platformdirs.
+
+- Maintenance Problem: appdirs 1.4.4 has had no releases in >2350 days; actively maintained platformdirs is the drop-in community replacement.
+- Action: replace
+- Replacement: platformdirs
+- Status: verified

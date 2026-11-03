@@ -1,0 +1,72 @@
+{
+  "dep": "toml",
+  "replacement": "tomllib",
+  "symbol": "load",
+  "call_site": "linkwatch/config.py:37",
+  "arguments": [
+    {
+      "kind": "in_repo_path",
+      "value": "sites.toml",
+      "repr": "'sites.toml'"
+    }
+  ],
+  "probe_result": {
+    "old_result": {
+      "type": "dict",
+      "repr": "{'title': 'My sites', 'output': 'status.html', 'sites': [{'name': 'Python', 'url': 'https://www.python.org'}, {'name': 'PyPI', 'url': 'https://pypi.org'}, {'name': 'Example', 'url': 'https://example.com'}, {'name': 'GitHub', 'url': 'https://github.com'}]}",
+      "json_normalized": {
+        "title": "My sites",
+        "output": "status.html",
+        "sites": [
+          {
+            "name": "Python",
+            "url": "https://www.python.org"
+          },
+          {
+            "name": "PyPI",
+            "url": "https://pypi.org"
+          },
+          {
+            "name": "Example",
+            "url": "https://example.com"
+          },
+          {
+            "name": "GitHub",
+            "url": "https://github.com"
+          }
+        ]
+      }
+    },
+    "new_result": {
+      "type": "dict",
+      "repr": "{'title': 'My sites', 'output': 'status.html', 'sites': [{'name': 'Python', 'url': 'https://www.python.org'}, {'name': 'PyPI', 'url': 'https://pypi.org'}, {'name': 'Example', 'url': 'https://example.com'}, {'name': 'GitHub', 'url': 'https://github.com'}]}",
+      "json_normalized": {
+        "title": "My sites",
+        "output": "status.html",
+        "sites": [
+          {
+            "name": "Python",
+            "url": "https://www.python.org"
+          },
+          {
+            "name": "PyPI",
+            "url": "https://pypi.org"
+          },
+          {
+            "name": "Example",
+            "url": "https://example.com"
+          },
+          {
+            "name": "GitHub",
+            "url": "https://github.com"
+          }
+        ]
+      }
+    },
+    "equal": true,
+    "notes": "Outputs identical (type: dict)",
+    "old_error": null,
+    "new_error": null
+  },
+  "timestamp": "2026-11-03T02:30:08.030900+00:00"
+}
